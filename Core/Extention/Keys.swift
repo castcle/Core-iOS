@@ -8,5 +8,5 @@
 import Defaults
 
 public extension Defaults.Keys {
-    static let appLanguage = Key<String>("appLanguage", default: "")
+    static let appLanguage = Key<String>("appLanguage", default: "en")
 }

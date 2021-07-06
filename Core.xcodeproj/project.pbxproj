@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		B7928121268F200C000ED84A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928120268F200C000ED84A /* Localization.swift */; };
 		B7928123268F2025000ED84A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928122268F2025000ED84A /* String.swift */; };
 		B7928125268F2056000ED84A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928124268F2056000ED84A /* Keys.swift */; };
+		B792818226942AF3000ED84A /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B792818126942AF3000ED84A /* Defaults */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDB6610F41512D6C8ED4530D /* Pods_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6127E76347A70E256F3473A /* Pods_Core.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B792818226942AF3000ED84A /* Defaults in Frameworks */,
 				DDB6610F41512D6C8ED4530D /* Pods_Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +136,9 @@
 			dependencies = (
 			);
 			name = Core;
+			packageProductDependencies = (
+				B792818126942AF3000ED84A /* Defaults */,
+			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
 			productType = "com.apple.product-type.framework";
@@ -161,6 +166,9 @@
 				Base,
 			);
 			mainGroup = B7F69CBB268EB85600B01223;
+			packageReferences = (
+				B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */,
+			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -352,6 +360,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -378,6 +387,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B792818126942AF3000ED84A /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7F69CBC268EB85600B01223 /* Project object */;
 }
