@@ -12,6 +12,12 @@
 		B7928123268F2025000ED84A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928122268F2025000ED84A /* String.swift */; };
 		B7928125268F2056000ED84A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928124268F2056000ED84A /* Keys.swift */; };
 		B792818226942AF3000ED84A /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B792818126942AF3000ED84A /* Defaults */; };
+		B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79281C5269596A1000ED84A /* ColorTheme.xcassets */; };
+		B79281C826959854000ED84A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281C726959854000ED84A /* Color.swift */; };
+		B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */; };
+		B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D726959FDC000ED84A /* Sarabun-Light.ttf */; };
+		B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */; };
+		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDB6610F41512D6C8ED4530D /* Pods_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6127E76347A70E256F3473A /* Pods_Core.framework */; };
 /* End PBXBuildFile section */
@@ -23,6 +29,12 @@
 		B7928120268F200C000ED84A /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		B7928122268F2025000ED84A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B7928124268F2056000ED84A /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B79281C5269596A1000ED84A /* ColorTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorTheme.xcassets; sourceTree = "<group>"; };
+		B79281C726959854000ED84A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Regular.ttf"; sourceTree = "<group>"; };
+		B79281D726959FDC000ED84A /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
+		B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
+		B79281DC2695A02F000ED84A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		B7F69CC9268EB85600B01223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,8 +68,29 @@
 				B7928120268F200C000ED84A /* Localization.swift */,
 				B7928122268F2025000ED84A /* String.swift */,
 				B7928124268F2056000ED84A /* Keys.swift */,
+				B79281C726959854000ED84A /* Color.swift */,
+				B79281DC2695A02F000ED84A /* Font.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		B79281C426959683000ED84A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B79281D526959FB6000ED84A /* Fonts */,
+				B79281C5269596A1000ED84A /* ColorTheme.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B79281D526959FB6000ED84A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B79281D726959FDC000ED84A /* Sarabun-Light.ttf */,
+				B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */,
+				B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		B7F69CBB268EB85600B01223 = {
@@ -81,6 +114,7 @@
 		B7F69CC7268EB85600B01223 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B79281C426959683000ED84A /* Assets */,
 				B792811F268F1FEA000ED84A /* Extention */,
 				B7928118268EC3DB000ED84A /* Config */,
 				B7F69CC8268EB85600B01223 /* Core.h */,
@@ -183,6 +217,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */,
+				B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */,
+				B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */,
+				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +258,9 @@
 			files = (
 				B7928123268F2025000ED84A /* String.swift in Sources */,
 				B7928125268F2056000ED84A /* Keys.swift in Sources */,
+				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
+				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
