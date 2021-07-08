@@ -14,6 +14,16 @@ public extension UIFont {
         registerFont(withFilenameString: "Kanit-Medium.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Sarabun-Light.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Sarabun-Regular.ttf", bundle: ConfigBundle.core)
+        registerFont(withFilenameString: "Cascle-Icon-Font.ttf", bundle: ConfigBundle.core)
+    }()
+    
+    static let checkFont: () = {
+        for family: String in UIFont.familyNames {
+            print(family)
+            for names: String in UIFont.fontNames(forFamilyName: family) {
+                print("== \(names)")
+            }
+        }
     }()
 
     //MARK: - Make custom font bundle register to framework
@@ -49,6 +59,7 @@ public extension UIFont {
         case medium = "Kanit-Medium"
         case light = "Sarabun-Light"
         case regular = "Sarabun-Regular"
+        case castcleIcon = "untitled-font-1"
     }
 
     enum FontSize {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B75E62A22696CDB3003E1ADA /* Cascle-Icon-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B75E62A12696CDB3003E1ADA /* Cascle-Icon-Font.ttf */; };
+		B75E62A62696D853003E1ADA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A52696D853003E1ADA /* IconFont.swift */; };
+		B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A72696DD2F003E1ADA /* FontType.swift */; };
+		B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A92696DDAE003E1ADA /* CascleFontType.swift */; };
 		B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928119268EC3F3000ED84A /* ConfigBundle.swift */; };
 		B7928121268F200C000ED84A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928120268F200C000ED84A /* Localization.swift */; };
 		B7928123268F2025000ED84A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928122268F2025000ED84A /* String.swift */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		0A97AFC7E132289467D1927B /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		74CEED3911A65C4A6DB47F79 /* Pods-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.debug.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.debug.xcconfig"; sourceTree = "<group>"; };
+		B75E62A12696CDB3003E1ADA /* Cascle-Icon-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cascle-Icon-Font.ttf"; sourceTree = "<group>"; };
+		B75E62A52696D853003E1ADA /* IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
+		B75E62A72696DD2F003E1ADA /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
+		B75E62A92696DDAE003E1ADA /* CascleFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascleFontType.swift; sourceTree = "<group>"; };
 		B7928119268EC3F3000ED84A /* ConfigBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigBundle.swift; sourceTree = "<group>"; };
 		B7928120268F200C000ED84A /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		B7928122268F2025000ED84A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -54,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B75E62A02696CD99003E1ADA /* IcontFont */ = {
+			isa = PBXGroup;
+			children = (
+				B75E62A12696CDB3003E1ADA /* Cascle-Icon-Font.ttf */,
+			);
+			path = IcontFont;
+			sourceTree = "<group>";
+		};
+		B75E62AB2696E204003E1ADA /* IcontFont */ = {
+			isa = PBXGroup;
+			children = (
+				B75E62A52696D853003E1ADA /* IconFont.swift */,
+				B75E62A72696DD2F003E1ADA /* FontType.swift */,
+				B75E62A92696DDAE003E1ADA /* CascleFontType.swift */,
+			);
+			path = IcontFont;
+			sourceTree = "<group>";
+		};
 		B7928118268EC3DB000ED84A /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +91,7 @@
 		B792811F268F1FEA000ED84A /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				B75E62AB2696E204003E1ADA /* IcontFont */,
 				B7928120268F200C000ED84A /* Localization.swift */,
 				B7928122268F2025000ED84A /* String.swift */,
 				B7928124268F2056000ED84A /* Keys.swift */,
@@ -77,6 +104,7 @@
 		B79281C426959683000ED84A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B75E62A02696CD99003E1ADA /* IcontFont */,
 				B79281D526959FB6000ED84A /* Fonts */,
 				B79281C5269596A1000ED84A /* ColorTheme.xcassets */,
 			);
@@ -221,6 +249,7 @@
 				B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */,
 				B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
+				B75E62A22696CDB3003E1ADA /* Cascle-Icon-Font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */,
 				B7928123268F2025000ED84A /* String.swift in Sources */,
 				B7928125268F2056000ED84A /* Keys.swift in Sources */,
+				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
+				B75E62A62696D853003E1ADA /* IconFont.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */,
