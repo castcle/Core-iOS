@@ -14,7 +14,7 @@ public extension UIFont {
         registerFont(withFilenameString: "Kanit-Medium.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Sarabun-Light.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Sarabun-Regular.ttf", bundle: ConfigBundle.core)
-        registerFont(withFilenameString: "Cascle-Icon-Font.ttf", bundle: ConfigBundle.core)
+        registerFont(withFilenameString: "Castcle.ttf", bundle: ConfigBundle.core)
     }()
     
     static let checkFont: () = {

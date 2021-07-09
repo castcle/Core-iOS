@@ -5,6 +5,7 @@
 //  Created by Tanakorn Phoochaliaw on 8/7/2564 BE.
 //
 
+import UIKit
 
 protocol FontProtocol {
     func errorAnnounce() -> String
@@ -37,7 +38,7 @@ public enum FontType: FontProtocol {
         var fileName: String
         switch self {
         case .castcle:
-            fileName = "Cascle-Icon-Font"
+            fileName = "Castcle"
         }
         return fileName
     }
