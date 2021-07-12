@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
+		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B75E62A62696D853003E1ADA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A52696D853003E1ADA /* IconFont.swift */; };
 		B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A72696DD2F003E1ADA /* FontType.swift */; };
 		B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A92696DDAE003E1ADA /* CascleFontType.swift */; };
@@ -15,7 +17,7 @@
 		B7928121268F200C000ED84A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928120268F200C000ED84A /* Localization.swift */; };
 		B7928123268F2025000ED84A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928122268F2025000ED84A /* String.swift */; };
 		B7928125268F2056000ED84A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928124268F2056000ED84A /* Keys.swift */; };
-		B792818226942AF3000ED84A /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B792818126942AF3000ED84A /* SwiftPackageProductDependency */; };
+		B792818226942AF3000ED84A /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B792818126942AF3000ED84A /* Defaults */; };
 		B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79281C5269596A1000ED84A /* ColorTheme.xcassets */; };
 		B79281C826959854000ED84A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281C726959854000ED84A /* Color.swift */; };
 		B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */; };
@@ -34,6 +36,8 @@
 		7481B10CB6E02B384F12DC06 /* Pods-Core.debug (staging).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.debug (staging).xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.debug (staging).xcconfig"; sourceTree = "<group>"; };
 		74CEED3911A65C4A6DB47F79 /* Pods-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.debug.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.debug.xcconfig"; sourceTree = "<group>"; };
 		99955FF32C4149910E589BF0 /* Pods-Core.release (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release (development).xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release (development).xcconfig"; sourceTree = "<group>"; };
+		B75528DF269B7ECF005D5EB5 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		B75528E1269B81C6005D5EB5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		B75E62A52696D853003E1ADA /* IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
 		B75E62A72696DD2F003E1ADA /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		B75E62A92696DDAE003E1ADA /* CascleFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascleFontType.swift; sourceTree = "<group>"; };
@@ -60,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B792818226942AF3000ED84A /* BuildFile in Frameworks */,
+				B792818226942AF3000ED84A /* Defaults in Frameworks */,
 				DDB6610F41512D6C8ED4530D /* Pods_Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +107,8 @@
 				B7928124268F2056000ED84A /* Keys.swift */,
 				B79281C726959854000ED84A /* Color.swift */,
 				B79281DC2695A02F000ED84A /* Font.swift */,
+				B75528DF269B7ECF005D5EB5 /* View.swift */,
+				B75528E1269B81C6005D5EB5 /* Image.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -211,7 +217,7 @@
 			);
 			name = Core;
 			packageProductDependencies = (
-				B792818126942AF3000ED84A /* SwiftPackageProductDependency */,
+				B792818126942AF3000ED84A /* Defaults */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -241,7 +247,7 @@
 			);
 			mainGroup = B7F69CBB268EB85600B01223;
 			packageReferences = (
-				B792818026942AF3000ED84A /* RemoteSwiftPackageReference */,
+				B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -299,12 +305,14 @@
 			files = (
 				B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */,
 				B7928123268F2025000ED84A /* String.swift in Sources */,
+				B75528E0269B7ECF005D5EB5 /* View.swift in Sources */,
 				B7928125268F2056000ED84A /* Keys.swift in Sources */,
 				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
 				B75E62A62696D853003E1ADA /* IconFont.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
+				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,
 				B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -869,7 +877,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B792818026942AF3000ED84A /* RemoteSwiftPackageReference */ = {
+		B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/Defaults";
 			requirement = {
@@ -880,9 +888,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B792818126942AF3000ED84A /* SwiftPackageProductDependency */ = {
+		B792818126942AF3000ED84A /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B792818026942AF3000ED84A /* RemoteSwiftPackageReference */;
+			package = B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */;
 			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */
