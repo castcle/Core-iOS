@@ -14,6 +14,8 @@
 		B7552911269C13A3005D5EB5 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B755290D269C13A3005D5EB5 /* Development.xcconfig */; };
 		B7552912269C13A3005D5EB5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290E269C13A3005D5EB5 /* Environment.swift */; };
 		B7552913269C13A3005D5EB5 /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B755290F269C13A3005D5EB5 /* Staging.xcconfig */; };
+		B755292B269C42AE005D5EB5 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755292A269C42AE005D5EB5 /* Window.swift */; };
+		B755292E269C4311005D5EB5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755292D269C4311005D5EB5 /* Utility.swift */; };
 		B75E62A62696D853003E1ADA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A52696D853003E1ADA /* IconFont.swift */; };
 		B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A72696DD2F003E1ADA /* FontType.swift */; };
 		B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A92696DDAE003E1ADA /* CascleFontType.swift */; };
@@ -40,6 +42,8 @@
 		B755290D269C13A3005D5EB5 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		B755290E269C13A3005D5EB5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		B755290F269C13A3005D5EB5 /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		B755292A269C42AE005D5EB5 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		B755292D269C4311005D5EB5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		B75E62A52696D853003E1ADA /* IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
 		B75E62A72696DD2F003E1ADA /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		B75E62A92696DDAE003E1ADA /* CascleFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascleFontType.swift; sourceTree = "<group>"; };
@@ -57,7 +61,6 @@
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		B7F69CC9268EB85600B01223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6127E76347A70E256F3473A /* Pods_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B755292C269C42F5005D5EB5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B755292D269C4311005D5EB5 /* Utility.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		B75E62A02696CD99003E1ADA /* IcontFont */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +125,7 @@
 				B75528DF269B7ECF005D5EB5 /* View.swift */,
 				B75528E1269B81C6005D5EB5 /* Image.swift */,
 				B755290A269C10E5005D5EB5 /* Emums.swift */,
+				B755292A269C42AE005D5EB5 /* Window.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -158,6 +170,7 @@
 		B7F69CC7268EB85600B01223 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B755292C269C42F5005D5EB5 /* Helper */,
 				B79281C426959683000ED84A /* Assets */,
 				B792811F268F1FEA000ED84A /* Extention */,
 				B7928118268EC3DB000ED84A /* Config */,
@@ -170,7 +183,6 @@
 		FD3BDFC01B4D6050981AE6D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6127E76347A70E256F3473A /* Pods_Core.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,10 +285,12 @@
 				B7928123268F2025000ED84A /* String.swift in Sources */,
 				B75528E0269B7ECF005D5EB5 /* View.swift in Sources */,
 				B7928125268F2056000ED84A /* Keys.swift in Sources */,
+				B755292E269C4311005D5EB5 /* Utility.swift in Sources */,
 				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
 				B75E62A62696D853003E1ADA /* IconFont.swift in Sources */,
 				B7552912269C13A3005D5EB5 /* Environment.swift in Sources */,
+				B755292B269C42AE005D5EB5 /* Window.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,

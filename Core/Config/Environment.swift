@@ -1,6 +1,6 @@
 //
 //  Environment.swift
-//  Castcle-iOS
+//  Core
 //
 //  Created by Tanakorn Phoochaliaw on 12/7/2564 BE.
 //
@@ -29,9 +29,9 @@ public enum Environment {
             fatalError("App Env not set in plist for this environment")
         }
         
-        if appEnv == "PROD" {
+        if appEnv == EnvironmentType.prod.rawValue {
             return .prod
-        } else if appEnv == "STG" {
+        } else if appEnv == EnvironmentType.stg.rawValue {
             return .stg
         } else {
             return .dev
