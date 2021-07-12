@@ -1,0 +1,12 @@
+//
+//  Development.xcconfig
+//  Castcle-iOS
+//
+//  Created by Tanakorn Phoochaliaw on 10/7/2564 BE.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// App Settings
+APP_ENV = DEV
