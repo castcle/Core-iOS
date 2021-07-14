@@ -12,6 +12,8 @@ public enum Environment {
     enum Keys {
         enum Plist {
             static let appEnv = "APP_ENV"
+            static let baseUrl = "BASE_URL"
+            static let appCenterKey = "APP_CENTER_KEY"
         }
     }
     
@@ -36,5 +38,21 @@ public enum Environment {
         } else {
             return .dev
         }
+    }()
+    
+    public static let baseUrl: String = {
+        guard let baseUrl = Environment.infoDictionary[Keys.Plist.baseUrl] as? String else {
+            fatalError("App Env not set in plist for this environment")
+        }
+        
+        return baseUrl
+    }()
+    
+    public static let appCenterKey: String = {
+        guard let appCenterKey = Environment.infoDictionary[Keys.Plist.appCenterKey] as? String else {
+            fatalError("App Env not set in plist for this environment")
+        }
+        
+        return appCenterKey
     }()
 }

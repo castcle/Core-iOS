@@ -14,4 +14,12 @@ public extension UIView {
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
     }
+    
+    func capsule(color: UIColor = UIColor.clear, borderWidth: CGFloat = 2.0, borderColor: UIColor = UIColor.clear) {
+        layer.cornerRadius = frame.size.height * 0.5
+        clipsToBounds = true
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
+        backgroundColor = color
+    }
 }
