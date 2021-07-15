@@ -18,4 +18,16 @@ public extension String {
         let languageBundle = Bundle (path: path)!
         return NSLocalizedString(self, bundle: languageBundle, comment: comment)
     }
+    
+    static func displayCount(count: Int) -> String {
+        if count > 1000000 {
+            let show = Int(count / 1000000)
+            return "\(show)M"
+        } else if count > 1000 {
+            let show = Int(count / 1000)
+            return "\(show)K"
+        } else {
+            return "\(count)"
+        }
+    }
 }
