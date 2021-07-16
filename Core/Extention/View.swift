@@ -22,4 +22,8 @@ public extension UIView {
         layer.borderColor = borderColor.cgColor
         backgroundColor = color
     }
+    
+    static func aspectRatioCalculator(ratioWidth: Double, ratioHeight: Double, pixelsWidth: Double) -> Double {
+        return ((pixelsWidth * ratioHeight) / ratioWidth)
+    }
 }
