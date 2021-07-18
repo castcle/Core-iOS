@@ -133,7 +133,7 @@ private func getAttributedString(prefixText: String, prefixTextColor: UIColor, p
     }
 
     //add postfix text attribute
-    if postfixText.count > 0 {
+    if !postfixText.isEmpty {
         resultAttrString.addAttributes([
             NSAttributedString.Key.font: postfixTextFont,
             NSAttributedString.Key.foregroundColor: postfixTextColor
