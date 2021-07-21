@@ -26,13 +26,13 @@
 		B7928121268F200C000ED84A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928120268F200C000ED84A /* Localization.swift */; };
 		B7928123268F2025000ED84A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928122268F2025000ED84A /* String.swift */; };
 		B7928125268F2056000ED84A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928124268F2056000ED84A /* Keys.swift */; };
-		B792818226942AF3000ED84A /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B792818126942AF3000ED84A /* Defaults */; };
 		B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79281C5269596A1000ED84A /* ColorTheme.xcassets */; };
 		B79281C826959854000ED84A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281C726959854000ED84A /* Color.swift */; };
 		B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */; };
 		B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D726959FDC000ED84A /* Sarabun-Light.ttf */; };
 		B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */; };
 		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
+		B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B7B1E3C126A875FF006E2FF6 /* Defaults */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B792818226942AF3000ED84A /* Defaults in Frameworks */,
+				B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +222,7 @@
 			);
 			name = Core;
 			packageProductDependencies = (
-				B792818126942AF3000ED84A /* Defaults */,
+				B7B1E3C126A875FF006E2FF6 /* Defaults */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -252,7 +252,7 @@
 			);
 			mainGroup = B7F69CBB268EB85600B01223;
 			packageReferences = (
-				B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */,
+				B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -872,9 +872,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */ = {
+		B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
@@ -883,9 +883,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B792818126942AF3000ED84A /* Defaults */ = {
+		B7B1E3C126A875FF006E2FF6 /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B792818026942AF3000ED84A /* XCRemoteSwiftPackageReference "Defaults" */;
+			package = B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */;
 			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */
