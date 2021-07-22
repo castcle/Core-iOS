@@ -31,4 +31,5 @@ public struct ConfigBundle {
     public static var component: Bundle = Bundle(identifier: "com.castcle.Component")!
     public static var feed: Bundle = Bundle(identifier: "com.castcle.Feed")!
     public static var search: Bundle = Bundle(identifier: "com.castcle.Search")!
+    public static var authen: Bundle = Bundle(identifier: "com.castcle.Authen")!
 }
