@@ -29,4 +29,5 @@ import Defaults
 
 public extension Defaults.Keys {
     static let appLanguage = Key<String>("appLanguage", default: "en")
+    static let accessToken = Key<String>("accessToken", default: "")
 }
