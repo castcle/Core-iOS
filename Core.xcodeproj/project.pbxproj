@@ -10,10 +10,7 @@
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
-		B7552910269C13A3005D5EB5 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B755290C269C13A3005D5EB5 /* Production.xcconfig */; };
-		B7552911269C13A3005D5EB5 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B755290D269C13A3005D5EB5 /* Development.xcconfig */; };
 		B7552912269C13A3005D5EB5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290E269C13A3005D5EB5 /* Environment.swift */; };
-		B7552913269C13A3005D5EB5 /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B755290F269C13A3005D5EB5 /* Staging.xcconfig */; };
 		B755292B269C42AE005D5EB5 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755292A269C42AE005D5EB5 /* Window.swift */; };
 		B755292E269C4311005D5EB5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755292D269C4311005D5EB5 /* Utility.swift */; };
 		B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529A9269E174E005D5EB5 /* TextSize.swift */; };
@@ -270,12 +267,9 @@
 			files = (
 				B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */,
 				B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */,
-				B7552911269C13A3005D5EB5 /* Development.xcconfig in Resources */,
 				B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */,
-				B7552913269C13A3005D5EB5 /* Staging.xcconfig in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
-				B7552910269C13A3005D5EB5 /* Production.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +618,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -635,6 +630,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
