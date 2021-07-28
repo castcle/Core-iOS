@@ -36,7 +36,7 @@ public extension UIColor {
         public static let gray = UIColor(named: "Gray", in: ConfigBundle.core, compatibleWith: nil)!
         public static let lightBlue = UIColor(named: "LightBlue", in: ConfigBundle.core, compatibleWith: nil)!
         public static let lightGray = UIColor(named: "LightGray", in: ConfigBundle.core, compatibleWith: nil)!
-        public static let white = UIColor(named: "WhiteColor", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let white = UIColor(named: "White", in: ConfigBundle.core, compatibleWith: nil)!
     }
 }
 
