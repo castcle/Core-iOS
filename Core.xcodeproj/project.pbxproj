@@ -22,6 +22,7 @@
 		B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1326B15FCD0097C94E /* Staging.xcconfig */; };
 		B7910E1726B15FCD0097C94E /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1426B15FCD0097C94E /* Production.xcconfig */; };
 		B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1526B15FCD0097C94E /* Development.xcconfig */; };
+		B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7910E2626B5CB5A0097C94E /* CoreImage.xcassets */; };
 		B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928119268EC3F3000ED84A /* ConfigBundle.swift */; };
 		B7928121268F200C000ED84A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928120268F200C000ED84A /* Localization.swift */; };
 		B7928123268F2025000ED84A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928122268F2025000ED84A /* String.swift */; };
@@ -52,6 +53,7 @@
 		B7910E1326B15FCD0097C94E /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		B7910E1426B15FCD0097C94E /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		B7910E1526B15FCD0097C94E /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		B7910E2626B5CB5A0097C94E /* CoreImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CoreImage.xcassets; sourceTree = "<group>"; };
 		B7928119268EC3F3000ED84A /* ConfigBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigBundle.swift; sourceTree = "<group>"; };
 		B7928120268F200C000ED84A /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		B7928122268F2025000ED84A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				B75E62A02696CD99003E1ADA /* IcontFont */,
 				B79281D526959FB6000ED84A /* Fonts */,
 				B79281C5269596A1000ED84A /* ColorTheme.xcassets */,
+				B7910E2626B5CB5A0097C94E /* CoreImage.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */,
 				B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
+				B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,6 +33,7 @@ public extension UIView {
         clipsToBounds = true
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
+        backgroundColor = color
     }
     
     func capsule(color: UIColor = UIColor.clear, borderWidth: CGFloat = 2.0, borderColor: UIColor = UIColor.clear) {

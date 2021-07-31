@@ -27,6 +27,14 @@
 
 import UIKit
 
+public extension UIImage {
+    struct Asset {
+        public static let castcleLogo = UIImage(named: "castcle-logo", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let googleLogo = UIImage(named: "google-logo", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let launchScreen = UIImage(named: "launch-screen", in: ConfigBundle.core, compatibleWith: nil)!
+    }
+}
+
 public extension UIImageView {
     func circle(color: UIColor = .clear) {
         layer.cornerRadius = frame.size.height * 0.5

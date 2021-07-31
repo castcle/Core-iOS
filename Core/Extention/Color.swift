@@ -28,7 +28,6 @@
 import UIKit
 
 public extension UIColor {
-    
     struct Asset {
         public static let black = UIColor(named: "Black", in: ConfigBundle.core, compatibleWith: nil)!
         public static let darkGraphiteBlue = UIColor(named: "DarkGraphiteBlue", in: ConfigBundle.core, compatibleWith: nil)!
@@ -37,6 +36,10 @@ public extension UIColor {
         public static let lightBlue = UIColor(named: "LightBlue", in: ConfigBundle.core, compatibleWith: nil)!
         public static let lightGray = UIColor(named: "LightGray", in: ConfigBundle.core, compatibleWith: nil)!
         public static let white = UIColor(named: "White", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let apple = UIColor(named: "Apple", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let facebook = UIColor(named: "Facebook", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let telegram = UIColor(named: "Telegram", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let twitter = UIColor(named: "Twitter", in: ConfigBundle.core, compatibleWith: nil)!
     }
 }
 
