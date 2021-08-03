@@ -32,7 +32,7 @@ public enum CastcleType: Int {
     case global
     case add
     case gif
-    case video
+    case youtube
     case image
     case text
     case head
@@ -43,7 +43,7 @@ public enum CastcleType: Int {
     case leftBack
     case rightBack
     case bell
-    case profile
+    case righProfile
     case privacy
     case language
     case aboutUs
@@ -77,70 +77,110 @@ public enum CastcleType: Int {
     case publicPost
     case tag
     case face
+    case deleteOne
+    case unfollow
+    case quoteCast
+    case underline
+    case italic
+    case eraser
+    case list
+    case addWithCheckmark
+    case seeFollowingTopics
+    case show
+    case edit
+    case arowUp
+    case notInterested
+    case facebook
+    case twitter
+    case apple
+    case email
+    case camera
+    case cameraLight
+    case filter
 }
 
 private let castcleIcons = [
-    "\u{0061}" , // alignJustify
-    "\u{0062}" , // logo
-    "\u{0063}" , // search
-    "\u{0064}" , // feed
-    "\u{0065}" , // next
-    "\u{0066}" , // friend
-    "\u{0067}" , // arowDown
-    "\u{0068}" , // verify
-    "\u{0069}" , // like
-    "\u{006A}" , // comment
-    "\u{006B}" , // recast
-    "\u{006C}" , // ellipsisV
-    "\u{006D}" , // back
-    "\u{006E}" , // info
-    "\u{006F}" , // direct
-    "\u{0070}" , // global
-    "\u{0071}" , // add
-    "\u{0072}" , // gif
-    "\u{0073}" , // video
-    "\u{0074}" , // image
-    "\u{0075}" , // text
-    "\u{0076}" , // head
-    "\u{0077}" , // step
-    "\u{0078}" , // pencil
-    "\u{0079}" , // blod
-    "\u{007A}" , // link
-    "\u{0041}" , // leftBack
-    "\u{0042}" , // rightBack
-    "\u{0043}" , // bell
-    "\u{0044}" , // profile
-    "\u{0045}" , // privacy
-    "\u{0046}" , // language
-    "\u{0047}" , // aboutUs
-    "\u{0048}" , // addWithCircle
-    "\u{0049}" , // checkmark
-    "\u{004A}" , // microphone
-    "\u{004B}" , // delete
-    "\u{004C}" , // related
-    "\u{004D}" , // farm
-    "\u{004E}" , // coin
-    "\u{004F}" , // airdropBalloon
-    "\u{0050}" , // airdropBox
-    "\u{0051}" , // notification
-    "\u{0052}" , // sms
-    "\u{0053}" , // mail
-    "\u{0054}" , // remind
-    "\u{0055}" , // settings
-    "\u{0056}" , // message
-    "\u{0057}" , // group
-    "\u{0058}" , // messenger
-    "\u{0059}" , // lightMode
-    "\u{005A}" , // switchAccount
-    "\u{0030}" , // share
-    "\u{0031}" , // blockedUsers
-    "\u{0032}" , // cellularDataUse
-    "\u{0033}" , // browsing
-    "\u{0034}" , // region
-    "\u{0035}" , // translationForPosts
-    "\u{0036}" , // manageAppPermissions
-    "\u{0037}" , // download
-    "\u{0038}" , // publicPost
-    "\u{0039}" , // tag
-    "\u{0021}" // face
+    "\u{0061}", //case alignJustify
+    "\u{0062}", //case logo
+    "\u{0063}", //case search
+    "\u{0064}", //case feed
+    "\u{0065}", //case next
+    "\u{0066}", //case friend
+    "\u{0067}", //case arowDown
+    "\u{0068}", //case verify
+    "\u{0069}", //case like
+    "\u{006A}", //case comment
+    "\u{006B}", //case recast
+    "\u{006C}", //case ellipsisV
+    "\u{006D}", //case back
+    "\u{006E}", //case info
+    "\u{006F}", //case direct
+    "\u{0070}", //case global
+    "\u{0071}", //case add
+    "\u{0072}", //case gif
+    "\u{0073}", //case youtube
+    "\u{0074}", //case image
+    "\u{0075}", //case text
+    "\u{0076}", //case head
+    "\u{0077}", //case step
+    "\u{0078}", //case pencil
+    "\u{0079}", //case blod
+    "\u{007A}", //case link
+    "\u{0041}", //case leftBack
+    "\u{0042}", //case rightBack
+    "\u{0043}", //case bell
+    "\u{0044}", //case righProfile
+    "\u{0045}", //case privacy
+    "\u{0046}", //case language
+    "\u{0047}", //case aboutUs
+    "\u{0048}", //case addWithCircle
+    "\u{0049}", //checkmark
+    "\u{004A}", //microphone
+    "\u{004B}", //delete
+    "\u{004C}", //related
+    "\u{004D}", //case farm
+    "\u{004E}", //case coin
+    "\u{004F}", //case airdropBalloon
+    "\u{0050}", //case airdropBox
+    "\u{0051}", //case notification
+    "\u{0052}", //case sms
+    "\u{0053}", //case mail
+    "\u{0054}", //case remind
+    "\u{0055}", //case settings
+    "\u{0056}", //case message
+    "\u{0057}", //case group
+    "\u{0058}", //case messenger
+    "\u{0059}", //case lightMode
+    "\u{005A}", //case switchAccount
+    "\u{0030}", //case share
+    "\u{0031}", //case blockedUsers
+    "\u{0032}", //case cellularDataUse
+    "\u{0033}", //case browsing
+    "\u{0034}", //case region
+    "\u{0035}", //case translationForPosts
+    "\u{0036}", //case manageAppPermissions
+    "\u{0037}", //case download
+    "\u{0038}", //case publicPost
+    "\u{0039}", //case tag
+    "\u{0021}", //case face
+    "\u{0022}", //case deleteOne
+    "\u{0023}", //case unfollow
+    "\u{0024}", //case quoteCast
+    "\u{0025}", //case underline
+    "\u{0026}", //case italic
+    "\u{0027}", //case eraser
+    "\u{0028}", //case list
+    "\u{0029}", //case addWithCheckmark
+    "\u{002A}", //case seeFollowingTopics
+    "\u{002B}", //case show
+    "\u{002C}", //case edit
+    "\u{002D}", //case arowUp
+    "\u{002E}", //case notInterested
+    "\u{002F}", //case facebook
+    "\u{003A}", //case twitter
+    "\u{003B}", //case apple
+    "\u{003C}", //case email
+    "\u{003D}", //case camera
+    "\u{003E}", //case cameraLight
+    "\u{003F}" //case filter
 ]
