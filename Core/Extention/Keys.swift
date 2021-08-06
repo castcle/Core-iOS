@@ -32,4 +32,11 @@ public extension Defaults.Keys {
     static let userRole = Key<String>("userRole", default: "")
     static let accessToken = Key<String>("accessToken", default: "")
     static let refreshToken = Key<String>("refreshToken", default: "")
+    
+    // Add Social
+    static let facebook = Key<String>("facebook", default: "")
+    static let twitter = Key<String>("twitter", default: "")
+    static let youtube = Key<String>("youtube", default: "")
+    static let medium = Key<String>("medium", default: "")
+    static let website = Key<String>("website", default: "")
 }
