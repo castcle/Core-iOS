@@ -47,6 +47,17 @@ public struct ApiHelper {
         ]
     }
     
+    public static var headerRefreshToken: [String: String] {
+        return [
+            "Content-Type": "application/json",
+            "Device": "\(Device.current)",
+            "Accept-Language": Defaults[.appLanguage],
+            "Accept-Version": "v1.0",
+            "Platform": "iOS",
+            "Authorization": "Bearer \(Defaults[.refreshToken])"
+        ]
+    }
+    
     public static func displayError(error: String) {
         let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
