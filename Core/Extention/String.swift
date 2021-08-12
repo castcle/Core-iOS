@@ -33,6 +33,13 @@ public extension String {
         return self.data(using: String.Encoding.utf8)!
     }
     
+    var isEmail: Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: self)
+    }
+    
     func localized(withComment comment: String = "", bundle: Bundle) -> String {
         let path = bundle.path(forResource: Defaults[.appLanguage], ofType: "lproj")!
         let languageBundle = Bundle (path: path)!

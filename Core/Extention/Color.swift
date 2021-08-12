@@ -40,6 +40,8 @@ public extension UIColor {
         public static let facebook = UIColor(named: "Facebook", in: ConfigBundle.core, compatibleWith: nil)!
         public static let telegram = UIColor(named: "Telegram", in: ConfigBundle.core, compatibleWith: nil)!
         public static let twitter = UIColor(named: "Twitter", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let warning = UIColor(named: "Warning", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let denger = UIColor(named: "Denger", in: ConfigBundle.core, compatibleWith: nil)!
     }
 }
 

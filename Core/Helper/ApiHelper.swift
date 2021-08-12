@@ -19,25 +19,37 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Keys.swift
+//  ApiHelper.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 2/7/2564 BE.
+//  Created by Tanakorn Phoochaliaw on 9/8/2564 BE.
 //
 
+import UIKit
+import DeviceKit
 import Defaults
+import SwiftJWT
 
-public extension Defaults.Keys {
-    static let appLanguage = Key<String>("appLanguage", default: "en")
-    static let userRole = Key<String>("userRole", default: "")
-    static let deviceUuid = Key<String>("deviceUuid", default: "")
-    static let accessToken = Key<String>("accessToken", default: "")
-    static let refreshToken = Key<String>("refreshToken", default: "")
+public enum ResponseErrorKey: String {
+    case message
+    case code
+}
+
+public struct ApiHelper {
+    public static var header: [String: String] {
+        return [
+            "Content-Type": "application/json",
+            "Device": "\(Device.current)",
+            "Accept-Language": Defaults[.appLanguage],
+            "Accept-Version": "v1.0",
+            "Platform": "iOS",
+            "Authorization": "Bearer \(Defaults[.accessToken])"
+        ]
+    }
     
-    // Add Social
-    static let facebook = Key<String>("facebook", default: "")
-    static let twitter = Key<String>("twitter", default: "")
-    static let youtube = Key<String>("youtube", default: "")
-    static let medium = Key<String>("medium", default: "")
-    static let website = Key<String>("website", default: "")
+    public static func displayError(error: String) {
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        Utility.currentViewController().present(alert, animated: true, completion: nil)
+    }
 }
