@@ -34,4 +34,5 @@ public struct ConfigBundle {
     public static var authen: Bundle = Bundle(identifier: "com.castcle.Authen")!
     public static var profile: Bundle = Bundle(identifier: "com.castcle.Profile")!
     public static var network: Bundle = Bundle(identifier: "com.castcle.Networking")!
+    public static var share: Bundle = Bundle(identifier: "com.castcle.Share")!
 }
