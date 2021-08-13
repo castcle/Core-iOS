@@ -19,19 +19,33 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  ConfigBundle.swift
+//  UserState.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 2/7/2564 BE.
+//  Created by Tanakorn Phoochaliaw on 13/8/2564 BE.
 //
 
-public struct ConfigBundle {
-    public static var mainApp: Bundle = .main
-    public static var core: Bundle = Bundle(identifier: "com.castcle.Core")!
-    public static var component: Bundle = Bundle(identifier: "com.castcle.Component")!
-    public static var feed: Bundle = Bundle(identifier: "com.castcle.Feed")!
-    public static var search: Bundle = Bundle(identifier: "com.castcle.Search")!
-    public static var authen: Bundle = Bundle(identifier: "com.castcle.Authen")!
-    public static var profile: Bundle = Bundle(identifier: "com.castcle.Profile")!
-    public static var network: Bundle = Bundle(identifier: "com.castcle.Networking")!
+import Defaults
+
+public class UserState: NSObject {
+    public static let shared = UserState()
+    
+    public var isLogin: Bool {
+        if Defaults[.userRole] == "GUEST" {
+            return false
+        } else if Defaults[.accessToken].isEmpty {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    public func login() {
+        Defaults[.userRole] = "USER"
+        Defaults[.accessToken] = "0000000000"
+    }
+    
+    public func logout() {
+        Defaults[.accessToken] = ""
+    }
 }
