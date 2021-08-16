@@ -40,6 +40,22 @@ public class UserState: NSObject {
         }
     }
     
+    public var name: String {
+        return "Tommy Cruise"
+    }
+    
+    public var userId: String {
+        return "@tommy-cruise"
+    }
+    
+    public var avatar: String {
+        return "https://images.mubicdn.net/images/cast_member/2184/cache-2992-1547409411/image-w856.jpg"
+    }
+    
+    public var cover: String {
+        return "https://cdn.pixabay.com/photo/2020/02/11/16/25/manarola-4840080_1280.jpg"
+    }
+    
     public func login() {
         Defaults[.userRole] = "USER"
         Defaults[.accessToken] = "0000000000"
