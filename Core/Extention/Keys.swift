@@ -28,6 +28,8 @@
 import Defaults
 
 public extension Defaults.Keys {
+    static let appVersion = Key<String>("appVersion", default: "")
+    static let appBuild = Key<String>("appBuild", default: "")
     static let appLanguage = Key<String>("appLanguage", default: "en")
     static let userRole = Key<String>("userRole", default: "")
     static let deviceUuid = Key<String>("deviceUuid", default: "")
