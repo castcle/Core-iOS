@@ -34,6 +34,8 @@ public enum Environment {
             static let appEnv = "APP_ENV"
             static let baseUrl = "BASE_URL"
             static let appCenterKey = "APP_CENTER_KEY"
+            static let privacyPolicy = "PRIVACY_POLICY"
+            static let userAgreement = "USER_AGREEMENT"
         }
     }
     
@@ -74,5 +76,21 @@ public enum Environment {
         }
         
         return appCenterKey
+    }()
+    
+    public static let privacyPolicy: String = {
+        guard let privacyPolicy = Environment.infoDictionary[Keys.Plist.privacyPolicy] as? String else {
+            fatalError("App Env not set in plist for this environment")
+        }
+        
+        return privacyPolicy
+    }()
+    
+    public static let userAgreement: String = {
+        guard let userAgreement = Environment.infoDictionary[Keys.Plist.userAgreement] as? String else {
+            fatalError("App Env not set in plist for this environment")
+        }
+        
+        return userAgreement
     }()
 }
