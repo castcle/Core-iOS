@@ -36,6 +36,9 @@ public enum Environment {
             static let appCenterKey = "APP_CENTER_KEY"
             static let privacyPolicy = "PRIVACY_POLICY"
             static let userAgreement = "USER_AGREEMENT"
+            static let docs = "DOCS"
+            static let joinUs = "JOIN_US"
+            static let whitepaper = "WHITEPAPER"
         }
     }
     
@@ -92,5 +95,29 @@ public enum Environment {
         }
         
         return userAgreement
+    }()
+    
+    public static let docs: String = {
+        guard let docs = Environment.infoDictionary[Keys.Plist.docs] as? String else {
+            fatalError("App Env not set in plist for this environment")
+        }
+        
+        return docs
+    }()
+    
+    public static let joinUs: String = {
+        guard let joinUs = Environment.infoDictionary[Keys.Plist.joinUs] as? String else {
+            fatalError("App Env not set in plist for this environment")
+        }
+        
+        return joinUs
+    }()
+    
+    public static let whitepaper: String = {
+        guard let whitepaper = Environment.infoDictionary[Keys.Plist.whitepaper] as? String else {
+            fatalError("App Env not set in plist for this environment")
+        }
+        
+        return whitepaper
     }()
 }

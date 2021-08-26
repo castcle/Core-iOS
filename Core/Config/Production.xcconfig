@@ -18,3 +18,6 @@ APP_CENTER_KEY = 20275f6f-d83d-420b-a91c-4a3eb8e5d304
 // Static URL
 PRIVACY_POLICY = https:/$()/castcle-public.s3.amazonaws.com/documents/privacy-policy.html
 USER_AGREEMENT = https:/$()/castcle-public.s3.amazonaws.com/documents/terms-of-service.html
+DOCS = https:/$()/castcle.gitbook.io/document/
+JOIN_US = https:/$()/castcle.com
+WHITEPAPER = https:/$()/castcle-public.s3.amazonaws.com/documents/castcle-whitepaper-v1_2.pdf

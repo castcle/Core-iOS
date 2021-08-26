@@ -28,5 +28,11 @@
 	<string>$(PRIVACY_POLICY)</string>
 	<key>USER_AGREEMENT</key>
 	<string>$(USER_AGREEMENT)</string>
+	<key>DOCS</key>
+	<string>$(DOCS)</string>
+	<key>JOIN_US</key>
+	<string>$(JOIN_US)</string>
+	<key>WHITEPAPER</key>
+	<string>$(WHITEPAPER)</string>
 </dict>
 </plist>
