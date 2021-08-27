@@ -58,6 +58,10 @@ public class UserState: NSObject {
         return "@tommy-cruise"
     }
     
+    public var email: String {
+        return "castcle@gmail.com"
+    }
+    
     public var avatar: String {
         return "https://images.mubicdn.net/images/cast_member/2184/cache-2992-1547409411/image-w856.jpg"
     }

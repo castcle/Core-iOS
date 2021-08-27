@@ -39,6 +39,7 @@ public enum Environment {
             static let docs = "DOCS"
             static let joinUs = "JOIN_US"
             static let whitepaper = "WHITEPAPER"
+            static let aboutUs = "ABOUT_US"
         }
     }
     
@@ -119,5 +120,13 @@ public enum Environment {
         }
         
         return whitepaper
+    }()
+    
+    public static let aboutUs: String = {
+        guard let aboutUs = Environment.infoDictionary[Keys.Plist.aboutUs] as? String else {
+            fatalError("App Env not set in plist for this environment")
+        }
+        
+        return aboutUs
     }()
 }

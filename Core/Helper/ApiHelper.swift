@@ -58,7 +58,7 @@ public struct ApiHelper {
         ]
     }
     
-    public static func displayError(error: String) {
+    public static func displayError(error: String = "Something Went wrong") {
         let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         Utility.currentViewController().present(alert, animated: true, completion: nil)

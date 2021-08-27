@@ -34,5 +34,7 @@
 	<string>$(JOIN_US)</string>
 	<key>WHITEPAPER</key>
 	<string>$(WHITEPAPER)</string>
+	<key>ABOUT_US</key>
+	<string>$(ABOUT_US)</string>
 </dict>
 </plist>
