@@ -34,10 +34,13 @@ public extension String {
     }
     
     var isEmail: Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
         return emailPred.evaluate(with: self)
+    }
+    
+    var isPassword: Bool {
+        let password = NSPredicate(format: "SELF MATCHES %@ ", "^(?=.*[a-z])(?=.*[0-9])(?=.*[$@$#%*?]).{6,20}$")
+        return password.evaluate(with: self)
     }
     
     func localized(withComment comment: String = "", bundle: Bundle) -> String {

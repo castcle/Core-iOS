@@ -41,7 +41,7 @@ public struct ApiHelper {
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
-            "Accept-Version": "v1.0",
+            "Accept-Version": "1.0",
             "Platform": "iOS",
             "Authorization": "Bearer \(Defaults[.accessToken])"
         ]
@@ -52,7 +52,7 @@ public struct ApiHelper {
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
-            "Accept-Version": "v1.0",
+            "Accept-Version": "1.0",
             "Platform": "iOS",
             "Authorization": "Bearer \(Defaults[.refreshToken])"
         ]
