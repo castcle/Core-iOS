@@ -97,6 +97,10 @@ public enum CastcleType: Int {
     case camera
     case cameraLight
     case filter
+    case dropDown
+    case incorrect
+    case arrowObliqueLeft
+    case medium
 }
 
 private let castcleIcons = [
@@ -182,5 +186,9 @@ private let castcleIcons = [
     "\u{003C}", //case email
     "\u{003D}", //case camera
     "\u{003E}", //case cameraLight
-    "\u{003F}" //case filter
+    "\u{003F}", //case filter
+    "\u{0040}", //case dropDown
+    "\u{005B}", //case incorrect
+    "\u{005D}", //case arrowObliqueLeft
+    "\u{005E}" //case medium
 ]
