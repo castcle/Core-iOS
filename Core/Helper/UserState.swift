@@ -85,6 +85,7 @@ public class UserState: NSObject {
     }
     
     public func logout() {
+        Defaults[.userRole] = "GUEST"
         Defaults[.accessToken] = ""
     }
 }
