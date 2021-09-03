@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B717447626E2587C0014D6B5 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B75528DF269B7ECF005D5EB5 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		B75528E1269B81C6005D5EB5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		B755290A269C10E5005D5EB5 /* Emums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emums.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				B755290A269C10E5005D5EB5 /* Emums.swift */,
 				B755292A269C42AE005D5EB5 /* Window.swift */,
 				B75529DF269FE5D3005D5EB5 /* Date.swift */,
+				B717447626E2587C0014D6B5 /* NavigationBar.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */,
 				B7552912269C13A3005D5EB5 /* Environment.swift in Sources */,
 				B755292B269C42AE005D5EB5 /* Window.swift in Sources */,
+				B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,
