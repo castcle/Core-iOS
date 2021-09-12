@@ -78,8 +78,4 @@ public class UserState: NSObject {
             Page(name: "Liverpool FC", avatar: "https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515361_10542.jpg")
         ]
     }
-    
-    public func logout() {
-        Defaults[.userRole] = "GUEST"
-    }
 }
