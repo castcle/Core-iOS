@@ -10,7 +10,7 @@
 
 // App Settings
 APP_ENV = PROD
-BASE_URL = https:/$()/www.castcle.com
+BASE_URL = https:/$()/castcle.com
 
 // Key
 APP_CENTER_KEY = 20275f6f-d83d-420b-a91c-4a3eb8e5d304

@@ -79,7 +79,7 @@ public extension UIViewController {
         navigationController?.navigationBar.isTranslucent = false
         
         if type == .primary {
-            self.setupPrimaryNavigationBar(title: title, leftBarButton: leftBarButton)
+            self.setupPrimaryNavigationBar(title: title, textColor: textColor, leftBarButton: leftBarButton)
         } else if type == .webView {
             self.setupWebViewNavigationBar(title: title, urlString: urlString)
         } else {
@@ -87,10 +87,10 @@ public extension UIViewController {
         }
     }
     
-    private func setupPrimaryNavigationBar(title: String, leftBarButton: NavBarButtonType?) {
+    private func setupPrimaryNavigationBar(title: String, textColor: UIColor = UIColor.Asset.white, leftBarButton: NavBarButtonType?) {
         // MARK: - Title
         navigationController?.navigationBar.titleTextAttributes = [
-            .foregroundColor: UIColor.Asset.lightBlue,
+            .foregroundColor: textColor,
             .font: UIFont.asset(.regular, fontSize: .h4)
         ]
         
