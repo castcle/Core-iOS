@@ -28,7 +28,6 @@
 import UIKit
 import DeviceKit
 import Defaults
-import SwiftJWT
 
 public enum ResponseErrorKey: String {
     case message
