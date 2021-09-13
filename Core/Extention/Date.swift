@@ -28,6 +28,10 @@
 import Foundation
 
 public extension Date {
+    static var currentTimeStamp: Int64 {
+        return Int64(Date().timeIntervalSince1970 * 1000)
+    }
+    
     static func stringToDate(str: String) -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "UTC")

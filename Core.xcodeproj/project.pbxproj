@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717448F26E765D50014D6B5 /* FlexibleTextView.swift */; };
+		B7189ADA26EF3C1400CB9719 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = B7189AD926EF3C1400CB9719 /* JWTDecode */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -21,7 +22,6 @@
 		B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A72696DD2F003E1ADA /* FontType.swift */; };
 		B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A92696DDAE003E1ADA /* CascleFontType.swift */; };
 		B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B75E62AC2696F33D003E1ADA /* Castcle.ttf */; };
-		B768499F26C403C800C438C5 /* SwiftJWT in Frameworks */ = {isa = PBXBuildFile; productRef = B768499E26C403C800C438C5 /* SwiftJWT */; };
 		B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1326B15FCD0097C94E /* Staging.xcconfig */; };
 		B7910E1726B15FCD0097C94E /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1426B15FCD0097C94E /* Production.xcconfig */; };
 		B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1526B15FCD0097C94E /* Development.xcconfig */; };
@@ -86,7 +86,7 @@
 			files = (
 				B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
-				B768499F26C403C800C438C5 /* SwiftJWT in Frameworks */,
+				B7189ADA26EF3C1400CB9719 /* JWTDecode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +243,7 @@
 			packageProductDependencies = (
 				B7B1E3C126A875FF006E2FF6 /* Defaults */,
 				B7910EDB26C0EF090097C94E /* DeviceKit */,
-				B768499E26C403C800C438C5 /* SwiftJWT */,
+				B7189AD926EF3C1400CB9719 /* JWTDecode */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -275,7 +275,7 @@
 			packageReferences = (
 				B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */,
 				B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */,
-				B768499D26C403C800C438C5 /* XCRemoteSwiftPackageReference "Swift-JWT" */,
+				B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -914,12 +914,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B768499D26C403C800C438C5 /* XCRemoteSwiftPackageReference "Swift-JWT" */ = {
+		B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Kitura/Swift-JWT.git";
+			repositoryURL = "https://github.com/auth0/JWTDecode.swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.6.200;
+				minimumVersion = 2.6.2;
 			};
 		};
 		B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
@@ -941,10 +941,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B768499E26C403C800C438C5 /* SwiftJWT */ = {
+		B7189AD926EF3C1400CB9719 /* JWTDecode */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B768499D26C403C800C438C5 /* XCRemoteSwiftPackageReference "Swift-JWT" */;
-			productName = SwiftJWT;
+			package = B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */;
+			productName = JWTDecode;
 		};
 		B7910EDB26C0EF090097C94E /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;

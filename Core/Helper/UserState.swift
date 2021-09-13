@@ -26,6 +26,8 @@
 //
 
 import Defaults
+import JWTDecode
+import CryptoKit
 
 public struct Page {
     public var name: String = ""
@@ -77,5 +79,43 @@ public class UserState: NSObject {
             Page(name: "Chelsea FC", avatar: "https://upload.wikimedia.org/wikipedia/th/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png"),
             Page(name: "Liverpool FC", avatar: "https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515361_10542.jpg")
         ]
+    }
+    
+    public var accountId: String {
+        do {
+            let jwt = try decode(jwt: Defaults[.accessToken])
+            
+            let claim = jwt.claim(name: "id")
+            if let id = claim.string {
+                return id
+            } else {
+                return ""
+            }
+        } catch {
+            return ""
+        }
+    }
+    
+    public var uxSessionId: String {
+        do {
+            let jwt = try decode(jwt: Defaults[.accessToken])
+            
+            let claim = jwt.claim(name: "id")
+            if let id = claim.string {
+                let uxSessionId = "\(id)+\(Date.currentTimeStamp)"
+                return MD5(string: uxSessionId)
+            } else {
+                return ""
+            }
+        } catch {
+            return ""
+        }
+    }
+    
+    private func MD5(string: String) -> String {
+        let digest = Insecure.MD5.hash(data: string.data(using: .utf8) ?? Data())
+        return digest.map {
+            String(format: "%02hhx", $0)
+        }.joined()
     }
 }

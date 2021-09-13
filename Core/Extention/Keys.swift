@@ -43,4 +43,7 @@ public extension Defaults.Keys {
     static let youtube = Key<String>("youtube", default: "")
     static let medium = Key<String>("medium", default: "")
     static let website = Key<String>("website", default: "")
+    
+    // Engagement
+    static let screenId = Key<String>("screenId", default: "")
 }
