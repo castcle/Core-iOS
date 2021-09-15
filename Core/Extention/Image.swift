@@ -32,6 +32,7 @@ public extension UIImage {
         public static let castcleLogo = UIImage(named: "castcle-logo", in: ConfigBundle.core, compatibleWith: nil)!
         public static let googleLogo = UIImage(named: "google-logo", in: ConfigBundle.core, compatibleWith: nil)!
         public static let launchScreen = UIImage(named: "launch-screen", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let placeholder = UIImage(named: "placeholder", in: ConfigBundle.core, compatibleWith: nil)!
     }
     
     func alpha(_ value: CGFloat) -> UIImage {
@@ -39,6 +40,38 @@ public extension UIImage {
         draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+        return newImage!
+    }
+    
+    func toBase64() -> String? {
+        guard let imageData = self.pngData() else { return nil }
+        return imageData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+    }
+    
+    func resizeImage(targetSize: CGSize) -> UIImage {
+        let size = self.size
+        
+        if size.width < targetSize.width || size.height < targetSize.height {
+            return self
+        }
+        
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
+        
+        var newSize: CGSize
+        if(widthRatio > heightRatio) {
+            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
+        } else {
+            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
+        }
+        
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        self.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
         return newImage!
     }
 }

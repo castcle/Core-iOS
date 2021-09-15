@@ -28,6 +28,8 @@
 import Defaults
 import JWTDecode
 import CryptoKit
+import Moya
+import SwiftyJSON
 
 public struct Page {
     public var name: String = ""
@@ -53,23 +55,63 @@ public class UserState: NSObject {
     }
     
     public var name: String {
-        return "Tommy Cruise"
+        return Defaults[.displayName]
     }
     
     public var userId: String {
-        return "@tommy-cruise"
+        return "@\(Defaults[.castcleId])"
     }
     
     public var email: String {
-        return "castcle@gmail.com"
+        return Defaults[.email]
+    }
+    
+    public var dob: String {
+        return Defaults[.dob]
     }
     
     public var avatar: String {
-        return "https://images.mubicdn.net/images/cast_member/2184/cache-2992-1547409411/image-w856.jpg"
+        return Defaults[.avatar]
     }
     
     public var cover: String {
-        return "https://cdn.pixabay.com/photo/2020/02/11/16/25/manarola-4840080_1280.jpg"
+        return Defaults[.cover]
+    }
+    
+    public var overview: String {
+        return Defaults[.overview]
+    }
+    
+    public var verified: Bool {
+        return Defaults[.verified]
+    }
+    
+    public var facebookLink: String {
+        return Defaults[.facebookLink]
+    }
+    
+    public var twitterLink: String {
+        return Defaults[.twitterLink]
+    }
+    
+    public var youtubeLink: String {
+        return Defaults[.youtubeLink]
+    }
+    
+    public var mediumLink: String {
+        return Defaults[.mediumLink]
+    }
+    
+    public var websiteLink: String {
+        return Defaults[.websiteLink]
+    }
+    
+    public var following: String {
+        return "\(String.displayCount(count: Defaults[.following])) "
+    }
+    
+    public var followers: String {
+        return "\(String.displayCount(count: Defaults[.followers])) "
     }
     
     public var page: [Page] {

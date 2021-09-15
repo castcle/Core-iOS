@@ -46,4 +46,22 @@ public extension Defaults.Keys {
     
     // Engagement
     static let screenId = Key<String>("screenId", default: "")
+    
+    // User
+    static let userId = Key<String>("userId", default: "")
+    static let castcleId = Key<String>("castcleId", default: "")
+    static let displayName = Key<String>("displayName", default: "")
+    static let cover = Key<String>("cover", default: "")
+    static let avatar = Key<String>("avatar", default: "")
+    static let overview = Key<String>("overview", default: "")
+    static let verified = Key<Bool>("verified", default: false)
+    static let email = Key<String>("email", default: "")
+    static let dob = Key<String>("dob", default: "")
+    static let followers = Key<Int>("followers", default: 0)
+    static let following = Key<Int>("following", default: 0)
+    static let facebookLink = Key<String>("facebookLink", default: "")
+    static let twitterLink = Key<String>("twitterLink", default: "")
+    static let youtubeLink = Key<String>("youtubeLink", default: "")
+    static let mediumLink = Key<String>("mediumLink", default: "")
+    static let websiteLink = Key<String>("websiteLink", default: "")
 }
