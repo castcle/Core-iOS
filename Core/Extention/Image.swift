@@ -33,6 +33,7 @@ public extension UIImage {
         public static let googleLogo = UIImage(named: "google-logo", in: ConfigBundle.core, compatibleWith: nil)!
         public static let launchScreen = UIImage(named: "launch-screen", in: ConfigBundle.core, compatibleWith: nil)!
         public static let placeholder = UIImage(named: "placeholder", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let userPlaceholder = UIImage(named: "user-placeholder", in: ConfigBundle.core, compatibleWith: nil)!
     }
     
     func alpha(_ value: CGFloat) -> UIImage {
