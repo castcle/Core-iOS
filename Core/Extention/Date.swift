@@ -35,7 +35,7 @@ public extension Date {
     static func stringToDate(str: String) -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "UTC")
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         if let date = dateFormatter.date(from: str) {
             return date
         } else {
@@ -50,6 +50,13 @@ public extension Date {
         
         let dateDisplay = dateFormatter.string(from: self)
         return dateDisplay.replacingOccurrences(of: "BE", with: "")
+    }
+    
+    func dateToStringSever() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "UTC")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        return dateFormatter.string(from: self)
     }
     
     func timeAgoDisplay() -> String {
