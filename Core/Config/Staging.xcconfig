@@ -16,9 +16,9 @@ BASE_URL = https:/$()/api-staging.castcle.com
 APP_CENTER_KEY = cf14e368-6536-4e3d-b069-6480867cefa7
 
 // Static URL
-PRIVACY_POLICY = https:/$()/castcle-public.s3.amazonaws.com/documents/privacy-policy.html
-USER_AGREEMENT = https:/$()/castcle-public.s3.amazonaws.com/documents/terms-of-service.html
+PRIVACY_POLICY = https:/$()/documents.castcle.com/privacy-policy.html
+USER_AGREEMENT = https:/$()/documents.castcle.com/terms-of-service.html
 DOCS = https:/$()/docs.castcle.com/
 JOIN_US = https:/$()/jobs.blognone.com/company/castcle
-WHITEPAPER = https:/$()/castcle-public.s3.amazonaws.com/documents/castcle-whitepaper-v1_2.pdf
-ABOUT_US = https:/$()/castcle-public.s3.amazonaws.com/documents/about-us.html
+WHITEPAPER = https:/$()/documents.castcle.com/castcle-whitepaper-v1_2.pdf
+ABOUT_US = https:/$()/documents.castcle.com/about-us.html
