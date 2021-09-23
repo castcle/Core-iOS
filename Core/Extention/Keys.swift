@@ -36,6 +36,7 @@ public extension Defaults.Keys {
     static let deviceUuid = Key<String>("deviceUuid", default: "")
     static let accessToken = Key<String>("accessToken", default: "")
     static let refreshToken = Key<String>("refreshToken", default: "")
+    static let firebaseToken = Key<String>("firebaseToken", default: "")
     
     // Add Social
     static let facebook = Key<String>("facebook", default: "")
