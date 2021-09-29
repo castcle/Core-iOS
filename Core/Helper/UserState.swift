@@ -56,8 +56,12 @@ public class UserState: NSObject {
         return Defaults[.displayName]
     }
     
-    public var userId: String {
+    public var castcleId: String {
         return "@\(Defaults[.castcleId])"
+    }
+    
+    public var rawCastcleId: String {
+        return Defaults[.castcleId]
     }
     
     public var email: String {
