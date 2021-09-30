@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717448F26E765D50014D6B5 /* FlexibleTextView.swift */; };
-		B7189ADA26EF3C1400CB9719 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = B7189AD926EF3C1400CB9719 /* JWTDecode */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -38,6 +37,7 @@
 		B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D726959FDC000ED84A /* Sarabun-Light.ttf */; };
 		B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */; };
 		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
+		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B7B1E3C126A875FF006E2FF6 /* Defaults */; };
 		B7C2521D26C6826A00ACBB84 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserState.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,7 +86,7 @@
 			files = (
 				B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
-				B7189ADA26EF3C1400CB9719 /* JWTDecode in Frameworks */,
+				B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +243,7 @@
 			packageProductDependencies = (
 				B7B1E3C126A875FF006E2FF6 /* Defaults */,
 				B7910EDB26C0EF090097C94E /* DeviceKit */,
-				B7189AD926EF3C1400CB9719 /* JWTDecode */,
+				B7A71D8027045E090092F318 /* SwiftyJSON */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -275,7 +275,7 @@
 			packageReferences = (
 				B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */,
 				B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */,
-				B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */,
+				B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -914,20 +914,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/auth0/JWTDecode.swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.2;
-			};
-		};
 		B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.4.0;
+			};
+		};
+		B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
 			};
 		};
 		B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */ = {
@@ -941,15 +941,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B7189AD926EF3C1400CB9719 /* JWTDecode */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */;
-			productName = JWTDecode;
-		};
 		B7910EDB26C0EF090097C94E /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		B7A71D8027045E090092F318 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 		B7B1E3C126A875FF006E2FF6 /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;

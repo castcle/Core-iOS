@@ -26,8 +26,8 @@
 //
 
 import Defaults
-import JWTDecode
 import CryptoKit
+import SwiftyJSON
 
 public struct Page {
     public var name: String = ""
@@ -41,6 +41,19 @@ public struct Page {
 
 public class UserState: NSObject {
     public static let shared = UserState()
+    
+    enum TokenKey: String {
+        case id
+        case role
+        case displayName
+        case castcleId
+        case verified
+        case official
+        case mobile
+        case email
+        case showAds
+        case pages
+    }
     
     public var isLogin: Bool {
         if Defaults[.userRole] == "GUEST" {
@@ -84,10 +97,6 @@ public class UserState: NSObject {
         return Defaults[.overview]
     }
     
-    public var verified: Bool {
-        return Defaults[.verified]
-    }
-    
     public var facebookLink: String {
         return Defaults[.facebookLink]
     }
@@ -117,24 +126,15 @@ public class UserState: NSObject {
     }
     
     public var page: [Page] {
-        return [
-            Page(name: "Manchester United", avatar: "https://seeklogo.com/images/M/manchester-united-logo-F14DA1FCCD-seeklogo.com.png"),
-            Page(name: "Manchester City", avatar: "https://upload.wikimedia.org/wikipedia/th/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png"),
-            Page(name: "Chelsea FC", avatar: "https://upload.wikimedia.org/wikipedia/th/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png"),
-            Page(name: "Liverpool FC", avatar: "https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515361_10542.jpg")
-        ]
+        return []
     }
     
     public var accountId: String {
         do {
-            let jwt = try decode(jwt: Defaults[.accessToken])
-            
-            let claim = jwt.claim(name: "id")
-            if let id = claim.string {
-                return id
-            } else {
-                return ""
-            }
+            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
+            let payloadData = payload.data(using: String.Encoding.utf8)
+            let json = try JSON(data: payloadData!)
+            return json[TokenKey.id.rawValue].stringValue
         } catch {
             return ""
         }
@@ -142,17 +142,26 @@ public class UserState: NSObject {
     
     public var uxSessionId: String {
         do {
-            let jwt = try decode(jwt: Defaults[.accessToken])
-            
-            let claim = jwt.claim(name: "id")
-            if let id = claim.string {
-                let uxSessionId = "\(id)+\(Date.currentTimeStamp)"
-                return MD5(string: uxSessionId)
-            } else {
-                return ""
-            }
+            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
+            let payloadData = payload.data(using: String.Encoding.utf8)
+            let json = try JSON(data: payloadData!)
+            let id = json[TokenKey.id.rawValue].stringValue
+            let uxSessionId = "\(id)+\(Date.currentTimeStamp)"
+            return MD5(string: uxSessionId)
         } catch {
             return ""
+        }
+    }
+    
+    public var emailVerified: Bool {
+        do {
+            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
+            let payloadData = payload.data(using: String.Encoding.utf8)
+            let json = try JSON(data: payloadData!)
+            let verified = JSON(json[TokenKey.verified.rawValue].dictionaryValue)
+            return verified[TokenKey.email.rawValue].boolValue
+        } catch {
+            return false
         }
     }
     
@@ -161,5 +170,21 @@ public class UserState: NSObject {
         return digest.map {
             String(format: "%02hhx", $0)
         }.joined()
+    }
+    
+    func getJwtBodyString(token: String) -> String {
+        let segments = token.components(separatedBy: ".")
+        var base64String = segments[1]
+        let requiredLength = Int(4 * ceil(Float(base64String.count) / 4.0))
+        let nbrPaddings = requiredLength - base64String.count
+        if nbrPaddings > 0 {
+            let padding = String().padding(toLength: nbrPaddings, withPad: "=", startingAt: 0)
+            base64String = base64String.appending(padding)
+        }
+        base64String = base64String.replacingOccurrences(of: "-", with: "+")
+        base64String = base64String.replacingOccurrences(of: "_", with: "/")
+        let decodedData = Data(base64Encoded: base64String, options: Data.Base64DecodingOptions(rawValue: UInt(0)))
+        let base64Decoded: String = String(data: decodedData! as Data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
+        return base64Decoded
     }
 }
