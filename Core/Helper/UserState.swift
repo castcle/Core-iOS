@@ -32,10 +32,12 @@ import SwiftyJSON
 public struct Page {
     public var name: String = ""
     public var avatar: String = ""
+    public var castcleId: String = ""
     
-    public init(name: String, avatar: String) {
+    public init(name: String, avatar: String, castcleId: String) {
         self.name = name
         self.avatar = avatar
+        self.castcleId = castcleId
     }
 }
 
