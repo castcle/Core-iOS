@@ -19,7 +19,7 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  UserState.swift
+//  UserManager.swift
 //  Core
 //
 //  Created by Tanakorn Phoochaliaw on 13/8/2564 BE.
@@ -30,19 +30,19 @@ import CryptoKit
 import SwiftyJSON
 
 public struct Page {
-    public var name: String = ""
+    public var displayName: String = ""
     public var avatar: String = ""
     public var castcleId: String = ""
     
-    public init(name: String, avatar: String, castcleId: String) {
-        self.name = name
+    public init(displayName: String, avatar: String, castcleId: String) {
+        self.displayName = displayName
         self.avatar = avatar
         self.castcleId = castcleId
     }
 }
 
-public class UserState: NSObject {
-    public static let shared = UserState()
+public class UserManager: NSObject {
+    public static let shared = UserManager()
     
     enum TokenKey: String {
         case id
@@ -67,7 +67,7 @@ public class UserState: NSObject {
         }
     }
     
-    public var name: String {
+    public var displayName: String {
         return Defaults[.displayName]
     }
     

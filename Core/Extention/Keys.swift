@@ -38,6 +38,9 @@ public extension Defaults.Keys {
     static let refreshToken = Key<String>("refreshToken", default: "")
     static let firebaseToken = Key<String>("firebaseToken", default: "")
     
+    // Feed
+    static let startLoadFeed = Key<Bool>("startLoadFeed", default: true)
+    
     // Add Social
     static let facebook = Key<String>("facebook", default: "")
     static let twitter = Key<String>("twitter", default: "")
