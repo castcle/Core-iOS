@@ -167,6 +167,18 @@ public class UserManager: NSObject {
         }
     }
     
+    public var official: Bool {
+        do {
+            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
+            let payloadData = payload.data(using: String.Encoding.utf8)
+            let json = try JSON(data: payloadData!)
+            let verified = JSON(json[TokenKey.verified.rawValue].dictionaryValue)
+            return verified[TokenKey.official.rawValue].boolValue
+        } catch {
+            return false
+        }
+    }
+    
     private func MD5(string: String) -> String {
         let digest = Insecure.MD5.hash(data: string.data(using: .utf8) ?? Data())
         return digest.map {
