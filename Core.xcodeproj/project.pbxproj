@@ -38,6 +38,7 @@
 		B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */; };
 		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
+		B79DF1AE270D4D3200A40502 /* DataDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AD270D4D3200A40502 /* DataDetector.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B7B1E3C126A875FF006E2FF6 /* Defaults */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
@@ -75,6 +76,7 @@
 		B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		B79281DC2695A02F000ED84A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		B79DF1AD270D4D3200A40502 /* DataDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDetector.swift; sourceTree = "<group>"; };
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				B75529A9269E174E005D5EB5 /* TextSize.swift */,
 				B7910ED826C0EB1D0097C94E /* ApiHelper.swift */,
 				B7C2521C26C6826A00ACBB84 /* UserManager.swift */,
+				B79DF1AD270D4D3200A40502 /* DataDetector.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				B755292E269C4311005D5EB5 /* Utility.swift in Sources */,
 				B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */,
 				B7910ED926C0EB1D0097C94E /* ApiHelper.swift in Sources */,
+				B79DF1AE270D4D3200A40502 /* DataDetector.swift in Sources */,
 				B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */,
 				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
