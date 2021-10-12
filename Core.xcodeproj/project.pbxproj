@@ -40,7 +40,7 @@
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
 		B79DF1AE270D4D3200A40502 /* DataDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AD270D4D3200A40502 /* DataDetector.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
-		B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B7B1E3C126A875FF006E2FF6 /* Defaults */; };
+		B7A785AC270FE0C6008443ED /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B7A785AB270FE0C6008443ED /* Defaults */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */,
+				B7A785AC270FE0C6008443ED /* Defaults in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
 				B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */,
 			);
@@ -247,9 +247,9 @@
 			);
 			name = Core;
 			packageProductDependencies = (
-				B7B1E3C126A875FF006E2FF6 /* Defaults */,
 				B7910EDB26C0EF090097C94E /* DeviceKit */,
 				B7A71D8027045E090092F318 /* SwiftyJSON */,
+				B7A785AB270FE0C6008443ED /* Defaults */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -279,9 +279,9 @@
 			);
 			mainGroup = B7F69CBB268EB85600B01223;
 			packageReferences = (
-				B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */,
 				B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */,
 				B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				B7A785AA270FE0C6008443ED /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -938,7 +938,7 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+		B7A785AA270FE0C6008443ED /* XCRemoteSwiftPackageReference "Defaults" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
 			requirement = {
@@ -959,9 +959,9 @@
 			package = B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
 		};
-		B7B1E3C126A875FF006E2FF6 /* Defaults */ = {
+		B7A785AB270FE0C6008443ED /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */;
+			package = B7A785AA270FE0C6008443ED /* XCRemoteSwiftPackageReference "Defaults" */;
 			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */

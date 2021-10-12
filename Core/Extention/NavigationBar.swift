@@ -76,6 +76,7 @@ public extension UIViewController {
         
         // MARK: - Set Background
         navigationController?.navigationBar.barTintColor = UIColor.Asset.darkGraphiteBlue
+        navigationController?.view.backgroundColor = UIColor.Asset.darkGraphiteBlue
         navigationController?.navigationBar.isTranslucent = false
         
         if type == .primary {
