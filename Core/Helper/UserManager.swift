@@ -51,6 +51,10 @@ public struct Page {
     public var verifiedMobile: Bool = false
     public var verifiedOfficial: Bool = false
     
+    public init() {
+        // Init page
+    }
+    
     init(json: JSON) {
         self.id = json[PageKey.id.rawValue].stringValue
         self.castcleId = json[PageKey.castcleId.rawValue].stringValue
