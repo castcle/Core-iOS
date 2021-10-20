@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717448F26E765D50014D6B5 /* FlexibleTextView.swift */; };
+		B71B66692720167400191A62 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B71B66682720167400191A62 /* Defaults */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -40,7 +41,6 @@
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
 		B79DF1AE270D4D3200A40502 /* DataDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AD270D4D3200A40502 /* DataDetector.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
-		B7A785AC270FE0C6008443ED /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B7A785AB270FE0C6008443ED /* Defaults */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7A785AC270FE0C6008443ED /* Defaults in Frameworks */,
+				B71B66692720167400191A62 /* Defaults in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
 				B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */,
 			);
@@ -249,7 +249,7 @@
 			packageProductDependencies = (
 				B7910EDB26C0EF090097C94E /* DeviceKit */,
 				B7A71D8027045E090092F318 /* SwiftyJSON */,
-				B7A785AB270FE0C6008443ED /* Defaults */,
+				B71B66682720167400191A62 /* Defaults */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -281,7 +281,7 @@
 			packageReferences = (
 				B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */,
 				B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				B7A785AA270FE0C6008443ED /* XCRemoteSwiftPackageReference "Defaults" */,
+				B71B66672720167400191A62 /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -922,6 +922,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B71B66672720167400191A62 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
@@ -938,17 +946,14 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		B7A785AA270FE0C6008443ED /* XCRemoteSwiftPackageReference "Defaults" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B71B66682720167400191A62 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B71B66672720167400191A62 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
 		B7910EDB26C0EF090097C94E /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */;
@@ -958,11 +963,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
-		};
-		B7A785AB270FE0C6008443ED /* Defaults */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B7A785AA270FE0C6008443ED /* XCRemoteSwiftPackageReference "Defaults" */;
-			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
