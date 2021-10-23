@@ -22,7 +22,7 @@
 //  ApiHelper.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 9/8/2564 BE.
+//  Created by Castcle Co., Ltd. on 9/8/2564 BE.
 //
 
 import UIKit

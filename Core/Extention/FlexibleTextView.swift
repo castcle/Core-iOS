@@ -22,7 +22,7 @@
 //  FlexibleTextView.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 7/9/2564 BE.
+//  Created by Castcle Co., Ltd. on 7/9/2564 BE.
 //
 
 import Foundation

@@ -22,7 +22,7 @@
 //  DataDetector.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 6/10/2564 BE.
+//  Created by Castcle Co., Ltd. on 6/10/2564 BE.
 //
 
 // MARK: DataDetector
