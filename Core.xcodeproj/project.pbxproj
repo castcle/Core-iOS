@@ -10,6 +10,13 @@
 		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717448F26E765D50014D6B5 /* FlexibleTextView.swift */; };
 		B71B66692720167400191A62 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B71B66682720167400191A62 /* Defaults */; };
+		B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667A272564A600191A62 /* Kanit-Regular.ttf */; };
+		B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667B272564A700191A62 /* Sarabun-LightItalic.ttf */; };
+		B71B6683272564A800191A62 /* Kanit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667C272564A700191A62 /* Kanit-Bold.ttf */; };
+		B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667D272564A700191A62 /* Sarabun-Bold.ttf */; };
+		B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667E272564A700191A62 /* Kanit-Light.ttf */; };
+		B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667F272564A700191A62 /* Kanit-Medium.ttf */; };
+		B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B6680272564A800191A62 /* Sarabun-Light.ttf */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -34,9 +41,6 @@
 		B7928125268F2056000ED84A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928124268F2056000ED84A /* Keys.swift */; };
 		B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79281C5269596A1000ED84A /* ColorTheme.xcassets */; };
 		B79281C826959854000ED84A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281C726959854000ED84A /* Color.swift */; };
-		B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */; };
-		B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D726959FDC000ED84A /* Sarabun-Light.ttf */; };
-		B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */; };
 		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
 		B79DF1AE270D4D3200A40502 /* DataDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AD270D4D3200A40502 /* DataDetector.swift */; };
@@ -48,6 +52,13 @@
 /* Begin PBXFileReference section */
 		B717447626E2587C0014D6B5 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B717448F26E765D50014D6B5 /* FlexibleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleTextView.swift; sourceTree = "<group>"; };
+		B71B667A272564A600191A62 /* Kanit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Regular.ttf"; sourceTree = "<group>"; };
+		B71B667B272564A700191A62 /* Sarabun-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-LightItalic.ttf"; sourceTree = "<group>"; };
+		B71B667C272564A700191A62 /* Kanit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Bold.ttf"; sourceTree = "<group>"; };
+		B71B667D272564A700191A62 /* Sarabun-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Bold.ttf"; sourceTree = "<group>"; };
+		B71B667E272564A700191A62 /* Kanit-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Light.ttf"; sourceTree = "<group>"; };
+		B71B667F272564A700191A62 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
+		B71B6680272564A800191A62 /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
 		B75528DF269B7ECF005D5EB5 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		B75528E1269B81C6005D5EB5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		B755290A269C10E5005D5EB5 /* Emums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emums.swift; sourceTree = "<group>"; };
@@ -71,9 +82,6 @@
 		B7928124268F2056000ED84A /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B79281C5269596A1000ED84A /* ColorTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorTheme.xcassets; sourceTree = "<group>"; };
 		B79281C726959854000ED84A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Regular.ttf"; sourceTree = "<group>"; };
-		B79281D726959FDC000ED84A /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
-		B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		B79281DC2695A02F000ED84A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B79DF1AD270D4D3200A40502 /* DataDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDetector.swift; sourceTree = "<group>"; };
@@ -174,9 +182,13 @@
 		B79281D526959FB6000ED84A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				B79281D726959FDC000ED84A /* Sarabun-Light.ttf */,
-				B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */,
-				B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */,
+				B71B667C272564A700191A62 /* Kanit-Bold.ttf */,
+				B71B667E272564A700191A62 /* Kanit-Light.ttf */,
+				B71B667F272564A700191A62 /* Kanit-Medium.ttf */,
+				B71B667A272564A600191A62 /* Kanit-Regular.ttf */,
+				B71B667D272564A700191A62 /* Sarabun-Bold.ttf */,
+				B71B6680272564A800191A62 /* Sarabun-Light.ttf */,
+				B71B667B272564A700191A62 /* Sarabun-LightItalic.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -297,14 +309,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */,
-				B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */,
+				B71B6683272564A800191A62 /* Kanit-Bold.ttf in Resources */,
+				B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */,
+				B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */,
 				B7910E1726B15FCD0097C94E /* Production.xcconfig in Resources */,
-				B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
+				B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */,
+				B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */,
 				B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */,
 				B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */,
+				B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
+				B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */,
 				B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

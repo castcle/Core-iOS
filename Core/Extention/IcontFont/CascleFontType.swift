@@ -121,6 +121,9 @@ public enum CastcleType: Int {
     case incorrect
     case arrowObliqueLeft
     case medium
+    case toptrend
+    case quill
+    case bindLink
 }
 
 private let castcleIcons = [
@@ -210,5 +213,8 @@ private let castcleIcons = [
     "\u{0040}", //case dropDown
     "\u{005B}", //case incorrect
     "\u{005D}", //case arrowObliqueLeft
-    "\u{005E}" //case medium
+    "\u{005E}", //case medium
+    "\u{005F}", //case toptrend
+    "\u{0060}", //case quill
+    "\u{007B}" //case bindLink
 ]
