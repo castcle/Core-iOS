@@ -81,9 +81,9 @@ public extension UIFont {
     
     enum Fonts: String, CaseIterable {
         case bold = "Kanit-Bold"
-        case Light = "Kanit-Light"
-        case Medium = "Kanit-Medium"
-        case Regular = "Kanit-Regular"
+        case light = "Kanit-Light"
+        case medium = "Kanit-Medium"
+        case regular = "Kanit-Regular"
         case contentBold = "Sarabun-Bold"
         case contentLight = "Sarabun-Light"
         case contentLightItalic = "Sarabun-LightItalic"
