@@ -29,51 +29,51 @@ import Defaults
 import CryptoKit
 import SwiftyJSON
 
-public struct Page {
-    enum PageKey: String {
-        case id
-        case role
-        case displayName
-        case castcleId
-        case avatar
-        case verified
-        case official
-        case mobile
-        case email
-    }
-    
-    public var id: String = ""
-    public var castcleId: String = ""
-    public var role: String = ""
-    public var displayName: String = ""
-    public var avatar: String = ""
-    public var verifiedEmail: Bool = false
-    public var verifiedMobile: Bool = false
-    public var verifiedOfficial: Bool = false
-    
-    public init() {
-        // Init page
-    }
-    
-    init(json: JSON) {
-        self.id = json[PageKey.id.rawValue].stringValue
-        self.castcleId = json[PageKey.castcleId.rawValue].stringValue
-        self.role = json[PageKey.role.rawValue].stringValue
-        self.displayName = json[PageKey.displayName.rawValue].stringValue
-        self.avatar = json[PageKey.avatar.rawValue].stringValue
-        
-        let verify = JSON(json[PageKey.verified.rawValue].dictionaryValue)
-        self.verifiedEmail = verify[PageKey.email.rawValue].boolValue
-        self.verifiedMobile = verify[PageKey.mobile.rawValue].boolValue
-        self.verifiedOfficial = verify[PageKey.official.rawValue].boolValue
-    }
-    
-    public init(displayName: String, avatar: String, castcleId: String) {
-        self.displayName = displayName
-        self.avatar = avatar
-        self.castcleId = castcleId
-    }
-}
+//public struct Page {
+//    enum PageKey: String {
+//        case id
+//        case role
+//        case displayName
+//        case castcleId
+//        case avatar
+//        case verified
+//        case official
+//        case mobile
+//        case email
+//    }
+//
+//    public var id: String = ""
+//    public var castcleId: String = ""
+//    public var role: String = ""
+//    public var displayName: String = ""
+//    public var avatar: String = ""
+//    public var verifiedEmail: Bool = false
+//    public var verifiedMobile: Bool = false
+//    public var verifiedOfficial: Bool = false
+//
+//    public init() {
+//        // Init page
+//    }
+//
+//    init(json: JSON) {
+//        self.id = json[PageKey.id.rawValue].stringValue
+//        self.castcleId = json[PageKey.castcleId.rawValue].stringValue
+//        self.role = json[PageKey.role.rawValue].stringValue
+//        self.displayName = json[PageKey.displayName.rawValue].stringValue
+//        self.avatar = json[PageKey.avatar.rawValue].stringValue
+//
+//        let verify = JSON(json[PageKey.verified.rawValue].dictionaryValue)
+//        self.verifiedEmail = verify[PageKey.email.rawValue].boolValue
+//        self.verifiedMobile = verify[PageKey.mobile.rawValue].boolValue
+//        self.verifiedOfficial = verify[PageKey.official.rawValue].boolValue
+//    }
+//
+//    public init(displayName: String, avatar: String, castcleId: String) {
+//        self.displayName = displayName
+//        self.avatar = avatar
+//        self.castcleId = castcleId
+//    }
+//}
 
 public class UserManager: NSObject {
     public static let shared = UserManager()
@@ -161,16 +161,12 @@ public class UserManager: NSObject {
         return "\(String.displayCount(count: Defaults[.followers])) "
     }
     
-    public var page: [Page] {
-        do {
-            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
-            let payloadData = payload.data(using: String.Encoding.utf8)
-            let json = try JSON(data: payloadData!)
-            return (json[TokenKey.pages.rawValue].arrayValue).map { Page(json: $0) }
-        } catch {
-            return []
-        }
-        
+    public var emailVerified: Bool {
+        return Defaults[.verifiedEmail]
+    }
+    
+    public var official: Bool {
+        return Defaults[.verifiedOfficial]
     }
     
     public var accountId: String {
@@ -194,30 +190,6 @@ public class UserManager: NSObject {
             return MD5(string: uxSessionId)
         } catch {
             return ""
-        }
-    }
-    
-    public var emailVerified: Bool {
-        do {
-            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
-            let payloadData = payload.data(using: String.Encoding.utf8)
-            let json = try JSON(data: payloadData!)
-            let verified = JSON(json[TokenKey.verified.rawValue].dictionaryValue)
-            return verified[TokenKey.email.rawValue].boolValue
-        } catch {
-            return false
-        }
-    }
-    
-    public var official: Bool {
-        do {
-            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
-            let payloadData = payload.data(using: String.Encoding.utf8)
-            let json = try JSON(data: payloadData!)
-            let verified = JSON(json[TokenKey.verified.rawValue].dictionaryValue)
-            return verified[TokenKey.official.rawValue].boolValue
-        } catch {
-            return false
         }
     }
     
