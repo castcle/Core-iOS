@@ -26,6 +26,16 @@
 		B72E366727290CB5003E730B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366627290CB5003E730B /* Realm */; };
 		B72E366927290CB5003E730B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366827290CB5003E730B /* RealmSwift */; };
 		B72E366B27294764003E730B /* RecentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E366A27294764003E730B /* RecentSearch.swift */; };
+		B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366D27294C62003E730B /* BetterSegmentedControl */; };
+		B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367027294CA6003E730B /* JGProgressHUD */; };
+		B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367327294D45003E730B /* SwiftLinkPreview */; };
+		B72E367727294D88003E730B /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367627294D88003E730B /* Atributika */; };
+		B72E367D27294F16003E730B /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367C27294F16003E730B /* CropViewController */; };
+		B72E367F27294F16003E730B /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367E27294F16003E730B /* TOCropViewController */; };
+		B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368127294F56003E730B /* JVFloatLabeledTextField */; };
+		B72E368527294FCE003E730B /* Nantes in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368427294FCE003E730B /* Nantes */; };
+		B72E36882729501D003E730B /* ActiveLabel in Frameworks */ = {isa = PBXBuildFile; productRef = B72E36872729501D003E730B /* ActiveLabel */; };
+		B72E368B2729505E003E730B /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368A2729505E003E730B /* SnackBar */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -111,10 +121,20 @@
 				B72E3658272907B5003E730B /* Kingfisher in Frameworks */,
 				B71B66692720167400191A62 /* Defaults in Frameworks */,
 				B72E365E27290946003E730B /* SwiftDate in Frameworks */,
+				B72E36882729501D003E730B /* ActiveLabel in Frameworks */,
+				B72E368B2729505E003E730B /* SnackBar in Frameworks */,
+				B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */,
 				B72E366427290A59003E730B /* PanModal in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
+				B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */,
+				B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */,
+				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
+				B72E367727294D88003E730B /* Atributika in Frameworks */,
+				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
+				B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */,
 				B72E366727290CB5003E730B /* Realm in Frameworks */,
 				B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */,
+				B72E368527294FCE003E730B /* Nantes in Frameworks */,
 				B72E366927290CB5003E730B /* RealmSwift in Frameworks */,
 				B72E365B272908EB003E730B /* SkeletonView in Frameworks */,
 			);
@@ -305,6 +325,16 @@
 				B72E366327290A59003E730B /* PanModal */,
 				B72E366627290CB5003E730B /* Realm */,
 				B72E366827290CB5003E730B /* RealmSwift */,
+				B72E366D27294C62003E730B /* BetterSegmentedControl */,
+				B72E367027294CA6003E730B /* JGProgressHUD */,
+				B72E367327294D45003E730B /* SwiftLinkPreview */,
+				B72E367627294D88003E730B /* Atributika */,
+				B72E367C27294F16003E730B /* CropViewController */,
+				B72E367E27294F16003E730B /* TOCropViewController */,
+				B72E368127294F56003E730B /* JVFloatLabeledTextField */,
+				B72E368427294FCE003E730B /* Nantes */,
+				B72E36872729501D003E730B /* ActiveLabel */,
+				B72E368A2729505E003E730B /* SnackBar */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -343,6 +373,15 @@
 				B72E365F27290A11003E730B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				B72E366227290A59003E730B /* XCRemoteSwiftPackageReference "PanModal" */,
 				B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */,
+				B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */,
+				B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */,
+				B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+				B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */,
+				B72E368327294FCE003E730B /* XCRemoteSwiftPackageReference "Nantes" */,
+				B72E36862729501D003E730B /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */,
+				B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1045,6 +1084,78 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gmarm/BetterSegmentedControl.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LeonardoCardoso/SwiftLinkPreview.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/psharanda/Atributika.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jverdi/JVFloatLabeledTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B72E368327294FCE003E730B /* XCRemoteSwiftPackageReference "Nantes" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/instacart/Nantes.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		B72E36862729501D003E730B /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/optonaut/ActiveLabel.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
 		B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
@@ -1103,6 +1214,56 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		B72E366D27294C62003E730B /* BetterSegmentedControl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */;
+			productName = BetterSegmentedControl;
+		};
+		B72E367027294CA6003E730B /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		B72E367327294D45003E730B /* SwiftLinkPreview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */;
+			productName = SwiftLinkPreview;
+		};
+		B72E367627294D88003E730B /* Atributika */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */;
+			productName = Atributika;
+		};
+		B72E367C27294F16003E730B /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		B72E367E27294F16003E730B /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+		B72E368127294F56003E730B /* JVFloatLabeledTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */;
+			productName = JVFloatLabeledTextField;
+		};
+		B72E368427294FCE003E730B /* Nantes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E368327294FCE003E730B /* XCRemoteSwiftPackageReference "Nantes" */;
+			productName = Nantes;
+		};
+		B72E36872729501D003E730B /* ActiveLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E36862729501D003E730B /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */;
+			productName = ActiveLabel;
+		};
+		B72E368A2729505E003E730B /* SnackBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */;
+			productName = SnackBar;
 		};
 		B7910EDB26C0EF090097C94E /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
