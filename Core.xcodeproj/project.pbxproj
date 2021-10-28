@@ -36,9 +36,6 @@
 		B72E368527294FCE003E730B /* Nantes in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368427294FCE003E730B /* Nantes */; };
 		B72E36882729501D003E730B /* ActiveLabel in Frameworks */ = {isa = PBXBuildFile; productRef = B72E36872729501D003E730B /* ActiveLabel */; };
 		B72E368B2729505E003E730B /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368A2729505E003E730B /* SnackBar */; };
-		B72E368E272A4923003E730B /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368D272A4923003E730B /* AppCenterAnalytics */; };
-		B72E3690272A4923003E730B /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368F272A4923003E730B /* AppCenterCrashes */; };
-		B72E3692272A4923003E730B /* AppCenterDistribute in Frameworks */ = {isa = PBXBuildFile; productRef = B72E3691272A4923003E730B /* AppCenterDistribute */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -125,12 +122,9 @@
 				B71B66692720167400191A62 /* Defaults in Frameworks */,
 				B72E365E27290946003E730B /* SwiftDate in Frameworks */,
 				B72E36882729501D003E730B /* ActiveLabel in Frameworks */,
-				B72E3692272A4923003E730B /* AppCenterDistribute in Frameworks */,
 				B72E368B2729505E003E730B /* SnackBar in Frameworks */,
 				B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */,
 				B72E366427290A59003E730B /* PanModal in Frameworks */,
-				B72E368E272A4923003E730B /* AppCenterAnalytics in Frameworks */,
-				B72E3690272A4923003E730B /* AppCenterCrashes in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
 				B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */,
 				B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */,
@@ -341,9 +335,6 @@
 				B72E368427294FCE003E730B /* Nantes */,
 				B72E36872729501D003E730B /* ActiveLabel */,
 				B72E368A2729505E003E730B /* SnackBar */,
-				B72E368D272A4923003E730B /* AppCenterAnalytics */,
-				B72E368F272A4923003E730B /* AppCenterCrashes */,
-				B72E3691272A4923003E730B /* AppCenterDistribute */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -391,7 +382,6 @@
 				B72E368327294FCE003E730B /* XCRemoteSwiftPackageReference "Nantes" */,
 				B72E36862729501D003E730B /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */,
 				B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */,
-				B72E368C272A4923003E730B /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1166,14 +1156,6 @@
 				minimumVersion = 0.1.1;
 			};
 		};
-		B72E368C272A4923003E730B /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/microsoft/appcenter-sdk-apple.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
 		B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
@@ -1282,21 +1264,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */;
 			productName = SnackBar;
-		};
-		B72E368D272A4923003E730B /* AppCenterAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B72E368C272A4923003E730B /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
-			productName = AppCenterAnalytics;
-		};
-		B72E368F272A4923003E730B /* AppCenterCrashes */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B72E368C272A4923003E730B /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
-			productName = AppCenterCrashes;
-		};
-		B72E3691272A4923003E730B /* AppCenterDistribute */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B72E368C272A4923003E730B /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
-			productName = AppCenterDistribute;
 		};
 		B7910EDB26C0EF090097C94E /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
