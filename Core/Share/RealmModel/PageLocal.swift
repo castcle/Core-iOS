@@ -30,18 +30,16 @@ import SwiftyJSON
 
 public class PageLocal: Object {
 
-    @objc dynamic public var id: String = ""
     @objc dynamic public var castcleId: String = ""
     @objc dynamic public var displayName: String = ""
     @objc dynamic public var image: String = ""
     
     public override static func primaryKey() -> String? {
-        return "id"
+        return "castcleId"
     }
     
     public func initCustom(displayName: String, image: String, castcleId: String) -> PageLocal {
         let pageLocal = PageLocal()
-        pageLocal.castcleId = castcleId
         pageLocal.displayName = displayName
         pageLocal.image = image
         
