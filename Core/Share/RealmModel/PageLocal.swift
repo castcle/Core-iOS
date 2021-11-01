@@ -42,7 +42,7 @@ public class PageLocal: Object {
         let pageLocal = PageLocal()
         pageLocal.displayName = displayName
         pageLocal.image = image
-        
+        pageLocal.castcleId = castcleId
         return pageLocal
     }
 }
