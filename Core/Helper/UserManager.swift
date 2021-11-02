@@ -29,52 +29,6 @@ import Defaults
 import CryptoKit
 import SwiftyJSON
 
-//public struct Page {
-//    enum PageKey: String {
-//        case id
-//        case role
-//        case displayName
-//        case castcleId
-//        case avatar
-//        case verified
-//        case official
-//        case mobile
-//        case email
-//    }
-//
-//    public var id: String = ""
-//    public var castcleId: String = ""
-//    public var role: String = ""
-//    public var displayName: String = ""
-//    public var avatar: String = ""
-//    public var verifiedEmail: Bool = false
-//    public var verifiedMobile: Bool = false
-//    public var verifiedOfficial: Bool = false
-//
-//    public init() {
-//        // Init page
-//    }
-//
-//    init(json: JSON) {
-//        self.id = json[PageKey.id.rawValue].stringValue
-//        self.castcleId = json[PageKey.castcleId.rawValue].stringValue
-//        self.role = json[PageKey.role.rawValue].stringValue
-//        self.displayName = json[PageKey.displayName.rawValue].stringValue
-//        self.avatar = json[PageKey.avatar.rawValue].stringValue
-//
-//        let verify = JSON(json[PageKey.verified.rawValue].dictionaryValue)
-//        self.verifiedEmail = verify[PageKey.email.rawValue].boolValue
-//        self.verifiedMobile = verify[PageKey.mobile.rawValue].boolValue
-//        self.verifiedOfficial = verify[PageKey.official.rawValue].boolValue
-//    }
-//
-//    public init(displayName: String, avatar: String, castcleId: String) {
-//        self.displayName = displayName
-//        self.avatar = avatar
-//        self.castcleId = castcleId
-//    }
-//}
-
 public class UserManager: NSObject {
     public static let shared = UserManager()
     

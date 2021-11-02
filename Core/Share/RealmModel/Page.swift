@@ -19,7 +19,7 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  PageLocal.swift
+//  Page.swift
 //  Core
 //
 //  Created by Castcle Co., Ltd. on 27/10/2564 BE.
@@ -28,7 +28,7 @@
 import RealmSwift
 import SwiftyJSON
 
-public class PageLocal: Object {
+public class Page: Object {
 
     @objc dynamic public var castcleId: String = ""
     @objc dynamic public var displayName: String = ""
@@ -38,11 +38,11 @@ public class PageLocal: Object {
         return "castcleId"
     }
     
-    public func initCustom(displayName: String, image: String, castcleId: String) -> PageLocal {
-        let pageLocal = PageLocal()
-        pageLocal.displayName = displayName
-        pageLocal.image = image
-        pageLocal.castcleId = castcleId
-        return pageLocal
+    public func initCustom(displayName: String, image: String, castcleId: String) -> Page {
+        let page = Page()
+        page.displayName = displayName
+        page.image = image
+        page.castcleId = castcleId
+        return page
     }
 }
