@@ -83,6 +83,16 @@ public extension UIImage {
         
         return newImage!
     }
+    
+    static func iconFromUrl(url: String) -> UIImage? {
+        if url.contains("reddit.com") {
+            return UIImage.Asset.reddit
+        } else if url.contains("twitter.com") {
+            return UIImage.Asset.twitter
+        } else {
+            return nil
+        }
+    }
 }
 
 public extension UIImageView {
