@@ -89,6 +89,8 @@ public extension UIImage {
             return UIImage.Asset.reddit
         } else if url.contains("twitter.com") {
             return UIImage.Asset.twitter
+        } else if url.contains("https://t.co/") {
+            return UIImage.Asset.twitter
         } else {
             return nil
         }
