@@ -38,10 +38,10 @@ public class Page: Object {
         return "castcleId"
     }
     
-    public func initCustom(displayName: String, image: String, castcleId: String) -> Page {
+    public func initCustom(displayName: String, pageImage: String, castcleId: String) -> Page {
         let page = Page()
         page.displayName = displayName
-        page.image = image
+        page.image = pageImage
         page.castcleId = castcleId
         return page
     }
