@@ -69,10 +69,17 @@ public class ImageHelper {
         let paths = NSSearchPathForDirectoriesInDomains(nsDocumentDirectory, nsUserDomainMask, true)
         if let dirPath = paths.first {
             let imageURL = URL(fileURLWithPath: dirPath).appendingPathComponent("\(type.rawValue)_\(nameOfImage).png")
-            let image = UIImage(contentsOfFile: imageURL.path)
-            return image!
+            if let image = UIImage(contentsOfFile: imageURL.path) {
+                return image
+            } else {
+                return self.getDefualtImage(type: type)
+            }
+        } else {
+            return self.getDefualtImage(type: type)
         }
-        
+    }
+    
+    private func getDefualtImage(type: ImageType) -> UIImage {
         if type == .avatar {
             return UIImage.Asset.userPlaceholder
         } else {

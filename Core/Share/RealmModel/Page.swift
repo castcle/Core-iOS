@@ -32,16 +32,14 @@ public class Page: Object {
 
     @objc dynamic public var castcleId: String = ""
     @objc dynamic public var displayName: String = ""
-    @objc dynamic public var image: String = ""
     
     public override static func primaryKey() -> String? {
         return "castcleId"
     }
     
-    public func initCustom(displayName: String, pageImage: String, castcleId: String) -> Page {
+    public func initCustom(displayName: String, castcleId: String) -> Page {
         let page = Page()
         page.displayName = displayName
-        page.image = pageImage
         page.castcleId = castcleId
         return page
     }
