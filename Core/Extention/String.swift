@@ -44,9 +44,13 @@ public extension String {
     }
     
     func localized(withComment comment: String = "", bundle: Bundle) -> String {
-        let path = bundle.path(forResource: Defaults[.appLanguage], ofType: "lproj")!
-        let languageBundle = Bundle (path: path)!
-        return NSLocalizedString(self, bundle: languageBundle, comment: comment)
+        if let path = bundle.path(forResource: Defaults[.appLanguage], ofType: "lproj"), let languageBundle = Bundle(path: path) {
+            return NSLocalizedString(self, bundle: languageBundle, comment: comment)
+        } else {
+            let path = bundle.path(forResource: "en", ofType: "lproj")!
+            let languageBundle = Bundle(path: path)!
+            return NSLocalizedString(self, bundle: languageBundle, comment: comment)
+        }
     }
     
     static func displayCount(count: Int) -> String {

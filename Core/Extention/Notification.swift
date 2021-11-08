@@ -27,5 +27,6 @@
 
 public extension Notification.Name {
     static let reloadMyContent = Notification.Name(rawValue: "reloadMyContent")
+    static let getMyContent = Notification.Name(rawValue: "getMyContent")
     static let updateProfileDelegate = Notification.Name(rawValue: "updateProfileDelegate")
 }
