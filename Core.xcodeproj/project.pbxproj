@@ -36,6 +36,7 @@
 		B72E368527294FCE003E730B /* Nantes in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368427294FCE003E730B /* Nantes */; };
 		B72E36882729501D003E730B /* ActiveLabel in Frameworks */ = {isa = PBXBuildFile; productRef = B72E36872729501D003E730B /* ActiveLabel */; };
 		B72E368B2729505E003E730B /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368A2729505E003E730B /* SnackBar */; };
+		B754A124274660C400147210 /* SwiftIP in Frameworks */ = {isa = PBXBuildFile; productRef = B754A123274660C400147210 /* SwiftIP */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -132,6 +133,7 @@
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
 				B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */,
 				B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */,
+				B754A124274660C400147210 /* SwiftIP in Frameworks */,
 				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
 				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
@@ -344,6 +346,7 @@
 				B72E368A2729505E003E730B /* SnackBar */,
 				B7872E6A2738CCC200ECA047 /* SwiftColor */,
 				B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */,
+				B754A123274660C400147210 /* SwiftIP */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -393,6 +396,7 @@
 				B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */,
 				B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */,
 				B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1168,6 +1172,14 @@
 				minimumVersion = 0.1.1;
 			};
 		};
+		B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Samasaur1/SwiftIP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/icodesign/SwiftColor.git";
@@ -1292,6 +1304,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */;
 			productName = SnackBar;
+		};
+		B754A123274660C400147210 /* SwiftIP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */;
+			productName = SwiftIP;
 		};
 		B7872E6A2738CCC200ECA047 /* SwiftColor */ = {
 			isa = XCSwiftPackageProductDependency;
