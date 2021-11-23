@@ -124,6 +124,11 @@ public enum CastcleType: Int {
     case toptrend
     case quill
     case bindLink
+    case manage
+    case adsManager
+    case mediumTwo
+    case github
+    case discord
 }
 
 private let castcleIcons = [
@@ -216,5 +221,10 @@ private let castcleIcons = [
     "\u{005E}", //case medium
     "\u{005F}", //case toptrend
     "\u{0060}", //case quill
-    "\u{007B}" //case bindLink
+    "\u{007B}", //case bindLink
+    "\u{007C}", //case manage
+    "\u{007D}", //case adsManager
+    "\u{007E}", //case mediumTwo
+    "\u{005C}", //case github
+    "\u{E000}" //case discord
 ]
