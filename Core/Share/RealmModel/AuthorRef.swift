@@ -19,30 +19,43 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Page.swift
+//  AuthorRef.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 27/10/2564 BE.
+//  Created by Castcle Co., Ltd. on 3/12/2564 BE.
 //
 
 import RealmSwift
 import SwiftyJSON
 
-public class Page: Object {
-
-    @objc dynamic public var id: String = ""
-    @objc dynamic public var castcleId: String = ""
-    @objc dynamic public var displayName: String = ""
+public class AuthorRef: Object {
+    @objc dynamic public var id = ""
+    @objc dynamic public var type = ""
+    @objc dynamic public var castcleId = ""
+    @objc dynamic public var displayName = ""
+    @objc dynamic public var followed = false
+    @objc dynamic public var blocking = false
+    @objc dynamic public var blocked = false
+    @objc dynamic public var avatar = ""
+    @objc dynamic public var official = false
     
     public override static func primaryKey() -> String? {
         return "castcleId"
     }
     
-    public func initCustom(id: String, displayName: String, castcleId: String) -> Page {
-        let page = Page()
-        page.id = id
-        page.displayName = displayName
-        page.castcleId = castcleId
-        return page
+    public func initCustom(json: JSON) -> AuthorRef {
+        let authorRef = AuthorRef()
+        authorRef.id = json["id"].stringValue
+        authorRef.type = json["type"].stringValue
+        authorRef.castcleId = json["castcleId"].stringValue
+        authorRef.displayName = json["displayName"].stringValue
+        authorRef.followed = json["followed"].boolValue
+        authorRef.blocking = json["blocking"].boolValue
+        authorRef.blocked = json["blocked"].boolValue
+        let avatar = JSON(json["avatar"].dictionaryValue)
+        authorRef.avatar = avatar["thumbnail"].stringValue
+        let verified = JSON(json["verified"].dictionaryValue)
+        authorRef.official = verified["official"].boolValue
+        return authorRef
     }
 }
