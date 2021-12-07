@@ -56,6 +56,10 @@ public class UserManager: NSObject {
         }
     }
     
+    public var id: String {
+        return Defaults[.userId]
+    }
+    
     public var displayName: String {
         return Defaults[.displayName]
     }

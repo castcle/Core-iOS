@@ -67,6 +67,7 @@
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
+		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
 		B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -111,6 +112,7 @@
 		B79281DC2695A02F000ED84A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
 		B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				B72E365427290561003E730B /* Page.swift */,
 				B72E366A27294764003E730B /* RecentSearch.swift */,
+				B7E4666C2759F13F006E0B89 /* AuthorRef.swift */,
 			);
 			path = RealmModel;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
+				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
 				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,
 				B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */,
 				B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */,
