@@ -18,5 +18,23 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>APP_ENV</key>
+	<string>$(APP_ENV)</string>
+	<key>BASE_URL</key>
+	<string>$(BASE_URL)</string>
+	<key>APP_CENTER_KEY</key>
+	<string>$(APP_CENTER_KEY)</string>
+	<key>PRIVACY_POLICY</key>
+	<string>$(PRIVACY_POLICY)</string>
+	<key>USER_AGREEMENT</key>
+	<string>$(USER_AGREEMENT)</string>
+	<key>DOCS</key>
+	<string>$(DOCS)</string>
+	<key>JOIN_US</key>
+	<string>$(JOIN_US)</string>
+	<key>WHITEPAPER</key>
+	<string>$(WHITEPAPER)</string>
+	<key>ABOUT_US</key>
+	<string>$(ABOUT_US)</string>
 </dict>
 </plist>

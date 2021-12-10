@@ -19,20 +19,18 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Core.h
+//  Utility.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 12/7/2564 BE.
 //
 
-#import <Foundation/Foundation.h>
+import UIKit
 
-//! Project version number for Core.
-FOUNDATION_EXPORT double CoreVersionNumber;
-
-//! Project version string for Core.
-FOUNDATION_EXPORT const unsigned char CoreVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Core/PublicHeader.h>
-
-
+public class Utility {
+    public static func currentViewController() -> UIViewController {
+        let getWindow : UIWindow? = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        let topController = getWindow?.visibleViewController()
+        return topController ?? UIViewController()
+    }
+}

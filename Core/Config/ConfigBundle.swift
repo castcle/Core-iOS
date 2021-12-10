@@ -19,20 +19,22 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Core.h
+//  ConfigBundle.swift
 //  Core
 //
 //  Created by Castcle Co., Ltd. on 2/7/2564 BE.
 //
 
-#import <Foundation/Foundation.h>
-
-//! Project version number for Core.
-FOUNDATION_EXPORT double CoreVersionNumber;
-
-//! Project version string for Core.
-FOUNDATION_EXPORT const unsigned char CoreVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Core/PublicHeader.h>
-
-
+public struct ConfigBundle {
+    public static var mainApp: Bundle = .main
+    public static var core: Bundle = Bundle(identifier: "com.castcle.Core")!
+    public static var component: Bundle = Bundle(identifier: "com.castcle.Component")!
+    public static var feed: Bundle = Bundle(identifier: "com.castcle.Feed")!
+    public static var search: Bundle = Bundle(identifier: "com.castcle.Search")!
+    public static var authen: Bundle = Bundle(identifier: "com.castcle.Authen")!
+    public static var profile: Bundle = Bundle(identifier: "com.castcle.Profile")!
+    public static var network: Bundle = Bundle(identifier: "com.castcle.Networking")!
+    public static var post: Bundle = Bundle(identifier: "com.castcle.Post")!
+    public static var setting: Bundle = Bundle(identifier: "com.castcle.Setting")!
+    public static var notification: Bundle = Bundle(identifier: "com.castcle.Notification")!
+}

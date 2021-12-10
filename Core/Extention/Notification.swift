@@ -19,20 +19,17 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Core.h
+//  Notification.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 4/10/2564 BE.
 //
 
-#import <Foundation/Foundation.h>
-
-//! Project version number for Core.
-FOUNDATION_EXPORT double CoreVersionNumber;
-
-//! Project version string for Core.
-FOUNDATION_EXPORT const unsigned char CoreVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Core/PublicHeader.h>
-
-
+public extension Notification.Name {
+    static let reloadMyContent = Notification.Name(rawValue: "reloadMyContent")
+    static let getMyContent = Notification.Name(rawValue: "getMyContent")
+    static let getUserInfo = Notification.Name(rawValue: "getUserInfo")
+    static let updateProfileDelegate = Notification.Name(rawValue: "updateProfileDelegate")
+    static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
+    static let getSearchFeed = Notification.Name(rawValue: "getSearchFeed")
+}

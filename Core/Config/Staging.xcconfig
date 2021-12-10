@@ -1,0 +1,24 @@
+//
+//  Staging.xcconfig
+//  Castcle-iOS
+//
+//  Created by Castcle Co., Ltd. on 10/7/2564 BE.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// App Settings
+APP_ENV = STG
+BASE_URL = https:/$()/api-staging.castcle.com
+
+// Key
+APP_CENTER_KEY = cf14e368-6536-4e3d-b069-6480867cefa7
+
+// Static URL
+PRIVACY_POLICY = https:/$()/documents.castcle.com/privacy-policy.html
+USER_AGREEMENT = https:/$()/documents.castcle.com/terms-of-service.html
+DOCS = https:/$()/docs.castcle.com/
+JOIN_US = https:/$()/jobs.blognone.com/company/castcle
+WHITEPAPER = https:/$()/documents.castcle.com/castcle-whitepaper-v1_3.pdf
+ABOUT_US = https:/$()/documents.castcle.com/about-us.html

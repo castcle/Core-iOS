@@ -19,20 +19,25 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Core.h
+//  ExtractUrls.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 1/11/2564 BE.
 //
 
-#import <Foundation/Foundation.h>
-
-//! Project version number for Core.
-FOUNDATION_EXPORT double CoreVersionNumber;
-
-//! Project version string for Core.
-FOUNDATION_EXPORT const unsigned char CoreVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Core/PublicHeader.h>
-
-
+public extension String {
+    func extractURLs() -> [URL] {
+        var urls : [URL] = []
+        do {
+            let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+            detector.enumerateMatches(in: self, options: [], range: NSMakeRange(0, self.count), using: { (result, _, _) in
+                if let match = result, let url = match.url {
+                    urls.append(url)
+                }
+            })
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        return urls
+    }
+}

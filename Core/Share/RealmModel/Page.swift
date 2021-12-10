@@ -19,20 +19,30 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Core.h
+//  Page.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 27/10/2564 BE.
 //
 
-#import <Foundation/Foundation.h>
+import RealmSwift
+import SwiftyJSON
 
-//! Project version number for Core.
-FOUNDATION_EXPORT double CoreVersionNumber;
+public class Page: Object {
 
-//! Project version string for Core.
-FOUNDATION_EXPORT const unsigned char CoreVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Core/PublicHeader.h>
-
-
+    @objc dynamic public var id: String = ""
+    @objc dynamic public var castcleId: String = ""
+    @objc dynamic public var displayName: String = ""
+    
+    public override static func primaryKey() -> String? {
+        return "castcleId"
+    }
+    
+    public func initCustom(id: String, displayName: String, castcleId: String) -> Page {
+        let page = Page()
+        page.id = id
+        page.displayName = displayName
+        page.castcleId = castcleId
+        return page
+    }
+}
