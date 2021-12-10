@@ -22,7 +22,7 @@
 //  Keys.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
 //
 
 import Defaults
@@ -36,6 +36,10 @@ public extension Defaults.Keys {
     static let deviceUuid = Key<String>("deviceUuid", default: "")
     static let accessToken = Key<String>("accessToken", default: "")
     static let refreshToken = Key<String>("refreshToken", default: "")
+    static let firebaseToken = Key<String>("firebaseToken", default: "")
+    
+    // Feed
+    static let startLoadFeed = Key<Bool>("startLoadFeed", default: true)
     
     // Add Social
     static let facebook = Key<String>("facebook", default: "")
@@ -51,10 +55,11 @@ public extension Defaults.Keys {
     static let userId = Key<String>("userId", default: "")
     static let castcleId = Key<String>("castcleId", default: "")
     static let displayName = Key<String>("displayName", default: "")
-    static let cover = Key<String>("cover", default: "")
-    static let avatar = Key<String>("avatar", default: "")
     static let overview = Key<String>("overview", default: "")
-    static let verified = Key<Bool>("verified", default: false)
+    static let verifiedEmail = Key<Bool>("verifiedEmail", default: false)
+    static let verifiedSocial = Key<Bool>("verifiedSocial", default: false)
+    static let verifiedOfficial = Key<Bool>("verifiedOfficial", default: false)
+    static let verifiedMobile = Key<Bool>("verifiedMobile", default: false)
     static let email = Key<String>("email", default: "")
     static let dob = Key<String>("dob", default: "")
     static let followers = Key<Int>("followers", default: 0)

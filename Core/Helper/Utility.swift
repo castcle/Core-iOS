@@ -22,7 +22,7 @@
 //  Utility.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 12/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 12/7/2564 BE.
 //
 
 import UIKit

@@ -19,28 +19,32 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  UserState.swift
+//  UserManager.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 13/8/2564 BE.
+//  Created by Castcle Co., Ltd. on 13/8/2564 BE.
 //
 
 import Defaults
-import JWTDecode
 import CryptoKit
+import SwiftyJSON
+import UIKit
 
-public struct Page {
-    public var name: String = ""
-    public var avatar: String = ""
+public class UserManager: NSObject {
+    public static let shared = UserManager()
     
-    public init(name: String, avatar: String) {
-        self.name = name
-        self.avatar = avatar
+    enum TokenKey: String {
+        case id
+        case role
+        case displayName
+        case castcleId
+        case verified
+        case official
+        case mobile
+        case email
+        case showAds
+        case pages
     }
-}
-
-public class UserState: NSObject {
-    public static let shared = UserState()
     
     public var isLogin: Bool {
         if Defaults[.userRole] == "GUEST" {
@@ -52,12 +56,20 @@ public class UserState: NSObject {
         }
     }
     
-    public var name: String {
+    public var id: String {
+        return Defaults[.userId]
+    }
+    
+    public var displayName: String {
         return Defaults[.displayName]
     }
     
-    public var userId: String {
+    public var castcleId: String {
         return "@\(Defaults[.castcleId])"
+    }
+    
+    public var rawCastcleId: String {
+        return Defaults[.castcleId]
     }
     
     public var email: String {
@@ -68,20 +80,16 @@ public class UserState: NSObject {
         return Defaults[.dob]
     }
     
-    public var avatar: String {
-        return Defaults[.avatar]
+    public var avatar: UIImage {
+        return ImageHelper.shared.loadImageFromDocumentDirectory(nameOfImage: Defaults[.castcleId], type: .avatar)
     }
     
-    public var cover: String {
-        return Defaults[.cover]
+    public var cover: UIImage {
+        return ImageHelper.shared.loadImageFromDocumentDirectory(nameOfImage: Defaults[.castcleId], type: .cover)
     }
     
     public var overview: String {
         return Defaults[.overview]
-    }
-    
-    public var verified: Bool {
-        return Defaults[.verified]
     }
     
     public var facebookLink: String {
@@ -112,25 +120,20 @@ public class UserState: NSObject {
         return "\(String.displayCount(count: Defaults[.followers])) "
     }
     
-    public var page: [Page] {
-        return [
-            Page(name: "Manchester United", avatar: "https://seeklogo.com/images/M/manchester-united-logo-F14DA1FCCD-seeklogo.com.png"),
-            Page(name: "Manchester City", avatar: "https://upload.wikimedia.org/wikipedia/th/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png"),
-            Page(name: "Chelsea FC", avatar: "https://upload.wikimedia.org/wikipedia/th/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png"),
-            Page(name: "Liverpool FC", avatar: "https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515361_10542.jpg")
-        ]
+    public var emailVerified: Bool {
+        return Defaults[.verifiedEmail]
+    }
+    
+    public var official: Bool {
+        return Defaults[.verifiedOfficial]
     }
     
     public var accountId: String {
         do {
-            let jwt = try decode(jwt: Defaults[.accessToken])
-            
-            let claim = jwt.claim(name: "id")
-            if let id = claim.string {
-                return id
-            } else {
-                return ""
-            }
+            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
+            let payloadData = payload.data(using: String.Encoding.utf8)
+            let json = try JSON(data: payloadData!)
+            return json[TokenKey.id.rawValue].stringValue
         } catch {
             return ""
         }
@@ -138,15 +141,12 @@ public class UserState: NSObject {
     
     public var uxSessionId: String {
         do {
-            let jwt = try decode(jwt: Defaults[.accessToken])
-            
-            let claim = jwt.claim(name: "id")
-            if let id = claim.string {
-                let uxSessionId = "\(id)+\(Date.currentTimeStamp)"
-                return MD5(string: uxSessionId)
-            } else {
-                return ""
-            }
+            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
+            let payloadData = payload.data(using: String.Encoding.utf8)
+            let json = try JSON(data: payloadData!)
+            let id = json[TokenKey.id.rawValue].stringValue
+            let uxSessionId = "\(id)+\(Date.currentTimeStamp)"
+            return MD5(string: uxSessionId)
         } catch {
             return ""
         }
@@ -157,5 +157,21 @@ public class UserState: NSObject {
         return digest.map {
             String(format: "%02hhx", $0)
         }.joined()
+    }
+    
+    func getJwtBodyString(token: String) -> String {
+        let segments = token.components(separatedBy: ".")
+        var base64String = segments[1]
+        let requiredLength = Int(4 * ceil(Float(base64String.count) / 4.0))
+        let nbrPaddings = requiredLength - base64String.count
+        if nbrPaddings > 0 {
+            let padding = String().padding(toLength: nbrPaddings, withPad: "=", startingAt: 0)
+            base64String = base64String.appending(padding)
+        }
+        base64String = base64String.replacingOccurrences(of: "-", with: "+")
+        base64String = base64String.replacingOccurrences(of: "_", with: "/")
+        let decodedData = Data(base64Encoded: base64String, options: Data.Base64DecodingOptions(rawValue: UInt(0)))
+        let base64Decoded: String = String(data: decodedData! as Data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
+        return base64Decoded
     }
 }

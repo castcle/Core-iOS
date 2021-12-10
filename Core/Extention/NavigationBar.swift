@@ -22,7 +22,7 @@
 //  NavigationBar.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 8/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 8/7/2564 BE.
 //
 
 import UIKit
@@ -72,22 +72,23 @@ public enum BarButtonActionType {
 
 public extension UIViewController {
     
-    func customNavigationBar(_ type: NavBarType, title: String, urlString: String = "", textColor: UIColor = UIColor.Asset.white, leftBarButton: NavBarButtonType? = nil, secondaryBackType: SecondaryBackType = .normal) {
+    func customNavigationBar(_ type: NavBarType, title: String, urlString: String = "", textColor: UIColor = UIColor.Asset.white, leftBarButton: NavBarButtonType? = nil, secondaryBackType: SecondaryBackType = .normal, animated: Bool = true) {
         
         // MARK: - Set Background
         navigationController?.navigationBar.barTintColor = UIColor.Asset.darkGraphiteBlue
+        navigationController?.view.backgroundColor = UIColor.Asset.darkGraphiteBlue
         navigationController?.navigationBar.isTranslucent = false
         
         if type == .primary {
-            self.setupPrimaryNavigationBar(title: title, textColor: textColor, leftBarButton: leftBarButton)
+            self.setupPrimaryNavigationBar(title: title, textColor: textColor, leftBarButton: leftBarButton, animated: animated)
         } else if type == .webView {
-            self.setupWebViewNavigationBar(title: title, urlString: urlString)
+            self.setupWebViewNavigationBar(title: title, urlString: urlString, animated: animated)
         } else {
-            self.setupSecondaryNavigationBar(title: title, textColor: textColor, secondaryBackType: secondaryBackType)
+            self.setupSecondaryNavigationBar(title: title, textColor: textColor, secondaryBackType: secondaryBackType, animated: animated)
         }
     }
     
-    private func setupPrimaryNavigationBar(title: String, textColor: UIColor = UIColor.Asset.white, leftBarButton: NavBarButtonType?) {
+    private func setupPrimaryNavigationBar(title: String, textColor: UIColor = UIColor.Asset.white, leftBarButton: NavBarButtonType?, animated: Bool) {
         // MARK: - Title
         navigationController?.navigationBar.titleTextAttributes = [
             .foregroundColor: textColor,
@@ -97,10 +98,10 @@ public extension UIViewController {
         navigationItem.title = title
         
         // MARK: - Left Bar Button
-        self.setupLeftNavigationBar(leftBarButton: leftBarButton)
+        self.setupLeftNavigationBar(leftBarButton: leftBarButton, animated: animated)
     }
     
-    private func setupSecondaryNavigationBar(title: String, textColor: UIColor = UIColor.Asset.white, secondaryBackType: SecondaryBackType) {
+    private func setupSecondaryNavigationBar(title: String, textColor: UIColor = UIColor.Asset.white, secondaryBackType: SecondaryBackType, animated: Bool) {
         // MARK: - Title
         navigationController?.navigationBar.titleTextAttributes = [
             .foregroundColor: textColor,
@@ -114,15 +115,17 @@ public extension UIViewController {
         icon.setImage(leftButton.image.withRenderingMode(.alwaysOriginal), for: .normal)
 
         if secondaryBackType == .normal {
-            icon.addTarget(self, action: #selector(backAction), for: .touchUpInside)
+            icon.tag = (animated ? 1 : 0)
+            icon.addTarget(self, action: #selector(popAction(_ :)), for: .touchUpInside)
         } else {
-            icon.addTarget(self, action: #selector(backToRootAction), for: .touchUpInside)
+            icon.tag = (animated ? 1 : 0)
+            icon.addTarget(self, action: #selector(popToRootAction(_ :)), for: .touchUpInside)
         }
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: icon)
     }
     
-    private func setupWebViewNavigationBar(title: String, urlString: String) {
+    private func setupWebViewNavigationBar(title: String, urlString: String, animated: Bool) {
         // MARK: - Title
         let titleStackView: UIStackView = {
             let titleLabel = UILabel()
@@ -145,7 +148,7 @@ public extension UIViewController {
         navigationItem.titleView = titleStackView
         
         // MARK: - Left Bar Button
-        self.setupLeftNavigationBar(leftBarButton: .back)
+        self.setupLeftNavigationBar(leftBarButton: .back, animated: animated)
         
         // MARK: - Right Bar Button
         let icon = UIButton(type: .system)
@@ -153,23 +156,24 @@ public extension UIViewController {
         navigationItem.rightBarButtonItems = rightButton
     }
     
-    private func setupLeftNavigationBar(leftBarButton: NavBarButtonType?) {
+    private func setupLeftNavigationBar(leftBarButton: NavBarButtonType?, animated: Bool) {
         if let leftButton = leftBarButton {
             let icon = UIButton(type: .system)
             icon.setImage(leftButton.image.withRenderingMode(.alwaysOriginal), for: .normal)
             
             if leftBarButton == .back {
-                icon.addTarget(self, action: #selector(backAction), for: .touchUpInside)
+                icon.tag = (animated ? 1 : 0)
+                icon.addTarget(self, action: #selector(popAction(_ :)), for: .touchUpInside)
             }
             navigationItem.leftBarButtonItem = UIBarButtonItem(customView: icon)
         }
     }
     
-    @objc private func backAction() {
-        Utility.currentViewController().navigationController?.popViewController(animated: true)
+    @objc private func popAction(_ sender: UIButton) {
+        Utility.currentViewController().navigationController?.popViewController(animated: (sender.tag == 1 ? true : false))
     }
     
-    @objc private func backToRootAction() {
-        Utility.currentViewController().navigationController?.popToRootViewController(animated: true)
+    @objc private func popToRootAction(_ sender: UIButton) {
+        Utility.currentViewController().navigationController?.popToRootViewController(animated: (sender.tag == 1 ? true : false))
     }
 }

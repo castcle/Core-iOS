@@ -9,7 +9,34 @@
 /* Begin PBXBuildFile section */
 		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717448F26E765D50014D6B5 /* FlexibleTextView.swift */; };
-		B7189ADA26EF3C1400CB9719 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = B7189AD926EF3C1400CB9719 /* JWTDecode */; };
+		B71B66692720167400191A62 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B71B66682720167400191A62 /* Defaults */; };
+		B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667A272564A600191A62 /* Kanit-Regular.ttf */; };
+		B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667B272564A700191A62 /* Sarabun-LightItalic.ttf */; };
+		B71B6683272564A800191A62 /* Kanit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667C272564A700191A62 /* Kanit-Bold.ttf */; };
+		B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667D272564A700191A62 /* Sarabun-Bold.ttf */; };
+		B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667E272564A700191A62 /* Kanit-Light.ttf */; };
+		B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667F272564A700191A62 /* Kanit-Medium.ttf */; };
+		B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B6680272564A800191A62 /* Sarabun-Light.ttf */; };
+		B72E365527290561003E730B /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E365427290561003E730B /* Page.swift */; };
+		B72E3658272907B5003E730B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B72E3657272907B5003E730B /* Kingfisher */; };
+		B72E365B272908EB003E730B /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B72E365A272908EB003E730B /* SkeletonView */; };
+		B72E365E27290946003E730B /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = B72E365D27290946003E730B /* SwiftDate */; };
+		B72E366127290A11003E730B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366027290A11003E730B /* IQKeyboardManagerSwift */; };
+		B72E366427290A59003E730B /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366327290A59003E730B /* PanModal */; };
+		B72E366727290CB5003E730B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366627290CB5003E730B /* Realm */; };
+		B72E366927290CB5003E730B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366827290CB5003E730B /* RealmSwift */; };
+		B72E366B27294764003E730B /* RecentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E366A27294764003E730B /* RecentSearch.swift */; };
+		B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366D27294C62003E730B /* BetterSegmentedControl */; };
+		B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367027294CA6003E730B /* JGProgressHUD */; };
+		B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367327294D45003E730B /* SwiftLinkPreview */; };
+		B72E367727294D88003E730B /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367627294D88003E730B /* Atributika */; };
+		B72E367D27294F16003E730B /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367C27294F16003E730B /* CropViewController */; };
+		B72E367F27294F16003E730B /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367E27294F16003E730B /* TOCropViewController */; };
+		B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368127294F56003E730B /* JVFloatLabeledTextField */; };
+		B72E368527294FCE003E730B /* Nantes in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368427294FCE003E730B /* Nantes */; };
+		B72E36882729501D003E730B /* ActiveLabel in Frameworks */ = {isa = PBXBuildFile; productRef = B72E36872729501D003E730B /* ActiveLabel */; };
+		B72E368B2729505E003E730B /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368A2729505E003E730B /* SnackBar */; };
+		B754A124274660C400147210 /* SwiftIP in Frameworks */ = {isa = PBXBuildFile; productRef = B754A123274660C400147210 /* SwiftIP */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
 		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
@@ -22,6 +49,8 @@
 		B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A72696DD2F003E1ADA /* FontType.swift */; };
 		B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A92696DDAE003E1ADA /* CascleFontType.swift */; };
 		B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B75E62AC2696F33D003E1ADA /* Castcle.ttf */; };
+		B76E4B12272FAB87008FFD2C /* ExtractUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */; };
+		B7872E6B2738CCC200ECA047 /* SwiftColor in Frameworks */ = {isa = PBXBuildFile; productRef = B7872E6A2738CCC200ECA047 /* SwiftColor */; };
 		B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1326B15FCD0097C94E /* Staging.xcconfig */; };
 		B7910E1726B15FCD0097C94E /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1426B15FCD0097C94E /* Production.xcconfig */; };
 		B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1526B15FCD0097C94E /* Development.xcconfig */; };
@@ -34,18 +63,28 @@
 		B7928125268F2056000ED84A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7928124268F2056000ED84A /* Keys.swift */; };
 		B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79281C5269596A1000ED84A /* ColorTheme.xcassets */; };
 		B79281C826959854000ED84A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281C726959854000ED84A /* Color.swift */; };
-		B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */; };
-		B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281D726959FDC000ED84A /* Sarabun-Light.ttf */; };
-		B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */; };
 		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
-		B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B7B1E3C126A875FF006E2FF6 /* Defaults */; };
-		B7C2521D26C6826A00ACBB84 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserState.swift */; };
+		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
+		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
+		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
+		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
+		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
+		B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B717447626E2587C0014D6B5 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B717448F26E765D50014D6B5 /* FlexibleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleTextView.swift; sourceTree = "<group>"; };
+		B71B667A272564A600191A62 /* Kanit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Regular.ttf"; sourceTree = "<group>"; };
+		B71B667B272564A700191A62 /* Sarabun-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-LightItalic.ttf"; sourceTree = "<group>"; };
+		B71B667C272564A700191A62 /* Kanit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Bold.ttf"; sourceTree = "<group>"; };
+		B71B667D272564A700191A62 /* Sarabun-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Bold.ttf"; sourceTree = "<group>"; };
+		B71B667E272564A700191A62 /* Kanit-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Light.ttf"; sourceTree = "<group>"; };
+		B71B667F272564A700191A62 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
+		B71B6680272564A800191A62 /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
+		B72E365427290561003E730B /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		B72E366A27294764003E730B /* RecentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearch.swift; sourceTree = "<group>"; };
 		B75528DF269B7ECF005D5EB5 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		B75528E1269B81C6005D5EB5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		B755290A269C10E5005D5EB5 /* Emums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emums.swift; sourceTree = "<group>"; };
@@ -58,6 +97,7 @@
 		B75E62A72696DD2F003E1ADA /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		B75E62A92696DDAE003E1ADA /* CascleFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascleFontType.swift; sourceTree = "<group>"; };
 		B75E62AC2696F33D003E1ADA /* Castcle.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Castcle.ttf; sourceTree = "<group>"; };
+		B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractUrls.swift; sourceTree = "<group>"; };
 		B7910E1326B15FCD0097C94E /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		B7910E1426B15FCD0097C94E /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		B7910E1526B15FCD0097C94E /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
@@ -69,11 +109,11 @@
 		B7928124268F2056000ED84A /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B79281C5269596A1000ED84A /* ColorTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorTheme.xcassets; sourceTree = "<group>"; };
 		B79281C726959854000ED84A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Regular.ttf"; sourceTree = "<group>"; };
-		B79281D726959FDC000ED84A /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
-		B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		B79281DC2695A02F000ED84A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		B7C2521C26C6826A00ACBB84 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
+		B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		B7F69CC9268EB85600B01223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,22 +124,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7B1E3C226A875FF006E2FF6 /* Defaults in Frameworks */,
+				B72E366127290A11003E730B /* IQKeyboardManagerSwift in Frameworks */,
+				B72E3658272907B5003E730B /* Kingfisher in Frameworks */,
+				B71B66692720167400191A62 /* Defaults in Frameworks */,
+				B72E365E27290946003E730B /* SwiftDate in Frameworks */,
+				B72E36882729501D003E730B /* ActiveLabel in Frameworks */,
+				B72E368B2729505E003E730B /* SnackBar in Frameworks */,
+				B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */,
+				B72E366427290A59003E730B /* PanModal in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
-				B7189ADA26EF3C1400CB9719 /* JWTDecode in Frameworks */,
+				B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */,
+				B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */,
+				B754A124274660C400147210 /* SwiftIP in Frameworks */,
+				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
+				B72E367727294D88003E730B /* Atributika in Frameworks */,
+				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
+				B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */,
+				B72E366727290CB5003E730B /* Realm in Frameworks */,
+				B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */,
+				B72E368527294FCE003E730B /* Nantes in Frameworks */,
+				B72E366927290CB5003E730B /* RealmSwift in Frameworks */,
+				B72E365B272908EB003E730B /* SkeletonView in Frameworks */,
+				B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */,
+				B7872E6B2738CCC200ECA047 /* SwiftColor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B72E36522729051C003E730B /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				B72E36532729052E003E730B /* RealmModel */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		B72E36532729052E003E730B /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				B72E365427290561003E730B /* Page.swift */,
+				B72E366A27294764003E730B /* RecentSearch.swift */,
+				B7E4666C2759F13F006E0B89 /* AuthorRef.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
 		B755292C269C42F5005D5EB5 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				B755292D269C4311005D5EB5 /* Utility.swift */,
 				B75529A9269E174E005D5EB5 /* TextSize.swift */,
 				B7910ED826C0EB1D0097C94E /* ApiHelper.swift */,
-				B7C2521C26C6826A00ACBB84 /* UserState.swift */,
+				B7C2521C26C6826A00ACBB84 /* UserManager.swift */,
+				B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */,
+				B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -150,6 +230,7 @@
 				B75529DF269FE5D3005D5EB5 /* Date.swift */,
 				B717447626E2587C0014D6B5 /* NavigationBar.swift */,
 				B717448F26E765D50014D6B5 /* FlexibleTextView.swift */,
+				B79DF1AB270AF4DF00A40502 /* Notification.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -168,9 +249,13 @@
 		B79281D526959FB6000ED84A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				B79281D726959FDC000ED84A /* Sarabun-Light.ttf */,
-				B79281D626959FDC000ED84A /* Sarabun-Regular.ttf */,
-				B79281DA26959FF0000ED84A /* Kanit-Medium.ttf */,
+				B71B667C272564A700191A62 /* Kanit-Bold.ttf */,
+				B71B667E272564A700191A62 /* Kanit-Light.ttf */,
+				B71B667F272564A700191A62 /* Kanit-Medium.ttf */,
+				B71B667A272564A600191A62 /* Kanit-Regular.ttf */,
+				B71B667D272564A700191A62 /* Sarabun-Bold.ttf */,
+				B71B6680272564A800191A62 /* Sarabun-Light.ttf */,
+				B71B667B272564A700191A62 /* Sarabun-LightItalic.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -195,6 +280,7 @@
 		B7F69CC7268EB85600B01223 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B72E36522729051C003E730B /* Share */,
 				B755292C269C42F5005D5EB5 /* Helper */,
 				B79281C426959683000ED84A /* Assets */,
 				B792811F268F1FEA000ED84A /* Extention */,
@@ -241,9 +327,29 @@
 			);
 			name = Core;
 			packageProductDependencies = (
-				B7B1E3C126A875FF006E2FF6 /* Defaults */,
 				B7910EDB26C0EF090097C94E /* DeviceKit */,
-				B7189AD926EF3C1400CB9719 /* JWTDecode */,
+				B7A71D8027045E090092F318 /* SwiftyJSON */,
+				B71B66682720167400191A62 /* Defaults */,
+				B72E3657272907B5003E730B /* Kingfisher */,
+				B72E365A272908EB003E730B /* SkeletonView */,
+				B72E365D27290946003E730B /* SwiftDate */,
+				B72E366027290A11003E730B /* IQKeyboardManagerSwift */,
+				B72E366327290A59003E730B /* PanModal */,
+				B72E366627290CB5003E730B /* Realm */,
+				B72E366827290CB5003E730B /* RealmSwift */,
+				B72E366D27294C62003E730B /* BetterSegmentedControl */,
+				B72E367027294CA6003E730B /* JGProgressHUD */,
+				B72E367327294D45003E730B /* SwiftLinkPreview */,
+				B72E367627294D88003E730B /* Atributika */,
+				B72E367C27294F16003E730B /* CropViewController */,
+				B72E367E27294F16003E730B /* TOCropViewController */,
+				B72E368127294F56003E730B /* JVFloatLabeledTextField */,
+				B72E368427294FCE003E730B /* Nantes */,
+				B72E36872729501D003E730B /* ActiveLabel */,
+				B72E368A2729505E003E730B /* SnackBar */,
+				B7872E6A2738CCC200ECA047 /* SwiftColor */,
+				B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */,
+				B754A123274660C400147210 /* SwiftIP */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -273,9 +379,27 @@
 			);
 			mainGroup = B7F69CBB268EB85600B01223;
 			packageReferences = (
-				B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */,
 				B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */,
-				B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */,
+				B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				B71B66672720167400191A62 /* XCRemoteSwiftPackageReference "Defaults" */,
+				B72E3656272907B5003E730B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B72E3659272908EB003E730B /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				B72E365C27290946003E730B /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				B72E365F27290A11003E730B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				B72E366227290A59003E730B /* XCRemoteSwiftPackageReference "PanModal" */,
+				B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */,
+				B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */,
+				B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */,
+				B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+				B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */,
+				B72E368327294FCE003E730B /* XCRemoteSwiftPackageReference "Nantes" */,
+				B72E36862729501D003E730B /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */,
+				B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */,
+				B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */,
+				B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -291,14 +415,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79281D926959FDC000ED84A /* Sarabun-Light.ttf in Resources */,
-				B79281DB26959FF0000ED84A /* Kanit-Medium.ttf in Resources */,
+				B71B6683272564A800191A62 /* Kanit-Bold.ttf in Resources */,
+				B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */,
+				B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */,
 				B7910E1726B15FCD0097C94E /* Production.xcconfig in Resources */,
-				B79281D826959FDC000ED84A /* Sarabun-Regular.ttf in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
+				B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */,
+				B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */,
 				B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */,
 				B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */,
+				B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
+				B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */,
 				B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */,
+				B76E4B12272FAB87008FFD2C /* ExtractUrls.swift in Sources */,
 				B755290B269C10E5005D5EB5 /* Emums.swift in Sources */,
 				B7928123268F2025000ED84A /* String.swift in Sources */,
 				B75528E0269B7ECF005D5EB5 /* View.swift in Sources */,
@@ -318,16 +447,21 @@
 				B755292E269C4311005D5EB5 /* Utility.swift in Sources */,
 				B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */,
 				B7910ED926C0EB1D0097C94E /* ApiHelper.swift in Sources */,
+				B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */,
 				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
-				B7C2521D26C6826A00ACBB84 /* UserState.swift in Sources */,
+				B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */,
 				B75E62A62696D853003E1ADA /* IconFont.swift in Sources */,
 				B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */,
 				B7552912269C13A3005D5EB5 /* Environment.swift in Sources */,
 				B755292B269C42AE005D5EB5 /* Window.swift in Sources */,
+				B72E366B27294764003E730B /* RecentSearch.swift in Sources */,
 				B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */,
+				B72E365527290561003E730B /* Page.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
+				B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
+				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
 				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,
 				B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */,
 				B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */,
@@ -914,12 +1048,148 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */ = {
+		B71B66672720167400191A62 /* XCRemoteSwiftPackageReference "Defaults" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/auth0/JWTDecode.swift.git";
+			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.2;
+				minimumVersion = 6.0.0;
+			};
+		};
+		B72E3656272907B5003E730B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		B72E3659272908EB003E730B /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B72E365C27290946003E730B /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		B72E365F27290A11003E730B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		B72E366227290A59003E730B /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gmarm/BetterSegmentedControl.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LeonardoCardoso/SwiftLinkPreview.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/psharanda/Atributika.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jverdi/JVFloatLabeledTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B72E368327294FCE003E730B /* XCRemoteSwiftPackageReference "Nantes" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/instacart/Nantes.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		B72E36862729501D003E730B /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/optonaut/ActiveLabel.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Samasaur1/SwiftIP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/icodesign/SwiftColor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.0;
 			};
 		};
 		B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
@@ -927,34 +1197,142 @@
 			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.4.0;
+				minimumVersion = 4.5.1;
 			};
 		};
-		B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+		B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 5.0.1;
+			};
+		};
+		B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B7189AD926EF3C1400CB9719 /* JWTDecode */ = {
+		B71B66682720167400191A62 /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B7189AD826EF3C1400CB9719 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */;
-			productName = JWTDecode;
+			package = B71B66672720167400191A62 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		B72E3657272907B5003E730B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E3656272907B5003E730B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B72E365A272908EB003E730B /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E3659272908EB003E730B /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		B72E365D27290946003E730B /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E365C27290946003E730B /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		B72E366027290A11003E730B /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E365F27290A11003E730B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		B72E366327290A59003E730B /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E366227290A59003E730B /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
+		};
+		B72E366627290CB5003E730B /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		B72E366827290CB5003E730B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		B72E366D27294C62003E730B /* BetterSegmentedControl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */;
+			productName = BetterSegmentedControl;
+		};
+		B72E367027294CA6003E730B /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		B72E367327294D45003E730B /* SwiftLinkPreview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */;
+			productName = SwiftLinkPreview;
+		};
+		B72E367627294D88003E730B /* Atributika */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */;
+			productName = Atributika;
+		};
+		B72E367C27294F16003E730B /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		B72E367E27294F16003E730B /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+		B72E368127294F56003E730B /* JVFloatLabeledTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */;
+			productName = JVFloatLabeledTextField;
+		};
+		B72E368427294FCE003E730B /* Nantes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E368327294FCE003E730B /* XCRemoteSwiftPackageReference "Nantes" */;
+			productName = Nantes;
+		};
+		B72E36872729501D003E730B /* ActiveLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E36862729501D003E730B /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */;
+			productName = ActiveLabel;
+		};
+		B72E368A2729505E003E730B /* SnackBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */;
+			productName = SnackBar;
+		};
+		B754A123274660C400147210 /* SwiftIP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */;
+			productName = SwiftIP;
+		};
+		B7872E6A2738CCC200ECA047 /* SwiftColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */;
+			productName = SwiftColor;
 		};
 		B7910EDB26C0EF090097C94E /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
 		};
-		B7B1E3C126A875FF006E2FF6 /* Defaults */ = {
+		B7A71D8027045E090092F318 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B7B1E3C026A875FF006E2FF6 /* XCRemoteSwiftPackageReference "Defaults" */;
-			productName = Defaults;
+			package = B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

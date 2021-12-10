@@ -22,7 +22,7 @@
 //  Color.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 7/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 7/7/2564 BE.
 //
 
 import UIKit
@@ -42,6 +42,8 @@ public extension UIColor {
         public static let twitter = UIColor(named: "Twitter", in: ConfigBundle.core, compatibleWith: nil)!
         public static let warning = UIColor(named: "Warning", in: ConfigBundle.core, compatibleWith: nil)!
         public static let denger = UIColor(named: "Denger", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let trendDown = UIColor(named: "TrendDown", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let trendUp = UIColor(named: "TrendUp", in: ConfigBundle.core, compatibleWith: nil)!
     }
 }
 

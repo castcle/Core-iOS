@@ -22,7 +22,7 @@
 //  Font.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 7/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 7/7/2564 BE.
 //
 
 import UIKit
@@ -31,9 +31,13 @@ public extension UIFont {
     
     // load framework font in application
     static let loadAllFonts: () = {
+        registerFont(withFilenameString: "Kanit-Bold.ttf", bundle: ConfigBundle.core)
+        registerFont(withFilenameString: "Kanit-Light.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Kanit-Medium.ttf", bundle: ConfigBundle.core)
+        registerFont(withFilenameString: "Kanit-Regular.ttf", bundle: ConfigBundle.core)
+        registerFont(withFilenameString: "Sarabun-Bold.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Sarabun-Light.ttf", bundle: ConfigBundle.core)
-        registerFont(withFilenameString: "Sarabun-Regular.ttf", bundle: ConfigBundle.core)
+        registerFont(withFilenameString: "Sarabun-LightItalic.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Castcle.ttf", bundle: ConfigBundle.core)
     }()
     
@@ -76,9 +80,13 @@ public extension UIFont {
     }
     
     enum Fonts: String, CaseIterable {
+        case bold = "Kanit-Bold"
+        case light = "Kanit-Light"
         case medium = "Kanit-Medium"
-        case light = "Sarabun-Light"
-        case regular = "Sarabun-Regular"
+        case regular = "Kanit-Regular"
+        case contentBold = "Sarabun-Bold"
+        case contentLight = "Sarabun-Light"
+        case contentLightItalic = "Sarabun-LightItalic"
         case castcleIcon = "untitled-font-1"
     }
 

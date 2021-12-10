@@ -22,7 +22,7 @@
 //  String.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
 //
 
 import Defaults
@@ -39,14 +39,18 @@ public extension String {
     }
     
     var isPassword: Bool {
-        let password = NSPredicate(format: "SELF MATCHES %@ ", "^(?=.*[a-z])(?=.*[0-9])(?=.*[$@$#%*?]).{6,20}$")
+        let password = NSPredicate(format: "SELF MATCHES %@ ", "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{6,20}$")
         return password.evaluate(with: self)
     }
     
     func localized(withComment comment: String = "", bundle: Bundle) -> String {
-        let path = bundle.path(forResource: Defaults[.appLanguage], ofType: "lproj")!
-        let languageBundle = Bundle (path: path)!
-        return NSLocalizedString(self, bundle: languageBundle, comment: comment)
+        if let path = bundle.path(forResource: Defaults[.appLanguage], ofType: "lproj"), let languageBundle = Bundle(path: path) {
+            return NSLocalizedString(self, bundle: languageBundle, comment: comment)
+        } else {
+            let path = bundle.path(forResource: "en", ofType: "lproj")!
+            let languageBundle = Bundle(path: path)!
+            return NSLocalizedString(self, bundle: languageBundle, comment: comment)
+        }
     }
     
     static func displayCount(count: Int) -> String {

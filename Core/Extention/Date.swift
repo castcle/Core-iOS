@@ -22,7 +22,7 @@
 //  Date.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 15/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 15/7/2564 BE.
 //
 
 import Foundation
@@ -33,13 +33,19 @@ public extension Date {
     }
     
     static func stringToDate(str: String) -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "UTC")
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
-        if let date = dateFormatter.date(from: str) {
-            return date
-        } else {
+        let timeStrArr = str.components(separatedBy: ".")
+        if timeStrArr.isEmpty {
             return Date()
+        } else {
+            let dateTimeStr = "\(timeStrArr[0])+0000"
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale(identifier: "UTC")
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+            if let date = dateFormatter.date(from: dateTimeStr) {
+                return date
+            } else {
+                return Date()
+            }
         }
     }
     
@@ -55,28 +61,29 @@ public extension Date {
     func dateToStringSever() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "UTC")
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         return dateFormatter.string(from: self)
     }
     
     func timeAgoDisplay() -> String {
-        let secondsAgo = Int(Date().timeIntervalSince(self))
+        let calendar = Calendar.current
+        let minuteAgo = calendar.date(byAdding: .minute, value: -1, to: Date())!
+        let hourAgo = calendar.date(byAdding: .hour, value: -1, to: Date())!
+        let dayAgo = calendar.date(byAdding: .day, value: -1, to: Date())!
+        let weekAgo = calendar.date(byAdding: .day, value: -7, to: Date())!
         
-        let minute = 60
-        let hour = 60 * minute
-        let day = 24 * hour
-        let week = 7 * day
-        
-        if secondsAgo < minute {
+        if minuteAgo < self {
             return "A minutes ago"
-        } else if secondsAgo < hour {
-            return "\(secondsAgo / minute) minutes ago"
-        } else if secondsAgo < day {
-            return "\(secondsAgo / hour) hours ago"
-        } else if secondsAgo < week {
-            return "\(secondsAgo / day) days ago"
-        } else {
-            return self.dateToString()
+        } else if hourAgo < self {
+            let diff = Calendar.current.dateComponents([.minute], from: self, to: Date()).minute ?? 0
+            return "\(diff) minutes ago"
+        } else if dayAgo < self {
+            let diff = Calendar.current.dateComponents([.hour], from: self, to: Date()).hour ?? 0
+            return "\(diff) hours ago"
+        } else if weekAgo < self {
+            let diff = Calendar.current.dateComponents([.day], from: self, to: Date()).day ?? 0
+            return "\(diff) days ago"
         }
+        return self.dateToString()
     }
 }

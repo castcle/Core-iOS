@@ -22,12 +22,13 @@
 //  ApiHelper.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 9/8/2564 BE.
+//  Created by Castcle Co., Ltd. on 9/8/2564 BE.
 //
 
 import UIKit
 import DeviceKit
 import Defaults
+import SwiftIP
 
 public enum ResponseErrorKey: String {
     case message
@@ -36,24 +37,28 @@ public enum ResponseErrorKey: String {
 
 public struct ApiHelper {
     public static var header: [String: String] {
+        let publicIP: String = IP.public() ?? "1.1.1.1"
         return [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
             "Accept-Version": "1.0",
             "Platform": "iOS",
-            "Authorization": "Bearer \(Defaults[.accessToken])"
+            "Authorization": "Bearer \(Defaults[.accessToken])",
+            "API-Metadata": "ip=\(publicIP.trimmingCharacters(in: .whitespacesAndNewlines)),src=iOS,dest=castcle"
         ]
     }
     
     public static var headerRefreshToken: [String: String] {
+        let publicIP: String = IP.public() ?? "1.1.1.1"
         return [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
             "Accept-Version": "1.0",
             "Platform": "iOS",
-            "Authorization": "Bearer \(Defaults[.refreshToken])"
+            "Authorization": "Bearer \(Defaults[.refreshToken])",
+            "API-Metadata": "ip=\(publicIP.trimmingCharacters(in: .whitespacesAndNewlines)),src=iOS,dest=castcle"
         ]
     }
     

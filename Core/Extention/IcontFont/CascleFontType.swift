@@ -1,8 +1,28 @@
+//  Copyright (c) 2021, Castcle and/or its affiliates. All rights reserved.
+//  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+//
+//  This code is free software; you can redistribute it and/or modify it
+//  under the terms of the GNU General Public License version 3 only, as
+//  published by the Free Software Foundation.
+//
+//  This code is distributed in the hope that it will be useful, but WITHOUT
+//  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+//  FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+//  version 3 for more details (a copy is included in the LICENSE file that
+//  accompanied this code).
+//
+//  You should have received a copy of the GNU General Public License version
+//  3 along with this work; if not, write to the Free Software Foundation,
+//  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+//
+//  Please contact Castcle, 22 Phet Kasem 47/2 Alley, Bang Khae, Bangkok,
+//  Thailand 10160, or visit www.castcle.com if you need additional information
+//  or have any questions.
 //
 //  CascleFontType.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 8/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 8/7/2564 BE.
 //
 
 public enum CastcleType: Int {
@@ -101,6 +121,14 @@ public enum CastcleType: Int {
     case incorrect
     case arrowObliqueLeft
     case medium
+    case toptrend
+    case quill
+    case bindLink
+    case manage
+    case adsManager
+    case mediumTwo
+    case github
+    case discord
 }
 
 private let castcleIcons = [
@@ -190,5 +218,13 @@ private let castcleIcons = [
     "\u{0040}", //case dropDown
     "\u{005B}", //case incorrect
     "\u{005D}", //case arrowObliqueLeft
-    "\u{005E}" //case medium
+    "\u{005E}", //case medium
+    "\u{005F}", //case toptrend
+    "\u{0060}", //case quill
+    "\u{007B}", //case bindLink
+    "\u{007C}", //case manage
+    "\u{007D}", //case adsManager
+    "\u{007E}", //case mediumTwo
+    "\u{005C}", //case github
+    "\u{E000}" //case discord
 ]

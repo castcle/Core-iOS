@@ -22,7 +22,7 @@
 //  Localization.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
 //
 
 public enum Localization {

@@ -22,7 +22,7 @@
 //  Image.swift
 //  Core
 //
-//  Created by Tanakorn Phoochaliaw on 12/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 12/7/2564 BE.
 //
 
 import UIKit
@@ -34,6 +34,14 @@ public extension UIImage {
         public static let launchScreen = UIImage(named: "launch-screen", in: ConfigBundle.core, compatibleWith: nil)!
         public static let placeholder = UIImage(named: "placeholder", in: ConfigBundle.core, compatibleWith: nil)!
         public static let userPlaceholder = UIImage(named: "user-placeholder", in: ConfigBundle.core, compatibleWith: nil)!
+        
+        // MARK: - Web Icon
+        public static let rssfeed = UIImage(named: "rssfeed", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let twitter = UIImage(named: "twitter", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let youtube = UIImage(named: "youtube", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let medium = UIImage(named: "medium", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let facebook = UIImage(named: "facebook", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let reddit = UIImage(named: "reddit", in: ConfigBundle.core, compatibleWith: nil)!
     }
     
     func alpha(_ value: CGFloat) -> UIImage {
@@ -74,6 +82,18 @@ public extension UIImage {
         UIGraphicsEndImageContext()
         
         return newImage!
+    }
+    
+    static func iconFromUrl(url: String) -> UIImage? {
+        if url.contains("reddit.com") {
+            return UIImage.Asset.reddit
+        } else if url.contains("twitter.com") {
+            return UIImage.Asset.twitter
+        } else if url.contains("https://t.co/") {
+            return UIImage.Asset.twitter
+        } else {
+            return nil
+        }
     }
 }
 
