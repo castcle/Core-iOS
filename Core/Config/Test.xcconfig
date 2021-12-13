@@ -1,19 +1,19 @@
 //
-//  Development.xcconfig
-//  Castcle-iOS
+//  Test.xcconfig
+//  Core
 //
-//  Created by Castcle Co., Ltd. on 10/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 13/12/2564 BE.
 //
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
 // App Settings
-APP_ENV = DEV
-BASE_URL = https:/$()/api-dev.castcle.com
+APP_ENV = TEST
+BASE_URL = https:/$()/api-staging.castcle.com
 
 // Key
-APP_CENTER_KEY = 44fc2bf8-c939-47d8-a0be-9a31a699cdb2
+APP_CENTER_KEY = b659c24c-d60b-416b-9c68-e7978b2d862a
 
 // Static URL
 PRIVACY_POLICY = https:/$()/documents.castcle.com/privacy-policy.html
