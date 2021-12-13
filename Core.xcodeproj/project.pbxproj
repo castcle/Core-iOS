@@ -68,6 +68,7 @@
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
 		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
+		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
 		B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -138,6 +139,7 @@
 				B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */,
 				B754A124274660C400147210 /* SwiftIP in Frameworks */,
 				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
+				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
 				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
 				B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */,
@@ -352,6 +354,7 @@
 				B7872E6A2738CCC200ECA047 /* SwiftColor */,
 				B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */,
 				B754A123274660C400147210 /* SwiftIP */,
+				B7E466722767433D006E0B89 /* TLPhotoPicker */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -402,6 +405,7 @@
 				B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */,
 				B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */,
+				B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1210,6 +1214,14 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tilltue/TLPhotoPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
@@ -1330,6 +1342,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		B7E466722767433D006E0B89 /* TLPhotoPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */;
+			productName = TLPhotoPicker;
 		};
 		B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
