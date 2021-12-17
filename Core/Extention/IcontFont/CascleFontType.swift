@@ -230,7 +230,7 @@ private let castcleIcons = [
     "\u{007E}", //case mediumTwo
     "\u{005C}", //case github
     "\u{E000}", //case discord
-    "\u{E000}", //case editNew
-    "\u{E000}", //case block
-    "\u{E000}" //case report
+    "\u{E001}", //case editNew
+    "\u{E002}", //case block
+    "\u{E003}" //case report
 ]
