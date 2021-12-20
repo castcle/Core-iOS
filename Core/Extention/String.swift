@@ -64,4 +64,14 @@ public extension String {
             return "\(count)"
         }
     }
+    
+    func substringWithRange(range: Int) -> String {
+        if self.count <= range {
+            return self
+        } else {
+            let start = self.index(self.startIndex, offsetBy: 0)
+            let end = self.index(self.startIndex, offsetBy: range)
+            return String(self[start..<end])
+        }
+    }
 }
