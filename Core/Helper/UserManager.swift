@@ -80,12 +80,12 @@ public class UserManager: NSObject {
         return Defaults[.dob]
     }
     
-    public var avatar: UIImage {
-        return ImageHelper.shared.loadImageFromDocumentDirectory(nameOfImage: Defaults[.castcleId], type: .avatar)
+    public var avatar: String {
+        return Defaults[.avatar]
     }
     
-    public var cover: UIImage {
-        return ImageHelper.shared.loadImageFromDocumentDirectory(nameOfImage: Defaults[.castcleId], type: .cover)
+    public var cover: String {
+        return Defaults[.cover]
     }
     
     public var overview: String {

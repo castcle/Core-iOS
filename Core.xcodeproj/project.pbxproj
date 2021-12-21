@@ -36,6 +36,8 @@
 		B72E368527294FCE003E730B /* Nantes in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368427294FCE003E730B /* Nantes */; };
 		B72E36882729501D003E730B /* ActiveLabel in Frameworks */ = {isa = PBXBuildFile; productRef = B72E36872729501D003E730B /* ActiveLabel */; };
 		B72E368B2729505E003E730B /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368A2729505E003E730B /* SnackBar */; };
+		B73FFBB42771B9E100E23E58 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */; };
+		B73FFBB62771B9E100E23E58 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */; };
 		B754A124274660C400147210 /* SwiftIP in Frameworks */ = {isa = PBXBuildFile; productRef = B754A123274660C400147210 /* SwiftIP */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
@@ -132,6 +134,7 @@
 				B72E365E27290946003E730B /* SwiftDate in Frameworks */,
 				B72E36882729501D003E730B /* ActiveLabel in Frameworks */,
 				B72E368B2729505E003E730B /* SnackBar in Frameworks */,
+				B73FFBB42771B9E100E23E58 /* NVActivityIndicatorView in Frameworks */,
 				B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */,
 				B72E366427290A59003E730B /* PanModal in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
@@ -142,6 +145,7 @@
 				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
 				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
+				B73FFBB62771B9E100E23E58 /* NVActivityIndicatorViewExtended in Frameworks */,
 				B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */,
 				B72E366727290CB5003E730B /* Realm in Frameworks */,
 				B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */,
@@ -355,6 +359,8 @@
 				B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */,
 				B754A123274660C400147210 /* SwiftIP */,
 				B7E466722767433D006E0B89 /* TLPhotoPicker */,
+				B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */,
+				B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -406,6 +412,7 @@
 				B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */,
 				B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
+				B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1182,6 +1189,14 @@
 				minimumVersion = 0.1.1;
 			};
 		};
+		B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Samasaur1/SwiftIP.git";
@@ -1322,6 +1337,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */;
 			productName = SnackBar;
+		};
+		B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
 		};
 		B754A123274660C400147210 /* SwiftIP */ = {
 			isa = XCSwiftPackageProductDependency;

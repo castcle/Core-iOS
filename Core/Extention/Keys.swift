@@ -55,6 +55,8 @@ public extension Defaults.Keys {
     static let userId = Key<String>("userId", default: "")
     static let castcleId = Key<String>("castcleId", default: "")
     static let displayName = Key<String>("displayName", default: "")
+    static let avatar = Key<String>("avatar", default: "")
+    static let cover = Key<String>("cover", default: "")
     static let overview = Key<String>("overview", default: "")
     static let verifiedEmail = Key<Bool>("verifiedEmail", default: false)
     static let verifiedSocial = Key<Bool>("verifiedSocial", default: false)
