@@ -33,16 +33,20 @@ public class Page: Object {
     @objc dynamic public var id: String = ""
     @objc dynamic public var castcleId: String = ""
     @objc dynamic public var displayName: String = ""
+    @objc dynamic public var avatar: String = ""
+    @objc dynamic public var cover: String = ""
     
     public override static func primaryKey() -> String? {
         return "castcleId"
     }
     
-    public func initCustom(id: String, displayName: String, castcleId: String) -> Page {
+    public func initCustom(id: String, displayName: String, castcleId: String, avatar: String, cover: String) -> Page {
         let page = Page()
         page.id = id
         page.displayName = displayName
         page.castcleId = castcleId
+        page.avatar = avatar
+        page.cover = cover
         return page
     }
 }
