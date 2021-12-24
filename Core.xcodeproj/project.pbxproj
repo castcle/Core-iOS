@@ -28,7 +28,6 @@
 		B72E366B27294764003E730B /* RecentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E366A27294764003E730B /* RecentSearch.swift */; };
 		B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366D27294C62003E730B /* BetterSegmentedControl */; };
 		B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367027294CA6003E730B /* JGProgressHUD */; };
-		B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367327294D45003E730B /* SwiftLinkPreview */; };
 		B72E367727294D88003E730B /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367627294D88003E730B /* Atributika */; };
 		B72E367D27294F16003E730B /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367C27294F16003E730B /* CropViewController */; };
 		B72E367F27294F16003E730B /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367E27294F16003E730B /* TOCropViewController */; };
@@ -139,7 +138,6 @@
 				B72E366427290A59003E730B /* PanModal in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
 				B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */,
-				B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */,
 				B754A124274660C400147210 /* SwiftIP in Frameworks */,
 				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
 				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
@@ -347,7 +345,6 @@
 				B72E366827290CB5003E730B /* RealmSwift */,
 				B72E366D27294C62003E730B /* BetterSegmentedControl */,
 				B72E367027294CA6003E730B /* JGProgressHUD */,
-				B72E367327294D45003E730B /* SwiftLinkPreview */,
 				B72E367627294D88003E730B /* Atributika */,
 				B72E367C27294F16003E730B /* CropViewController */,
 				B72E367E27294F16003E730B /* TOCropViewController */,
@@ -401,7 +398,6 @@
 				B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */,
 				B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
-				B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */,
 				B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */,
 				B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */,
 				B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */,
@@ -1133,14 +1129,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/LeonardoCardoso/SwiftLinkPreview.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
 		B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/psharanda/Atributika.git";
@@ -1297,11 +1285,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
-		};
-		B72E367327294D45003E730B /* SwiftLinkPreview */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */;
-			productName = SwiftLinkPreview;
 		};
 		B72E367627294D88003E730B /* Atributika */ = {
 			isa = XCSwiftPackageProductDependency;

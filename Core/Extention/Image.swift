@@ -42,6 +42,7 @@ public extension UIImage {
         public static let medium = UIImage(named: "medium", in: ConfigBundle.core, compatibleWith: nil)!
         public static let facebook = UIImage(named: "facebook", in: ConfigBundle.core, compatibleWith: nil)!
         public static let reddit = UIImage(named: "reddit", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let web = UIImage(named: "web", in: ConfigBundle.core, compatibleWith: nil)!
     }
     
     func alpha(_ value: CGFloat) -> UIImage {
