@@ -73,6 +73,7 @@
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
 		B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,7 @@
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		B7F69CC9268EB85600B01223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexpParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				B7C2521C26C6826A00ACBB84 /* UserManager.swift */,
 				B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */,
 				B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */,
+				B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
 				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,
+				B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */,
 				B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */,
 				B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */,
 			);
