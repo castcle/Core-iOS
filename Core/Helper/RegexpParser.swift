@@ -19,34 +19,17 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Page.swift
+//  RegexpParser.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 27/10/2564 BE.
+//  Created by Castcle Co., Ltd. on 27/12/2564 BE.
 //
 
-import RealmSwift
-import SwiftyJSON
+import Foundation
 
-public class Page: Object {
-
-    @objc dynamic public var id: String = ""
-    @objc dynamic public var castcleId: String = ""
-    @objc dynamic public var displayName: String = ""
-    @objc dynamic public var avatar: String = ""
-    @objc dynamic public var cover: String = ""
-    
-    public override static func primaryKey() -> String? {
-        return "castcleId"
-    }
-    
-    public func initCustom(id: String, displayName: String, castcleId: String, avatar: String, cover: String) -> Page {
-        let page = Page()
-        page.id = id
-        page.displayName = displayName
-        page.castcleId = castcleId
-        page.avatar = avatar
-        page.cover = cover
-        return page
-    }
+public struct RegexpParser {
+    public static let hashtagPattern = "#([^\\s\\K]+)"
+    public static let mentionPattern = "@([^\\s\\K]+)"
+    public static let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    public static let psdPattern = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{6,20}$"
 }

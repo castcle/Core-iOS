@@ -129,6 +129,9 @@ public enum CastcleType: Int {
     case mediumTwo
     case github
     case discord
+    case editNew
+    case block
+    case report
 }
 
 private let castcleIcons = [
@@ -226,5 +229,8 @@ private let castcleIcons = [
     "\u{007D}", //case adsManager
     "\u{007E}", //case mediumTwo
     "\u{005C}", //case github
-    "\u{E000}" //case discord
+    "\u{E000}", //case discord
+    "\u{E001}", //case editNew
+    "\u{E002}", //case block
+    "\u{E003}" //case report
 ]

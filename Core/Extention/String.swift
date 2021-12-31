@@ -34,12 +34,12 @@ public extension String {
     }
     
     var isEmail: Bool {
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", RegexpParser.emailPattern)
         return emailPred.evaluate(with: self)
     }
     
     var isPassword: Bool {
-        let password = NSPredicate(format: "SELF MATCHES %@ ", "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{6,20}$")
+        let password = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.psdPattern)
         return password.evaluate(with: self)
     }
     
@@ -62,6 +62,16 @@ public extension String {
             return "\(show)K"
         } else {
             return "\(count)"
+        }
+    }
+    
+    func substringWithRange(range: Int) -> String {
+        if self.count <= range {
+            return self
+        } else {
+            let start = self.index(self.startIndex, offsetBy: 0)
+            let end = self.index(self.startIndex, offsetBy: range)
+            return String(self[start..<end])
         }
     }
 }
