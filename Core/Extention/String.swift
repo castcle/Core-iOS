@@ -39,7 +39,7 @@ public extension String {
     }
     
     var isPassword: Bool {
-        let password = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.passwordPattern)
+        let password = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.psdPattern)
         return password.evaluate(with: self)
     }
     
