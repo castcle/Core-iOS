@@ -28,7 +28,6 @@
 		B72E366B27294764003E730B /* RecentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E366A27294764003E730B /* RecentSearch.swift */; };
 		B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366D27294C62003E730B /* BetterSegmentedControl */; };
 		B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367027294CA6003E730B /* JGProgressHUD */; };
-		B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367327294D45003E730B /* SwiftLinkPreview */; };
 		B72E367727294D88003E730B /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367627294D88003E730B /* Atributika */; };
 		B72E367D27294F16003E730B /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367C27294F16003E730B /* CropViewController */; };
 		B72E367F27294F16003E730B /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367E27294F16003E730B /* TOCropViewController */; };
@@ -36,6 +35,8 @@
 		B72E368527294FCE003E730B /* Nantes in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368427294FCE003E730B /* Nantes */; };
 		B72E36882729501D003E730B /* ActiveLabel in Frameworks */ = {isa = PBXBuildFile; productRef = B72E36872729501D003E730B /* ActiveLabel */; };
 		B72E368B2729505E003E730B /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368A2729505E003E730B /* SnackBar */; };
+		B73FFBB42771B9E100E23E58 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */; };
+		B73FFBB62771B9E100E23E58 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */; };
 		B754A124274660C400147210 /* SwiftIP in Frameworks */ = {isa = PBXBuildFile; productRef = B754A123274660C400147210 /* SwiftIP */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
@@ -68,9 +69,11 @@
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
 		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
+		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
 		B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,10 +116,12 @@
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
+		B7E4666E2767394F006E0B89 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		B7F69CC9268EB85600B01223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexpParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,15 +135,17 @@
 				B72E365E27290946003E730B /* SwiftDate in Frameworks */,
 				B72E36882729501D003E730B /* ActiveLabel in Frameworks */,
 				B72E368B2729505E003E730B /* SnackBar in Frameworks */,
+				B73FFBB42771B9E100E23E58 /* NVActivityIndicatorView in Frameworks */,
 				B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */,
 				B72E366427290A59003E730B /* PanModal in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
 				B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */,
-				B72E367427294D45003E730B /* SwiftLinkPreview in Frameworks */,
 				B754A124274660C400147210 /* SwiftIP in Frameworks */,
 				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
+				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
 				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
+				B73FFBB62771B9E100E23E58 /* NVActivityIndicatorViewExtended in Frameworks */,
 				B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */,
 				B72E366727290CB5003E730B /* Realm in Frameworks */,
 				B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */,
@@ -180,6 +187,7 @@
 				B7C2521C26C6826A00ACBB84 /* UserManager.swift */,
 				B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */,
 				B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */,
+				B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 				B7910E1526B15FCD0097C94E /* Development.xcconfig */,
 				B7910E1426B15FCD0097C94E /* Production.xcconfig */,
 				B7910E1326B15FCD0097C94E /* Staging.xcconfig */,
+				B7E4666E2767394F006E0B89 /* Test.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -339,7 +348,6 @@
 				B72E366827290CB5003E730B /* RealmSwift */,
 				B72E366D27294C62003E730B /* BetterSegmentedControl */,
 				B72E367027294CA6003E730B /* JGProgressHUD */,
-				B72E367327294D45003E730B /* SwiftLinkPreview */,
 				B72E367627294D88003E730B /* Atributika */,
 				B72E367C27294F16003E730B /* CropViewController */,
 				B72E367E27294F16003E730B /* TOCropViewController */,
@@ -350,6 +358,9 @@
 				B7872E6A2738CCC200ECA047 /* SwiftColor */,
 				B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */,
 				B754A123274660C400147210 /* SwiftIP */,
+				B7E466722767433D006E0B89 /* TLPhotoPicker */,
+				B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */,
+				B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -390,7 +401,6 @@
 				B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */,
 				B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
-				B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */,
 				B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */,
 				B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */,
 				B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */,
@@ -400,6 +410,8 @@
 				B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */,
 				B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */,
+				B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
+				B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -463,6 +475,7 @@
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
 				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,
+				B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */,
 				B792811A268EC3F3000ED84A /* ConfigBundle.swift in Sources */,
 				B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */,
 			);
@@ -1120,14 +1133,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/LeonardoCardoso/SwiftLinkPreview.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
 		B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/psharanda/Atributika.git";
@@ -1176,6 +1181,14 @@
 				minimumVersion = 0.1.1;
 			};
 		};
+		B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Samasaur1/SwiftIP.git";
@@ -1206,6 +1219,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.1;
+			};
+		};
+		B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tilltue/TLPhotoPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 		B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
@@ -1269,11 +1290,6 @@
 			package = B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
 		};
-		B72E367327294D45003E730B /* SwiftLinkPreview */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B72E367227294D45003E730B /* XCRemoteSwiftPackageReference "SwiftLinkPreview" */;
-			productName = SwiftLinkPreview;
-		};
 		B72E367627294D88003E730B /* Atributika */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */;
@@ -1309,6 +1325,16 @@
 			package = B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */;
 			productName = SnackBar;
 		};
+		B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
 		B754A123274660C400147210 /* SwiftIP */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */;
@@ -1328,6 +1354,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		B7E466722767433D006E0B89 /* TLPhotoPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */;
+			productName = TLPhotoPicker;
 		};
 		B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */ = {
 			isa = XCSwiftPackageProductDependency;

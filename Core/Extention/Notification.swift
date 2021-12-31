@@ -30,6 +30,8 @@ public extension Notification.Name {
     static let getMyContent = Notification.Name(rawValue: "getMyContent")
     static let getUserInfo = Notification.Name(rawValue: "getUserInfo")
     static let updateProfileDelegate = Notification.Name(rawValue: "updateProfileDelegate")
+    static let openProfileDelegate = Notification.Name(rawValue: "openProfileDelegate")
     static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
+    static let feedReloadContent = Notification.Name(rawValue: "feedReloadContent")
     static let getSearchFeed = Notification.Name(rawValue: "getSearchFeed")
 }
