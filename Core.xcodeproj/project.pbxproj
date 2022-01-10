@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B703A551278AB37A007BFA01 /* ContentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703A550278AB379007BFA01 /* ContentRef.swift */; };
 		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717448F26E765D50014D6B5 /* FlexibleTextView.swift */; };
 		B71B66692720167400191A62 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B71B66682720167400191A62 /* Defaults */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B703A550278AB379007BFA01 /* ContentRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRef.swift; sourceTree = "<group>"; };
 		B717447626E2587C0014D6B5 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B717448F26E765D50014D6B5 /* FlexibleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleTextView.swift; sourceTree = "<group>"; };
 		B71B667A272564A600191A62 /* Kanit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Regular.ttf"; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				B72E365427290561003E730B /* Page.swift */,
 				B72E366A27294764003E730B /* RecentSearch.swift */,
 				B7E4666C2759F13F006E0B89 /* AuthorRef.swift */,
+				B703A550278AB379007BFA01 /* ContentRef.swift */,
 			);
 			path = RealmModel;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */,
 				B7552912269C13A3005D5EB5 /* Environment.swift in Sources */,
 				B755292B269C42AE005D5EB5 /* Window.swift in Sources */,
+				B703A551278AB37A007BFA01 /* ContentRef.swift in Sources */,
 				B72E366B27294764003E730B /* RecentSearch.swift in Sources */,
 				B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */,
 				B72E365527290561003E730B /* Page.swift in Sources */,
