@@ -47,6 +47,7 @@
 		B755292E269C4311005D5EB5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755292D269C4311005D5EB5 /* Utility.swift */; };
 		B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529A9269E174E005D5EB5 /* TextSize.swift */; };
 		B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529DF269FE5D3005D5EB5 /* Date.swift */; };
+		B75D26B0278D9EEF00F19AC1 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = B75D26AF278D9EEF00F19AC1 /* Swifter */; };
 		B75E62A62696D853003E1ADA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A52696D853003E1ADA /* IconFont.swift */; };
 		B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A72696DD2F003E1ADA /* FontType.swift */; };
 		B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A92696DDAE003E1ADA /* CascleFontType.swift */; };
@@ -69,6 +70,11 @@
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
+		B7CBC5F0278EDDCF00750FC3 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CBC5EB278EDDCF00750FC3 /* TwitterConstants.swift */; };
+		B7CBC5F1278EDDCF00750FC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CBC5EC278EDDCF00750FC3 /* GoogleService-Info.plist */; };
+		B7CBC5F2278EDDCF00750FC3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B7CBC5ED278EDDCF00750FC3 /* README.md */; };
+		B7CBC5F3278EDDCF00750FC3 /* GoogleService-Info-Stg.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CBC5EE278EDDCF00750FC3 /* GoogleService-Info-Stg.plist */; };
+		B7CBC5F4278EDDCF00750FC3 /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CBC5EF278EDDCF00750FC3 /* GoogleService-Info-Dev.plist */; };
 		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
 		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
@@ -117,6 +123,11 @@
 		B79281DC2695A02F000ED84A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		B7CBC5EB278EDDCF00750FC3 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
+		B7CBC5EC278EDDCF00750FC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7CBC5ED278EDDCF00750FC3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B7CBC5EE278EDDCF00750FC3 /* GoogleService-Info-Stg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Stg.plist"; sourceTree = "<group>"; };
+		B7CBC5EF278EDDCF00750FC3 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
 		B7E4666E2767394F006E0B89 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
@@ -152,6 +163,7 @@
 				B72E366727290CB5003E730B /* Realm in Frameworks */,
 				B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */,
 				B72E368527294FCE003E730B /* Nantes in Frameworks */,
+				B75D26B0278D9EEF00F19AC1 /* Swifter in Frameworks */,
 				B72E366927290CB5003E730B /* RealmSwift in Frameworks */,
 				B72E365B272908EB003E730B /* SkeletonView in Frameworks */,
 				B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */,
@@ -213,7 +225,7 @@
 			path = IcontFont;
 			sourceTree = "<group>";
 		};
-		B7928118268EC3DB000ED84A /* Config */ = {
+		B7928118268EC3DB000ED84A /* Core Config */ = {
 			isa = PBXGroup;
 			children = (
 				B7928119268EC3F3000ED84A /* ConfigBundle.swift */,
@@ -223,7 +235,7 @@
 				B7910E1326B15FCD0097C94E /* Staging.xcconfig */,
 				B7E4666E2767394F006E0B89 /* Test.xcconfig */,
 			);
-			path = Config;
+			path = "Core Config";
 			sourceTree = "<group>";
 		};
 		B792811F268F1FEA000ED84A /* Extention */ = {
@@ -272,6 +284,19 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B7CBC5EA278EDDCF00750FC3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B7CBC5EB278EDDCF00750FC3 /* TwitterConstants.swift */,
+				B7CBC5EC278EDDCF00750FC3 /* GoogleService-Info.plist */,
+				B7CBC5ED278EDDCF00750FC3 /* README.md */,
+				B7CBC5EE278EDDCF00750FC3 /* GoogleService-Info-Stg.plist */,
+				B7CBC5EF278EDDCF00750FC3 /* GoogleService-Info-Dev.plist */,
+			);
+			name = Config;
+			path = ../../Config;
+			sourceTree = "<group>";
+		};
 		B7F69CBB268EB85600B01223 = {
 			isa = PBXGroup;
 			children = (
@@ -296,7 +321,8 @@
 				B755292C269C42F5005D5EB5 /* Helper */,
 				B79281C426959683000ED84A /* Assets */,
 				B792811F268F1FEA000ED84A /* Extention */,
-				B7928118268EC3DB000ED84A /* Config */,
+				B7928118268EC3DB000ED84A /* Core Config */,
+				B7CBC5EA278EDDCF00750FC3 /* Config */,
 				B7F69CC8268EB85600B01223 /* Core.h */,
 				B7F69CC9268EB85600B01223 /* Info.plist */,
 			);
@@ -364,6 +390,7 @@
 				B7E466722767433D006E0B89 /* TLPhotoPicker */,
 				B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */,
 				B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */,
+				B75D26AF278D9EEF00F19AC1 /* Swifter */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -415,6 +442,7 @@
 				B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */,
 				B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
 				B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -438,11 +466,15 @@
 				B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */,
 				B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */,
 				B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */,
+				B7CBC5F3278EDDCF00750FC3 /* GoogleService-Info-Stg.plist in Resources */,
 				B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */,
 				B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
 				B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */,
+				B7CBC5F2278EDDCF00750FC3 /* README.md in Resources */,
+				B7CBC5F4278EDDCF00750FC3 /* GoogleService-Info-Dev.plist in Resources */,
 				B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */,
+				B7CBC5F1278EDDCF00750FC3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +490,7 @@
 				B755290B269C10E5005D5EB5 /* Emums.swift in Sources */,
 				B7928123268F2025000ED84A /* String.swift in Sources */,
 				B75528E0269B7ECF005D5EB5 /* View.swift in Sources */,
+				B7CBC5F0278EDDCF00750FC3 /* TwitterConstants.swift in Sources */,
 				B7928125268F2056000ED84A /* Keys.swift in Sources */,
 				B755292E269C4311005D5EB5 /* Utility.swift in Sources */,
 				B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */,
@@ -1201,6 +1234,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattdonnelly/Swifter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/icodesign/SwiftColor.git";
@@ -1343,6 +1384,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */;
 			productName = SwiftIP;
+		};
+		B75D26AF278D9EEF00F19AC1 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */;
+			productName = Swifter;
 		};
 		B7872E6A2738CCC200ECA047 /* SwiftColor */ = {
 			isa = XCSwiftPackageProductDependency;
