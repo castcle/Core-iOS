@@ -38,6 +38,7 @@
 		B72E368B2729505E003E730B /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368A2729505E003E730B /* SnackBar */; };
 		B73FFBB42771B9E100E23E58 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */; };
 		B73FFBB62771B9E100E23E58 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */; };
+		B74E912027901BAF0067059B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B74E911F27901BAF0067059B /* GoogleSignIn */; };
 		B754A124274660C400147210 /* SwiftIP in Frameworks */ = {isa = PBXBuildFile; productRef = B754A123274660C400147210 /* SwiftIP */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
@@ -168,6 +169,7 @@
 				B72E365B272908EB003E730B /* SkeletonView in Frameworks */,
 				B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */,
 				B7872E6B2738CCC200ECA047 /* SwiftColor in Frameworks */,
+				B74E912027901BAF0067059B /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +393,7 @@
 				B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */,
 				B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */,
 				B75D26AF278D9EEF00F19AC1 /* Swifter */,
+				B74E911F27901BAF0067059B /* GoogleSignIn */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -443,6 +446,7 @@
 				B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
 				B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */,
+				B74E911E27901BAF0067059B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1226,6 +1230,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		B74E911E27901BAF0067059B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Samasaur1/SwiftIP.git";
@@ -1379,6 +1391,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
 			productName = NVActivityIndicatorViewExtended;
+		};
+		B74E911F27901BAF0067059B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B74E911E27901BAF0067059B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 		B754A123274660C400147210 /* SwiftIP */ = {
 			isa = XCSwiftPackageProductDependency;
