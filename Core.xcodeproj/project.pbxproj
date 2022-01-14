@@ -55,9 +55,6 @@
 		B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B75E62AC2696F33D003E1ADA /* Castcle.ttf */; };
 		B76E4B12272FAB87008FFD2C /* ExtractUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */; };
 		B7872E6B2738CCC200ECA047 /* SwiftColor in Frameworks */ = {isa = PBXBuildFile; productRef = B7872E6A2738CCC200ECA047 /* SwiftColor */; };
-		B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1326B15FCD0097C94E /* Staging.xcconfig */; };
-		B7910E1726B15FCD0097C94E /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1426B15FCD0097C94E /* Production.xcconfig */; };
-		B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B7910E1526B15FCD0097C94E /* Development.xcconfig */; };
 		B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7910E2626B5CB5A0097C94E /* CoreImage.xcassets */; };
 		B7910ED926C0EB1D0097C94E /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7910ED826C0EB1D0097C94E /* ApiHelper.swift */; };
 		B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = B7910EDB26C0EF090097C94E /* DeviceKit */; };
@@ -110,9 +107,6 @@
 		B75E62A92696DDAE003E1ADA /* CascleFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascleFontType.swift; sourceTree = "<group>"; };
 		B75E62AC2696F33D003E1ADA /* Castcle.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Castcle.ttf; sourceTree = "<group>"; };
 		B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractUrls.swift; sourceTree = "<group>"; };
-		B7910E1326B15FCD0097C94E /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
-		B7910E1426B15FCD0097C94E /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		B7910E1526B15FCD0097C94E /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		B7910E2626B5CB5A0097C94E /* CoreImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CoreImage.xcassets; sourceTree = "<group>"; };
 		B7910ED826C0EB1D0097C94E /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		B7928119268EC3F3000ED84A /* ConfigBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigBundle.swift; sourceTree = "<group>"; };
@@ -130,7 +124,10 @@
 		B7CBC5EE278EDDCF00750FC3 /* GoogleService-Info-Stg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Stg.plist"; sourceTree = "<group>"; };
 		B7CBC5EF278EDDCF00750FC3 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
-		B7E4666E2767394F006E0B89 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		B7E86E5527915A07004A9666 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		B7E86E5627915A07004A9666 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		B7E86E5727915A07004A9666 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		B7E86E5827915A08004A9666 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
@@ -232,10 +229,6 @@
 			children = (
 				B7928119268EC3F3000ED84A /* ConfigBundle.swift */,
 				B755290E269C13A3005D5EB5 /* Environment.swift */,
-				B7910E1526B15FCD0097C94E /* Development.xcconfig */,
-				B7910E1426B15FCD0097C94E /* Production.xcconfig */,
-				B7910E1326B15FCD0097C94E /* Staging.xcconfig */,
-				B7E4666E2767394F006E0B89 /* Test.xcconfig */,
 			);
 			path = "Core Config";
 			sourceTree = "<group>";
@@ -290,6 +283,10 @@
 			isa = PBXGroup;
 			children = (
 				B7CBC5EB278EDDCF00750FC3 /* TwitterConstants.swift */,
+				B7E86E5527915A07004A9666 /* Development.xcconfig */,
+				B7E86E5627915A07004A9666 /* Production.xcconfig */,
+				B7E86E5727915A07004A9666 /* Staging.xcconfig */,
+				B7E86E5827915A08004A9666 /* Test.xcconfig */,
 				B7CBC5EC278EDDCF00750FC3 /* GoogleService-Info.plist */,
 				B7CBC5ED278EDDCF00750FC3 /* README.md */,
 				B7CBC5EE278EDDCF00750FC3 /* GoogleService-Info-Stg.plist */,
@@ -465,13 +462,10 @@
 				B71B6683272564A800191A62 /* Kanit-Bold.ttf in Resources */,
 				B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */,
 				B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */,
-				B7910E1726B15FCD0097C94E /* Production.xcconfig in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
 				B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */,
 				B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */,
-				B7910E1626B15FCD0097C94E /* Staging.xcconfig in Resources */,
 				B7CBC5F3278EDDCF00750FC3 /* GoogleService-Info-Stg.plist in Resources */,
-				B7910E1826B15FCD0097C94E /* Development.xcconfig in Resources */,
 				B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
 				B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */,
@@ -527,7 +521,7 @@
 /* Begin XCBuildConfiguration section */
 		B75E62F12699D39E003E1ADA /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1326B15FCD0097C94E /* Staging.xcconfig */;
+			baseConfigurationReference = B7E86E5727915A07004A9666 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -593,7 +587,7 @@
 		};
 		B75E62F22699D39E003E1ADA /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1326B15FCD0097C94E /* Staging.xcconfig */;
+			baseConfigurationReference = B7E86E5727915A07004A9666 /* Staging.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,7 +615,7 @@
 		};
 		B75E62F32699D3A0003E1ADA /* Debug (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1526B15FCD0097C94E /* Development.xcconfig */;
+			baseConfigurationReference = B7E86E5527915A07004A9666 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -687,7 +681,7 @@
 		};
 		B75E62F42699D3A0003E1ADA /* Debug (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1526B15FCD0097C94E /* Development.xcconfig */;
+			baseConfigurationReference = B7E86E5527915A07004A9666 /* Development.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -715,7 +709,7 @@
 		};
 		B75E62F52699D3A3003E1ADA /* Release (Staging) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1326B15FCD0097C94E /* Staging.xcconfig */;
+			baseConfigurationReference = B7E86E5727915A07004A9666 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -775,7 +769,7 @@
 		};
 		B75E62F62699D3A3003E1ADA /* Release (Staging) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1326B15FCD0097C94E /* Staging.xcconfig */;
+			baseConfigurationReference = B7E86E5727915A07004A9666 /* Staging.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -802,7 +796,7 @@
 		};
 		B75E62F72699D3A6003E1ADA /* Release (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1526B15FCD0097C94E /* Development.xcconfig */;
+			baseConfigurationReference = B7E86E5527915A07004A9666 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -864,7 +858,7 @@
 		};
 		B75E62F82699D3A6003E1ADA /* Release (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1526B15FCD0097C94E /* Development.xcconfig */;
+			baseConfigurationReference = B7E86E5527915A07004A9666 /* Development.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -891,7 +885,7 @@
 		};
 		B7F69CCB268EB85600B01223 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1426B15FCD0097C94E /* Production.xcconfig */;
+			baseConfigurationReference = B7E86E5627915A07004A9666 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -957,7 +951,7 @@
 		};
 		B7F69CCC268EB85600B01223 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1426B15FCD0097C94E /* Production.xcconfig */;
+			baseConfigurationReference = B7E86E5627915A07004A9666 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1017,7 +1011,7 @@
 		};
 		B7F69CCE268EB85600B01223 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1426B15FCD0097C94E /* Production.xcconfig */;
+			baseConfigurationReference = B7E86E5627915A07004A9666 /* Production.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1045,7 +1039,7 @@
 		};
 		B7F69CCF268EB85600B01223 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7910E1426B15FCD0097C94E /* Production.xcconfig */;
+			baseConfigurationReference = B7E86E5627915A07004A9666 /* Production.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
