@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B703A551278AB37A007BFA01 /* ContentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703A550278AB379007BFA01 /* ContentRef.swift */; };
+		B70748E427955C6700F01CB4 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748DA27955C6700F01CB4 /* TwitterConstants.swift */; };
+		B70748E527955C6700F01CB4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748DB27955C6700F01CB4 /* Environment.swift */; };
+		B70748E627955C6700F01CB4 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748DC27955C6700F01CB4 /* Development.xcconfig */; };
+		B70748E827955C6700F01CB4 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748DE27955C6700F01CB4 /* Test.xcconfig */; };
+		B70748EA27955C6700F01CB4 /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748E027955C6700F01CB4 /* Staging.xcconfig */; };
+		B70748EB27955C6700F01CB4 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748E127955C6700F01CB4 /* Production.xcconfig */; };
+		B70748EC27955C6700F01CB4 /* ConfigBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748E227955C6700F01CB4 /* ConfigBundle.swift */; };
 		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717448F26E765D50014D6B5 /* FlexibleTextView.swift */; };
 		B71B66692720167400191A62 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B71B66682720167400191A62 /* Defaults */; };
@@ -66,15 +73,8 @@
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
-		B7CBC5F0278EDDCF00750FC3 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CBC5EB278EDDCF00750FC3 /* TwitterConstants.swift */; };
-		B7CBC5F1278EDDCF00750FC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CBC5EC278EDDCF00750FC3 /* GoogleService-Info.plist */; };
-		B7CBC5F2278EDDCF00750FC3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B7CBC5ED278EDDCF00750FC3 /* README.md */; };
-		B7CBC5F3278EDDCF00750FC3 /* GoogleService-Info-Stg.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CBC5EE278EDDCF00750FC3 /* GoogleService-Info-Stg.plist */; };
-		B7CBC5F4278EDDCF00750FC3 /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CBC5EF278EDDCF00750FC3 /* GoogleService-Info-Dev.plist */; };
 		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
 		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
-		B7E86E5B27915CC6004A9666 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E86E5A27915CC6004A9666 /* Environment.swift */; };
-		B7E86E5C27915CC6004A9666 /* ConfigBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E86E5927915CC6004A9666 /* ConfigBundle.swift */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
 		B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -83,6 +83,13 @@
 
 /* Begin PBXFileReference section */
 		B703A550278AB379007BFA01 /* ContentRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRef.swift; sourceTree = "<group>"; };
+		B70748DA27955C6700F01CB4 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
+		B70748DB27955C6700F01CB4 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		B70748DC27955C6700F01CB4 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		B70748DE27955C6700F01CB4 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		B70748E027955C6700F01CB4 /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		B70748E127955C6700F01CB4 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		B70748E227955C6700F01CB4 /* ConfigBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigBundle.swift; sourceTree = "<group>"; };
 		B717447626E2587C0014D6B5 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B717448F26E765D50014D6B5 /* FlexibleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleTextView.swift; sourceTree = "<group>"; };
 		B71B667A272564A600191A62 /* Kanit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Regular.ttf"; sourceTree = "<group>"; };
@@ -116,18 +123,7 @@
 		B79281DC2695A02F000ED84A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		B7CBC5EB278EDDCF00750FC3 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
-		B7CBC5EC278EDDCF00750FC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B7CBC5ED278EDDCF00750FC3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B7CBC5EE278EDDCF00750FC3 /* GoogleService-Info-Stg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Stg.plist"; sourceTree = "<group>"; };
-		B7CBC5EF278EDDCF00750FC3 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
-		B7E86E5527915A07004A9666 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
-		B7E86E5627915A07004A9666 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		B7E86E5727915A07004A9666 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
-		B7E86E5827915A08004A9666 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
-		B7E86E5927915CC6004A9666 /* ConfigBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigBundle.swift; sourceTree = "<group>"; };
-		B7E86E5A27915CC6004A9666 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
@@ -173,6 +169,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B70748D927955C6700F01CB4 /* Core Config */ = {
+			isa = PBXGroup;
+			children = (
+				B70748E227955C6700F01CB4 /* ConfigBundle.swift */,
+				B70748DA27955C6700F01CB4 /* TwitterConstants.swift */,
+				B70748DB27955C6700F01CB4 /* Environment.swift */,
+				B70748E127955C6700F01CB4 /* Production.xcconfig */,
+				B70748E027955C6700F01CB4 /* Staging.xcconfig */,
+				B70748DC27955C6700F01CB4 /* Development.xcconfig */,
+				B70748DE27955C6700F01CB4 /* Test.xcconfig */,
+			);
+			name = "Core Config";
+			path = "../../Config/Core Config";
+			sourceTree = "<group>";
+		};
 		B72E36522729051C003E730B /* Share */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,25 +281,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		B7CBC5EA278EDDCF00750FC3 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				B7E86E5927915CC6004A9666 /* ConfigBundle.swift */,
-				B7E86E5A27915CC6004A9666 /* Environment.swift */,
-				B7CBC5EB278EDDCF00750FC3 /* TwitterConstants.swift */,
-				B7E86E5527915A07004A9666 /* Development.xcconfig */,
-				B7E86E5627915A07004A9666 /* Production.xcconfig */,
-				B7E86E5727915A07004A9666 /* Staging.xcconfig */,
-				B7E86E5827915A08004A9666 /* Test.xcconfig */,
-				B7CBC5EC278EDDCF00750FC3 /* GoogleService-Info.plist */,
-				B7CBC5EE278EDDCF00750FC3 /* GoogleService-Info-Stg.plist */,
-				B7CBC5EF278EDDCF00750FC3 /* GoogleService-Info-Dev.plist */,
-				B7CBC5ED278EDDCF00750FC3 /* README.md */,
-			);
-			name = Config;
-			path = ../../Config;
-			sourceTree = "<group>";
-		};
 		B7F69CBB268EB85600B01223 = {
 			isa = PBXGroup;
 			children = (
@@ -313,7 +305,7 @@
 				B755292C269C42F5005D5EB5 /* Helper */,
 				B79281C426959683000ED84A /* Assets */,
 				B792811F268F1FEA000ED84A /* Extention */,
-				B7CBC5EA278EDDCF00750FC3 /* Config */,
+				B70748D927955C6700F01CB4 /* Core Config */,
 				B7F69CC8268EB85600B01223 /* Core.h */,
 				B7F69CC9268EB85600B01223 /* Info.plist */,
 			);
@@ -455,16 +447,16 @@
 				B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */,
 				B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
+				B70748E827955C6700F01CB4 /* Test.xcconfig in Resources */,
 				B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */,
+				B70748E627955C6700F01CB4 /* Development.xcconfig in Resources */,
+				B70748EB27955C6700F01CB4 /* Production.xcconfig in Resources */,
 				B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */,
-				B7CBC5F3278EDDCF00750FC3 /* GoogleService-Info-Stg.plist in Resources */,
 				B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
 				B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */,
-				B7CBC5F2278EDDCF00750FC3 /* README.md in Resources */,
-				B7CBC5F4278EDDCF00750FC3 /* GoogleService-Info-Dev.plist in Resources */,
+				B70748EA27955C6700F01CB4 /* Staging.xcconfig in Resources */,
 				B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */,
-				B7CBC5F1278EDDCF00750FC3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,11 +468,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */,
+				B70748E427955C6700F01CB4 /* TwitterConstants.swift in Sources */,
+				B70748E527955C6700F01CB4 /* Environment.swift in Sources */,
 				B76E4B12272FAB87008FFD2C /* ExtractUrls.swift in Sources */,
 				B755290B269C10E5005D5EB5 /* Emums.swift in Sources */,
 				B7928123268F2025000ED84A /* String.swift in Sources */,
 				B75528E0269B7ECF005D5EB5 /* View.swift in Sources */,
-				B7CBC5F0278EDDCF00750FC3 /* TwitterConstants.swift in Sources */,
 				B7928125268F2056000ED84A /* Keys.swift in Sources */,
 				B755292E269C4311005D5EB5 /* Utility.swift in Sources */,
 				B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */,
@@ -493,7 +486,6 @@
 				B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */,
 				B755292B269C42AE005D5EB5 /* Window.swift in Sources */,
 				B703A551278AB37A007BFA01 /* ContentRef.swift in Sources */,
-				B7E86E5B27915CC6004A9666 /* Environment.swift in Sources */,
 				B72E366B27294764003E730B /* RecentSearch.swift in Sources */,
 				B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */,
 				B72E365527290561003E730B /* Page.swift in Sources */,
@@ -502,8 +494,8 @@
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
 				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,
+				B70748EC27955C6700F01CB4 /* ConfigBundle.swift in Sources */,
 				B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */,
-				B7E86E5C27915CC6004A9666 /* ConfigBundle.swift in Sources */,
 				B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,7 +505,7 @@
 /* Begin XCBuildConfiguration section */
 		B75E62F12699D39E003E1ADA /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5727915A07004A9666 /* Staging.xcconfig */;
+			baseConfigurationReference = B70748E027955C6700F01CB4 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -579,7 +571,7 @@
 		};
 		B75E62F22699D39E003E1ADA /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5727915A07004A9666 /* Staging.xcconfig */;
+			baseConfigurationReference = B70748E027955C6700F01CB4 /* Staging.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,7 +599,7 @@
 		};
 		B75E62F32699D3A0003E1ADA /* Debug (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5527915A07004A9666 /* Development.xcconfig */;
+			baseConfigurationReference = B70748DC27955C6700F01CB4 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -673,7 +665,7 @@
 		};
 		B75E62F42699D3A0003E1ADA /* Debug (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5527915A07004A9666 /* Development.xcconfig */;
+			baseConfigurationReference = B70748DC27955C6700F01CB4 /* Development.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -701,7 +693,7 @@
 		};
 		B75E62F52699D3A3003E1ADA /* Release (Staging) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5727915A07004A9666 /* Staging.xcconfig */;
+			baseConfigurationReference = B70748E027955C6700F01CB4 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -761,7 +753,7 @@
 		};
 		B75E62F62699D3A3003E1ADA /* Release (Staging) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5727915A07004A9666 /* Staging.xcconfig */;
+			baseConfigurationReference = B70748E027955C6700F01CB4 /* Staging.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -788,7 +780,7 @@
 		};
 		B75E62F72699D3A6003E1ADA /* Release (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5527915A07004A9666 /* Development.xcconfig */;
+			baseConfigurationReference = B70748DC27955C6700F01CB4 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -850,7 +842,7 @@
 		};
 		B75E62F82699D3A6003E1ADA /* Release (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5527915A07004A9666 /* Development.xcconfig */;
+			baseConfigurationReference = B70748DC27955C6700F01CB4 /* Development.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -877,7 +869,7 @@
 		};
 		B7F69CCB268EB85600B01223 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5627915A07004A9666 /* Production.xcconfig */;
+			baseConfigurationReference = B70748E127955C6700F01CB4 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -943,7 +935,7 @@
 		};
 		B7F69CCC268EB85600B01223 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5627915A07004A9666 /* Production.xcconfig */;
+			baseConfigurationReference = B70748E127955C6700F01CB4 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1003,7 +995,7 @@
 		};
 		B7F69CCE268EB85600B01223 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5627915A07004A9666 /* Production.xcconfig */;
+			baseConfigurationReference = B70748E127955C6700F01CB4 /* Production.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1031,7 +1023,7 @@
 		};
 		B7F69CCF268EB85600B01223 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E86E5627915A07004A9666 /* Production.xcconfig */;
+			baseConfigurationReference = B70748E127955C6700F01CB4 /* Production.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

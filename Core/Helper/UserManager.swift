@@ -30,6 +30,11 @@ import CryptoKit
 import SwiftyJSON
 import UIKit
 
+public enum UserRole: String {
+    case user = "USER"
+    case guest = "GUEST"
+}
+
 public class UserManager: NSObject {
     public static let shared = UserManager()
     
@@ -53,6 +58,22 @@ public class UserManager: NSObject {
             return false
         } else {
             return true
+        }
+    }
+    
+    public var accessToken: String {
+        return Defaults[.accessToken]
+    }
+    
+    public var refreshToken: String {
+        return Defaults[.refreshToken]
+    }
+    
+    public var userRole: UserRole {
+        if Defaults[.userRole] == UserRole.user.rawValue {
+            return .user
+        } else {
+            return .guest
         }
     }
     
@@ -173,5 +194,17 @@ public class UserManager: NSObject {
         let decodedData = Data(base64Encoded: base64String, options: Data.Base64DecodingOptions(rawValue: UInt(0)))
         let base64Decoded: String = String(data: decodedData! as Data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
         return base64Decoded
+    }
+    
+    public func setAccessToken(token: String) {
+        Defaults[.accessToken] = token
+    }
+    
+    public func setRefreshToken(token: String) {
+        Defaults[.refreshToken] = token
+    }
+    
+    public func setUserRole(userRole: UserRole) {
+        Defaults[.userRole] = userRole.rawValue
     }
 }
