@@ -36,5 +36,11 @@
 	<string>$(WHITEPAPER)</string>
 	<key>ABOUT_US</key>
 	<string>$(ABOUT_US)</string>
+	<key>TWITTER_KEY</key>
+	<string>$(TWITTER_KEY)</string>
+	<key>TWITTER_SECRET_KEY</key>
+	<string>$(TWITTER_SECRET_KEY)</string>
+	<key>TWITTER_CALLBACK_URL</key>
+	<string>$(TWITTER_CALLBACK_URL)</string>
 </dict>
 </plist>
