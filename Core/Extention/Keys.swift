@@ -71,9 +71,4 @@ public extension Defaults.Keys {
     static let youtubeLink = Key<String>("youtubeLink", default: "")
     static let mediumLink = Key<String>("mediumLink", default: "")
     static let websiteLink = Key<String>("websiteLink", default: "")
-    
-    // Apple Login
-    static let appleUserId = Key<String>("appleUserId", default: "")
-    static let appleEmail = Key<String>("appleEmail", default: "")
-    static let appleFullName = Key<String>("appleFullName", default: "")
 }
