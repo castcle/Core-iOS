@@ -141,8 +141,12 @@ public class UserManager: NSObject {
         return "\(String.displayCount(count: Defaults[.followers])) "
     }
     
-    public var emailVerified: Bool {
-        return Defaults[.verifiedEmail]
+    public var isVerified: Bool {
+        if Defaults[.verifiedEmail] || Defaults[.verifiedMobile] || Defaults[.verifiedSocial] {
+            return true
+        } else {
+            return false
+        }
     }
     
     public var official: Bool {
