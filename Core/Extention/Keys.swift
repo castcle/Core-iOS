@@ -50,6 +50,7 @@ public extension Defaults.Keys {
     
     // Engagement
     static let screenId = Key<String>("screenId", default: "")
+    static let seenId = Key<String>("seenId", default: "")
     
     // User
     static let userId = Key<String>("userId", default: "")
