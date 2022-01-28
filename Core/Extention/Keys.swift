@@ -72,4 +72,5 @@ public extension Defaults.Keys {
     static let youtubeLink = Key<String>("youtubeLink", default: "")
     static let mediumLink = Key<String>("mediumLink", default: "")
     static let websiteLink = Key<String>("websiteLink", default: "")
+    static let notificationBadges = Key<Int>("notificationBadges", default: 0)
 }
