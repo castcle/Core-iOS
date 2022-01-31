@@ -19,22 +19,21 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  ConfigBundle.swift
+//  DispatchQueue.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 25/1/2565 BE.
 //
 
-public struct ConfigBundle {
-    public static var mainApp: Bundle = .main
-    public static var core: Bundle = Bundle(identifier: "com.castcle.Core")!
-    public static var component: Bundle = Bundle(identifier: "com.castcle.Component")!
-    public static var feed: Bundle = Bundle(identifier: "com.castcle.Feed")!
-    public static var search: Bundle = Bundle(identifier: "com.castcle.Search")!
-    public static var authen: Bundle = Bundle(identifier: "com.castcle.Authen")!
-    public static var profile: Bundle = Bundle(identifier: "com.castcle.Profile")!
-    public static var network: Bundle = Bundle(identifier: "com.castcle.Networking")!
-    public static var post: Bundle = Bundle(identifier: "com.castcle.Post")!
-    public static var setting: Bundle = Bundle(identifier: "com.castcle.Setting")!
-    public static var notification: Bundle = Bundle(identifier: "com.castcle.Notification")!
+public extension DispatchQueue {
+    static func background(delay: Double = 0.0, background: (()->Void)? = nil, completion: (() -> Void)? = nil) {
+        DispatchQueue.global(qos: .background).async {
+            background?()
+            if let completion = completion {
+                DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: {
+                    completion()
+                })
+            }
+        }
+    }
 }

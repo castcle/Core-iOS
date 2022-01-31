@@ -33,6 +33,7 @@ public class AuthorRef: Object {
     @objc dynamic public var type = ""
     @objc dynamic public var castcleId = ""
     @objc dynamic public var displayName = ""
+    @objc dynamic public var overview = ""
     @objc dynamic public var followed = false
     @objc dynamic public var blocking = false
     @objc dynamic public var blocked = false
@@ -49,6 +50,7 @@ public class AuthorRef: Object {
         authorRef.type = json["type"].stringValue
         authorRef.castcleId = json["castcleId"].stringValue
         authorRef.displayName = json["displayName"].stringValue
+        authorRef.overview = json["overview"].stringValue
         authorRef.followed = json["followed"].boolValue
         authorRef.blocking = json["blocking"].boolValue
         authorRef.blocked = json["blocked"].boolValue

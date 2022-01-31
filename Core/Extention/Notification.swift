@@ -25,6 +25,8 @@
 //  Created by Castcle Co., Ltd. on 4/10/2564 BE.
 //
 
+import Foundation
+
 public extension Notification.Name {
     static let reloadMyContent = Notification.Name(rawValue: "reloadMyContent")
     static let getMyContent = Notification.Name(rawValue: "getMyContent")
@@ -33,5 +35,9 @@ public extension Notification.Name {
     static let openProfileDelegate = Notification.Name(rawValue: "openProfileDelegate")
     static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
     static let feedReloadContent = Notification.Name(rawValue: "feedReloadContent")
-    static let getSearchFeed = Notification.Name(rawValue: "getSearchFeed")
+    static let resetFeedContent = Notification.Name(rawValue: "resetFeedContent")
+    
+    static func getSearchFeedNotification() -> Notification.Name {
+        return Notification.Name(rawValue: "getSearchFeed\(UUID().uuidString)")
+    }
 }

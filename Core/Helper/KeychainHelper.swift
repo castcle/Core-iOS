@@ -19,17 +19,33 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  RegexpParser.swift
+//  KeychainHelper.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 27/12/2564 BE.
+//  Created by Castcle Co., Ltd. on 17/1/2565 BE.
 //
 
-import Foundation
+import SwiftKeychainWrapper
 
-public struct RegexpParser {
-    public static let hashtagPattern = "#[^[:punct:][:space:]]+"
-    public static let mentionPattern = "@[^[:punct:][:space:]]+"
-    public static let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-    public static let psdPattern = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{6,20}$"
+public enum KeychainKey: String {
+    case castcleDeviceId
+    case appleUserId
+    case appleEmail
+    case appleFullName
+}
+
+public class KeychainHelper {
+    public static let shared = KeychainHelper()
+    
+    public func getKeychainWith(with key: KeychainKey) -> String {
+        if let value: String = KeychainWrapper.standard.string(forKey: key.rawValue) {
+            return value
+        } else {
+            return ""
+        }
+    }
+    
+    public func setKeychainWith(with key: KeychainKey, value: String) {
+        let _: Bool = KeychainWrapper.standard.set(value, forKey: key.rawValue)
+    }
 }

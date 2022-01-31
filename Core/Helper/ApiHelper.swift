@@ -44,7 +44,7 @@ public struct ApiHelper {
             "Accept-Language": Defaults[.appLanguage],
             "Accept-Version": "1.0",
             "Platform": "iOS",
-            "Authorization": "Bearer \(Defaults[.accessToken])",
+            "Authorization": "Bearer \(UserManager.shared.accessToken)",
             "API-Metadata": "ip=\(publicIP.trimmingCharacters(in: .whitespacesAndNewlines)),src=iOS,dest=castcle"
         ]
     }
@@ -57,7 +57,7 @@ public struct ApiHelper {
             "Accept-Language": Defaults[.appLanguage],
             "Accept-Version": "1.0",
             "Platform": "iOS",
-            "Authorization": "Bearer \(Defaults[.refreshToken])",
+            "Authorization": "Bearer \(UserManager.shared.refreshToken)",
             "API-Metadata": "ip=\(publicIP.trimmingCharacters(in: .whitespacesAndNewlines)),src=iOS,dest=castcle"
         ]
     }
