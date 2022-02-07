@@ -26,6 +26,7 @@
 //
 
 import Foundation
+import Defaults
 
 public extension Date {
     static var currentTimeStamp: Int64 {
@@ -53,7 +54,11 @@ public extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
-        
+        if Defaults[.appLanguage] == "th" {
+            dateFormatter.locale =  Locale(identifier: "th_TH")
+        } else {
+            dateFormatter.locale = Locale(identifier: "en_US")
+        }
         let dateDisplay = dateFormatter.string(from: self)
         return dateDisplay.replacingOccurrences(of: "BE", with: "")
     }
