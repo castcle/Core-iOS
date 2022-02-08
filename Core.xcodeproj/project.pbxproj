@@ -55,6 +55,7 @@
 		B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529A9269E174E005D5EB5 /* TextSize.swift */; };
 		B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529DF269FE5D3005D5EB5 /* Date.swift */; };
 		B75D26B0278D9EEF00F19AC1 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = B75D26AF278D9EEF00F19AC1 /* Swifter */; };
+		B75E5B2E27ABCD2B00B6CC14 /* CenteredCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = B75E5B2D27ABCD2B00B6CC14 /* CenteredCollectionView */; };
 		B75E62A62696D853003E1ADA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A52696D853003E1ADA /* IconFont.swift */; };
 		B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A72696DD2F003E1ADA /* FontType.swift */; };
 		B75E62AA2696DDAE003E1ADA /* CascleFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A92696DDAE003E1ADA /* CascleFontType.swift */; };
@@ -143,6 +144,7 @@
 				B72E366127290A11003E730B /* IQKeyboardManagerSwift in Frameworks */,
 				B72E3658272907B5003E730B /* Kingfisher in Frameworks */,
 				B71B66692720167400191A62 /* Defaults in Frameworks */,
+				B75E5B2E27ABCD2B00B6CC14 /* CenteredCollectionView in Frameworks */,
 				B72E365E27290946003E730B /* SwiftDate in Frameworks */,
 				B72E36882729501D003E730B /* ActiveLabel in Frameworks */,
 				B72E368B2729505E003E730B /* SnackBar in Frameworks */,
@@ -381,6 +383,7 @@
 				B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */,
 				B75D26AF278D9EEF00F19AC1 /* Swifter */,
 				B74E911F27901BAF0067059B /* GoogleSignIn */,
+				B75E5B2D27ABCD2B00B6CC14 /* CenteredCollectionView */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -434,6 +437,7 @@
 				B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */,
 				B74E911E27901BAF0067059B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				B75E5B2C27ABCD2B00B6CC14 /* XCRemoteSwiftPackageReference "CenteredCollectionView" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1240,6 +1244,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		B75E5B2C27ABCD2B00B6CC14 /* XCRemoteSwiftPackageReference "CenteredCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BenEmdon/CenteredCollectionView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/icodesign/SwiftColor.git";
@@ -1392,6 +1404,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */;
 			productName = Swifter;
+		};
+		B75E5B2D27ABCD2B00B6CC14 /* CenteredCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B75E5B2C27ABCD2B00B6CC14 /* XCRemoteSwiftPackageReference "CenteredCollectionView" */;
+			productName = CenteredCollectionView;
 		};
 		B7872E6A2738CCC200ECA047 /* SwiftColor */ = {
 			isa = XCSwiftPackageProductDependency;
