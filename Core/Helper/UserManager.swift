@@ -153,8 +153,20 @@ public class UserManager: NSObject {
         }
     }
     
+    public var isVerifiedEmail: Bool {
+        return Defaults[.verifiedEmail]
+    }
+    
+    public var isVerifiedMobile: Bool {
+        return Defaults[.verifiedMobile]
+    }
+    
     public var official: Bool {
         return Defaults[.verifiedOfficial]
+    }
+    
+    public var passwordNotSet: Bool {
+        return Defaults[.passwordNotSet]
     }
     
     public var accountId: String {
