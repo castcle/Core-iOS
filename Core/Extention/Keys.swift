@@ -74,4 +74,6 @@ public extension Defaults.Keys {
     static let websiteLink = Key<String>("websiteLink", default: "")
     static let notificationBadges = Key<Int>("notificationBadges", default: 0)
     static let passwordNotSet = Key<Bool>("passwordNotSet", default: true)
+    static let mobileCountryCode = Key<String>("mobileCountryCode", default: "")
+    static let mobileNumber = Key<String>("mobileNumber", default: "")
 }

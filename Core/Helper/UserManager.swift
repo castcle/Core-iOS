@@ -101,6 +101,10 @@ public class UserManager: NSObject {
         return Defaults[.email]
     }
     
+    public var mobile: String {
+        return Defaults[.mobileNumber]
+    }
+    
     public var dob: String {
         return Defaults[.dob]
     }
