@@ -132,6 +132,10 @@ public enum CastcleType: Int {
     case editNew
     case block
     case report
+    case engagement
+    case reach
+    case wallet
+    case autoPost
 }
 
 private let castcleIcons = [
@@ -232,5 +236,9 @@ private let castcleIcons = [
     "\u{E000}", //case discord
     "\u{E001}", //case editNew
     "\u{E002}", //case block
-    "\u{E003}" //case report
+    "\u{E003}", //case report
+    "\u{E004}", //case engagement
+    "\u{E005}", //case reach
+    "\u{E006}", //case wallet
+    "\u{E007}" //case autoPost
 ]
