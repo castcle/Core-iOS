@@ -142,11 +142,11 @@ public class UserManager: NSObject {
     }
     
     public var following: String {
-        return "\(String.displayCount(count: Defaults[.following])) "
+        return "\(String.displayCount(count: Defaults[.following]))"
     }
     
     public var followers: String {
-        return "\(String.displayCount(count: Defaults[.followers])) "
+        return "\(String.displayCount(count: Defaults[.followers]))"
     }
     
     public var isVerified: Bool {
