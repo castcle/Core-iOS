@@ -101,6 +101,10 @@ public class UserManager: NSObject {
         return Defaults[.email]
     }
     
+    public var mobile: String {
+        return Defaults[.mobileNumber]
+    }
+    
     public var dob: String {
         return Defaults[.dob]
     }
@@ -138,11 +142,11 @@ public class UserManager: NSObject {
     }
     
     public var following: String {
-        return "\(String.displayCount(count: Defaults[.following])) "
+        return "\(String.displayCount(count: Defaults[.following]))"
     }
     
     public var followers: String {
-        return "\(String.displayCount(count: Defaults[.followers])) "
+        return "\(String.displayCount(count: Defaults[.followers]))"
     }
     
     public var isVerified: Bool {
@@ -153,8 +157,20 @@ public class UserManager: NSObject {
         }
     }
     
+    public var isVerifiedEmail: Bool {
+        return Defaults[.verifiedEmail]
+    }
+    
+    public var isVerifiedMobile: Bool {
+        return Defaults[.verifiedMobile]
+    }
+    
     public var official: Bool {
         return Defaults[.verifiedOfficial]
+    }
+    
+    public var passwordNotSet: Bool {
+        return Defaults[.passwordNotSet]
     }
     
     public var accountId: String {
