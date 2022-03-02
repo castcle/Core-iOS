@@ -49,7 +49,11 @@ public enum FontType: FontProtocol {
         var familyName: String
         switch self {
         case .castcle:
+<<<<<<< HEAD
             familyName = "iconfont-castcle-17"
+=======
+            familyName = "iconfont-castcle-16"
+>>>>>>> develop
         }
         return familyName
     }
