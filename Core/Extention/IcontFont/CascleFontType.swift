@@ -237,13 +237,8 @@ private let castcleIcons = [
     "\u{E001}", //case editNew
     "\u{E002}", //case block
     "\u{E003}", //case report
-<<<<<<< HEAD
     "\u{E004}", //case engagement
     "\u{E005}", //case reach
     "\u{E006}", //case wallet
     "\u{E007}" //case autoPost
-=======
-    "\u{E004}", // case engagement
-    "\u{E005}" // case reach
->>>>>>> develop
 ]
