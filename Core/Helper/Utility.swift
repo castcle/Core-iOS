@@ -26,11 +26,22 @@
 //
 
 import UIKit
+import Defaults
 
 public class Utility {
     public static func currentViewController() -> UIViewController {
         let getWindow : UIWindow? = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
         let topController = getWindow?.visibleViewController()
         return topController ?? UIViewController()
+    }
+    
+    public static func isUpdateApp(version: String) -> Bool {
+        let current = Defaults[.appVersion]
+        let versionCompare = current.compare(version, options: .numeric)
+        if versionCompare == .orderedAscending {
+            return true
+        } else {
+            return false
+        }
     }
 }
