@@ -28,6 +28,7 @@
 import Foundation
 
 public extension Notification.Name {
+    static let resetApplication = Notification.Name(rawValue: "resetApplication")
     static let reloadMyContent = Notification.Name(rawValue: "reloadMyContent")
     static let getMyContent = Notification.Name(rawValue: "getMyContent")
     static let getUserInfo = Notification.Name(rawValue: "getUserInfo")
