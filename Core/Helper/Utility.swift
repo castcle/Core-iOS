@@ -34,14 +34,4 @@ public class Utility {
         let topController = getWindow?.visibleViewController()
         return topController ?? UIViewController()
     }
-    
-    public static func isUpdateApp(version: String) -> Bool {
-        let current = Defaults[.appVersion]
-        let versionCompare = current.compare(version, options: .numeric)
-        if versionCompare == .orderedAscending {
-            return true
-        } else {
-            return false
-        }
-    }
 }

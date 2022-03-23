@@ -25,6 +25,7 @@
 		B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667E272564A700191A62 /* Kanit-Light.ttf */; };
 		B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667F272564A700191A62 /* Kanit-Medium.ttf */; };
 		B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B6680272564A800191A62 /* Sarabun-Light.ttf */; };
+		B71F66D727EB2BDF004DF6D5 /* CheckUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F66D627EB2BDF004DF6D5 /* CheckUpdate.swift */; };
 		B72E365527290561003E730B /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E365427290561003E730B /* Page.swift */; };
 		B72E3658272907B5003E730B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B72E3657272907B5003E730B /* Kingfisher */; };
 		B72E365B272908EB003E730B /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B72E365A272908EB003E730B /* SkeletonView */; };
@@ -103,6 +104,7 @@
 		B71B667E272564A700191A62 /* Kanit-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Light.ttf"; sourceTree = "<group>"; };
 		B71B667F272564A700191A62 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		B71B6680272564A800191A62 /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
+		B71F66D627EB2BDF004DF6D5 /* CheckUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpdate.swift; sourceTree = "<group>"; };
 		B72E365427290561003E730B /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		B72E366A27294764003E730B /* RecentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearch.swift; sourceTree = "<group>"; };
 		B75528DF269B7ECF005D5EB5 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */,
 				B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */,
 				B7A15B162795AE1C001E34DE /* KeychainHelper.swift */,
+				B71F66D627EB2BDF004DF6D5 /* CheckUpdate.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */,
 				B779D95227B4D349008C8670 /* CountryCode.swift in Sources */,
 				B7910ED926C0EB1D0097C94E /* ApiHelper.swift in Sources */,
+				B71F66D727EB2BDF004DF6D5 /* CheckUpdate.swift in Sources */,
 				B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */,
 				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
