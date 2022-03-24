@@ -76,4 +76,12 @@ public extension Defaults.Keys {
     static let passwordNotSet = Key<Bool>("passwordNotSet", default: true)
     static let mobileCountryCode = Key<String>("mobileCountryCode", default: "")
     static let mobileNumber = Key<String>("mobileNumber", default: "")
+    
+    // Force update
+    static let isForceUpdate = Key<Bool>("isForceUpdate", default: false)
+    static let isSoftUpdate = Key<Bool>("isSoftUpdate", default: false)
+    static let updateUrl = Key<String>("updateUrl", default: "")
+    static let updateTitle = Key<String>("updateTitle", default: "")
+    static let updateMessage = Key<String>("updateMessage", default: "")
+    static let updateButton = Key<String>("updateButton", default: "")
 }
