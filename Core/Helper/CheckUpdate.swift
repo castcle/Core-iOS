@@ -67,7 +67,7 @@ public class CheckUpdate: NSObject {
             if let appStoreAppVersion = info?.version {
                 if let error = error {
                     print("error getting app store version: ", error)
-                } else if !self.isUpdateApp(version: appStoreAppVersion) {
+                } else if self.isUpdateApp(version: appStoreAppVersion) {
                     print("Already on the last app version: ", appStoreAppVersion)
                 } else {
                     print("Needs update: AppStore Version: \(appStoreAppVersion) > Current version: ", Defaults[.appVersion])
