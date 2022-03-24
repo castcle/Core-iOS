@@ -38,19 +38,13 @@ public class LookupResult: Decodable {
 }
 
 public class AppInfo: Decodable {
-    var version: String
+    public var version: String
     var trackViewUrl: String
 }
 
 public class CheckUpdate: NSObject {
     
     public static let shared = CheckUpdate()
-    
-    public func showUpdate(withConfirmation: Bool) {
-        DispatchQueue.global().async {
-            self.checkVersion(force : !withConfirmation)
-        }
-    }
     
     public func isUpdateApp(version: String) -> Bool {
         let current = Defaults[.appVersion]
@@ -62,25 +56,7 @@ public class CheckUpdate: NSObject {
         }
     }
     
-    private func checkVersion(force: Bool) {
-        _ = getAppInfo { (info, error) in
-            if let appStoreAppVersion = info?.version {
-                if let error = error {
-                    print("error getting app store version: ", error)
-                } else if self.isUpdateApp(version: appStoreAppVersion) {
-                    print("Already on the last app version: ", appStoreAppVersion)
-                } else {
-                    print("Needs update: AppStore Version: \(appStoreAppVersion) > Current version: ", Defaults[.appVersion])
-                    DispatchQueue.main.async {
-                        let topController: UIViewController = (UIApplication.shared.windows.first?.rootViewController)!
-                        topController.showAppUpdateAlert(version: (info?.version)!, force: force, appUrl: (info?.trackViewUrl)!)
-                    }
-                }
-            }
-        }
-    }
-    
-    private func getAppInfo(completion: @escaping (AppInfo?, Error?) -> Void) -> URLSessionDataTask? {
+    public func getAppInfo(completion: @escaping (AppInfo?, Error?) -> Void) -> URLSessionDataTask? {
         guard let url = URL(string: "http://itunes.apple.com/br/lookup?bundleId=com.castcle.ios.prod") else {
             DispatchQueue.main.async {
                 completion(nil, VersionError.invalidBundleInfo)
@@ -105,33 +81,5 @@ public class CheckUpdate: NSObject {
         
         task.resume()
         return task
-    }
-}
-
-extension UIViewController {
-    @objc fileprivate func showAppUpdateAlert(version : String, force: Bool, appUrl: String) {
-        let alertTitle = "New version"
-        let alertMessage = "A new version of Castcle is available on AppStore. Update now!"
-        
-        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
-        
-        if !force {
-            let notNowButton = UIAlertAction(title: "Not now", style: .default)
-            alertController.addAction(notNowButton)
-        }
-        
-        let updateButton = UIAlertAction(title: "Update", style: .default) { (action:UIAlertAction) in
-            guard let url = URL(string: appUrl) else {
-                return
-            }
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-        }
-        
-        alertController.addAction(updateButton)
-        self.present(alertController, animated: true, completion: nil)
     }
 }
