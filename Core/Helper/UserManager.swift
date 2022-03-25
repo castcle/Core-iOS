@@ -173,6 +173,10 @@ public class UserManager: NSObject {
         return Defaults[.passwordNotSet]
     }
     
+    public var canUpdateCastcleId: Bool {
+        return Defaults[.canUpdateCastcleId]
+    }
+    
     public var accountId: String {
         do {
             let payload = self.getJwtBodyString(token: Defaults[.accessToken])
