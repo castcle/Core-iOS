@@ -28,11 +28,13 @@
 import Foundation
 
 public extension Notification.Name {
+    static let resetApplication = Notification.Name(rawValue: "resetApplication")
     static let reloadMyContent = Notification.Name(rawValue: "reloadMyContent")
     static let getMyContent = Notification.Name(rawValue: "getMyContent")
     static let getUserInfo = Notification.Name(rawValue: "getUserInfo")
     static let updateProfileDelegate = Notification.Name(rawValue: "updateProfileDelegate")
     static let openProfileDelegate = Notification.Name(rawValue: "openProfileDelegate")
+    static let openSearchDelegate = Notification.Name(rawValue: "openSearchDelegate")
     static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
     static let feedReloadContent = Notification.Name(rawValue: "feedReloadContent")
     static let resetFeedContent = Notification.Name(rawValue: "resetFeedContent")

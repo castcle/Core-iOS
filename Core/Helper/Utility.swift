@@ -26,6 +26,7 @@
 //
 
 import UIKit
+import Defaults
 
 public class Utility {
     public static func currentViewController() -> UIViewController {

@@ -66,11 +66,11 @@ public extension String {
     }
     
     func substringWithRange(range: Int) -> String {
-        if self.count <= range {
+        if self.utf16.count <= range {
             return self
         } else {
-            let start = self.index(self.startIndex, offsetBy: 0)
-            let end = self.index(self.startIndex, offsetBy: range)
+            let start = self.utf16.index(self.startIndex, offsetBy: 0)
+            let end = self.utf16.index(self.startIndex, offsetBy: range)
             return String(self[start..<end])
         }
     }
