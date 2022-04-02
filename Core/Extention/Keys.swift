@@ -40,6 +40,7 @@ public extension Defaults.Keys {
     
     // Feed
     static let startLoadFeed = Key<Bool>("startLoadFeed", default: true)
+    static let syncTwitter = Key<Bool>("syncTwitter", default: true)
     
     // Add Social
     static let facebook = Key<String>("facebook", default: "")
