@@ -39,6 +39,7 @@ public extension Notification.Name {
     static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
     static let feedReloadContent = Notification.Name(rawValue: "feedReloadContent")
     static let resetFeedContent = Notification.Name(rawValue: "resetFeedContent")
+    static let syncTwittwerAutoPost = Notification.Name(rawValue: "syncTwittwerAutoPost")
     
     static func getSearchFeedNotification() -> Notification.Name {
         return Notification.Name(rawValue: "getSearchFeed\(UUID().uuidString)")
