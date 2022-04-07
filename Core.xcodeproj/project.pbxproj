@@ -106,6 +106,7 @@
 		B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A15B162795AE1C001E34DE /* KeychainHelper.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
+		B7D4BC2027FEFAC3008ACD9F /* Emum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4BC1F27FEFAC3008ACD9F /* Emum.swift */; };
 		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
 		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
@@ -160,6 +161,7 @@
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B7A15B162795AE1C001E34DE /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		B7D4BC1F27FEFAC3008ACD9F /* Emum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emum.swift; sourceTree = "<group>"; };
 		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
 		B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				B72E36532729052E003E730B /* RealmModel */,
+				B7D4BC1F27FEFAC3008ACD9F /* Emum.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				B7910ED926C0EB1D0097C94E /* ApiHelper.swift in Sources */,
 				B71F66D727EB2BDF004DF6D5 /* CheckUpdate.swift in Sources */,
 				B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */,
+				B7D4BC2027FEFAC3008ACD9F /* Emum.swift in Sources */,
 				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
 				B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */,
