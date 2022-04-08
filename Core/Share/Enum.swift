@@ -27,6 +27,7 @@
 
 import UIKit
 
+// MARK: - SocialType
 public enum SocialType: String {
     case facebook
     case twitter
@@ -76,6 +77,68 @@ public enum SocialType: String {
             return UIColor.Asset.apple
         default:
             return UIColor.clear
+        }
+    }
+}
+
+// MARK: - FarmingHistoryType
+public enum FarmingHistoryType {
+    case active
+    case history
+    case unknow
+}
+
+// MARK: - HistoryFilterType
+public enum HistoryFilterType: String {
+    case all = "All"
+    case day = "Today"
+    case week = "This week"
+    case month = "This month"
+}
+
+// MARK: - SettingSection
+public enum SettingSection {
+    case profile
+    case privacy
+    case languang
+    case aboutUs
+    case verify
+    case ads
+    case farming
+    
+    public var text: String {
+        switch self {
+        case .profile:
+            return Localization.coreSetting.account.text
+        case .languang:
+            return Localization.coreSetting.language.text
+        case .aboutUs:
+            return Localization.coreSetting.about.text
+        case .ads:
+            return "Ad Manager"
+        case .farming:
+            return "Content Farming"
+        default:
+            return ""
+        }
+    }
+    
+    public var image: UIImage {
+        switch self {
+        case .profile:
+            return UIImage.init(icon: .castcle(.righProfile), size: CGSize(width: 25, height: 25), textColor: UIColor.Asset.white)
+        case .privacy:
+            return UIImage.init(icon: .castcle(.privacy), size: CGSize(width: 25, height: 25), textColor: UIColor.Asset.white)
+        case .languang:
+            return UIImage.init(icon: .castcle(.language), size: CGSize(width: 25, height: 25), textColor: UIColor.Asset.white)
+        case .aboutUs:
+            return UIImage.init(icon: .castcle(.aboutUs), size: CGSize(width: 25, height: 25), textColor: UIColor.Asset.white)
+        case .ads:
+            return UIImage.init(icon: .castcle(.adsManager), size: CGSize(width: 25, height: 25), textColor: UIColor.Asset.white)
+        case .farming:
+            return UIImage.init(icon: .castcle(.farm), size: CGSize(width: 25, height: 25), textColor: UIColor.Asset.white)
+        default:
+            return UIImage()
         }
     }
 }

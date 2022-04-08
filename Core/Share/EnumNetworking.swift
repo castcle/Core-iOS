@@ -19,11 +19,21 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Localization.swift
+//  EnumNetworking.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 2/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 8/4/2565 BE.
 //
 
-public enum Localization {
+public enum JsonKey: String {
+    case payload
+    case provider
+    case socialId
+    case userName
+    case displayName
+    case overview
+    case avatar
+    case cover
+    case link
+    case authToken
 }
