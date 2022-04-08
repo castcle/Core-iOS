@@ -36,6 +36,7 @@ public extension Notification.Name {
     static let openProfileDelegate = Notification.Name(rawValue: "openProfileDelegate")
     static let openSearchDelegate = Notification.Name(rawValue: "openSearchDelegate")
     static let openFarmmingDelegate = Notification.Name(rawValue: "openFarmmingDelegate")
+    static let openSignInDelegate = Notification.Name(rawValue: "openSignInDelegate")
     static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
     static let feedReloadContent = Notification.Name(rawValue: "feedReloadContent")
     static let resetFeedContent = Notification.Name(rawValue: "resetFeedContent")

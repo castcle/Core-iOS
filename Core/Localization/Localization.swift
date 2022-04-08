@@ -35,11 +35,11 @@ public enum Localization {
         public var text: String {
             switch self {
             case .account:
-                return "setting_account".localized(bundle: ConfigBundle.setting)
+                return "setting_account".localized(bundle: ConfigBundle.core)
             case .language:
-                return "setting_language".localized(bundle: ConfigBundle.setting)
+                return "setting_language".localized(bundle: ConfigBundle.core)
             case .about:
-                return "setting_about".localized(bundle: ConfigBundle.setting)
+                return "setting_about".localized(bundle: ConfigBundle.core)
             }
         }
     }
