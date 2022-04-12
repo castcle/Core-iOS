@@ -111,6 +111,7 @@
 		B7D4BC2027FEFAC3008ACD9F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */; };
 		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
 		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
+		B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E924BD2805880E00F9D75D /* CommentRef.swift */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
 		B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -168,6 +169,7 @@
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
+		B7E924BD2805880E00F9D75D /* CommentRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRef.swift; sourceTree = "<group>"; };
 		B7EEC20B2738DEDE00C9F66B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				B72E366A27294764003E730B /* RecentSearch.swift */,
 				B7E4666C2759F13F006E0B89 /* AuthorRef.swift */,
 				B703A550278AB379007BFA01 /* ContentRef.swift */,
+				B7E924BD2805880E00F9D75D /* CommentRef.swift */,
 				B779D95127B4D349008C8670 /* CountryCode.swift */,
 			);
 			path = RealmModel;
@@ -616,6 +619,7 @@
 				B72E365527290561003E730B /* Page.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B7EEC20C2738DEDE00C9F66B /* ImageHelper.swift in Sources */,
+				B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
 				B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */,

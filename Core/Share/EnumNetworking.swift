@@ -26,7 +26,9 @@
 //
 
 public enum JsonKey: String {
+    case id
     case payload
+    case includes
     case provider
     case socialId
     case userName
@@ -36,4 +38,23 @@ public enum JsonKey: String {
     case cover
     case link
     case authToken
+    case email
+    case password
+    case message
+    case like
+    case author
+    case reply
+    case metrics
+    case participate
+    case createdAt
+    case updatedAt
+    case comments
+    case users
+    case casts
+    case userFields
+    case keyword
+    case type
+    case hashtag
+    case maxResults
+    case untilId
 }

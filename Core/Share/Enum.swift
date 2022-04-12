@@ -142,3 +142,9 @@ public enum SettingSection {
         }
     }
 }
+
+// MARK: - UserFields
+public enum UserFields: String {
+    case relationships
+    case none
+}

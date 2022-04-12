@@ -36,7 +36,6 @@ public enum CountryCodeKey: String, Codable {
 }
 
 public class CountryCode: Object {
-
     @objc dynamic public var code: String = ""
     @objc dynamic public var dialCode: String = ""
     @objc dynamic public var name: String = ""
