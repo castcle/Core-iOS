@@ -57,4 +57,22 @@ public enum JsonKey: String {
     case hashtag
     case maxResults
     case untilId
+    case castcleId
+    case images
+    case following
+    case followers
+    case links
+    case followed
+    case blocking
+    case blocked
+    case verified
+    case syncSocial
+    case count
+    case facebook
+    case twitter
+    case youtube
+    case medium
+    case website
+    case active
+    case autoPost
 }
