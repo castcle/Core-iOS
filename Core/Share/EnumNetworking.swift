@@ -72,7 +72,21 @@ public enum JsonKey: String {
     case twitter
     case youtube
     case medium
+    case google
+    case apple
     case website
     case active
     case autoPost
+    case dob
+    case aggregator
+    case passwordNotSet
+    case linkSocial
+    case mobile
+    case canUpdateCastcleId
+    case original
+    case thumbnail
+    case fullHd
+    case large
+    case countryCode
+    case number
 }
