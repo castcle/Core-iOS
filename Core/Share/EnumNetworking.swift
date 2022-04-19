@@ -89,4 +89,10 @@ public enum JsonKey: String {
     case large
     case countryCode
     case number
+    case contentId
+    case feedItemId
+    case photo
+    case contents
+    case image
+    case meta
 }
