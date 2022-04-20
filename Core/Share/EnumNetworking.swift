@@ -95,4 +95,8 @@ public enum JsonKey: String {
     case contents
     case image
     case meta
+    case role
+    case official
+    case showAds
+    case pages
 }
