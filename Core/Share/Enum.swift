@@ -27,6 +27,12 @@
 
 import UIKit
 
+// MARK: - UserRole
+public enum UserRole: String {
+    case user = "USER"
+    case guest = "GUEST"
+}
+
 // MARK: - SocialType
 public enum SocialType: String {
     case facebook
@@ -77,6 +83,45 @@ public enum SocialType: String {
             return UIColor.Asset.apple
         default:
             return UIColor.clear
+        }
+    }
+}
+
+// MARK: - SocialLinkType
+public enum SocialLinkType: String {
+    case facebook = "Facebook"
+    case twitter = "Twitter"
+    case youtube = "Youtube"
+    case medium = "Medium"
+    case website = "Add website"
+}
+
+// MARK: - LinkType
+public enum LinkType: String, Codable {
+    case twitter
+    case youtube
+    case rssfeed
+    case medium
+    case facebook
+    case reddit
+    case other
+    
+    public var image: UIImage {
+        switch self {
+        case .twitter:
+            return UIImage.Asset.twitter
+        case .youtube:
+            return UIImage.Asset.youtube
+        case .rssfeed:
+            return UIImage.Asset.rssfeed
+        case .medium:
+            return UIImage.Asset.medium
+        case .facebook:
+            return UIImage.Asset.facebook
+        case .reddit:
+            return UIImage.Asset.reddit
+        default:
+            return UIImage.Asset.web
         }
     }
 }
@@ -146,5 +191,215 @@ public enum SettingSection {
 // MARK: - UserFields
 public enum UserFields: String {
     case relationships
+    case none
+}
+
+// MARK: - PostType
+public enum PostType: String {
+    case newCast = "New Cast"
+    case quoteCast = "Quote Cast"
+}
+
+// MARK: - FeedCellType
+public enum FeedCellType {
+    case activity
+    case header
+    case content
+    case quote
+    case footer
+    case pageAds
+    case reach
+    case none
+}
+
+// MARK: - ContentType
+public enum ContentType: String, Codable {
+    case short
+    case long
+    case blog
+    case image
+    case shortClip
+    case clip
+    case live
+    case unknow = ""
+}
+
+// MARK: - FeedDisplayType
+public enum FeedDisplayType: String {
+    case postText
+    case postLink
+    case postLinkPreview
+    case postImageX1
+    case postImageX2
+    case postImageX3
+    case postImageXMore
+    case blogImage
+    case blogNoImage
+}
+
+// MARK: - FeedType
+public enum FeedType: String, Codable {
+    case content
+    case suggestion
+    case reminder
+    case ads
+    case suggestionFollow = "suggestion-follow"
+}
+
+// MARK: - ReferencedCastType
+public enum ReferencedCastType: String, Codable {
+    case quoted
+    case recasted
+    case unknown
+}
+
+// MARK: - AuthorType
+public enum AuthorType: String, Codable {
+    case people
+    case page
+}
+
+// MARK: - ProfileType
+public enum ProfileType {
+    case me
+    case user
+    case unknow
+}
+
+// MARK: - VerifyCodeType
+public enum VerifyCodeType {
+    case password
+    case mergeAccount
+}
+
+// MARK: - KeychainKey
+public enum KeychainKey: String {
+    case castcleDeviceId
+    case appleUserId
+    case appleEmail
+    case appleFullName
+}
+
+// MARK: - AdsObjective
+public enum AdsObjective: String {
+    case engagement
+    case reach
+    
+    public var detail: String {
+        switch self {
+        case .engagement:
+            return "Get more people to see your Cast or Page"
+        case .reach:
+            return "Show your ad to the maximum number of people"
+        }
+    }
+    
+    public var image: UIImage {
+        switch self {
+        case .engagement:
+            return UIImage.init(icon: .castcle(.engagement), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+        case .reach:
+            return UIImage.init(icon: .castcle(.reach), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+        }
+    }
+}
+
+// MARK: - AdStatus
+public enum AdStatus: String {
+    case processing
+    case declinded
+    case approved
+}
+
+// MARK: - BoostStatus
+public enum BoostStatus: String {
+    case unknown
+    case running
+    case pause
+    case end
+}
+
+// MARK: - BoostType
+public enum BoostType: String {
+    case page
+    case content
+}
+
+// MARK: - AdsPaymentType
+public enum AdsPaymentType: String {
+    case token = "Token wallet"
+    case adCredit = "Ad credit"
+    
+    public var image: UIImage {
+        switch self {
+        case .token:
+            return UIImage.init(icon: .castcle(.wallet), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+        case .adCredit:
+            return UIImage.init(icon: .castcle(.coin), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+        }
+    }
+    
+    public var notice: String {
+        switch self {
+        case .token:
+            return "Approximate token value in\nUSD 40.32 Learn more"
+        case .adCredit:
+            return "Note: Ad credit are valid\nuntil 29/12/2020"
+        }
+    }
+}
+
+// MARK: - LoadState
+public enum LoadState {
+    case loading
+    case loaded
+}
+
+// MARK: - State
+public enum State {
+    case getAds
+    case getMe
+    case getMyPage
+    case getUserInfo
+    case unregisterToken
+    case registerToken
+    case connectSocial
+    case requestOtp
+    case verifyOtp
+    case updateMobile
+    case getMention
+    case getHastag
+    case suggestCastcleId
+    case checkCastcleIdExists
+    case register
+    case createPage
+    case createPageWithSocial
+    case deletePage
+    case updateUserInfo
+    case updateUserAvatar
+    case updateUserCover
+    case updatePassword
+    case followUser
+    case unfollowUser
+    case reportUser
+    case blockUser
+    case unblockUser
+    case setAutoPost
+    case cancelAutoPost
+    case reconnectSyncSocial
+    case disconnectSyncSocial
+    case syncSocial
+    case login
+    case refreshToken
+    case getComments
+    case createComment
+    case replyComment
+    case likeComment
+    case unlikeComment
+    case deleteComment
+    case deleteReplyComment
+    case deleteContent
+    case reportContent
+    case getCountryCode
     case none
 }

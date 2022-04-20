@@ -30,11 +30,6 @@ import CryptoKit
 import SwiftyJSON
 import UIKit
 
-public enum UserRole: String {
-    case user = "USER"
-    case guest = "GUEST"
-}
-
 public class UserManager: NSObject {
     public static let shared = UserManager()
     

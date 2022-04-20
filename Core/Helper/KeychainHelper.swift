@@ -27,13 +27,6 @@
 
 import SwiftKeychainWrapper
 
-public enum KeychainKey: String {
-    case castcleDeviceId
-    case appleUserId
-    case appleEmail
-    case appleFullName
-}
-
 public class KeychainHelper {
     public static let shared = KeychainHelper()
     

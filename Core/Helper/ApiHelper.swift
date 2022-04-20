@@ -30,11 +30,6 @@ import DeviceKit
 import Defaults
 import SwiftIP
 
-public enum ResponseErrorKey: String {
-    case message
-    case code
-}
-
 public struct ApiHelper {
     public static func header(version: String = "") -> [String: String] {
         let publicIP: String = IP.public() ?? "1.1.1.1"
