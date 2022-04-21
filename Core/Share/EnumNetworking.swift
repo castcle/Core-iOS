@@ -39,6 +39,7 @@ public enum JsonKey: String {
     case link
     case authToken
     case email
+    case phone
     case password
     case message
     case like
@@ -59,6 +60,7 @@ public enum JsonKey: String {
     case untilId
     case castcleId
     case images
+    case contact
     case following
     case followers
     case links
@@ -166,4 +168,8 @@ public enum JsonKey: String {
     case oldestId
     case newestId
     case resultCount
+    case channel
+    case targetCastcleId
+    case refCode
+    case mobileNumber
 }

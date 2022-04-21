@@ -272,6 +272,12 @@ public enum VerifyCodeType {
     case mergeAccount
 }
 
+// MARK: - UserChannelKey
+public enum UserChannelKey: String {
+    case email
+    case social
+}
+
 // MARK: - KeychainKey
 public enum KeychainKey: String {
     case castcleDeviceId
