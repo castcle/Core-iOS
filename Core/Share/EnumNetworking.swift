@@ -155,6 +155,7 @@ public enum JsonKey: String {
     case header
     case social
     case likeCount
+    case commentId
     case commentCount
     case quoteCount
     case recastCount
