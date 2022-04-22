@@ -175,8 +175,8 @@ public class UserManager: NSObject {
             let payload = self.getJwtBodyString(token: Defaults[.accessToken])
             let payloadData = payload.data(using: String.Encoding.utf8)
             let json = try JSON(data: payloadData!)
-            let id = json[JsonKey.id.rawValue].stringValue
-            let uxSessionId = "\(id)+\(Date.currentTimeStamp)"
+            let userId = json[JsonKey.id.rawValue].stringValue
+            let uxSessionId = "\(userId)+\(Date.currentTimeStamp)"
             return MD5(string: uxSessionId)
         } catch {
             return ""
