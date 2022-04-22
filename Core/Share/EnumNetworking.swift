@@ -39,6 +39,7 @@ public enum JsonKey: String {
     case link
     case authToken
     case email
+    case phone
     case password
     case message
     case like
@@ -57,4 +58,119 @@ public enum JsonKey: String {
     case hashtag
     case maxResults
     case untilId
+    case castcleId
+    case images
+    case contact
+    case following
+    case followers
+    case links
+    case followed
+    case blocking
+    case blocked
+    case verified
+    case syncSocial
+    case count
+    case facebook
+    case twitter
+    case youtube
+    case medium
+    case google
+    case apple
+    case website
+    case active
+    case autoPost
+    case dob
+    case aggregator
+    case passwordNotSet
+    case linkSocial
+    case mobile
+    case canUpdateCastcleId
+    case original
+    case thumbnail
+    case fullHd
+    case large
+    case countryCode
+    case number
+    case contentId
+    case feedItemId
+    case photo
+    case contents
+    case image
+    case meta
+    case role
+    case official
+    case showAds
+    case pages
+    case code
+    case slug
+    case name
+    case key
+    case rank
+    case trends
+    case text
+    case isTrending
+    case campaignName
+    case campaignMessage
+    case campaignCode
+    case objective
+    case dailyBudget
+    case duration
+    case adStatus
+    case boostStatus
+    case boostType
+    case statistics
+    case engagement
+    case budgetSpent
+    case impression
+    case reach
+    case cpm = "CPM"
+    case organic
+    case paid
+    case likes
+    case recast
+    case quotecast
+    case clicks
+    case followerGain
+    case farm
+    case saved
+    case rewardDistributed
+    case ios
+    case android
+    case url
+    case version
+    case button
+    case title
+    case en
+    case th
+    case hashtags
+    case topics
+    case follows
+    case display
+    case description
+    case imagePreview
+    case authorId
+    case referencedCasts
+    case feature
+    case circle
+    case header
+    case social
+    case likeCount
+    case commentId
+    case commentCount
+    case quoteCount
+    case recastCount
+    case farmCount
+    case liked
+    case commented
+    case quoted
+    case recasted
+    case reported
+    case farming
+    case oldestId
+    case newestId
+    case resultCount
+    case channel
+    case targetCastcleId
+    case refCode
+    case mobileNumber
 }

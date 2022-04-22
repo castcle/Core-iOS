@@ -30,26 +30,8 @@ import CryptoKit
 import SwiftyJSON
 import UIKit
 
-public enum UserRole: String {
-    case user = "USER"
-    case guest = "GUEST"
-}
-
 public class UserManager: NSObject {
     public static let shared = UserManager()
-    
-    enum TokenKey: String {
-        case id
-        case role
-        case displayName
-        case castcleId
-        case verified
-        case official
-        case mobile
-        case email
-        case showAds
-        case pages
-    }
     
     public var isLogin: Bool {
         if Defaults[.userRole] == "GUEST" {
@@ -182,7 +164,7 @@ public class UserManager: NSObject {
             let payload = self.getJwtBodyString(token: Defaults[.accessToken])
             let payloadData = payload.data(using: String.Encoding.utf8)
             let json = try JSON(data: payloadData!)
-            return json[TokenKey.id.rawValue].stringValue
+            return json[JsonKey.id.rawValue].stringValue
         } catch {
             return ""
         }
@@ -193,9 +175,9 @@ public class UserManager: NSObject {
             let payload = self.getJwtBodyString(token: Defaults[.accessToken])
             let payloadData = payload.data(using: String.Encoding.utf8)
             let json = try JSON(data: payloadData!)
-            let id = json[TokenKey.id.rawValue].stringValue
-            let uxSessionId = "\(id)+\(Date.currentTimeStamp)"
-            return MD5(string: uxSessionId)
+            let userId = json[JsonKey.id.rawValue].stringValue
+            let rawUxSessionId = "\(userId)+\(Date.currentTimeStamp)"
+            return MD5(string: rawUxSessionId)
         } catch {
             return ""
         }
