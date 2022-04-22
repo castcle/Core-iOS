@@ -176,8 +176,8 @@ public class UserManager: NSObject {
             let payloadData = payload.data(using: String.Encoding.utf8)
             let json = try JSON(data: payloadData!)
             let userId = json[JsonKey.id.rawValue].stringValue
-            let uxSessionId = "\(userId)+\(Date.currentTimeStamp)"
-            return MD5(string: uxSessionId)
+            let sessionId = "\(userId)+\(Date.currentTimeStamp)"
+            return MD5(string: sessionId)
         } catch {
             return ""
         }
