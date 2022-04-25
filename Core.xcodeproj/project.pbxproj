@@ -1367,8 +1367,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Samasaur1/SwiftIP.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				kind = exactVersion;
+				version = 2.2.0;
 			};
 		};
 		B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */ = {
