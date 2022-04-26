@@ -25,11 +25,20 @@
 //  Created by Castcle Co., Ltd. on 27/12/2564 BE.
 //
 
-import Foundation
+import UIKit
+import Atributika
 
 public struct RegexpParser {
     public static let hashtagPattern = "#[^[:punct:][:space:]]+"
     public static let mentionPattern = "@[^[:punct:][:space:]]+"
     public static let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
     public static let psdPattern = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{6,20}$"
+}
+
+public struct AttributedContent {
+    public static let all = Style.font(UIFont.asset(.contentLight, fontSize: .body))
+    public static let quote = Style.font(UIFont.asset(.contentLight, fontSize: .overline))
+    public static let link = Style
+        .foregroundColor(UIColor.Asset.lightBlue, .normal)
+        .foregroundColor(UIColor.Asset.lightBlue, .highlighted)
 }
