@@ -395,6 +395,7 @@ public enum State {
     case reconnectSyncSocial
     case disconnectSyncSocial
     case syncSocial
+    case guestLogin
     case login
     case refreshToken
     case getComments
@@ -407,5 +408,6 @@ public enum State {
     case deleteContent
     case reportContent
     case getCountryCode
+    case getBadges
     case none
 }

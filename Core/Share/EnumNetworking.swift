@@ -173,4 +173,7 @@ public enum JsonKey: String {
     case targetCastcleId
     case refCode
     case mobileNumber
+    case page
+    case profile
+    case system
 }
