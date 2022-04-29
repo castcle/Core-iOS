@@ -60,7 +60,7 @@ public class UserManager: NSObject {
     }
     
     public var badgeCount: Int {
-        return Defaults[.notificationBadges]
+        return (Defaults[.badgePage] + Defaults[.badgeProfile] + Defaults[.badgeSystem])
     }
     
     public var id: String {

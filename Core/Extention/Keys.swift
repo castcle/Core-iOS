@@ -73,11 +73,13 @@ public extension Defaults.Keys {
     static let youtubeLink = Key<String>("youtubeLink", default: "")
     static let mediumLink = Key<String>("mediumLink", default: "")
     static let websiteLink = Key<String>("websiteLink", default: "")
-    static let notificationBadges = Key<Int>("notificationBadges", default: 0)
     static let passwordNotSet = Key<Bool>("passwordNotSet", default: true)
     static let canUpdateCastcleId = Key<Bool>("canUpdateCastcleId", default: false)
     static let mobileCountryCode = Key<String>("mobileCountryCode", default: "")
     static let mobileNumber = Key<String>("mobileNumber", default: "")
+    static let badgePage = Key<Int>("badgePage", default: 0)
+    static let badgeProfile = Key<Int>("badgeProfile", default: 0)
+    static let badgeSystem = Key<Int>("badgeSystem", default: 0)
     
     // Force update
     static let isForceUpdate = Key<Bool>("isForceUpdate", default: false)
