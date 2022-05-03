@@ -69,7 +69,6 @@ public class CheckUpdate: NSObject {
                 guard let data = data else { throw VersionError.invalidResponse }
                 
                 let result = try JSONDecoder().decode(LookupResult.self, from: data)
-                print(result.results)
                 guard let info = result.results.first else {
                     throw VersionError.invalidResponse
                 }

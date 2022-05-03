@@ -30,40 +30,41 @@ import DeviceKit
 import Defaults
 import SwiftIP
 
-public enum ResponseErrorKey: String {
-    case message
-    case code
-}
-
 public struct ApiHelper {
-    public static var header: [String: String] {
+    public static func header(version: String = "") -> [String: String] {
         let publicIP: String = IP.public() ?? "1.1.1.1"
-        return [
+        var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
-            "Accept-Version": "1.0",
             "Platform": "iOS",
             "Authorization": "Bearer \(UserManager.shared.accessToken)",
             "API-Metadata": "ip=\(publicIP.trimmingCharacters(in: .whitespacesAndNewlines)),src=iOS,dest=castcle"
         ]
+        if !version.isEmpty {
+            param["Accept-Version"] = version
+        }
+        return param
     }
     
-    public static var headerRefreshToken: [String: String] {
+    public static func headerRefreshToken(version: String = "") -> [String: String] {
         let publicIP: String = IP.public() ?? "1.1.1.1"
-        return [
+        var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
-            "Accept-Version": "1.0",
             "Platform": "iOS",
             "Authorization": "Bearer \(UserManager.shared.refreshToken)",
             "API-Metadata": "ip=\(publicIP.trimmingCharacters(in: .whitespacesAndNewlines)),src=iOS,dest=castcle"
         ]
+        if !version.isEmpty {
+            param["Accept-Version"] = version
+        }
+        return param
     }
     
-    public static func displayError(error: String = "Something Went wrong") {
-        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+    public static func displayError(code: String = "", error: String = "Something Went wrong") {
+        let alert = UIAlertController(title: "Error" + (code.isEmpty ? "" : " (\(code))"), message: error, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         Utility.currentViewController().present(alert, animated: true, completion: nil)
     }

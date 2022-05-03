@@ -84,11 +84,11 @@ public class ContentRef: Object {
         
         // MARK: - Participate
         let participateJson = JSON(json["participate"].dictionaryValue)
-        self.liked = participateJson["liked"].boolValue
-        self.commented = participateJson["commented"].boolValue
-        self.quoted = participateJson["quoted"].boolValue
-        self.recasted = participateJson["recasted"].boolValue
-        self.reported = participateJson["reported"].boolValue
+        contentRef.liked = participateJson["liked"].boolValue
+        contentRef.commented = participateJson["commented"].boolValue
+        contentRef.quoted = participateJson["quoted"].boolValue
+        contentRef.recasted = participateJson["recasted"].boolValue
+        contentRef.reported = participateJson["reported"].boolValue
         
         // MARK: - Photo
         let photoJson = JSON(json["photo"].dictionaryValue)

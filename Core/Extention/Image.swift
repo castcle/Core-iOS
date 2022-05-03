@@ -34,6 +34,8 @@ public extension UIImage {
         public static let launchScreen = UIImage(named: "launch-screen", in: ConfigBundle.core, compatibleWith: nil)!
         public static let placeholder = UIImage(named: "placeholder", in: ConfigBundle.core, compatibleWith: nil)!
         public static let userPlaceholder = UIImage(named: "user-placeholder", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let typeCastIcon = UIImage(named: "type-cast-icon", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let typePageIcon = UIImage(named: "type-page-icon", in: ConfigBundle.core, compatibleWith: nil)!
         
         // MARK: - Web Icon
         public static let rssfeed = UIImage(named: "rssfeed", in: ConfigBundle.core, compatibleWith: nil)!

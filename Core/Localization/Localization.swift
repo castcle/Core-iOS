@@ -26,4 +26,21 @@
 //
 
 public enum Localization {
+    // MARK: - Setting
+    public enum coreSetting {
+        case account
+        case language
+        case about
+        
+        public var text: String {
+            switch self {
+            case .account:
+                return "setting_account".localized(bundle: ConfigBundle.core)
+            case .language:
+                return "setting_language".localized(bundle: ConfigBundle.core)
+            case .about:
+                return "setting_about".localized(bundle: ConfigBundle.core)
+            }
+        }
+    }
 }

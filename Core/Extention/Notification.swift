@@ -35,9 +35,12 @@ public extension Notification.Name {
     static let updateProfileDelegate = Notification.Name(rawValue: "updateProfileDelegate")
     static let openProfileDelegate = Notification.Name(rawValue: "openProfileDelegate")
     static let openSearchDelegate = Notification.Name(rawValue: "openSearchDelegate")
+    static let openFarmmingDelegate = Notification.Name(rawValue: "openFarmmingDelegate")
+    static let openSignInDelegate = Notification.Name(rawValue: "openSignInDelegate")
     static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
     static let feedReloadContent = Notification.Name(rawValue: "feedReloadContent")
     static let resetFeedContent = Notification.Name(rawValue: "resetFeedContent")
+    static let syncTwittwerAutoPost = Notification.Name(rawValue: "syncTwittwerAutoPost")
     
     static func getSearchFeedNotification() -> Notification.Name {
         return Notification.Name(rawValue: "getSearchFeed\(UUID().uuidString)")
