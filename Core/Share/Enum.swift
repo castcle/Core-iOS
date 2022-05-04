@@ -27,6 +27,13 @@
 
 import UIKit
 
+// MARK: - EnvironmentType
+public enum EnvironmentType: String {
+    case dev = "DEV"
+    case stg = "STG"
+    case prod = "PROD"
+}
+
 // MARK: - UserRole
 public enum UserRole: String {
     case user = "USER"
@@ -381,6 +388,14 @@ public enum NotificationType: String {
     case none
 }
 
+// MARK: - LandingPage
+public enum LandingPage: String {
+    case follower
+    case comment
+    case cast
+    case none
+}
+
 // MARK: - LoadState
 public enum LoadState {
     case loading
@@ -424,7 +439,9 @@ public enum State {
     case guestLogin
     case login
     case refreshToken
+    case getContentDetail
     case getComments
+    case getCommentDetail
     case createComment
     case replyComment
     case likeComment
