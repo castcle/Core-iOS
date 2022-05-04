@@ -104,6 +104,7 @@
 		B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79281C5269596A1000ED84A /* ColorTheme.xcassets */; };
 		B79281C826959854000ED84A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281C726959854000ED84A /* Color.swift */; };
 		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
+		B79A8ED42822629100918716 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = B79A8ED32822629100918716 /* SwipeCellKit */; };
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
 		B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A15B162795AE1C001E34DE /* KeychainHelper.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
@@ -208,6 +209,7 @@
 				B715A11E27EC47A70011C13C /* FirebaseRemoteConfig in Frameworks */,
 				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B715A0FC27EC47A70011C13C /* FirebaseAuthCombine-Community in Frameworks */,
+				B79A8ED42822629100918716 /* SwipeCellKit in Frameworks */,
 				B715A12027EC47A70011C13C /* FirebaseRemoteConfigSwift-Beta in Frameworks */,
 				B715A0FA27EC47A70011C13C /* FirebaseAuth in Frameworks */,
 				B715A11C27EC47A70011C13C /* FirebasePerformance in Frameworks */,
@@ -492,6 +494,7 @@
 				B715A12127EC47A70011C13C /* FirebaseStorage */,
 				B715A12327EC47A70011C13C /* FirebaseStorageCombine-Community */,
 				B715A12527EC47A70011C13C /* FirebaseStorageSwift-Beta */,
+				B79A8ED32822629100918716 /* SwipeCellKit */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -548,6 +551,7 @@
 				B74E911E27901BAF0067059B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				B75E5B2C27ABCD2B00B6CC14 /* XCRemoteSwiftPackageReference "CenteredCollectionView" */,
 				B715A0EE27EC47A60011C13C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1403,6 +1407,14 @@
 				minimumVersion = 4.5.1;
 			};
 		};
+		B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
@@ -1694,6 +1706,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		B79A8ED32822629100918716 /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
 		};
 		B7A71D8027045E090092F318 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;

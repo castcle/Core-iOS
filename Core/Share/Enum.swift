@@ -355,6 +355,32 @@ public enum AdsPaymentType: String {
     }
 }
 
+// MARK: - SearchSection
+public enum SearchSection {
+    case trend
+    case lastest
+    case photo
+    case people
+    case none
+}
+
+// MARK: - NotificationSection
+public enum NotificationSection: String {
+    case profile
+    case page
+    case system
+}
+
+// MARK: - NotificationType
+public enum NotificationType: String {
+    case comment
+    case follow
+    case like
+    case recast
+    case adsApprove = "ads-approve"
+    case none
+}
+
 // MARK: - LoadState
 public enum LoadState {
     case loading
@@ -409,5 +435,6 @@ public enum State {
     case reportContent
     case getCountryCode
     case getBadges
+    case getNotification
     case none
 }

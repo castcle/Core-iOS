@@ -176,4 +176,11 @@ public enum JsonKey: String {
     case page
     case profile
     case system
+    case uuid
+    case firebaseToken
+    case platform
+    case source
+    case read
+    case landingPage
+    case profileId
 }

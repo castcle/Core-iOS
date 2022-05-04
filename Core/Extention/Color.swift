@@ -44,6 +44,7 @@ public extension UIColor {
         public static let denger = UIColor(named: "Denger", in: ConfigBundle.core, compatibleWith: nil)!
         public static let trendDown = UIColor(named: "TrendDown", in: ConfigBundle.core, compatibleWith: nil)!
         public static let trendUp = UIColor(named: "TrendUp", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let notifyFocus = UIColor(named: "NotifyFocus", in: ConfigBundle.core, compatibleWith: nil)!
     }
 }
 
