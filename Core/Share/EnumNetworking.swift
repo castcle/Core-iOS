@@ -171,6 +171,7 @@ public enum JsonKey: String {
     case resultCount
     case channel
     case targetCastcleId
+    case targetContentId
     case refCode
     case mobileNumber
     case page
@@ -193,4 +194,14 @@ public enum JsonKey: String {
     case exist
     case suggestCastcleId
     case registered
+    case client
+    case accountId
+    case uxSessionId
+    case screenId
+    case screenInstance
+    case target
+    case targetId
+    case eventType
+    case eventData
+    case timestamp
 }

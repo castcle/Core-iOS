@@ -40,6 +40,30 @@ public enum UserRole: String {
     case guest = "GUEST"
 }
 
+// MARK: - AuthenChannelKey
+public enum AuthenChannelKey: String {
+    case mobile
+    case email
+}
+
+// MARK: - AuthenObjective
+public enum AuthenObjective: String {
+    case forgotPassword = "forgot_password"
+    case changePassword = "change_password"
+    case verifyMobile = "verify_mobile"
+    case mergeAccount = "merge_account"
+    case none
+}
+
+// MARK: - AuthenSocialProvider
+public enum AuthenSocialProvider: String {
+    case facebook
+    case twitter
+    case google
+    case apple = "apple id"
+    case none
+}
+
 // MARK: - SocialType
 public enum SocialType: String {
     case facebook
