@@ -187,4 +187,10 @@ public enum JsonKey: String {
     case newPassword
     case limit
     case contentType
+    case deviceUuid = "deviceUUID"
+    case accessToken
+    case refreshToken
+    case exist
+    case suggestCastcleId
+    case registered
 }
