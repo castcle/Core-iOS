@@ -183,4 +183,6 @@ public enum JsonKey: String {
     case read
     case landingPage
     case profileId
+    case otp
+    case newPassword
 }
