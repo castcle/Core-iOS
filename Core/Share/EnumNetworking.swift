@@ -185,4 +185,6 @@ public enum JsonKey: String {
     case profileId
     case otp
     case newPassword
+    case limit
+    case contentType
 }
