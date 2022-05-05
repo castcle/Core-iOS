@@ -453,5 +453,7 @@ public enum State {
     case getCountryCode
     case getBadges
     case getNotification
+    case deleteNotification
+    case readNotification
     case none
 }
