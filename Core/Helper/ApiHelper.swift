@@ -31,6 +31,8 @@ import Defaults
 import SwiftIP
 
 public struct ApiHelper {
+    public static let errorResponse: Data = "{\"code\" : \"9999\", \"statusCode\" : \"500\", \"message\" : \"Sorry, Internal server error.\"}".data(using: .utf8) ?? Data()
+    
     public static func header(version: String = "") -> [String: String] {
         let publicIP: String = IP.public() ?? "1.1.1.1"
         var param: [String: String] = [
