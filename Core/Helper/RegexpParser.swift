@@ -33,6 +33,7 @@ public struct RegexpParser {
     public static let mentionPattern = "@[^[:punct:][:space:]]+"
     public static let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
     public static let psdPattern = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{6,20}$"
+    public static let castcleIdPattern = "[A-Za-z0-9]+"
 }
 
 public struct AttributedContent {

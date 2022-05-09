@@ -43,6 +43,11 @@ public extension String {
         return password.evaluate(with: self)
     }
     
+    var isCastcleId: Bool {
+        let castcleId = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.castcleIdPattern)
+        return castcleId.evaluate(with: self)
+    }
+    
     func localized(withComment comment: String = "", bundle: Bundle) -> String {
         if let path = bundle.path(forResource: Defaults[.appLanguage], ofType: "lproj"), let languageBundle = Bundle(path: path) {
             return NSLocalizedString(self, bundle: languageBundle, comment: comment)
