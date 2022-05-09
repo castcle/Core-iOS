@@ -479,5 +479,6 @@ public enum State {
     case getNotification
     case deleteNotification
     case readNotification
+    case readAllNotification
     case none
 }
