@@ -412,6 +412,13 @@ public enum NotificationType: String {
     case none
 }
 
+// MARK: - UpdateImageType
+public enum UpdateImageType {
+    case avatar
+    case cover
+    case none
+}
+
 // MARK: - LandingPage
 public enum LandingPage: String {
     case follower
