@@ -59,6 +59,7 @@ public enum JsonKey: String {
     case maxResults
     case untilId
     case castcleId
+    case referral
     case images
     case contact
     case following
