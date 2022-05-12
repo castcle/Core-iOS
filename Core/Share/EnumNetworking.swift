@@ -140,8 +140,8 @@ public enum JsonKey: String {
     case version
     case button
     case title
-    case en
-    case th
+    case eng = "en"
+    case tha = "th"
     case hashtags
     case topics
     case follows

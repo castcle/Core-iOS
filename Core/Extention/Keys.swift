@@ -37,22 +37,22 @@ public extension Defaults.Keys {
     static let accessToken = Key<String>("accessToken", default: "")
     static let refreshToken = Key<String>("refreshToken", default: "")
     static let firebaseToken = Key<String>("firebaseToken", default: "")
-    
+
     // Feed
     static let startLoadFeed = Key<Bool>("startLoadFeed", default: true)
     static let syncTwitter = Key<Bool>("syncTwitter", default: true)
-    
+
     // Add Social
     static let facebook = Key<String>("facebook", default: "")
     static let twitter = Key<String>("twitter", default: "")
     static let youtube = Key<String>("youtube", default: "")
     static let medium = Key<String>("medium", default: "")
     static let website = Key<String>("website", default: "")
-    
+
     // Engagement
     static let screenId = Key<String>("screenId", default: "")
     static let seenId = Key<String>("seenId", default: "")
-    
+
     // User
     static let userId = Key<String>("userId", default: "")
     static let castcleId = Key<String>("castcleId", default: "")
@@ -80,7 +80,7 @@ public extension Defaults.Keys {
     static let badgePage = Key<Int>("badgePage", default: 0)
     static let badgeProfile = Key<Int>("badgeProfile", default: 0)
     static let badgeSystem = Key<Int>("badgeSystem", default: 0)
-    
+
     // Force update
     static let isForceUpdate = Key<Bool>("isForceUpdate", default: false)
     static let isSoftUpdate = Key<Bool>("isSoftUpdate", default: false)

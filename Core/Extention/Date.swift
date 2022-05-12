@@ -32,7 +32,7 @@ public extension Date {
     static var currentTimeStamp: Int64 {
         return Int64(Date().timeIntervalSince1970 * 1000)
     }
-    
+
     static func stringToDate(str: String) -> Date {
         let timeStrArr = str.components(separatedBy: ".")
         if timeStrArr.isEmpty {
@@ -49,7 +49,7 @@ public extension Date {
             }
         }
     }
-    
+
     func dateToString() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
@@ -62,21 +62,21 @@ public extension Date {
         let dateDisplay = dateFormatter.string(from: self)
         return dateDisplay.replacingOccurrences(of: "BE", with: "")
     }
-    
+
     func dateToStringSever() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "UTC")
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         return dateFormatter.string(from: self)
     }
-    
+
     func timeAgoDisplay() -> String {
         let calendar = Calendar.current
         let minuteAgo = calendar.date(byAdding: .minute, value: -1, to: Date())!
         let hourAgo = calendar.date(byAdding: .hour, value: -1, to: Date())!
         let dayAgo = calendar.date(byAdding: .day, value: -1, to: Date())!
         let weekAgo = calendar.date(byAdding: .day, value: -7, to: Date())!
-        
+
         if minuteAgo < self {
             return "A minutes ago"
         } else if hourAgo < self {

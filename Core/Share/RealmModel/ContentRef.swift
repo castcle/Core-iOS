@@ -51,11 +51,11 @@ public class ContentRef: Object {
     @objc dynamic public var updatedAt = ""
     public var photoThumbnail = List<String>()
     public var photoFullHd = List<String>()
-    
+
     public override static func primaryKey() -> String? {
         return "id"
     }
-    
+
     public func initCustom(json: JSON) -> ContentRef {
         let contentRef = ContentRef()
         contentRef.id = json["id"].stringValue
@@ -64,7 +64,7 @@ public class ContentRef: Object {
         contentRef.message = json["message"].stringValue
         contentRef.createdAt = json["createdAt"].stringValue
         contentRef.updatedAt = json["updatedAt"].stringValue
-        
+
         // MARK: - Link
         let linkArr = json["link"].arrayValue
         if let linkInfo = linkArr.first {
@@ -74,14 +74,14 @@ public class ContentRef: Object {
             contentRef.linkDesc = linkInfo["description"].stringValue
             contentRef.linkImagePreview = linkInfo["imagePreview"].stringValue
         }
-        
+
         // MARK: - Metric
         let metricJson = JSON(json["metrics"].dictionaryValue)
         contentRef.likeCount = metricJson["likeCount"].intValue
         contentRef.commentCount = metricJson["commentCount"].intValue
         contentRef.quoteCount = metricJson["quoteCount"].intValue
         contentRef.recastCount = metricJson["recastCount"].intValue
-        
+
         // MARK: - Participate
         let participateJson = JSON(json["participate"].dictionaryValue)
         contentRef.liked = participateJson["liked"].boolValue
@@ -89,7 +89,7 @@ public class ContentRef: Object {
         contentRef.quoted = participateJson["quoted"].boolValue
         contentRef.recasted = participateJson["recasted"].boolValue
         contentRef.reported = participateJson["reported"].boolValue
-        
+
         // MARK: - Photo
         let photoJson = JSON(json["photo"].dictionaryValue)
         let photoContent = photoJson["contents"].arrayValue

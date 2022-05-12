@@ -43,9 +43,9 @@ public class AppInfo: Decodable {
 }
 
 public class CheckUpdate: NSObject {
-    
+
     public static let shared = CheckUpdate()
-    
+
     public func isUpdateApp(version: String) -> Bool {
         let current = Defaults[.appVersion]
         let versionCompare = current.compare(version, options: .numeric)
@@ -55,7 +55,7 @@ public class CheckUpdate: NSObject {
             return false
         }
     }
-    
+
     public func getAppInfo(completion: @escaping (AppInfo?, Error?) -> Void) -> URLSessionDataTask? {
         guard let url = URL(string: "http://itunes.apple.com/br/lookup?bundleId=com.castcle.ios.prod") else {
             DispatchQueue.main.async {
@@ -63,11 +63,10 @@ public class CheckUpdate: NSObject {
             }
             return nil
         }
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
             do {
                 if let error = error { throw error }
                 guard let data = data else { throw VersionError.invalidResponse }
-                
                 let result = try JSONDecoder().decode(LookupResult.self, from: data)
                 guard let info = result.results.first else {
                     throw VersionError.invalidResponse
@@ -77,7 +76,6 @@ public class CheckUpdate: NSObject {
                 completion(nil, error)
             }
         }
-        
         task.resume()
         return task
     }

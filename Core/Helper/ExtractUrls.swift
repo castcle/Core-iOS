@@ -25,12 +25,14 @@
 //  Created by Castcle Co., Ltd. on 1/11/2564 BE.
 //
 
+import Foundation
+
 public extension String {
     func extractURLs() -> [URL] {
-        var urls : [URL] = []
+        var urls: [URL] = []
         do {
             let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
-            detector.enumerateMatches(in: self, options: [], range: NSMakeRange(0, self.count), using: { (result, _, _) in
+            detector.enumerateMatches(in: self, options: [], range: NSRange(location: 0, length: self.count), using: { (result, _, _) in
                 if let match = result, let url = match.url {
                     urls.append(url)
                 }

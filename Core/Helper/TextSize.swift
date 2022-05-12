@@ -33,7 +33,7 @@ public struct TextSize {
         let font: UIFont
         let width: CGFloat
         let insets: UIEdgeInsets
-        
+
         func hash(into hasher: inout Hasher) {
             hasher.combine(text)
             hasher.combine(width)
@@ -42,24 +42,24 @@ public struct TextSize {
             hasher.combine(insets.bottom)
             hasher.combine(insets.right)
         }
-        
-        static func ==(lhs: TextSize.CacheEntry, rhs: TextSize.CacheEntry) -> Bool {
+
+        static func == (lhs: TextSize.CacheEntry, rhs: TextSize.CacheEntry) -> Bool {
             return lhs.width == rhs.width && lhs.insets == rhs.insets && lhs.text == rhs.text
         }
     }
-    
+
     private static var cache: [CacheEntry: CGRect] = [:] {
         didSet {
             assert(Thread.isMainThread)
         }
     }
-    
+
     public static func size(_ text: String, font: UIFont, width: CGFloat, insets: UIEdgeInsets = .zero) -> CGRect {
         let key = CacheEntry(text: text, font: font, width: width, insets: insets)
         if let hit = cache[key] {
             return hit
         }
-        
+
         let constrainedSize = CGSize(width: width - insets.left - insets.right, height: .greatestFiniteMagnitude)
         let attributes = [NSAttributedString.Key.font: font]
         let options: NSStringDrawingOptions = [.usesFontLeading, .usesLineFragmentOrigin]

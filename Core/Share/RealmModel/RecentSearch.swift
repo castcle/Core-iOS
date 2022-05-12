@@ -29,7 +29,7 @@ import RealmSwift
 
 public class RecentSearch: Object {
     @objc dynamic public var value = ""
-    
+
     public override static func primaryKey() -> String? {
         return "value"
     }

@@ -27,11 +27,11 @@
 
 public enum Localization {
     // MARK: - Setting
-    public enum coreSetting {
+    public enum CoreSetting {
         case account
         case language
         case about
-        
+
         public var text: String {
             switch self {
             case .account:

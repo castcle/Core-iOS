@@ -71,7 +71,7 @@ public enum SocialType: String {
     case google
     case apple
     case unknow
-    
+
     public var display: String {
         switch self {
         case .facebook:
@@ -86,7 +86,7 @@ public enum SocialType: String {
             return "Unknow"
         }
     }
-    
+
     public var icon: UIImage {
         switch self {
         case .facebook:
@@ -101,7 +101,7 @@ public enum SocialType: String {
             return UIImage()
         }
     }
-    
+
     public var color: UIColor {
         switch self {
         case .facebook:
@@ -136,7 +136,7 @@ public enum LinkType: String, Codable {
     case facebook
     case reddit
     case other
-    
+
     public var image: UIImage {
         switch self {
         case .twitter:
@@ -181,15 +181,15 @@ public enum SettingSection {
     case verify
     case ads
     case farming
-    
+
     public var text: String {
         switch self {
         case .profile:
-            return Localization.coreSetting.account.text
+            return Localization.CoreSetting.account.text
         case .languang:
-            return Localization.coreSetting.language.text
+            return Localization.CoreSetting.language.text
         case .aboutUs:
-            return Localization.coreSetting.about.text
+            return Localization.CoreSetting.about.text
         case .ads:
             return "Ad Manager"
         case .farming:
@@ -198,7 +198,7 @@ public enum SettingSection {
             return ""
         }
     }
-    
+
     public var image: UIImage {
         switch self {
         case .profile:
@@ -229,6 +229,15 @@ public enum UserFields: String {
 public enum PostType: String {
     case newCast = "New Cast"
     case quoteCast = "Quote Cast"
+}
+
+// MARK: - ProfileContentType
+public enum ProfileContentType: String {
+    case all
+    case post
+    case blog
+    case photo
+    case unknow
 }
 
 // MARK: - FeedCellType
@@ -292,9 +301,16 @@ public enum AuthorType: String, Codable {
 
 // MARK: - ProfileType
 public enum ProfileType {
-    case me
+    case mine
     case user
     case unknow
+}
+
+// MARK: - FollowType
+public enum FollowType {
+    case following
+    case follower
+    case none
 }
 
 // MARK: - VerifyCodeType
@@ -321,7 +337,7 @@ public enum KeychainKey: String {
 public enum AdsObjective: String {
     case engagement
     case reach
-    
+
     public var detail: String {
         switch self {
         case .engagement:
@@ -330,7 +346,7 @@ public enum AdsObjective: String {
             return "Show your ad to the maximum number of people"
         }
     }
-    
+
     public var image: UIImage {
         switch self {
         case .engagement:
@@ -366,7 +382,7 @@ public enum BoostType: String {
 public enum AdsPaymentType: String {
     case token = "Token wallet"
     case adCredit = "Ad credit"
-    
+
     public var image: UIImage {
         switch self {
         case .token:
@@ -375,7 +391,7 @@ public enum AdsPaymentType: String {
             return UIImage.init(icon: .castcle(.coin), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
         }
     }
-    
+
     public var notice: String {
         switch self {
         case .token:
@@ -417,6 +433,15 @@ public enum UpdateImageType {
     case avatar
     case cover
     case none
+}
+
+// MARK: - SearchResualState
+public enum SearchResualState {
+    case initial
+    case suggest
+    case hastag
+    case resualt
+    case unknow
 }
 
 // MARK: - LandingPage

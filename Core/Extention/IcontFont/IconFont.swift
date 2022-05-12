@@ -315,19 +315,19 @@ private func getAttributedString(prefixText: String, prefixTextColor: UIColor, p
     let iconsString = icons.reduce("") { $0 + ($1.text ?? "") }
     let resultAttrString = NSMutableAttributedString(string: "\(prefixText)\(iconsString)\(postfixText)")
 
-    //add prefix text attribute
+    // add prefix text attribute
     resultAttrString.addAttributes([
         NSAttributedString.Key.font: prefixTextFont,
         NSAttributedString.Key.foregroundColor: prefixTextColor
         ], range: NSRange(location: 0, length: prefixText.count))
 
-    //add icons attribute
+    // add icons attribute
     resultAttrString.addAttribute(NSAttributedString.Key.foregroundColor, value: iconsColor, range: NSRange(location: prefixText.count, length: iconsString.count))
     for (index, _) in icons.enumerated() {
         resultAttrString.addAttribute(NSAttributedString.Key.font, value: iconFonts[index]!, range: NSRange(location: prefixText.count + index, length: 1))
     }
 
-    //add postfix text attribute
+    // add postfix text attribute
     if !postfixText.isEmpty {
         resultAttrString.addAttributes([
             NSAttributedString.Key.font: postfixTextFont,

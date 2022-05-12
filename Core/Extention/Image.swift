@@ -36,7 +36,7 @@ public extension UIImage {
         public static let userPlaceholder = UIImage(named: "user-placeholder", in: ConfigBundle.core, compatibleWith: nil)!
         public static let typeCastIcon = UIImage(named: "type-cast-icon", in: ConfigBundle.core, compatibleWith: nil)!
         public static let typePageIcon = UIImage(named: "type-page-icon", in: ConfigBundle.core, compatibleWith: nil)!
-        
+
         // MARK: - Web Icon
         public static let rssfeed = UIImage(named: "rssfeed", in: ConfigBundle.core, compatibleWith: nil)!
         public static let twitter = UIImage(named: "twitter", in: ConfigBundle.core, compatibleWith: nil)!
@@ -46,7 +46,7 @@ public extension UIImage {
         public static let reddit = UIImage(named: "reddit", in: ConfigBundle.core, compatibleWith: nil)!
         public static let web = UIImage(named: "web", in: ConfigBundle.core, compatibleWith: nil)!
     }
-    
+
     func alpha(_ value: CGFloat) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
@@ -54,39 +54,36 @@ public extension UIImage {
         UIGraphicsEndImageContext()
         return newImage!
     }
-    
+
     func toBase64() -> String? {
         guard let imageData = self.pngData() else { return nil }
         return imageData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
     }
-    
+
     func resizeImage(targetSize: CGSize) -> UIImage {
         let size = self.size
-        
         if size.width < targetSize.width || size.height < targetSize.height {
             return self
         }
-        
+
         let widthRatio  = targetSize.width  / size.width
         let heightRatio = targetSize.height / size.height
-        
+
         var newSize: CGSize
-        if(widthRatio > heightRatio) {
+        if widthRatio > heightRatio {
             newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
         } else {
-            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
+            newSize = CGSize(width: size.width * widthRatio, height: size.height * widthRatio)
         }
-        
+
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-        
         UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
         self.draw(in: rect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
         return newImage!
     }
-    
+
     static func iconFromUrl(url: String) -> UIImage? {
         if url.contains("reddit.com") {
             return UIImage.Asset.reddit

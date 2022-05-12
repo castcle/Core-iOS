@@ -36,15 +36,15 @@ public class CommentRef: Object {
     @objc dynamic public var liked = false
     @objc dynamic public var createdAt = ""
     @objc dynamic public var updatedAt = ""
-    
+
     public override static func primaryKey() -> String? {
         return "id"
     }
-    
+
     public var commentDate: Date {
         return Date.stringToDate(str: self.createdAt)
     }
-    
+
     public func initCustom(json: JSON) -> CommentRef {
         let commentRef = CommentRef()
         commentRef.id = json["id"].stringValue
@@ -52,15 +52,15 @@ public class CommentRef: Object {
         commentRef.authorId = json["author"].stringValue
         commentRef.createdAt = json["createdAt"].stringValue
         commentRef.updatedAt = json["updatedAt"].stringValue
-        
+
         // MARK: - Metric
         let metricJson = JSON(json["metrics"].dictionaryValue)
         commentRef.likeCount = metricJson["likeCount"].intValue
-        
+
         // MARK: - Participate
         let participateJson = JSON(json["participate"].dictionaryValue)
         commentRef.liked = participateJson["liked"].boolValue
-        
+
         return commentRef
     }
 }

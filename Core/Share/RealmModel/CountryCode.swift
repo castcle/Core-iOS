@@ -40,11 +40,11 @@ public class CountryCode: Object {
     @objc dynamic public var dialCode: String = ""
     @objc dynamic public var name: String = ""
     @objc dynamic public var flag: String = ""
-    
+
     public override static func primaryKey() -> String? {
         return "code"
     }
-    
+
     public func initWithJson(json: JSON) -> CountryCode {
         let countryCode = CountryCode()
         countryCode.code = json[CountryCodeKey.code.rawValue].stringValue
@@ -53,7 +53,7 @@ public class CountryCode: Object {
         countryCode.flag = json[CountryCodeKey.flag.rawValue].stringValue
         return countryCode
     }
-    
+
     public func initCustom(code: String, dialCode: String, name: String) -> CountryCode {
         let countryCode = CountryCode()
         countryCode.code = code
