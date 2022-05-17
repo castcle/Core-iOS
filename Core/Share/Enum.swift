@@ -495,6 +495,7 @@ public enum State {
     case guestLogin
     case login
     case refreshToken
+    case getContent
     case getContentDetail
     case getComments
     case getCommentDetail

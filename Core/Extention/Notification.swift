@@ -39,6 +39,7 @@ public extension Notification.Name {
     static let openFollerDelegate = Notification.Name(rawValue: "openFollerDelegate")
     static let openCastDelegate = Notification.Name(rawValue: "openCastDelegate")
     static let openCommentDelegate = Notification.Name(rawValue: "openCommentDelegate")
+    static let openQuoteCastListDelegate = Notification.Name(rawValue: "openQuoteCastListDelegate")
     static let openSignInDelegate = Notification.Name(rawValue: "openSignInDelegate")
     static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
     static let feedReloadContent = Notification.Name(rawValue: "feedReloadContent")
