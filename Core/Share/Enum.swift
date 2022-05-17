@@ -444,6 +444,15 @@ public enum SearchResualState {
     case unknow
 }
 
+// MARK: - WalletHistoryType
+public enum WalletHistoryType: String {
+    case wallet = "Wallet Balance"
+    case farming = "Content Farming"
+    case social = "Social Rewards"
+    case transaction = "Deposit & Send"
+    case airdrop = "Referral & Airdrop"
+}
+
 // MARK: - LandingPage
 public enum LandingPage: String {
     case follower
