@@ -453,6 +453,13 @@ public enum WalletHistoryType: String {
     case airdrop = "Referral & Airdrop"
 }
 
+// MARK: - ReactionType
+public enum ReactionType: String {
+    case like
+    case recast
+    case none
+}
+
 // MARK: - LandingPage
 public enum LandingPage: String {
     case follower
@@ -522,5 +529,7 @@ public enum State {
     case deleteNotification
     case readNotification
     case readAllNotification
+    case getUserLikeContent
+    case getUserRecastContent
     case none
 }
