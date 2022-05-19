@@ -136,6 +136,9 @@ public enum CastcleType: Int {
     case reach
     case wallet
     case autoPost
+    case deposit
+    case send
+    case buy
 }
 
 private let castcleIcons = [
@@ -240,5 +243,8 @@ private let castcleIcons = [
     "\u{E004}", // case engagement
     "\u{E005}", // case reach
     "\u{E006}", // case wallet
-    "\u{E007}" // case autoPost
+    "\u{E007}", // case autoPost
+    "\u{E008}", // case deposit
+    "\u{E009}", // case send
+    "\u{E00A}" // case buy
 ]
