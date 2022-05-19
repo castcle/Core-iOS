@@ -205,4 +205,6 @@ public enum JsonKey: String {
     case eventType
     case eventData
     case timestamp
+    case paymentMethod
+    case userId
 }

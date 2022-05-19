@@ -380,8 +380,17 @@ public enum BoostType: String {
 
 // MARK: - AdsPaymentType
 public enum AdsPaymentType: String {
-    case token = "Token wallet"
-    case adCredit = "Ad credit"
+    case token = "token-wallet"
+    case adCredit = "ad-credit"
+
+    public var display: String {
+        switch self {
+        case .token:
+            return "Token wallet"
+        case .adCredit:
+            return "Ad credit"
+        }
+    }
 
     public var image: UIImage {
         switch self {
