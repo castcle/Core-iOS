@@ -47,6 +47,13 @@ public extension UIView {
     static func aspectRatioCalculator(ratioWidth: Double, ratioHeight: Double, pixelsWidth: Double) -> Double {
         return ((pixelsWidth * ratioHeight) / ratioWidth)
     }
+
+    func asImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
+    }
 }
 
 public extension UIViewController {
