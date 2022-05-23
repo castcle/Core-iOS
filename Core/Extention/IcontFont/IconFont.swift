@@ -323,7 +323,7 @@ private func getAttributedString(prefixText: String, prefixTextColor: UIColor, p
 
     // add icons attribute
     resultAttrString.addAttribute(NSAttributedString.Key.foregroundColor, value: iconsColor, range: NSRange(location: prefixText.count, length: iconsString.count))
-    for (index, _) in icons.enumerated() {
+    for (index, _) in icons.enumerated().reversed() {
         resultAttrString.addAttribute(NSAttributedString.Key.font, value: iconFonts[index]!, range: NSRange(location: prefixText.count + index, length: 1))
     }
 
