@@ -10,10 +10,6 @@
 		B703A551278AB37A007BFA01 /* ContentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703A550278AB379007BFA01 /* ContentRef.swift */; };
 		B70748E427955C6700F01CB4 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748DA27955C6700F01CB4 /* TwitterConstants.swift */; };
 		B70748E527955C6700F01CB4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748DB27955C6700F01CB4 /* Environment.swift */; };
-		B70748E627955C6700F01CB4 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748DC27955C6700F01CB4 /* Development.xcconfig */; };
-		B70748E827955C6700F01CB4 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748DE27955C6700F01CB4 /* Test.xcconfig */; };
-		B70748EA27955C6700F01CB4 /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748E027955C6700F01CB4 /* Staging.xcconfig */; };
-		B70748EB27955C6700F01CB4 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748E127955C6700F01CB4 /* Production.xcconfig */; };
 		B70748EC27955C6700F01CB4 /* ConfigBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748E227955C6700F01CB4 /* ConfigBundle.swift */; };
 		B715A0F027EC47A70011C13C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B715A0EF27EC47A70011C13C /* FirebaseAnalytics */; };
 		B715A0F227EC47A70011C13C /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B715A0F127EC47A70011C13C /* FirebaseAnalyticsSwift-Beta */; };
@@ -503,7 +499,7 @@
 		B7F69CBC268EB85600B01223 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					B7F69CC4268EB85600B01223 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -568,16 +564,12 @@
 				B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */,
 				B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
-				B70748E827955C6700F01CB4 /* Test.xcconfig in Resources */,
 				B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */,
-				B70748E627955C6700F01CB4 /* Development.xcconfig in Resources */,
-				B70748EB27955C6700F01CB4 /* Production.xcconfig in Resources */,
 				B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */,
 				B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */,
 				B754FD3727FFFEFD00ACB1D2 /* Localizable.strings in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
 				B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */,
-				B70748EA27955C6700F01CB4 /* Staging.xcconfig in Resources */,
 				B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,6 +639,7 @@
 			baseConfigurationReference = B70748E027955C6700F01CB4 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -741,6 +734,7 @@
 			baseConfigurationReference = B70748DC27955C6700F01CB4 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -835,6 +829,7 @@
 			baseConfigurationReference = B70748E027955C6700F01CB4 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -881,6 +876,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -922,6 +918,7 @@
 			baseConfigurationReference = B70748DC27955C6700F01CB4 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1011,6 +1008,7 @@
 			baseConfigurationReference = B70748E127955C6700F01CB4 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1077,6 +1075,7 @@
 			baseConfigurationReference = B70748E127955C6700F01CB4 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1123,6 +1122,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
