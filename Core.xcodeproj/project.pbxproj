@@ -118,7 +118,6 @@
 		B70748DA27955C6700F01CB4 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
 		B70748DB27955C6700F01CB4 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		B70748DC27955C6700F01CB4 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
-		B70748DE27955C6700F01CB4 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		B70748E027955C6700F01CB4 /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		B70748E127955C6700F01CB4 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		B70748E227955C6700F01CB4 /* ConfigBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigBundle.swift; sourceTree = "<group>"; };
@@ -247,7 +246,6 @@
 				B70748E127955C6700F01CB4 /* Production.xcconfig */,
 				B70748E027955C6700F01CB4 /* Staging.xcconfig */,
 				B70748DC27955C6700F01CB4 /* Development.xcconfig */,
-				B70748DE27955C6700F01CB4 /* Test.xcconfig */,
 			);
 			name = "Core Config";
 			path = "../../Config/Core Config";
