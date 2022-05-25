@@ -105,6 +105,8 @@ public enum JsonKey: String {
     case code
     case slug
     case name
+    case username
+    case about
     case key
     case rank
     case trends
@@ -193,6 +195,7 @@ public enum JsonKey: String {
     case contentType
     case deviceUuid = "deviceUUID"
     case accessToken
+    case fbAccessToken = "access_token"
     case refreshToken
     case exist
     case suggestCastcleId
