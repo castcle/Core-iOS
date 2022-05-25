@@ -209,4 +209,6 @@ public enum JsonKey: String {
     case timestamp
     case paymentMethod
     case userId
+    case dialCode
+    case flag
 }

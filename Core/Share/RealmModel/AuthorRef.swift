@@ -46,18 +46,18 @@ public class AuthorRef: Object {
 
     public func initCustom(json: JSON) -> AuthorRef {
         let authorRef = AuthorRef()
-        authorRef.id = json["id"].stringValue
-        authorRef.type = json["type"].stringValue
-        authorRef.castcleId = json["castcleId"].stringValue
-        authorRef.displayName = json["displayName"].stringValue
-        authorRef.overview = json["overview"].stringValue
-        authorRef.followed = json["followed"].boolValue
-        authorRef.blocking = json["blocking"].boolValue
-        authorRef.blocked = json["blocked"].boolValue
-        let avatar = JSON(json["avatar"].dictionaryValue)
-        authorRef.avatar = avatar["thumbnail"].stringValue
-        let verified = JSON(json["verified"].dictionaryValue)
-        authorRef.official = verified["official"].boolValue
+        authorRef.id = json[JsonKey.id.rawValue].stringValue
+        authorRef.type = json[JsonKey.type.rawValue].stringValue
+        authorRef.castcleId = json[JsonKey.castcleId.rawValue].stringValue
+        authorRef.displayName = json[JsonKey.displayName.rawValue].stringValue
+        authorRef.overview = json[JsonKey.overview.rawValue].stringValue
+        authorRef.followed = json[JsonKey.followed.rawValue].boolValue
+        authorRef.blocking = json[JsonKey.blocking.rawValue].boolValue
+        authorRef.blocked = json[JsonKey.blocked.rawValue].boolValue
+        let avatar = JSON(json[JsonKey.avatar.rawValue].dictionaryValue)
+        authorRef.avatar = avatar[JsonKey.thumbnail.rawValue].stringValue
+        let verified = JSON(json[JsonKey.verified.rawValue].dictionaryValue)
+        authorRef.official = verified[JsonKey.official.rawValue].boolValue
         return authorRef
     }
 }

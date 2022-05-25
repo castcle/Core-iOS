@@ -109,6 +109,7 @@
 		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
 		B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E924BD2805880E00F9D75D /* CommentRef.swift */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
+		B7F376C5283E317C00BDCFEB /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F376C4283E317C00BDCFEB /* Urls.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */; };
 /* End PBXBuildFile section */
@@ -163,6 +164,7 @@
 		B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
 		B7E924BD2805880E00F9D75D /* CommentRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRef.swift; sourceTree = "<group>"; };
+		B7F376C4283E317C00BDCFEB /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F69CC8268EB85600B01223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		B7F69CC9268EB85600B01223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				B70748E227955C6700F01CB4 /* ConfigBundle.swift */,
 				B70748DA27955C6700F01CB4 /* TwitterConstants.swift */,
 				B70748DB27955C6700F01CB4 /* Environment.swift */,
+				B7F376C4283E317C00BDCFEB /* Urls.swift */,
 				B70748E127955C6700F01CB4 /* Production.xcconfig */,
 				B70748E027955C6700F01CB4 /* Staging.xcconfig */,
 				B70748DC27955C6700F01CB4 /* Development.xcconfig */,
@@ -606,6 +609,7 @@
 				B72E365527290561003E730B /* Page.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */,
+				B7F376C5283E317C00BDCFEB /* Urls.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
 				B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */,

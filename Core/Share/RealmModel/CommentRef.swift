@@ -47,19 +47,19 @@ public class CommentRef: Object {
 
     public func initCustom(json: JSON) -> CommentRef {
         let commentRef = CommentRef()
-        commentRef.id = json["id"].stringValue
-        commentRef.message = json["message"].stringValue
-        commentRef.authorId = json["author"].stringValue
-        commentRef.createdAt = json["createdAt"].stringValue
-        commentRef.updatedAt = json["updatedAt"].stringValue
+        commentRef.id = json[JsonKey.id.rawValue].stringValue
+        commentRef.message = json[JsonKey.message.rawValue].stringValue
+        commentRef.authorId = json[JsonKey.author.rawValue].stringValue
+        commentRef.createdAt = json[JsonKey.createdAt.rawValue].stringValue
+        commentRef.updatedAt = json[JsonKey.updatedAt.rawValue].stringValue
 
         // MARK: - Metric
-        let metricJson = JSON(json["metrics"].dictionaryValue)
-        commentRef.likeCount = metricJson["likeCount"].intValue
+        let metricJson = JSON(json[JsonKey.metrics.rawValue].dictionaryValue)
+        commentRef.likeCount = metricJson[JsonKey.likeCount.rawValue].intValue
 
         // MARK: - Participate
-        let participateJson = JSON(json["participate"].dictionaryValue)
-        commentRef.liked = participateJson["liked"].boolValue
+        let participateJson = JSON(json[JsonKey.participate.rawValue].dictionaryValue)
+        commentRef.liked = participateJson[JsonKey.liked.rawValue].boolValue
 
         return commentRef
     }

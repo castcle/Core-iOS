@@ -28,13 +28,6 @@
 import RealmSwift
 import SwiftyJSON
 
-public enum CountryCodeKey: String, Codable {
-    case code
-    case dialCode
-    case name
-    case flag
-}
-
 public class CountryCode: Object {
     @objc dynamic public var code: String = ""
     @objc dynamic public var dialCode: String = ""
@@ -47,10 +40,10 @@ public class CountryCode: Object {
 
     public func initWithJson(json: JSON) -> CountryCode {
         let countryCode = CountryCode()
-        countryCode.code = json[CountryCodeKey.code.rawValue].stringValue
-        countryCode.dialCode = json[CountryCodeKey.dialCode.rawValue].stringValue
-        countryCode.name = json[CountryCodeKey.name.rawValue].stringValue
-        countryCode.flag = json[CountryCodeKey.flag.rawValue].stringValue
+        countryCode.code = json[JsonKey.code.rawValue].stringValue
+        countryCode.dialCode = json[JsonKey.dialCode.rawValue].stringValue
+        countryCode.name = json[JsonKey.name.rawValue].stringValue
+        countryCode.flag = json[JsonKey.flag.rawValue].stringValue
         return countryCode
     }
 

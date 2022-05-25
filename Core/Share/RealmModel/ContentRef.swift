@@ -42,11 +42,13 @@ public class ContentRef: Object {
     @objc dynamic public var commentCount = 0
     @objc dynamic public var quoteCount = 0
     @objc dynamic public var recastCount = 0
+    @objc dynamic public var farmCount = 0
     @objc dynamic public var liked = false
     @objc dynamic public var commented = false
     @objc dynamic public var quoted = false
     @objc dynamic public var recasted = false
     @objc dynamic public var reported = false
+    @objc dynamic public var farming = false
     @objc dynamic public var createdAt = ""
     @objc dynamic public var updatedAt = ""
     public var photoThumbnail = List<String>()
@@ -58,44 +60,46 @@ public class ContentRef: Object {
 
     public func initCustom(json: JSON) -> ContentRef {
         let contentRef = ContentRef()
-        contentRef.id = json["id"].stringValue
-        contentRef.authorId = json["authorId"].stringValue
-        contentRef.type = json["type"].stringValue
-        contentRef.message = json["message"].stringValue
-        contentRef.createdAt = json["createdAt"].stringValue
-        contentRef.updatedAt = json["updatedAt"].stringValue
+        contentRef.id = json[JsonKey.id.rawValue].stringValue
+        contentRef.authorId = json[JsonKey.authorId.rawValue].stringValue
+        contentRef.type = json[JsonKey.type.rawValue].stringValue
+        contentRef.message = json[JsonKey.message.rawValue].stringValue
+        contentRef.createdAt = json[JsonKey.createdAt.rawValue].stringValue
+        contentRef.updatedAt = json[JsonKey.updatedAt.rawValue].stringValue
 
         // MARK: - Link
-        let linkArr = json["link"].arrayValue
+        let linkArr = json[JsonKey.link.rawValue].arrayValue
         if let linkInfo = linkArr.first {
-            contentRef.linkType = linkInfo["type"].stringValue
-            contentRef.linkUrl = linkInfo["url"].stringValue
-            contentRef.linkTitle = linkInfo["title"].stringValue
-            contentRef.linkDesc = linkInfo["description"].stringValue
-            contentRef.linkImagePreview = linkInfo["imagePreview"].stringValue
+            contentRef.linkType = linkInfo[JsonKey.type.rawValue].stringValue
+            contentRef.linkUrl = linkInfo[JsonKey.url.rawValue].stringValue
+            contentRef.linkTitle = linkInfo[JsonKey.title.rawValue].stringValue
+            contentRef.linkDesc = linkInfo[JsonKey.description.rawValue].stringValue
+            contentRef.linkImagePreview = linkInfo[JsonKey.imagePreview.rawValue].stringValue
         }
 
         // MARK: - Metric
-        let metricJson = JSON(json["metrics"].dictionaryValue)
-        contentRef.likeCount = metricJson["likeCount"].intValue
-        contentRef.commentCount = metricJson["commentCount"].intValue
-        contentRef.quoteCount = metricJson["quoteCount"].intValue
-        contentRef.recastCount = metricJson["recastCount"].intValue
+        let metricJson = JSON(json[JsonKey.metrics.rawValue].dictionaryValue)
+        contentRef.likeCount = metricJson[JsonKey.likeCount.rawValue].intValue
+        contentRef.commentCount = metricJson[JsonKey.commentCount.rawValue].intValue
+        contentRef.quoteCount = metricJson[JsonKey.quoteCount.rawValue].intValue
+        contentRef.recastCount = metricJson[JsonKey.recastCount.rawValue].intValue
+        contentRef.farmCount = metricJson[JsonKey.farmCount.rawValue].intValue
 
         // MARK: - Participate
-        let participateJson = JSON(json["participate"].dictionaryValue)
-        contentRef.liked = participateJson["liked"].boolValue
-        contentRef.commented = participateJson["commented"].boolValue
-        contentRef.quoted = participateJson["quoted"].boolValue
-        contentRef.recasted = participateJson["recasted"].boolValue
-        contentRef.reported = participateJson["reported"].boolValue
+        let participateJson = JSON(json[JsonKey.participate.rawValue].dictionaryValue)
+        contentRef.liked = participateJson[JsonKey.liked.rawValue].boolValue
+        contentRef.commented = participateJson[JsonKey.commented.rawValue].boolValue
+        contentRef.quoted = participateJson[JsonKey.quoted.rawValue].boolValue
+        contentRef.recasted = participateJson[JsonKey.recasted.rawValue].boolValue
+        contentRef.reported = participateJson[JsonKey.reported.rawValue].boolValue
+        contentRef.farming = participateJson[JsonKey.farming.rawValue].boolValue
 
         // MARK: - Photo
-        let photoJson = JSON(json["photo"].dictionaryValue)
-        let photoContent = photoJson["contents"].arrayValue
+        let photoJson = JSON(json[JsonKey.photo.rawValue].dictionaryValue)
+        let photoContent = photoJson[JsonKey.contents.rawValue].arrayValue
         photoContent.forEach { photoInfo in
-            contentRef.photoThumbnail.append(photoInfo["thumbnail"].stringValue)
-            contentRef.photoFullHd.append(photoInfo["fullHd"].stringValue)
+            contentRef.photoThumbnail.append(photoInfo[JsonKey.thumbnail.rawValue].stringValue)
+            contentRef.photoFullHd.append(photoInfo[JsonKey.fullHd.rawValue].stringValue)
         }
         return contentRef
     }

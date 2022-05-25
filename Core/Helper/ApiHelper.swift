@@ -29,6 +29,7 @@ import UIKit
 import DeviceKit
 import Defaults
 import SwiftIP
+import SwiftyJSON
 
 public struct ApiHelper {
     public static let errorResponse: Data = "{\"code\" : \"9999\", \"statusCode\" : \"500\", \"message\" : \"Sorry, Internal server error.\"}".data(using: .utf8) ?? Data()
@@ -75,5 +76,17 @@ public struct ApiHelper {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         Utility.currentViewController().present(alert, animated: true, completion: nil)
+    }
+
+    public static func loadPath() {
+        if let path = ConfigBundle.core.path(forResource: "Urls", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let rawJson = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                let json = JSON(rawJson)
+                print(json)
+                print("=========")
+            } catch {}
+        }
     }
 }
