@@ -55,28 +55,4 @@ public class CheckUpdate: NSObject {
             return false
         }
     }
-
-    public func getAppInfo(completion: @escaping (AppInfo?, Error?) -> Void) -> URLSessionDataTask? {
-        guard let url = URL(string: "http://itunes.apple.com/br/lookup?bundleId=com.castcle.ios.prod") else {
-            DispatchQueue.main.async {
-                completion(nil, VersionError.invalidBundleInfo)
-            }
-            return nil
-        }
-        let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
-            do {
-                if let error = error { throw error }
-                guard let data = data else { throw VersionError.invalidResponse }
-                let result = try JSONDecoder().decode(LookupResult.self, from: data)
-                guard let info = result.results.first else {
-                    throw VersionError.invalidResponse
-                }
-                completion(info, nil)
-            } catch {
-                completion(nil, error)
-            }
-        }
-        task.resume()
-        return task
-    }
 }
