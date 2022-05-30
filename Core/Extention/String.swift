@@ -43,6 +43,11 @@ public extension String {
         return password.evaluate(with: self)
     }
 
+    var isUrl: Bool {
+        let url = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.urlPattern)
+        return url.evaluate(with: self)
+    }
+
     var isCastcleId: Bool {
         let castcleId = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.castcleIdPattern)
         return castcleId.evaluate(with: self)
