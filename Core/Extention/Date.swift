@@ -63,6 +63,17 @@ public extension Date {
         return dateDisplay.replacingOccurrences(of: "BE", with: "")
     }
 
+    func timeToString() -> String {
+        let dateFormatter = DateFormatter()
+        if Defaults[.appLanguage] == "th" {
+            dateFormatter.locale =  Locale(identifier: "th_TH")
+        } else {
+            dateFormatter.locale = Locale(identifier: "en_US")
+        }
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter.string(from: self)
+    }
+
     func dateToStringSever() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "UTC")
