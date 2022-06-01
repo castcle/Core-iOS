@@ -473,7 +473,7 @@ public enum ReactionType: String {
 public enum QrCodeType: String {
     case wallet
     case deposit
-    
+
     public var display: String {
         switch self {
         case .wallet:
@@ -508,7 +508,9 @@ public enum State {
     case registerToken
     case connectSocial
     case requestOtp
+    case requestOtpWithEmail
     case verifyOtp
+    case verifyOtpWithEmail
     case updateMobile
     case getMention
     case getHastag
