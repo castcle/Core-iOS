@@ -39,11 +39,11 @@ public class Page: Object {
     @objc dynamic public var official: Bool = false
     @objc dynamic public var isSyncTwitter: Bool = false
     @objc dynamic public var isSyncFacebook: Bool = false
-    
+
     public override static func primaryKey() -> String? {
         return "castcleId"
     }
-    
+
     public func initCustom(id: String, displayName: String, castcleId: String, avatar: String, cover: String, overview: String, official: Bool) -> Page {
         let page = Page()
         page.id = id

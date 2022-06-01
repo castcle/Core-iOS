@@ -59,6 +59,7 @@ public enum JsonKey: String {
     case maxResults
     case untilId
     case castcleId
+    case referral
     case images
     case contact
     case following
@@ -139,9 +140,11 @@ public enum JsonKey: String {
     case url
     case version
     case button
+    case buttonOk = "button_ok"
+    case buttonCancel = "button_cancel"
     case title
-    case en
-    case th
+    case eng = "en"
+    case tha = "th"
     case hashtags
     case topics
     case follows
@@ -171,6 +174,39 @@ public enum JsonKey: String {
     case resultCount
     case channel
     case targetCastcleId
+    case targetContentId
     case refCode
     case mobileNumber
+    case page
+    case profile
+    case system
+    case uuid
+    case firebaseToken
+    case platform
+    case source
+    case read
+    case landingPage
+    case profileId
+    case otp
+    case newPassword
+    case limit
+    case contentType
+    case deviceUuid = "deviceUUID"
+    case accessToken
+    case refreshToken
+    case exist
+    case suggestCastcleId
+    case registered
+    case client
+    case accountId
+    case uxSessionId
+    case screenId
+    case screenInstance
+    case target
+    case targetId
+    case eventType
+    case eventData
+    case timestamp
+    case paymentMethod
+    case userId
 }

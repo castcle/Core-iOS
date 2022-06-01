@@ -32,17 +32,22 @@ public extension String {
     var dataEncoded: Data {
         return self.data(using: String.Encoding.utf8)!
     }
-    
+
     var isEmail: Bool {
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", RegexpParser.emailPattern)
+        let emailPred = NSPredicate(format: "SELF MATCHES %@", RegexpParser.emailPattern)
         return emailPred.evaluate(with: self)
     }
-    
+
     var isPassword: Bool {
         let password = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.psdPattern)
         return password.evaluate(with: self)
     }
-    
+
+    var isCastcleId: Bool {
+        let castcleId = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.castcleIdPattern)
+        return castcleId.evaluate(with: self)
+    }
+
     func localized(withComment comment: String = "", bundle: Bundle) -> String {
         if let path = bundle.path(forResource: Defaults[.appLanguage], ofType: "lproj"), let languageBundle = Bundle(path: path) {
             return NSLocalizedString(self, bundle: languageBundle, comment: comment)
@@ -52,7 +57,7 @@ public extension String {
             return NSLocalizedString(self, bundle: languageBundle, comment: comment)
         }
     }
-    
+
     static func displayCount(count: Int) -> String {
         if count > 1000000 {
             let show = Int(count / 1000000)
@@ -64,7 +69,7 @@ public extension String {
             return "\(count)"
         }
     }
-    
+
     func substringWithRange(range: Int) -> String {
         if self.utf16.count <= range {
             return self

@@ -27,10 +27,41 @@
 
 import UIKit
 
+// MARK: - EnvironmentType
+public enum EnvironmentType: String {
+    case dev = "DEV"
+    case stg = "STG"
+    case prod = "PROD"
+}
+
 // MARK: - UserRole
 public enum UserRole: String {
     case user = "USER"
     case guest = "GUEST"
+}
+
+// MARK: - AuthenChannelKey
+public enum AuthenChannelKey: String {
+    case mobile
+    case email
+}
+
+// MARK: - AuthenObjective
+public enum AuthenObjective: String {
+    case forgotPassword = "forgot_password"
+    case changePassword = "change_password"
+    case verifyMobile = "verify_mobile"
+    case mergeAccount = "merge_account"
+    case none
+}
+
+// MARK: - AuthenSocialProvider
+public enum AuthenSocialProvider: String {
+    case facebook
+    case twitter
+    case google
+    case apple = "apple id"
+    case none
 }
 
 // MARK: - SocialType
@@ -40,7 +71,7 @@ public enum SocialType: String {
     case google
     case apple
     case unknow
-    
+
     public var display: String {
         switch self {
         case .facebook:
@@ -55,7 +86,7 @@ public enum SocialType: String {
             return "Unknow"
         }
     }
-    
+
     public var icon: UIImage {
         switch self {
         case .facebook:
@@ -70,7 +101,7 @@ public enum SocialType: String {
             return UIImage()
         }
     }
-    
+
     public var color: UIColor {
         switch self {
         case .facebook:
@@ -105,7 +136,7 @@ public enum LinkType: String, Codable {
     case facebook
     case reddit
     case other
-    
+
     public var image: UIImage {
         switch self {
         case .twitter:
@@ -150,15 +181,15 @@ public enum SettingSection {
     case verify
     case ads
     case farming
-    
+
     public var text: String {
         switch self {
         case .profile:
-            return Localization.coreSetting.account.text
+            return Localization.CoreSetting.account.text
         case .languang:
-            return Localization.coreSetting.language.text
+            return Localization.CoreSetting.language.text
         case .aboutUs:
-            return Localization.coreSetting.about.text
+            return Localization.CoreSetting.about.text
         case .ads:
             return "Ad Manager"
         case .farming:
@@ -167,7 +198,7 @@ public enum SettingSection {
             return ""
         }
     }
-    
+
     public var image: UIImage {
         switch self {
         case .profile:
@@ -198,6 +229,15 @@ public enum UserFields: String {
 public enum PostType: String {
     case newCast = "New Cast"
     case quoteCast = "Quote Cast"
+}
+
+// MARK: - ProfileContentType
+public enum ProfileContentType: String {
+    case all
+    case post
+    case blog
+    case photo
+    case unknow
 }
 
 // MARK: - FeedCellType
@@ -261,9 +301,16 @@ public enum AuthorType: String, Codable {
 
 // MARK: - ProfileType
 public enum ProfileType {
-    case me
+    case mine
     case user
     case unknow
+}
+
+// MARK: - FollowType
+public enum FollowType {
+    case following
+    case follower
+    case none
 }
 
 // MARK: - VerifyCodeType
@@ -290,7 +337,7 @@ public enum KeychainKey: String {
 public enum AdsObjective: String {
     case engagement
     case reach
-    
+
     public var detail: String {
         switch self {
         case .engagement:
@@ -299,7 +346,7 @@ public enum AdsObjective: String {
             return "Show your ad to the maximum number of people"
         }
     }
-    
+
     public var image: UIImage {
         switch self {
         case .engagement:
@@ -333,9 +380,18 @@ public enum BoostType: String {
 
 // MARK: - AdsPaymentType
 public enum AdsPaymentType: String {
-    case token = "Token wallet"
-    case adCredit = "Ad credit"
-    
+    case token = "token-wallet"
+    case adCredit = "ad-credit"
+
+    public var display: String {
+        switch self {
+        case .token:
+            return "Token wallet"
+        case .adCredit:
+            return "Ad credit"
+        }
+    }
+
     public var image: UIImage {
         switch self {
         case .token:
@@ -344,7 +400,7 @@ public enum AdsPaymentType: String {
             return UIImage.init(icon: .castcle(.coin), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
         }
     }
-    
+
     public var notice: String {
         switch self {
         case .token:
@@ -353,6 +409,72 @@ public enum AdsPaymentType: String {
             return "Note: Ad credit are valid\nuntil 29/12/2020"
         }
     }
+}
+
+// MARK: - SearchSection
+public enum SearchSection {
+    case trend
+    case lastest
+    case photo
+    case people
+    case none
+}
+
+// MARK: - NotificationSection
+public enum NotificationSection: String {
+    case profile
+    case page
+    case system
+}
+
+// MARK: - NotificationType
+public enum NotificationType: String {
+    case comment
+    case follow
+    case like
+    case recast
+    case adsApprove = "ads-approve"
+    case none
+}
+
+// MARK: - UpdateImageType
+public enum UpdateImageType {
+    case avatar
+    case cover
+    case none
+}
+
+// MARK: - SearchResualState
+public enum SearchResualState {
+    case initial
+    case suggest
+    case hastag
+    case resualt
+    case unknow
+}
+
+// MARK: - WalletHistoryType
+public enum WalletHistoryType: String {
+    case wallet = "Wallet Balance"
+    case farming = "Content Farming"
+    case social = "Social Rewards"
+    case transaction = "Deposit & Send"
+    case airdrop = "Referral & Airdrop"
+}
+
+// MARK: - ReactionType
+public enum ReactionType: String {
+    case like
+    case recast
+    case none
+}
+
+// MARK: - LandingPage
+public enum LandingPage: String {
+    case follower
+    case comment
+    case cast
+    case none
 }
 
 // MARK: - LoadState
@@ -395,9 +517,13 @@ public enum State {
     case reconnectSyncSocial
     case disconnectSyncSocial
     case syncSocial
+    case guestLogin
     case login
     case refreshToken
+    case getContent
+    case getContentDetail
     case getComments
+    case getCommentDetail
     case createComment
     case replyComment
     case likeComment
@@ -407,5 +533,12 @@ public enum State {
     case deleteContent
     case reportContent
     case getCountryCode
+    case getBadges
+    case getNotification
+    case deleteNotification
+    case readNotification
+    case readAllNotification
+    case getUserLikeContent
+    case getUserRecastContent
     case none
 }

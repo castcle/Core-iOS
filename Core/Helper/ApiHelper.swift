@@ -31,6 +31,8 @@ import Defaults
 import SwiftIP
 
 public struct ApiHelper {
+    public static let errorResponse: Data = "{\"code\" : \"9999\", \"statusCode\" : \"500\", \"message\" : \"Sorry, Internal server error.\"}".data(using: .utf8) ?? Data()
+
     public static func header(version: String = "") -> [String: String] {
         let publicIP: String = IP.public() ?? "1.1.1.1"
         var param: [String: String] = [
@@ -46,7 +48,7 @@ public struct ApiHelper {
         }
         return param
     }
-    
+
     public static func headerRefreshToken(version: String = "") -> [String: String] {
         let publicIP: String = IP.public() ?? "1.1.1.1"
         var param: [String: String] = [
@@ -62,9 +64,15 @@ public struct ApiHelper {
         }
         return param
     }
-    
+
     public static func displayError(code: String = "", error: String = "Something Went wrong") {
         let alert = UIAlertController(title: "Error" + (code.isEmpty ? "" : " (\(code))"), message: error, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        Utility.currentViewController().present(alert, animated: true, completion: nil)
+    }
+
+    public static func displayMessage(title: String = "", message: String = "") {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         Utility.currentViewController().present(alert, animated: true, completion: nil)
     }

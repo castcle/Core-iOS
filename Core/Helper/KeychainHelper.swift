@@ -29,7 +29,7 @@ import SwiftKeychainWrapper
 
 public class KeychainHelper {
     public static let shared = KeychainHelper()
-    
+
     public func getKeychainWith(with key: KeychainKey) -> String {
         if let value: String = KeychainWrapper.standard.string(forKey: key.rawValue) {
             return value
@@ -37,7 +37,7 @@ public class KeychainHelper {
             return ""
         }
     }
-    
+
     public func setKeychainWith(with key: KeychainKey, value: String) {
         let _: Bool = KeychainWrapper.standard.set(value, forKey: key.rawValue)
     }

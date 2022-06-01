@@ -28,7 +28,7 @@
 import UIKit
 
 public extension UIFont {
-    
+
     // load framework font in application
     static let loadAllFonts: () = {
         registerFont(withFilenameString: "Kanit-Bold.ttf", bundle: ConfigBundle.core)
@@ -40,7 +40,7 @@ public extension UIFont {
         registerFont(withFilenameString: "Sarabun-LightItalic.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Castcle.ttf", bundle: ConfigBundle.core)
     }()
-    
+
     static let checkFont: () = {
         for family: String in UIFont.familyNames {
             print(family)
@@ -50,35 +50,35 @@ public extension UIFont {
         }
     }()
 
-    //MARK: - Make custom font bundle register to framework
+    // MARK: - Make custom font bundle register to framework
     static func registerFont(withFilenameString filenameString: String, bundle: Bundle) {
 
         guard let pathForResourceString = bundle.path(forResource: filenameString, ofType: nil) else {
-            print("UIFont+:  Failed to register font - path for resource not found.")
+            print("UIFont+: Failed to register font - path for resource not found.")
             return
         }
 
         guard let fontData = NSData(contentsOfFile: pathForResourceString) else {
-            print("UIFont+:  Failed to register font - font data could not be loaded.")
+            print("UIFont+: Failed to register font - font data could not be loaded.")
             return
         }
 
         guard let dataProvider = CGDataProvider(data: fontData) else {
-            print("UIFont+:  Failed to register font - data provider could not be loaded.")
+            print("UIFont+: Failed to register font - data provider could not be loaded.")
             return
         }
 
         guard let font = CGFont(dataProvider) else {
-            print("UIFont+:  Failed to register font - font could not be loaded.")
+            print("UIFont+: Failed to register font - font could not be loaded.")
             return
         }
 
-        var errorRef: Unmanaged<CFError>? = nil
-        if (CTFontManagerRegisterGraphicsFont(font, &errorRef) == false) {
-            print("UIFont+:  Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
+        var errorRef: Unmanaged<CFError>?
+        if !CTFontManagerRegisterGraphicsFont(font, &errorRef) {
+            print("UIFont+: Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
         }
     }
-    
+
     enum Fonts: String, CaseIterable {
         case bold = "Kanit-Bold"
         case light = "Kanit-Light"
@@ -92,11 +92,11 @@ public extension UIFont {
 
     enum FontSize {
         case title
-        case h1
-        case h2
-        case h3
-        case h4
-        case h5
+        case head1
+        case head2
+        case head3
+        case head4
+        case head5
         case body
         case overline
         case small
@@ -106,15 +106,15 @@ public extension UIFont {
             switch self {
             case .title:
                 return 30
-            case .h1:
+            case .head1:
                 return 30
-            case .h2:
+            case .head2:
                 return 24
-            case .h3:
+            case .head3:
                 return 20
-            case .h4:
+            case .head4:
                 return 18
-            case .h5:
+            case .head5:
                 return 16
             case .body:
                 return 16

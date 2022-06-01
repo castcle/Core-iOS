@@ -39,11 +39,11 @@ public class AuthorRef: Object {
     @objc dynamic public var blocked = false
     @objc dynamic public var avatar = ""
     @objc dynamic public var official = false
-    
+
     public override static func primaryKey() -> String? {
         return "castcleId"
     }
-    
+
     public func initCustom(json: JSON) -> AuthorRef {
         let authorRef = AuthorRef()
         authorRef.id = json["id"].stringValue

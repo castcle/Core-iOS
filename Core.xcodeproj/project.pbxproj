@@ -10,10 +10,6 @@
 		B703A551278AB37A007BFA01 /* ContentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703A550278AB379007BFA01 /* ContentRef.swift */; };
 		B70748E427955C6700F01CB4 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748DA27955C6700F01CB4 /* TwitterConstants.swift */; };
 		B70748E527955C6700F01CB4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748DB27955C6700F01CB4 /* Environment.swift */; };
-		B70748E627955C6700F01CB4 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748DC27955C6700F01CB4 /* Development.xcconfig */; };
-		B70748E827955C6700F01CB4 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748DE27955C6700F01CB4 /* Test.xcconfig */; };
-		B70748EA27955C6700F01CB4 /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748E027955C6700F01CB4 /* Staging.xcconfig */; };
-		B70748EB27955C6700F01CB4 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B70748E127955C6700F01CB4 /* Production.xcconfig */; };
 		B70748EC27955C6700F01CB4 /* ConfigBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748E227955C6700F01CB4 /* ConfigBundle.swift */; };
 		B715A0F027EC47A70011C13C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B715A0EF27EC47A70011C13C /* FirebaseAnalytics */; };
 		B715A0F227EC47A70011C13C /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B715A0F127EC47A70011C13C /* FirebaseAnalyticsSwift-Beta */; };
@@ -80,7 +76,6 @@
 		B754FD3727FFFEFD00ACB1D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B754FD3927FFFEFD00ACB1D2 /* Localizable.strings */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
 		B75528E2269B81C6005D5EB5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528E1269B81C6005D5EB5 /* Image.swift */; };
-		B755290B269C10E5005D5EB5 /* Emums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755290A269C10E5005D5EB5 /* Emums.swift */; };
 		B755292B269C42AE005D5EB5 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755292A269C42AE005D5EB5 /* Window.swift */; };
 		B755292E269C4311005D5EB5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755292D269C4311005D5EB5 /* Utility.swift */; };
 		B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529A9269E174E005D5EB5 /* TextSize.swift */; };
@@ -104,6 +99,7 @@
 		B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79281C5269596A1000ED84A /* ColorTheme.xcassets */; };
 		B79281C826959854000ED84A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281C726959854000ED84A /* Color.swift */; };
 		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
+		B79A8ED42822629100918716 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = B79A8ED32822629100918716 /* SwipeCellKit */; };
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
 		B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A15B162795AE1C001E34DE /* KeychainHelper.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
@@ -122,7 +118,6 @@
 		B70748DA27955C6700F01CB4 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
 		B70748DB27955C6700F01CB4 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		B70748DC27955C6700F01CB4 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
-		B70748DE27955C6700F01CB4 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		B70748E027955C6700F01CB4 /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		B70748E127955C6700F01CB4 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		B70748E227955C6700F01CB4 /* ConfigBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigBundle.swift; sourceTree = "<group>"; };
@@ -143,7 +138,6 @@
 		B754FD3A27FFFEFF00ACB1D2 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B75528DF269B7ECF005D5EB5 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		B75528E1269B81C6005D5EB5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		B755290A269C10E5005D5EB5 /* Emums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emums.swift; sourceTree = "<group>"; };
 		B755292A269C42AE005D5EB5 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		B755292D269C4311005D5EB5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		B75529A9269E174E005D5EB5 /* TextSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
@@ -208,6 +202,7 @@
 				B715A11E27EC47A70011C13C /* FirebaseRemoteConfig in Frameworks */,
 				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B715A0FC27EC47A70011C13C /* FirebaseAuthCombine-Community in Frameworks */,
+				B79A8ED42822629100918716 /* SwipeCellKit in Frameworks */,
 				B715A12027EC47A70011C13C /* FirebaseRemoteConfigSwift-Beta in Frameworks */,
 				B715A0FA27EC47A70011C13C /* FirebaseAuth in Frameworks */,
 				B715A11C27EC47A70011C13C /* FirebasePerformance in Frameworks */,
@@ -251,7 +246,6 @@
 				B70748E127955C6700F01CB4 /* Production.xcconfig */,
 				B70748E027955C6700F01CB4 /* Staging.xcconfig */,
 				B70748DC27955C6700F01CB4 /* Development.xcconfig */,
-				B70748DE27955C6700F01CB4 /* Test.xcconfig */,
 			);
 			name = "Core Config";
 			path = "../../Config/Core Config";
@@ -332,7 +326,6 @@
 				B79281DC2695A02F000ED84A /* Font.swift */,
 				B75528DF269B7ECF005D5EB5 /* View.swift */,
 				B75528E1269B81C6005D5EB5 /* Image.swift */,
-				B755290A269C10E5005D5EB5 /* Emums.swift */,
 				B755292A269C42AE005D5EB5 /* Window.swift */,
 				B75529DF269FE5D3005D5EB5 /* Date.swift */,
 				B717447626E2587C0014D6B5 /* NavigationBar.swift */,
@@ -492,6 +485,7 @@
 				B715A12127EC47A70011C13C /* FirebaseStorage */,
 				B715A12327EC47A70011C13C /* FirebaseStorageCombine-Community */,
 				B715A12527EC47A70011C13C /* FirebaseStorageSwift-Beta */,
+				B79A8ED32822629100918716 /* SwipeCellKit */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -503,7 +497,7 @@
 		B7F69CBC268EB85600B01223 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					B7F69CC4268EB85600B01223 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -548,6 +542,7 @@
 				B74E911E27901BAF0067059B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				B75E5B2C27ABCD2B00B6CC14 /* XCRemoteSwiftPackageReference "CenteredCollectionView" */,
 				B715A0EE27EC47A60011C13C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -567,16 +562,12 @@
 				B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */,
 				B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
-				B70748E827955C6700F01CB4 /* Test.xcconfig in Resources */,
 				B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */,
-				B70748E627955C6700F01CB4 /* Development.xcconfig in Resources */,
-				B70748EB27955C6700F01CB4 /* Production.xcconfig in Resources */,
 				B71B6684272564A800191A62 /* Sarabun-Bold.ttf in Resources */,
 				B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */,
 				B754FD3727FFFEFD00ACB1D2 /* Localizable.strings in Resources */,
 				B75E62AD2696F33D003E1ADA /* Castcle.ttf in Resources */,
 				B71B6685272564A800191A62 /* Kanit-Light.ttf in Resources */,
-				B70748EA27955C6700F01CB4 /* Staging.xcconfig in Resources */,
 				B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,7 +584,6 @@
 				B70748E527955C6700F01CB4 /* Environment.swift in Sources */,
 				B7630CC2279FECAF00675165 /* DispatchQueue.swift in Sources */,
 				B76E4B12272FAB87008FFD2C /* ExtractUrls.swift in Sources */,
-				B755290B269C10E5005D5EB5 /* Emums.swift in Sources */,
 				B7928123268F2025000ED84A /* String.swift in Sources */,
 				B75528E0269B7ECF005D5EB5 /* View.swift in Sources */,
 				B7928125268F2056000ED84A /* Keys.swift in Sources */,
@@ -647,6 +637,7 @@
 			baseConfigurationReference = B70748E027955C6700F01CB4 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -741,6 +732,7 @@
 			baseConfigurationReference = B70748DC27955C6700F01CB4 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -835,6 +827,7 @@
 			baseConfigurationReference = B70748E027955C6700F01CB4 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -881,6 +874,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -922,6 +916,7 @@
 			baseConfigurationReference = B70748DC27955C6700F01CB4 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1011,6 +1006,7 @@
 			baseConfigurationReference = B70748E127955C6700F01CB4 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1077,6 +1073,7 @@
 			baseConfigurationReference = B70748E127955C6700F01CB4 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1123,6 +1120,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -1401,6 +1399,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.5.1;
+			};
+		};
+		B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 		B7A71D7F27045E090092F318 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
@@ -1694,6 +1700,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B7910EDA26C0EF080097C94E /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		B79A8ED32822629100918716 /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
 		};
 		B7A71D8027045E090092F318 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;

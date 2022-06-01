@@ -32,7 +32,7 @@ import UIKit
 
 public class UserManager: NSObject {
     public static let shared = UserManager()
-    
+
     public var isLogin: Bool {
         if Defaults[.userRole] == "GUEST" {
             return false
@@ -42,15 +42,15 @@ public class UserManager: NSObject {
             return true
         }
     }
-    
+
     public var accessToken: String {
         return Defaults[.accessToken]
     }
-    
+
     public var refreshToken: String {
         return Defaults[.refreshToken]
     }
-    
+
     public var userRole: UserRole {
         if Defaults[.userRole] == UserRole.user.rawValue {
             return .user
@@ -58,79 +58,79 @@ public class UserManager: NSObject {
             return .guest
         }
     }
-    
+
     public var badgeCount: Int {
-        return Defaults[.notificationBadges]
+        return (Defaults[.badgePage] + Defaults[.badgeProfile] + Defaults[.badgeSystem])
     }
-    
+
     public var id: String {
         return Defaults[.userId]
     }
-    
+
     public var displayName: String {
         return Defaults[.displayName]
     }
-    
+
     public var castcleId: String {
         return "@\(Defaults[.castcleId])"
     }
-    
+
     public var rawCastcleId: String {
         return Defaults[.castcleId]
     }
-    
+
     public var email: String {
         return Defaults[.email]
     }
-    
+
     public var mobile: String {
         return Defaults[.mobileNumber]
     }
-    
+
     public var dob: String {
         return Defaults[.dob]
     }
-    
+
     public var avatar: String {
         return Defaults[.avatar]
     }
-    
+
     public var cover: String {
         return Defaults[.cover]
     }
-    
+
     public var overview: String {
         return Defaults[.overview]
     }
-    
+
     public var facebookLink: String {
         return Defaults[.facebookLink]
     }
-    
+
     public var twitterLink: String {
         return Defaults[.twitterLink]
     }
-    
+
     public var youtubeLink: String {
         return Defaults[.youtubeLink]
     }
-    
+
     public var mediumLink: String {
         return Defaults[.mediumLink]
     }
-    
+
     public var websiteLink: String {
         return Defaults[.websiteLink]
     }
-    
+
     public var following: String {
         return "\(String.displayCount(count: Defaults[.following]))"
     }
-    
+
     public var followers: String {
         return "\(String.displayCount(count: Defaults[.followers]))"
     }
-    
+
     public var isVerified: Bool {
         if Defaults[.verifiedEmail] || Defaults[.verifiedMobile] || Defaults[.verifiedSocial] {
             return true
@@ -138,27 +138,27 @@ public class UserManager: NSObject {
             return false
         }
     }
-    
+
     public var isVerifiedEmail: Bool {
         return Defaults[.verifiedEmail]
     }
-    
+
     public var isVerifiedMobile: Bool {
         return Defaults[.verifiedMobile]
     }
-    
+
     public var official: Bool {
         return Defaults[.verifiedOfficial]
     }
-    
+
     public var passwordNotSet: Bool {
         return Defaults[.passwordNotSet]
     }
-    
+
     public var canUpdateCastcleId: Bool {
         return Defaults[.canUpdateCastcleId]
     }
-    
+
     public var accountId: String {
         do {
             let payload = self.getJwtBodyString(token: Defaults[.accessToken])
@@ -169,7 +169,7 @@ public class UserManager: NSObject {
             return ""
         }
     }
-    
+
     public var uxSessionId: String {
         do {
             let payload = self.getJwtBodyString(token: Defaults[.accessToken])
@@ -182,14 +182,14 @@ public class UserManager: NSObject {
             return ""
         }
     }
-    
+
     private func MD5(string: String) -> String {
         let digest = Insecure.MD5.hash(data: string.data(using: .utf8) ?? Data())
         return digest.map {
             String(format: "%02hhx", $0)
         }.joined()
     }
-    
+
     func getJwtBodyString(token: String) -> String {
         let segments = token.components(separatedBy: ".")
         var base64String = segments[1]
@@ -205,15 +205,15 @@ public class UserManager: NSObject {
         let base64Decoded: String = String(data: decodedData! as Data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
         return base64Decoded
     }
-    
+
     public func setAccessToken(token: String) {
         Defaults[.accessToken] = token
     }
-    
+
     public func setRefreshToken(token: String) {
         Defaults[.refreshToken] = token
     }
-    
+
     public func setUserRole(userRole: UserRole) {
         Defaults[.userRole] = userRole.rawValue
     }

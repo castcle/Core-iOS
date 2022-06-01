@@ -35,25 +35,25 @@ protocol FontProtocol {
 }
 
 public enum FontType: FontProtocol {
-    
+
     case castcle(CastcleType)
-    
+
     func errorAnnounce() -> String {
         let message = " FONT - not associated with Info.plist when manual installation was performed"
         let fontName = self.fontName().uppercased()
         let errorAnnounce = fontName.appending(message)
         return errorAnnounce
     }
-    
+
     func familyName() -> String {
         var familyName: String
         switch self {
         case .castcle:
-            familyName = "iconfont-castcle-17"
+            familyName = "iconfont-castcle-18"
         }
         return familyName
     }
-    
+
     func fileName() -> String {
         var fileName: String
         switch self {
@@ -62,16 +62,16 @@ public enum FontType: FontProtocol {
         }
         return fileName
     }
-    
+
     func fontName() -> String {
         var fontName: String
         switch self {
         case .castcle:
-            fontName = "iconfont-castcle-17"
+            fontName = "iconfont-castcle-18"
         }
         return fontName
     }
-    
+
     public var text: String? {
         var text: String
 

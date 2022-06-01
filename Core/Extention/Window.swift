@@ -28,26 +28,26 @@
 import UIKit
 
 extension UIWindow {
-    
+
     func visibleViewController() -> UIViewController? {
         if let rootViewController: UIViewController = self.rootViewController {
             return UIWindow.getVisibleViewControllerFrom(rootViewController)
         }
         return nil
     }
-    
-    class func getVisibleViewControllerFrom(_ vc:UIViewController) -> UIViewController {
-        if vc.isKind(of: UINavigationController.self) {
-            let navigationController = vc as! UINavigationController
-            return UIWindow.getVisibleViewControllerFrom( navigationController.visibleViewController! )
-        } else if vc.isKind(of: UITabBarController.self) {
-            let tabBarController = vc as! UITabBarController
-            return UIWindow.getVisibleViewControllerFrom(tabBarController.selectedViewController!)
+
+    class func getVisibleViewControllerFrom(_ viewController: UIViewController) -> UIViewController {
+        if viewController.isKind(of: UINavigationController.self) {
+            let navigationController = viewController as? UINavigationController
+            return UIWindow.getVisibleViewControllerFrom(navigationController?.visibleViewController ?? UINavigationController())
+        } else if viewController.isKind(of: UITabBarController.self) {
+            let tabBarController = viewController as? UITabBarController
+            return UIWindow.getVisibleViewControllerFrom(tabBarController?.selectedViewController! ?? UIViewController())
         } else {
-            if let presentedViewController = vc.presentedViewController {
+            if let presentedViewController = viewController.presentedViewController {
                 return UIWindow.getVisibleViewControllerFrom(presentedViewController)
             } else {
-                return vc;
+                return viewController
             }
         }
     }

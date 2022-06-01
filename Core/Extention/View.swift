@@ -35,7 +35,7 @@ public extension UIView {
         layer.borderColor = borderColor.cgColor
         backgroundColor = color
     }
-    
+
     func capsule(color: UIColor = UIColor.clear, borderWidth: CGFloat = 2.0, borderColor: UIColor = UIColor.clear) {
         layer.cornerRadius = frame.size.height * 0.5
         clipsToBounds = true
@@ -43,9 +43,16 @@ public extension UIView {
         layer.borderColor = borderColor.cgColor
         backgroundColor = color
     }
-    
+
     static func aspectRatioCalculator(ratioWidth: Double, ratioHeight: Double, pixelsWidth: Double) -> Double {
         return ((pixelsWidth * ratioHeight) / ratioWidth)
+    }
+
+    func asImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
     }
 }
 
@@ -55,7 +62,7 @@ public extension UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-    
+
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
