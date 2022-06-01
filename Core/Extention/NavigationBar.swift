@@ -35,6 +35,7 @@ public enum NavBarButtonType {
     case airdrop
     case wallet
     case close
+    case qrCode
 
     public var image: UIImage {
         switch self {
@@ -52,6 +53,8 @@ public enum NavBarButtonType {
             return UIImage.init(icon: .castcle(.wallet), size: CGSize(width: 24, height: 24), textColor: UIColor.Asset.white)
         case .close:
             return UIImage.init(icon: .castcle(.incorrect), size: CGSize(width: 24, height: 24), textColor: UIColor.Asset.white)
+        case .qrCode:
+            return UIImage.init(icon: .castcle(.qrCode), size: CGSize(width: 24, height: 24), textColor: UIColor.Asset.white)
         }
     }
 
