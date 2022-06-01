@@ -469,6 +469,21 @@ public enum ReactionType: String {
     case none
 }
 
+// MARK: - ReactionType
+public enum QrCodeType: String {
+    case wallet
+    case deposit
+    
+    public var display: String {
+        switch self {
+        case .wallet:
+            return "My QR Code"
+        case .deposit:
+            return "Deposit CAST"
+        }
+    }
+}
+
 // MARK: - LandingPage
 public enum LandingPage: String {
     case follower
