@@ -26,6 +26,7 @@
 //
 
 import Defaults
+import UIKit
 
 public extension String {
 
@@ -51,6 +52,13 @@ public extension String {
     var isCastcleId: Bool {
         let castcleId = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.castcleIdPattern)
         return castcleId.evaluate(with: self)
+    }
+
+    var imageFromBase64: UIImage? {
+        guard let imageData = Data(base64Encoded: self, options: .ignoreUnknownCharacters) else {
+            return nil
+        }
+        return UIImage(data: imageData)
     }
 
     func localized(withComment comment: String = "", bundle: Bundle) -> String {

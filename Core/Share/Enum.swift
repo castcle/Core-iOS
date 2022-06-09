@@ -484,6 +484,13 @@ public enum QrCodeType: String {
     }
 }
 
+// MARK: - SizeType
+public enum SizeType: String {
+    case thumbnail
+    case medium
+    case large
+}
+
 // MARK: - LandingPage
 public enum LandingPage: String {
     case follower

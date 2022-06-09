@@ -214,4 +214,5 @@ public enum JsonKey: String {
     case userId
     case dialCode
     case flag
+    case size
 }
