@@ -181,10 +181,10 @@ public extension UIViewController {
     }
 
     @objc private func popAction(_ sender: UIButton) {
-        Utility.currentViewController().navigationController?.popViewController(animated: (sender.tag == 1 ? true : false))
+        Utility.currentViewController().navigationController?.popViewController(animated: (sender.tag == 1))
     }
 
     @objc private func popToRootAction(_ sender: UIButton) {
-        Utility.currentViewController().navigationController?.popToRootViewController(animated: (sender.tag == 1 ? true : false))
+        Utility.currentViewController().navigationController?.popToRootViewController(animated: (sender.tag == 1))
     }
 }

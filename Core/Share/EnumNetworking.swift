@@ -105,7 +105,7 @@ public enum JsonKey: String {
     case code
     case slug
     case name
-    case username
+    case userNameLower = "username"
     case about
     case key
     case rank

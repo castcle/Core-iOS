@@ -54,8 +54,8 @@ public class AuthorRef: Object {
         authorRef.followed = json[JsonKey.followed.rawValue].boolValue
         authorRef.blocking = json[JsonKey.blocking.rawValue].boolValue
         authorRef.blocked = json[JsonKey.blocked.rawValue].boolValue
-        let avatar = JSON(json[JsonKey.avatar.rawValue].dictionaryValue)
-        authorRef.avatar = avatar[JsonKey.thumbnail.rawValue].stringValue
+        let avatarThumbnail = JSON(json[JsonKey.avatar.rawValue].dictionaryValue)
+        authorRef.avatar = avatarThumbnail[JsonKey.thumbnail.rawValue].stringValue
         let verified = JSON(json[JsonKey.verified.rawValue].dictionaryValue)
         authorRef.official = verified[JsonKey.official.rawValue].boolValue
         return authorRef

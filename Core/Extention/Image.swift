@@ -85,11 +85,11 @@ public extension UIImage {
     }
 
     static func iconFromUrl(url: String) -> UIImage? {
-        if url.contains("reddit.com") {
+        if url.contains(ConstantUrl.reddit.path) {
             return UIImage.Asset.reddit
-        } else if url.contains("twitter.com") {
+        } else if url.contains(ConstantUrl.twitter.path) {
             return UIImage.Asset.twitter
-        } else if url.contains("https://t.co/") {
+        } else if url.contains(ConstantUrl.twitterShot.path) {
             return UIImage.Asset.twitter
         } else {
             return nil

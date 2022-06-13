@@ -35,22 +35,22 @@ public extension String {
     }
 
     var isEmail: Bool {
-        let emailPred = NSPredicate(format: "SELF MATCHES %@", RegexpParser.emailPattern)
+        let emailPred = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.emailPattern)
         return emailPred.evaluate(with: self)
     }
 
     var isPassword: Bool {
-        let password = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.psdPattern)
+        let password = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.psdPattern)
         return password.evaluate(with: self)
     }
 
     var isUrl: Bool {
-        let url = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.urlPattern)
+        let url = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.urlPattern)
         return url.evaluate(with: self)
     }
 
     var isCastcleId: Bool {
-        let castcleId = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.castcleIdPattern)
+        let castcleId = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.castcleIdPattern)
         return castcleId.evaluate(with: self)
     }
 

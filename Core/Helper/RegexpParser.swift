@@ -29,12 +29,13 @@ import UIKit
 import Atributika
 
 public struct RegexpParser {
-    public static let hashtagPattern = "#[^[:punct:][:space:]]+"
-    public static let mentionPattern = "@[^[:punct:][:space:]]+"
-    public static let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-    public static let psdPattern = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{6,20}$"
-    public static let castcleIdPattern = "[A-Za-z0-9]+"
-    public static let urlPattern = "((http|https)://)?([(w|W)]{3}+\\.)?+(.)+\\.+[A-Za-z]{2,3}+(\\.)?+(/(.)*)?"
+    public static let selfMatchesStr: String = "SELF MATCHES %@"
+    public static let hashtagPattern: String = "#[^[:punct:][:space:]]+"
+    public static let mentionPattern: String = "@[^[:punct:][:space:]]+"
+    public static let emailPattern: String = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    public static let psdPattern: String = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{6,20}$"
+    public static let castcleIdPattern: String = "[A-Za-z0-9]+"
+    public static let urlPattern: String = "((http|https)://)?([(w|W)]{3}+\\.)?+(.)+\\.+[A-Za-z]{2,3}+(\\.)?+(/(.)*)?"
 }
 
 public struct AttributedContent {
