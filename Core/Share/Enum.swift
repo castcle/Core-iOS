@@ -374,7 +374,7 @@ public enum BoostStatus: String {
 
 // MARK: - BoostType
 public enum BoostType: String {
-    case page
+    case user
     case content
 }
 
@@ -407,6 +407,39 @@ public enum AdsPaymentType: String {
             return "Approximate token value in\nUSD 40.32 Learn more"
         case .adCredit:
             return "Note: Ad credit are valid\nuntil 29/12/2020"
+        }
+    }
+}
+
+// MARK: - DailyBidType
+public enum DailyBidType: String {
+    case auto
+    case costPerAccount = "cost-per-account"
+
+    public var display: String {
+        switch self {
+        case .auto:
+            return "Auto bid (Recommended)"
+        case .costPerAccount:
+            return "Cost per account"
+        }
+    }
+
+    public var image: UIImage {
+        switch self {
+        case .auto:
+            return UIImage.init(icon: .castcle(.remind), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+        case .costPerAccount:
+            return UIImage.init(icon: .castcle(.remind), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+        }
+    }
+
+    public var notice: String {
+        switch self {
+        case .auto:
+            return "Maximize your budget to get the best result"
+        case .costPerAccount:
+            return "Set daily cost per account to manage cost per 1k impressions"
         }
     }
 }

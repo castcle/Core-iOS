@@ -118,6 +118,8 @@ public enum JsonKey: String {
     case objective
     case dailyBudget
     case duration
+    case dailyBidType
+    case dailyBidValue
     case adStatus
     case boostStatus
     case boostType
