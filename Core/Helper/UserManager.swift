@@ -26,7 +26,6 @@
 //
 
 import Defaults
-import CryptoKit
 import SwiftyJSON
 import UIKit
 
@@ -177,17 +176,10 @@ public class UserManager: NSObject {
             let json = try JSON(data: payloadData!)
             let userId = json[JsonKey.id.rawValue].stringValue
             let rawUxSessionId = "\(userId)+\(Date.currentTimeStamp)"
-            return MD5(string: rawUxSessionId)
+            return Encryption.shared.encryptRawUxSession(rawUxSessionId)
         } catch {
             return ""
         }
-    }
-
-    private func MD5(string: String) -> String {
-        let digest = Insecure.MD5.hash(data: string.data(using: .utf8) ?? Data())
-        return digest.map {
-            String(format: "%02hhx", $0)
-        }.joined()
     }
 
     func getJwtBodyString(token: String) -> String {

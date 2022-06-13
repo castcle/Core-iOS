@@ -100,6 +100,7 @@
 		B79281DD2695A02F000ED84A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79281DC2695A02F000ED84A /* Font.swift */; };
 		B79A8ED42822629100918716 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = B79A8ED32822629100918716 /* SwipeCellKit */; };
 		B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79DF1AB270AF4DF00A40502 /* Notification.swift */; };
+		B79F2AFD2856F62500B82989 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79F2AFC2856F62500B82989 /* Encryption.swift */; };
 		B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A15B162795AE1C001E34DE /* KeychainHelper.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
@@ -158,6 +159,7 @@
 		B79281C726959854000ED84A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B79281DC2695A02F000ED84A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		B79F2AFC2856F62500B82989 /* Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
 		B7A15B162795AE1C001E34DE /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				B70748DA27955C6700F01CB4 /* TwitterConstants.swift */,
 				B70748DB27955C6700F01CB4 /* Environment.swift */,
 				B7F376C4283E317C00BDCFEB /* Urls.swift */,
+				B79F2AFC2856F62500B82989 /* Encryption.swift */,
 				B70748E127955C6700F01CB4 /* Production.xcconfig */,
 				B70748E027955C6700F01CB4 /* Staging.xcconfig */,
 				B70748DC27955C6700F01CB4 /* Development.xcconfig */,
@@ -607,6 +610,7 @@
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */,
 				B7F376C5283E317C00BDCFEB /* Urls.swift in Sources */,
+				B79F2AFD2856F62500B82989 /* Encryption.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
 				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
 				B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */,

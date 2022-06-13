@@ -35,7 +35,7 @@ public struct ApiHelper {
     public static let errorResponse: Data = "{\"code\" : \"9999\", \"statusCode\" : \"500\", \"message\" : \"Sorry, Internal server error.\"}".data(using: .utf8) ?? Data()
 
     public static func header(version: String = "") -> [String: String] {
-        let publicIP: String = IP.public() ?? "1.1.1.1"
+        let publicIP: String = IP.public() ?? APIs.defualtIpAddress
         var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
@@ -51,7 +51,7 @@ public struct ApiHelper {
     }
 
     public static func headerRefreshToken(version: String = "") -> [String: String] {
-        let publicIP: String = IP.public() ?? "1.1.1.1"
+        let publicIP: String = IP.public() ?? APIs.defualtIpAddress
         var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
