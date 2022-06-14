@@ -428,9 +428,9 @@ public enum DailyBidType: String {
     public var image: UIImage {
         switch self {
         case .auto:
-            return UIImage.init(icon: .castcle(.remind), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+            return UIImage.init(icon: .castcle(.autoBid), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
         case .costPerAccount:
-            return UIImage.init(icon: .castcle(.remind), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+            return UIImage.init(icon: .castcle(.costPerAccount), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
         }
     }
 

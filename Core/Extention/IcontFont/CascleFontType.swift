@@ -144,6 +144,8 @@ public enum CastcleType: Int {
     case qrCode
     case copy
     case save
+    case autoBid
+    case costPerAccount
 }
 
 private let castcleIcons = [
@@ -256,5 +258,7 @@ private let castcleIcons = [
     "\u{E00C}", // case exchange
     "\u{E00D}", // case qrCode
     "\u{E00E}", // case copy
-    "\u{E00F}" // case save
+    "\u{E00F}", // case save
+    "\u{E010}", // case autoBid
+    "\u{E011}" // case costPerAccount
 ]
