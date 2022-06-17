@@ -44,6 +44,11 @@ public extension String {
         return password.evaluate(with: self)
     }
 
+    var isMatchChar: Bool {
+        let password = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.psdCharPattern)
+        return password.evaluate(with: self)
+    }
+
     var isUrl: Bool {
         let url = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.urlPattern)
         return url.evaluate(with: self)
