@@ -110,6 +110,11 @@
 		B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E924BD2805880E00F9D75D /* CommentRef.swift */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7F814D628634357002C3F50 /* Adjust in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814D528634357002C3F50 /* Adjust */; };
+		B7F814D828634357002C3F50 /* Criteo in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814D728634357002C3F50 /* Criteo */; };
+		B7F814DA28634357002C3F50 /* Sociomantic in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814D928634357002C3F50 /* Sociomantic */; };
+		B7F814DC28634357002C3F50 /* Trademob in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814DB28634357002C3F50 /* Trademob */; };
+		B7F814DE28634357002C3F50 /* WebBridge in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814DD28634357002C3F50 /* WebBridge */; };
 		B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F814DE28634357002C3F50 /* WebBridge in Frameworks */,
 				B715A0F227EC47A70011C13C /* FirebaseAnalyticsSwift-Beta in Frameworks */,
 				B72E366127290A11003E730B /* IQKeyboardManagerSwift in Frameworks */,
 				B72E3658272907B5003E730B /* Kingfisher in Frameworks */,
@@ -181,6 +187,7 @@
 				B75E5B2E27ABCD2B00B6CC14 /* CenteredCollectionView in Frameworks */,
 				B715A12627EC47A70011C13C /* FirebaseStorageSwift-Beta in Frameworks */,
 				B72E365E27290946003E730B /* SwiftDate in Frameworks */,
+				B7F814DC28634357002C3F50 /* Trademob in Frameworks */,
 				B72E36882729501D003E730B /* ActiveLabel in Frameworks */,
 				B72E368B2729505E003E730B /* SnackBar in Frameworks */,
 				B73FFBB42771B9E100E23E58 /* NVActivityIndicatorView in Frameworks */,
@@ -197,6 +204,7 @@
 				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
 				B715A11027EC47A70011C13C /* FirebaseFunctionsSwift-Beta in Frameworks */,
 				B715A0F627EC47A70011C13C /* FirebaseAppCheck in Frameworks */,
+				B7F814D628634357002C3F50 /* Adjust in Frameworks */,
 				B715A12427EC47A70011C13C /* FirebaseStorageCombine-Community in Frameworks */,
 				B715A0F427EC47A70011C13C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				B715A11E27EC47A70011C13C /* FirebaseRemoteConfig in Frameworks */,
@@ -207,6 +215,7 @@
 				B715A0FA27EC47A70011C13C /* FirebaseAuth in Frameworks */,
 				B715A11C27EC47A70011C13C /* FirebasePerformance in Frameworks */,
 				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
+				B7F814D828634357002C3F50 /* Criteo in Frameworks */,
 				B715A11627EC47A70011C13C /* FirebaseInstallations in Frameworks */,
 				B715A0F827EC47A70011C13C /* FirebaseAppDistribution-Beta in Frameworks */,
 				B73FFBB62771B9E100E23E58 /* NVActivityIndicatorViewExtended in Frameworks */,
@@ -228,6 +237,7 @@
 				B7872E6B2738CCC200ECA047 /* SwiftColor in Frameworks */,
 				B715A0FE27EC47A70011C13C /* FirebaseCrashlytics in Frameworks */,
 				B715A0F027EC47A70011C13C /* FirebaseAnalytics in Frameworks */,
+				B7F814DA28634357002C3F50 /* Sociomantic in Frameworks */,
 				B74E912027901BAF0067059B /* GoogleSignIn in Frameworks */,
 				B715A10827EC47A70011C13C /* FirebaseFirestoreCombine-Community in Frameworks */,
 				B715A10427EC47A70011C13C /* FirebaseDynamicLinks in Frameworks */,
@@ -486,6 +496,11 @@
 				B715A12327EC47A70011C13C /* FirebaseStorageCombine-Community */,
 				B715A12527EC47A70011C13C /* FirebaseStorageSwift-Beta */,
 				B79A8ED32822629100918716 /* SwipeCellKit */,
+				B7F814D528634357002C3F50 /* Adjust */,
+				B7F814D728634357002C3F50 /* Criteo */,
+				B7F814D928634357002C3F50 /* Sociomantic */,
+				B7F814DB28634357002C3F50 /* Trademob */,
+				B7F814DD28634357002C3F50 /* WebBridge */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -543,6 +558,7 @@
 				B75E5B2C27ABCD2B00B6CC14 /* XCRemoteSwiftPackageReference "CenteredCollectionView" */,
 				B715A0EE27EC47A60011C13C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+				B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1433,6 +1449,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjust/ios_sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1720,6 +1744,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
+		};
+		B7F814D528634357002C3F50 /* Adjust */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Adjust;
+		};
+		B7F814D728634357002C3F50 /* Criteo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Criteo;
+		};
+		B7F814D928634357002C3F50 /* Sociomantic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Sociomantic;
+		};
+		B7F814DB28634357002C3F50 /* Trademob */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Trademob;
+		};
+		B7F814DD28634357002C3F50 /* WebBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = WebBridge;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
