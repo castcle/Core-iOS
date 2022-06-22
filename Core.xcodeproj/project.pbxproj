@@ -113,6 +113,11 @@
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
 		B7F376C5283E317C00BDCFEB /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F376C4283E317C00BDCFEB /* Urls.swift */; };
 		B7F69CCA268EB85600B01223 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F69CC8268EB85600B01223 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7F814D628634357002C3F50 /* Adjust in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814D528634357002C3F50 /* Adjust */; };
+		B7F814D828634357002C3F50 /* Criteo in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814D728634357002C3F50 /* Criteo */; };
+		B7F814DA28634357002C3F50 /* Sociomantic in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814D928634357002C3F50 /* Sociomantic */; };
+		B7F814DC28634357002C3F50 /* Trademob in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814DB28634357002C3F50 /* Trademob */; };
+		B7F814DE28634357002C3F50 /* WebBridge in Frameworks */ = {isa = PBXBuildFile; productRef = B7F814DD28634357002C3F50 /* WebBridge */; };
 		B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +188,8 @@
 			files = (
 				B73ECF8428447357001A32AD /* FirebaseDatabaseSwift in Frameworks */,
 				B73ECF8228447357001A32AD /* FirebaseDatabase in Frameworks */,
+				B7F814DE28634357002C3F50 /* WebBridge in Frameworks */,
+				B715A0F227EC47A70011C13C /* FirebaseAnalyticsSwift-Beta in Frameworks */,
 				B72E366127290A11003E730B /* IQKeyboardManagerSwift in Frameworks */,
 				B72E3658272907B5003E730B /* Kingfisher in Frameworks */,
 				B73ECF9228447357001A32AD /* FirebaseInAppMessaging-Beta in Frameworks */,
@@ -197,6 +204,7 @@
 				B73ECF7228447357001A32AD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				B73ECF9428447357001A32AD /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				B73ECF7A28447357001A32AD /* FirebaseAppDistribution-Beta in Frameworks */,
+				B7F814DC28634357002C3F50 /* Trademob in Frameworks */,
 				B72E36882729501D003E730B /* ActiveLabel in Frameworks */,
 				B72E368B2729505E003E730B /* SnackBar in Frameworks */,
 				B73ECF8E28447357001A32AD /* FirebaseFunctions in Frameworks */,
@@ -213,10 +221,19 @@
 				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
 				B73ECF7828447357001A32AD /* FirebaseAppCheck in Frameworks */,
 				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
+				B715A11027EC47A70011C13C /* FirebaseFunctionsSwift-Beta in Frameworks */,
+				B715A0F627EC47A70011C13C /* FirebaseAppCheck in Frameworks */,
+				B7F814D628634357002C3F50 /* Adjust in Frameworks */,
+				B715A12427EC47A70011C13C /* FirebaseStorageCombine-Community in Frameworks */,
+				B715A0F427EC47A70011C13C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				B715A11E27EC47A70011C13C /* FirebaseRemoteConfig in Frameworks */,
 				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B79A8ED42822629100918716 /* SwipeCellKit in Frameworks */,
 				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
 				B73ECF9628447357001A32AD /* FirebaseInstallations in Frameworks */,
+				B7F814D828634357002C3F50 /* Criteo in Frameworks */,
+				B715A11627EC47A70011C13C /* FirebaseInstallations in Frameworks */,
+				B715A0F827EC47A70011C13C /* FirebaseAppDistribution-Beta in Frameworks */,
 				B73FFBB62771B9E100E23E58 /* NVActivityIndicatorViewExtended in Frameworks */,
 				B73ECF8C28447357001A32AD /* FirebaseFirestoreSwift in Frameworks */,
 				B73ECF9028447357001A32AD /* FirebaseFunctionsCombine-Community in Frameworks */,
@@ -234,6 +251,9 @@
 				B73ECFA428447357001A32AD /* FirebaseStorageCombine-Community in Frameworks */,
 				B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */,
 				B7872E6B2738CCC200ECA047 /* SwiftColor in Frameworks */,
+				B715A0FE27EC47A70011C13C /* FirebaseCrashlytics in Frameworks */,
+				B715A0F027EC47A70011C13C /* FirebaseAnalytics in Frameworks */,
+				B7F814DA28634357002C3F50 /* Sociomantic in Frameworks */,
 				B74E912027901BAF0067059B /* GoogleSignIn in Frameworks */,
 				B73ECF7E28447357001A32AD /* FirebaseAuthCombine-Community in Frameworks */,
 				B73ECF8828447357001A32AD /* FirebaseFirestore in Frameworks */,
@@ -495,6 +515,11 @@
 				B73ECF9F28447357001A32AD /* FirebaseRemoteConfigSwift */,
 				B73ECFA128447357001A32AD /* FirebaseStorage */,
 				B73ECFA328447357001A32AD /* FirebaseStorageCombine-Community */,
+				B7F814D528634357002C3F50 /* Adjust */,
+				B7F814D728634357002C3F50 /* Criteo */,
+				B7F814D928634357002C3F50 /* Sociomantic */,
+				B7F814DB28634357002C3F50 /* Trademob */,
+				B7F814DD28634357002C3F50 /* WebBridge */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -552,6 +577,7 @@
 				B75E5B2C27ABCD2B00B6CC14 /* XCRemoteSwiftPackageReference "CenteredCollectionView" */,
 				B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
 				B73ECF6E28447356001A32AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1446,6 +1472,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjust/ios_sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1728,6 +1762,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
+		};
+		B7F814D528634357002C3F50 /* Adjust */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Adjust;
+		};
+		B7F814D728634357002C3F50 /* Criteo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Criteo;
+		};
+		B7F814D928634357002C3F50 /* Sociomantic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Sociomantic;
+		};
+		B7F814DB28634357002C3F50 /* Trademob */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Trademob;
+		};
+		B7F814DD28634357002C3F50 /* WebBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = WebBridge;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
