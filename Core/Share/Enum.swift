@@ -55,20 +55,11 @@ public enum AuthenObjective: String {
     case none
 }
 
-// MARK: - AuthenSocialProvider
-public enum AuthenSocialProvider: String {
-    case facebook
-    case twitter
-    case google
-    case apple = "apple id"
-    case none
-}
-
 // MARK: - SocialType
 public enum SocialType: String {
     case facebook
     case twitter
-    case google
+    case google = "apple id"
     case apple
     case unknow
 
@@ -547,9 +538,9 @@ public enum State {
     case unregisterToken
     case registerToken
     case connectSocial
-    case requestOtp
+    case requestOtpWithMobile
     case requestOtpWithEmail
-    case verifyOtp
+    case verifyOtpWithMobile
     case verifyOtpWithEmail
     case updateMobile
     case getMention
