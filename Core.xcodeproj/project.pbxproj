@@ -79,6 +79,8 @@
 		B755292E269C4311005D5EB5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755292D269C4311005D5EB5 /* Utility.swift */; };
 		B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529A9269E174E005D5EB5 /* TextSize.swift */; };
 		B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529DF269FE5D3005D5EB5 /* Date.swift */; };
+		B7581183286421AE00A0DDEC /* AdjustEventToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7581182286421AE00A0DDEC /* AdjustEventToken.swift */; };
+		B75811852864230100A0DDEC /* AdjustHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75811842864230100A0DDEC /* AdjustHelper.swift */; };
 		B75D26B0278D9EEF00F19AC1 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = B75D26AF278D9EEF00F19AC1 /* Swifter */; };
 		B75E5B2E27ABCD2B00B6CC14 /* CenteredCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = B75E5B2D27ABCD2B00B6CC14 /* CenteredCollectionView */; };
 		B75E62A62696D853003E1ADA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A52696D853003E1ADA /* IconFont.swift */; };
@@ -150,6 +152,8 @@
 		B755292D269C4311005D5EB5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		B75529A9269E174E005D5EB5 /* TextSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
 		B75529DF269FE5D3005D5EB5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		B7581182286421AE00A0DDEC /* AdjustEventToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustEventToken.swift; sourceTree = "<group>"; };
+		B75811842864230100A0DDEC /* AdjustHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustHelper.swift; sourceTree = "<group>"; };
 		B75E62A52696D853003E1ADA /* IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
 		B75E62A72696DD2F003E1ADA /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		B75E62A92696DDAE003E1ADA /* CascleFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascleFontType.swift; sourceTree = "<group>"; };
@@ -189,7 +193,6 @@
 				B73ECF8428447357001A32AD /* FirebaseDatabaseSwift in Frameworks */,
 				B73ECF8228447357001A32AD /* FirebaseDatabase in Frameworks */,
 				B7F814DE28634357002C3F50 /* WebBridge in Frameworks */,
-				B715A0F227EC47A70011C13C /* FirebaseAnalyticsSwift-Beta in Frameworks */,
 				B72E366127290A11003E730B /* IQKeyboardManagerSwift in Frameworks */,
 				B72E3658272907B5003E730B /* Kingfisher in Frameworks */,
 				B73ECF9228447357001A32AD /* FirebaseInAppMessaging-Beta in Frameworks */,
@@ -221,19 +224,12 @@
 				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
 				B73ECF7828447357001A32AD /* FirebaseAppCheck in Frameworks */,
 				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
-				B715A11027EC47A70011C13C /* FirebaseFunctionsSwift-Beta in Frameworks */,
-				B715A0F627EC47A70011C13C /* FirebaseAppCheck in Frameworks */,
 				B7F814D628634357002C3F50 /* Adjust in Frameworks */,
-				B715A12427EC47A70011C13C /* FirebaseStorageCombine-Community in Frameworks */,
-				B715A0F427EC47A70011C13C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
-				B715A11E27EC47A70011C13C /* FirebaseRemoteConfig in Frameworks */,
 				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B79A8ED42822629100918716 /* SwipeCellKit in Frameworks */,
 				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
 				B73ECF9628447357001A32AD /* FirebaseInstallations in Frameworks */,
 				B7F814D828634357002C3F50 /* Criteo in Frameworks */,
-				B715A11627EC47A70011C13C /* FirebaseInstallations in Frameworks */,
-				B715A0F827EC47A70011C13C /* FirebaseAppDistribution-Beta in Frameworks */,
 				B73FFBB62771B9E100E23E58 /* NVActivityIndicatorViewExtended in Frameworks */,
 				B73ECF8C28447357001A32AD /* FirebaseFirestoreSwift in Frameworks */,
 				B73ECF9028447357001A32AD /* FirebaseFunctionsCombine-Community in Frameworks */,
@@ -251,8 +247,6 @@
 				B73ECFA428447357001A32AD /* FirebaseStorageCombine-Community in Frameworks */,
 				B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */,
 				B7872E6B2738CCC200ECA047 /* SwiftColor in Frameworks */,
-				B715A0FE27EC47A70011C13C /* FirebaseCrashlytics in Frameworks */,
-				B715A0F027EC47A70011C13C /* FirebaseAnalytics in Frameworks */,
 				B7F814DA28634357002C3F50 /* Sociomantic in Frameworks */,
 				B74E912027901BAF0067059B /* GoogleSignIn in Frameworks */,
 				B73ECF7E28447357001A32AD /* FirebaseAuthCombine-Community in Frameworks */,
@@ -269,6 +263,7 @@
 				B70748E227955C6700F01CB4 /* ConfigBundle.swift */,
 				B70748DA27955C6700F01CB4 /* TwitterConstants.swift */,
 				B70748DB27955C6700F01CB4 /* Environment.swift */,
+				B7581182286421AE00A0DDEC /* AdjustEventToken.swift */,
 				B7F376C4283E317C00BDCFEB /* Urls.swift */,
 				B79F2AFC2856F62500B82989 /* Encryption.swift */,
 				B70748E127955C6700F01CB4 /* Production.xcconfig */,
@@ -322,6 +317,7 @@
 				B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */,
 				B7A15B162795AE1C001E34DE /* KeychainHelper.swift */,
 				B71F66D627EB2BDF004DF6D5 /* CheckUpdate.swift */,
+				B75811842864230100A0DDEC /* AdjustHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -627,6 +623,7 @@
 				B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */,
 				B779D95227B4D349008C8670 /* CountryCode.swift in Sources */,
 				B7910ED926C0EB1D0097C94E /* ApiHelper.swift in Sources */,
+				B7581183286421AE00A0DDEC /* AdjustEventToken.swift in Sources */,
 				B71F66D727EB2BDF004DF6D5 /* CheckUpdate.swift in Sources */,
 				B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */,
 				B7D4BC2027FEFAC3008ACD9F /* Enum.swift in Sources */,
@@ -652,6 +649,7 @@
 				B754FD3327FFFB1900ACB1D2 /* EnumNetworking.swift in Sources */,
 				B70748EC27955C6700F01CB4 /* ConfigBundle.swift in Sources */,
 				B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */,
+				B75811852864230100A0DDEC /* AdjustHelper.swift in Sources */,
 				B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
