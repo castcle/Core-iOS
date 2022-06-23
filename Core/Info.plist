@@ -44,5 +44,7 @@
 	<string>$(TWITTER_SECRET_KEY)</string>
 	<key>TWITTER_CALLBACK_URL</key>
 	<string>$(TWITTER_CALLBACK_URL)</string>
+	<key>ADJUST_APP_TOKEN</key>
+	<string>$(ADJUST_APP_TOKEN)</string>
 </dict>
 </plist>

@@ -213,6 +213,7 @@ public enum SettingSection {
 // MARK: - UserFields
 public enum UserFields: String {
     case relationships
+    case syncSocial = "sync-social"
     case none
 }
 
@@ -521,6 +522,23 @@ public enum LandingPage: String {
     case comment
     case cast
     case none
+}
+
+// MARK: - AdjustEventType
+public enum AdjustEventType: String {
+    case login
+    case registration
+    case verification
+}
+
+// MARK: - AdjustEventType
+public enum AdjustChennel: String {
+    case email
+    case facebook = "social_facebook"
+    case twitter = "social_twitter"
+    case google = "social_google"
+    case apple = "social_apple"
+    case unkown
 }
 
 // MARK: - LoadState
