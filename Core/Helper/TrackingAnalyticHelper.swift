@@ -71,6 +71,6 @@ public class TrackingAnalyticHelper {
     }
 
     private func sendFirebaseAnalytic(eventType: TrackingEventType, item: Analytic) {
-        Analytics.logEvent(eventType.rawValue, parameters: item.toDict())
+        Analytics.logEvent(eventType.firebaseEvent, parameters: item.toDict())
     }
 }

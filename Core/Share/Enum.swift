@@ -530,6 +530,19 @@ public enum TrackingEventType: String {
     case registration = "Registration"
     case verificationMobile = "Verification Mobile"
     case viewFeed = "View Feed"
+
+    public var firebaseEvent: String {
+        switch self {
+        case .login:
+            return "login"
+        case .registration:
+            return "registration"
+        case .verificationMobile:
+            return "verification_mobile"
+        case .viewFeed:
+            return "view_feed"
+        }
+    }
 }
 
 // MARK: - AdjustEventType
