@@ -19,29 +19,41 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  AdjustHelper.swift
+//  Analytic.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 23/6/2565 BE.
+//  Created by Castcle Co., Ltd. on 24/6/2565 BE.
 //
 
-import Adjust
+// MARK: - Analytic
+public class Analytic {
+    public var accountId: String = ""
+    public var userId: String = ""
+    public var channel: String = ""
+    public var countryCode: String = ""
+    public var role: String = ""
 
-public class AdjustHelper {
-    public static let shared = AdjustHelper()
-
-    private func getEventToken(eventType: AdjustEventType) -> String {
-        if eventType == .registration {
-            return AdjustEventToken.registration
-        } else {
-            return ""
-        }
+    public init() {
+        // Init Analytic
     }
 
-    public func sendAdjustAnalytic(eventType: AdjustEventType, userId: String, chennel: AdjustChennel) {
-        let event = ADJEvent(eventToken: self.getEventToken(eventType: eventType))
-        event?.addCallbackParameter("user_id", value: userId)
-        event?.addCallbackParameter("channel", value: chennel.rawValue)
-        Adjust.trackEvent(event)
+    func toDict() -> [String: String] {
+        var param: [String: String] = [:]
+        if !self.accountId.isEmpty {
+            param["account_id"] = self.accountId
+        }
+        if !self.userId.isEmpty {
+            param["user_id"] = self.userId
+        }
+        if !self.channel.isEmpty {
+            param["channel"] = self.channel
+        }
+        if !self.countryCode.isEmpty {
+            param["country_code"] = self.countryCode
+        }
+        if !self.role.isEmpty {
+            param["role"] = self.role
+        }
+        return param
     }
 }

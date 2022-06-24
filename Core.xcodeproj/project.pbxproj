@@ -80,7 +80,7 @@
 		B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529A9269E174E005D5EB5 /* TextSize.swift */; };
 		B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75529DF269FE5D3005D5EB5 /* Date.swift */; };
 		B7581183286421AE00A0DDEC /* AdjustEventToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7581182286421AE00A0DDEC /* AdjustEventToken.swift */; };
-		B75811852864230100A0DDEC /* AdjustHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75811842864230100A0DDEC /* AdjustHelper.swift */; };
+		B75811852864230100A0DDEC /* TrackingAnalyticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75811842864230100A0DDEC /* TrackingAnalyticHelper.swift */; };
 		B75D26B0278D9EEF00F19AC1 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = B75D26AF278D9EEF00F19AC1 /* Swifter */; };
 		B75E5B2E27ABCD2B00B6CC14 /* CenteredCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = B75E5B2D27ABCD2B00B6CC14 /* CenteredCollectionView */; };
 		B75E62A62696D853003E1ADA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E62A52696D853003E1ADA /* IconFont.swift */; };
@@ -109,6 +109,7 @@
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
 		B7D4BC2027FEFAC3008ACD9F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */; };
 		B7DE6A372861A1B40015DC84 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE6A362861A1B40015DC84 /* Int.swift */; };
+		B7DF39F0286593110027F028 /* Analytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF39EF286593110027F028 /* Analytic.swift */; };
 		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
 		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
 		B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E924BD2805880E00F9D75D /* CommentRef.swift */; };
@@ -153,7 +154,7 @@
 		B75529A9269E174E005D5EB5 /* TextSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
 		B75529DF269FE5D3005D5EB5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		B7581182286421AE00A0DDEC /* AdjustEventToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustEventToken.swift; sourceTree = "<group>"; };
-		B75811842864230100A0DDEC /* AdjustHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustHelper.swift; sourceTree = "<group>"; };
+		B75811842864230100A0DDEC /* TrackingAnalyticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingAnalyticHelper.swift; sourceTree = "<group>"; };
 		B75E62A52696D853003E1ADA /* IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
 		B75E62A72696DD2F003E1ADA /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		B75E62A92696DDAE003E1ADA /* CascleFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascleFontType.swift; sourceTree = "<group>"; };
@@ -176,6 +177,7 @@
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		B7DE6A362861A1B40015DC84 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		B7DF39EF286593110027F028 /* Analytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytic.swift; sourceTree = "<group>"; };
 		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
 		B7E924BD2805880E00F9D75D /* CommentRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRef.swift; sourceTree = "<group>"; };
 		B7F376C4283E317C00BDCFEB /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				B72E36532729052E003E730B /* RealmModel */,
 				B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */,
 				B754FD3227FFFB1900ACB1D2 /* EnumNetworking.swift */,
+				B7DF39EF286593110027F028 /* Analytic.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -317,7 +320,7 @@
 				B7FFF3EC2779B27800BB0C33 /* RegexpParser.swift */,
 				B7A15B162795AE1C001E34DE /* KeychainHelper.swift */,
 				B71F66D627EB2BDF004DF6D5 /* CheckUpdate.swift */,
-				B75811842864230100A0DDEC /* AdjustHelper.swift */,
+				B75811842864230100A0DDEC /* TrackingAnalyticHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -626,6 +629,7 @@
 				B7581183286421AE00A0DDEC /* AdjustEventToken.swift in Sources */,
 				B71F66D727EB2BDF004DF6D5 /* CheckUpdate.swift in Sources */,
 				B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */,
+				B7DF39F0286593110027F028 /* Analytic.swift in Sources */,
 				B7D4BC2027FEFAC3008ACD9F /* Enum.swift in Sources */,
 				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
@@ -649,7 +653,7 @@
 				B754FD3327FFFB1900ACB1D2 /* EnumNetworking.swift in Sources */,
 				B70748EC27955C6700F01CB4 /* ConfigBundle.swift in Sources */,
 				B7FFF3ED2779B27800BB0C33 /* RegexpParser.swift in Sources */,
-				B75811852864230100A0DDEC /* AdjustHelper.swift in Sources */,
+				B75811852864230100A0DDEC /* TrackingAnalyticHelper.swift in Sources */,
 				B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
