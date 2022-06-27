@@ -169,6 +169,17 @@ public class UserManager: NSObject {
             return ""
         }
     }
+    
+    public var role: String {
+        do {
+            let payload = self.getJwtBodyString(token: Defaults[.accessToken])
+            let payloadData = payload.data(using: String.Encoding.utf8)
+            let json = try JSON(data: payloadData!)
+            return json[JsonKey.role.rawValue].stringValue
+        } catch {
+            return ""
+        }
+    }
 
     public var uxSessionId: String {
         do {
