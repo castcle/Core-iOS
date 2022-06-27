@@ -477,15 +477,16 @@ public enum LandingPage: String {
     case none
 }
 
-// MARK: - AdjustEventType
-public enum AdjustEventType: String {
-    case login
-    case registration
-    case verification
+// MARK: - TrackingEventType
+public enum TrackingEventType: String {
+    case login = "Login"
+    case registration = "Registration"
+    case verificationMobile = "Verification Mobile"
+    case viewFeed = "View Feed"
 }
 
-// MARK: - AdjustEventType
-public enum AdjustChennel: String {
+// MARK: - TrackingChennel
+public enum TrackingChennel: String {
     case email
     case facebook = "social_facebook"
     case twitter = "social_twitter"
