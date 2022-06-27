@@ -158,6 +158,10 @@ public class UserManager: NSObject {
         return Defaults[.canUpdateCastcleId]
     }
 
+    public var pdpa: Bool {
+        return Defaults[.pdpa]
+    }
+
     public var accountId: String {
         do {
             let payload = self.getJwtBodyString(token: Defaults[.accessToken])

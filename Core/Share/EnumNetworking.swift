@@ -52,6 +52,7 @@ public enum JsonKey: String {
     case comments
     case users
     case casts
+    case pdpa
     case userFields
     case keyword
     case type
@@ -217,4 +218,5 @@ public enum JsonKey: String {
     case dialCode
     case flag
     case size
+    case date
 }
