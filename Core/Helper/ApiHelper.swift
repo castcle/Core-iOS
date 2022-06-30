@@ -72,9 +72,9 @@ public struct ApiHelper {
         Utility.currentViewController().present(alert, animated: true, completion: nil)
     }
 
-    public static func displayMessage(title: String = "", message: String = "") {
+    public static func displayMessage(title: String = "", message: String = "", buttonTitle: String = "Ok") {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: buttonTitle, style: .default, handler: nil))
         Utility.currentViewController().present(alert, animated: true, completion: nil)
     }
 
