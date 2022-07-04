@@ -29,8 +29,8 @@ import UIKit
 import SwiftColor
 
 public extension UIButton {
-    func activeButton(isActive: Bool) {
-        self.titleLabel?.font = UIFont.asset(.regular, fontSize: .head4)
+    func activeButton(isActive: Bool, fontSize: UIFont.FontSize = .head4) {
+        self.titleLabel?.font = UIFont.asset(.regular, fontSize: fontSize)
         self.setTitleColor(UIColor.Asset.white, for: .normal)
         if isActive {
             self.setBackgroundImage(UIColor.Asset.lightBlue.toImage(), for: .normal)

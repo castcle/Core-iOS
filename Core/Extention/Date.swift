@@ -81,6 +81,13 @@ public extension Date {
         return dateFormatter.string(from: self)
     }
 
+    func datePDPA() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "UTC")
+        dateFormatter.dateFormat = "yyyyMMdd"
+        return dateFormatter.string(from: self)
+    }
+
     func timeAgoDisplay() -> String {
         let calendar = Calendar.current
         let minuteAgo = calendar.date(byAdding: .minute, value: -1, to: Date())!

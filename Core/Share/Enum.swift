@@ -524,15 +524,29 @@ public enum LandingPage: String {
     case none
 }
 
-// MARK: - AdjustEventType
-public enum AdjustEventType: String {
-    case login
-    case registration
-    case verification
+// MARK: - TrackingEventType
+public enum TrackingEventType: String {
+    case login = "Login"
+    case registration = "Registration"
+    case verificationMobile = "Verification Mobile"
+    case viewFeed = "View Feed"
+
+    public var firebaseEvent: String {
+        switch self {
+        case .login:
+            return "login"
+        case .registration:
+            return "registration"
+        case .verificationMobile:
+            return "verification_mobile"
+        case .viewFeed:
+            return "view_feed"
+        }
+    }
 }
 
-// MARK: - AdjustEventType
-public enum AdjustChennel: String {
+// MARK: - TrackingChennel
+public enum TrackingChennel: String {
     case email
     case facebook = "social_facebook"
     case twitter = "social_twitter"
