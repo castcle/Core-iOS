@@ -545,7 +545,7 @@ public enum TrackingEventType: String {
     }
 }
 
-// MARK: - AdjustEventType
+// MARK: - TrackingChennel
 public enum TrackingChennel: String {
     case email
     case facebook = "social_facebook"
