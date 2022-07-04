@@ -26,6 +26,7 @@
 //
 
 import Defaults
+import UIKit
 
 public extension String {
 
@@ -34,18 +35,35 @@ public extension String {
     }
 
     var isEmail: Bool {
-        let emailPred = NSPredicate(format: "SELF MATCHES %@", RegexpParser.emailPattern)
+        let emailPred = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.emailPattern)
         return emailPred.evaluate(with: self)
     }
 
     var isPassword: Bool {
-        let password = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.psdPattern)
+        let password = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.psdPattern)
         return password.evaluate(with: self)
     }
 
+    var isMatchChar: Bool {
+        let password = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.psdCharPattern)
+        return password.evaluate(with: self)
+    }
+
+    var isUrl: Bool {
+        let url = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.urlPattern)
+        return url.evaluate(with: self)
+    }
+
     var isCastcleId: Bool {
-        let castcleId = NSPredicate(format: "SELF MATCHES %@ ", RegexpParser.castcleIdPattern)
+        let castcleId = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.castcleIdPattern)
         return castcleId.evaluate(with: self)
+    }
+
+    var imageFromBase64: UIImage? {
+        guard let imageData = Data(base64Encoded: self, options: .ignoreUnknownCharacters) else {
+            return nil
+        }
+        return UIImage(data: imageData)
     }
 
     func localized(withComment comment: String = "", bundle: Bundle) -> String {

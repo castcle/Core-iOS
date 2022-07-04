@@ -29,12 +29,13 @@ import UIKit
 import DeviceKit
 import Defaults
 import SwiftIP
+import SwiftyJSON
 
 public struct ApiHelper {
     public static let errorResponse: Data = "{\"code\" : \"9999\", \"statusCode\" : \"500\", \"message\" : \"Sorry, Internal server error.\"}".data(using: .utf8) ?? Data()
 
     public static func header(version: String = "") -> [String: String] {
-        let publicIP: String = IP.public() ?? "1.1.1.1"
+        let publicIP: String = IP.public() ?? APIs.defualtIpAddress
         var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
@@ -50,7 +51,7 @@ public struct ApiHelper {
     }
 
     public static func headerRefreshToken(version: String = "") -> [String: String] {
-        let publicIP: String = IP.public() ?? "1.1.1.1"
+        let publicIP: String = IP.public() ?? APIs.defualtIpAddress
         var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
@@ -71,9 +72,21 @@ public struct ApiHelper {
         Utility.currentViewController().present(alert, animated: true, completion: nil)
     }
 
-    public static func displayMessage(title: String = "", message: String = "") {
+    public static func displayMessage(title: String = "", message: String = "", buttonTitle: String = "Ok") {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: buttonTitle, style: .default, handler: nil))
         Utility.currentViewController().present(alert, animated: true, completion: nil)
+    }
+
+    public static func loadPath() {
+        if let path = ConfigBundle.core.path(forResource: "Urls", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let rawJson = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                let json = JSON(rawJson)
+                print(json)
+                print("=========")
+            } catch {}
+        }
     }
 }

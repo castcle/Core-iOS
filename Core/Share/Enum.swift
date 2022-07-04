@@ -55,20 +55,11 @@ public enum AuthenObjective: String {
     case none
 }
 
-// MARK: - AuthenSocialProvider
-public enum AuthenSocialProvider: String {
-    case facebook
-    case twitter
-    case google
-    case apple = "apple id"
-    case none
-}
-
 // MARK: - SocialType
 public enum SocialType: String {
     case facebook
     case twitter
-    case google
+    case google = "apple id"
     case apple
     case unknow
 
@@ -222,6 +213,7 @@ public enum SettingSection {
 // MARK: - UserFields
 public enum UserFields: String {
     case relationships
+    case syncSocial = "sync-social"
     case none
 }
 
@@ -374,7 +366,7 @@ public enum BoostStatus: String {
 
 // MARK: - BoostType
 public enum BoostType: String {
-    case page
+    case user
     case content
 }
 
@@ -407,6 +399,39 @@ public enum AdsPaymentType: String {
             return "Approximate token value in\nUSD 40.32 Learn more"
         case .adCredit:
             return "Note: Ad credit are valid\nuntil 29/12/2020"
+        }
+    }
+}
+
+// MARK: - DailyBidType
+public enum DailyBidType: String {
+    case auto
+    case costPerAccount = "cost-per-account"
+
+    public var display: String {
+        switch self {
+        case .auto:
+            return "Auto bid (Recommended)"
+        case .costPerAccount:
+            return "Cost per account"
+        }
+    }
+
+    public var image: UIImage {
+        switch self {
+        case .auto:
+            return UIImage.init(icon: .castcle(.autoBid), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+        case .costPerAccount:
+            return UIImage.init(icon: .castcle(.costPerAccount), size: CGSize(width: 100, height: 100), textColor: UIColor.Asset.white)
+        }
+    }
+
+    public var notice: String {
+        switch self {
+        case .auto:
+            return "Maximize your budget to get the best result"
+        case .costPerAccount:
+            return "Set daily cost per account to manage cost per 1k impressions"
         }
     }
 }
@@ -469,6 +494,28 @@ public enum ReactionType: String {
     case none
 }
 
+// MARK: - ReactionType
+public enum QrCodeType: String {
+    case wallet
+    case deposit
+
+    public var display: String {
+        switch self {
+        case .wallet:
+            return "My QR Code"
+        case .deposit:
+            return "Deposit CAST"
+        }
+    }
+}
+
+// MARK: - SizeType
+public enum SizeType: String {
+    case thumbnail
+    case medium
+    case large
+}
+
 // MARK: - LandingPage
 public enum LandingPage: String {
     case follower
@@ -483,6 +530,19 @@ public enum TrackingEventType: String {
     case registration = "Registration"
     case verificationMobile = "Verification Mobile"
     case viewFeed = "View Feed"
+
+    public var firebaseEvent: String {
+        switch self {
+        case .login:
+            return "login"
+        case .registration:
+            return "registration"
+        case .verificationMobile:
+            return "verification_mobile"
+        case .viewFeed:
+            return "view_feed"
+        }
+    }
 }
 
 // MARK: - TrackingChennel
@@ -510,8 +570,10 @@ public enum State {
     case unregisterToken
     case registerToken
     case connectSocial
-    case requestOtp
-    case verifyOtp
+    case requestOtpWithMobile
+    case requestOtpWithEmail
+    case verifyOtpWithMobile
+    case verifyOtpWithEmail
     case updateMobile
     case getMention
     case getHastag

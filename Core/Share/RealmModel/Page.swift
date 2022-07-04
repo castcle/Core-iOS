@@ -44,7 +44,7 @@ public class Page: Object {
         return "castcleId"
     }
 
-    public func initCustom(id: String, displayName: String, castcleId: String, avatar: String, cover: String, overview: String, official: Bool) -> Page {
+    public func initCustom(id: String = "", displayName: String = "", castcleId: String = "", avatar: String = "", cover: String = "", overview: String = "", official: Bool = false) -> Page {
         let page = Page()
         page.id = id
         page.displayName = displayName

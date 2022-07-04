@@ -52,6 +52,7 @@ public enum JsonKey: String {
     case comments
     case users
     case casts
+    case pdpa
     case userFields
     case keyword
     case type
@@ -105,6 +106,8 @@ public enum JsonKey: String {
     case code
     case slug
     case name
+    case userNameLower = "username"
+    case about
     case key
     case rank
     case trends
@@ -116,6 +119,8 @@ public enum JsonKey: String {
     case objective
     case dailyBudget
     case duration
+    case dailyBidType
+    case dailyBidValue
     case adStatus
     case boostStatus
     case boostType
@@ -193,6 +198,7 @@ public enum JsonKey: String {
     case contentType
     case deviceUuid = "deviceUUID"
     case accessToken
+    case fbAccessToken = "access_token"
     case refreshToken
     case exist
     case suggestCastcleId
@@ -209,4 +215,8 @@ public enum JsonKey: String {
     case timestamp
     case paymentMethod
     case userId
+    case dialCode
+    case flag
+    case size
+    case date
 }

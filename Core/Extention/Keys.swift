@@ -77,6 +77,7 @@ public extension Defaults.Keys {
     static let canUpdateCastcleId = Key<Bool>("canUpdateCastcleId", default: false)
     static let mobileCountryCode = Key<String>("mobileCountryCode", default: "")
     static let mobileNumber = Key<String>("mobileNumber", default: "")
+    static let pdpa = Key<Bool>("pdpa", default: false)
     static let badgePage = Key<Int>("badgePage", default: 0)
     static let badgeProfile = Key<Int>("badgeProfile", default: 0)
     static let badgeSystem = Key<Int>("badgeSystem", default: 0)

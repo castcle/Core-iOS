@@ -19,7 +19,7 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  AdjustHelper.swift
+//  TrackingAnalyticHelper.swift
 //  Core
 //
 //  Created by Castcle Co., Ltd. on 23/6/2565 BE.
@@ -71,6 +71,6 @@ public class TrackingAnalyticHelper {
     }
 
     private func sendFirebaseAnalytic(eventType: TrackingEventType, item: Analytic) {
-        Analytics.logEvent(eventType.rawValue, parameters: item.toDict())
+        Analytics.logEvent(eventType.firebaseEvent, parameters: item.toDict())
     }
 }

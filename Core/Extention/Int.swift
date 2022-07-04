@@ -19,31 +19,19 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Utility.swift
+//  Int.swift
 //  Core
 //
-//  Created by Castcle Co., Ltd. on 12/7/2564 BE.
+//  Created by Castcle Co., Ltd. on 21/6/2565 BE.
 //
 
-import UIKit
-import Defaults
+import Foundation
 
-public class Utility {
-    public static func currentViewController() -> UIViewController {
-        let getWindow: UIWindow? = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-        let topController = getWindow?.visibleViewController()
-        return topController ?? UIViewController()
-    }
-
-    public static func generateQRCode(from string: String) -> UIImage? {
-        let data = string.data(using: String.Encoding.ascii)
-        if let filter = CIFilter(name: "CIQRCodeGenerator") {
-            filter.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransform(scaleX: 10, y: 10)
-            if let output = filter.outputImage?.transformed(by: transform) {
-                return UIImage(ciImage: output)
-            }
-        }
-        return nil
+public extension Int {
+    func secondsToTime() -> String {
+        let (minuteValue, secondValue) = ((self % 3600) / 60, (self % 3600) % 60)
+        let minuteString =  minuteValue < 10 ? "0\(minuteValue)" : "\(minuteValue)"
+        let secondString =  secondValue < 10 ? "0\(secondValue)" : "\(secondValue)"
+        return "\(minuteString):\(secondString)"
     }
 }
