@@ -32,6 +32,7 @@ public class Analytic {
     public var channel: String = ""
     public var countryCode: String = ""
     public var role: String = ""
+    public var active: String = ""
 
     public init() {
         // Init Analytic
@@ -53,6 +54,9 @@ public class Analytic {
         }
         if !self.role.isEmpty {
             param["role"] = self.role
+        }
+        if !self.active.isEmpty {
+            param["active"] = self.active
         }
         return param
     }
