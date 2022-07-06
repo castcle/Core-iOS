@@ -73,13 +73,11 @@ public enum FontType: FontProtocol {
     }
 
     public var text: String? {
-        var text: String
-
+        var displayText: String
         switch self {
         case let .castcle(icon):
-            text = icon.text!
+            displayText = icon.text!
         }
-
-        return text
+        return displayText
     }
 }

@@ -576,6 +576,41 @@ public enum TrackingEventType: String {
             return "view_wallet"
         }
     }
+    
+    public var adjustEventToken: String {
+        switch self {
+        case .login:
+            return AdjustEventToken.login
+        case .registration:
+            return AdjustEventToken.registration
+        case .verificationMobile:
+            return AdjustEventToken.verificationMobile
+        case .viewFeed:
+            return AdjustEventToken.viewFeed
+        case .viewSetting:
+            return AdjustEventToken.viewSetting
+        case .viewAccount:
+            return AdjustEventToken.viewAccount
+        case .resetPassword:
+            return AdjustEventToken.resetPassword
+        case .viewResetPassword:
+            return AdjustEventToken.viewResetPassword
+        case .viewSyncSocial:
+            return AdjustEventToken.viewSyncSocial
+        case .connectSyncSocial:
+            return AdjustEventToken.connectSyncSocial
+        case .disconnectSyncSocial:
+            return AdjustEventToken.disconnectSyncSocial
+        case .autoPostSyncSocial:
+            return AdjustEventToken.autoPostSyncSocial
+        case .viewDeleteAccount:
+            return AdjustEventToken.viewDeleteAccount
+        case .deleteAccount:
+            return AdjustEventToken.deleteAccount
+        case .viewWallet:
+            return  AdjustEventToken.viewWallet
+        }
+    }
 }
 
 // MARK: - TrackingChennel
