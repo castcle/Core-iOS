@@ -530,6 +530,17 @@ public enum TrackingEventType: String {
     case registration = "Registration"
     case verificationMobile = "Verification Mobile"
     case viewFeed = "View Feed"
+    case viewSetting = "View Setting"
+    case viewAccount = "View Account"
+    case resetPassword = "Reset Password"
+    case viewResetPassword = "View Reset Password"
+    case viewSyncSocial = "View Sync Social"
+    case connectSyncSocial = "Connect Sync Social"
+    case disconnectSyncSocial = " Disconnect Sync Social"
+    case autoPostSyncSocial = "Auto Post Sync Social"
+    case viewDeleteAccount = "View Delete Account"
+    case deleteAccount = "Delete Account"
+    case viewWallet = "View Wallet"
 
     public var firebaseEvent: String {
         switch self {
@@ -541,6 +552,28 @@ public enum TrackingEventType: String {
             return "verification_mobile"
         case .viewFeed:
             return "view_feed"
+        case .viewSetting:
+            return "view_setting"
+        case .viewAccount:
+            return "view_account"
+        case .resetPassword:
+            return "reset_password"
+        case .viewResetPassword:
+            return "view_reset_password"
+        case .viewSyncSocial:
+            return "view_sync_social"
+        case .connectSyncSocial:
+            return "connect_sync_social"
+        case .disconnectSyncSocial:
+            return "disconnect_sync_social"
+        case .autoPostSyncSocial:
+            return "auto_post_sync_social"
+        case .viewDeleteAccount:
+            return "view_delete_account"
+        case .deleteAccount:
+            return "delete_account"
+        case .viewWallet:
+            return "view_wallet"
         }
     }
 }

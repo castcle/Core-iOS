@@ -40,6 +40,28 @@ public class TrackingAnalyticHelper {
             return AdjustEventToken.verificationMobile
         } else if eventType == .viewFeed {
             return AdjustEventToken.viewFeed
+        } else if eventType == .viewSetting {
+            return AdjustEventToken.viewSetting
+        } else if eventType == .viewAccount {
+            return AdjustEventToken.viewAccount
+        } else if eventType == .resetPassword {
+            return AdjustEventToken.resetPassword
+        } else if eventType == .viewResetPassword {
+            return AdjustEventToken.viewResetPassword
+        } else if eventType == .viewSyncSocial {
+            return AdjustEventToken.viewSyncSocial
+        } else if eventType == .connectSyncSocial {
+            return AdjustEventToken.connectSyncSocial
+        } else if eventType == .disconnectSyncSocial {
+            return AdjustEventToken.disconnectSyncSocial
+        } else if eventType == .autoPostSyncSocial {
+            return AdjustEventToken.autoPostSyncSocial
+        } else if eventType == .viewDeleteAccount {
+            return AdjustEventToken.viewDeleteAccount
+        } else if eventType == .deleteAccount {
+            return AdjustEventToken.deleteAccount
+        } else if eventType == .viewWallet {
+            return AdjustEventToken.viewWallet
         } else {
             return ""
         }
@@ -66,6 +88,9 @@ public class TrackingAnalyticHelper {
         }
         if !item.role.isEmpty {
             event?.addCallbackParameter("role", value: item.role)
+        }
+        if !item.active.isEmpty {
+            event?.addCallbackParameter("active", value: item.active)
         }
         Adjust.trackEvent(event)
     }
