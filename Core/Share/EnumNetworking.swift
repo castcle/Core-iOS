@@ -219,4 +219,8 @@ public enum JsonKey: String {
     case flag
     case size
     case date
+    case chainId
+    case order
+    case accounts
+    case shortcuts
 }

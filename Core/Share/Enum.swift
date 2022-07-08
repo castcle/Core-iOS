@@ -576,7 +576,7 @@ public enum TrackingEventType: String {
             return "view_wallet"
         }
     }
-    
+
     public var adjustEventToken: String {
         switch self {
         case .login:
