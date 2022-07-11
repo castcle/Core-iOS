@@ -223,4 +223,8 @@ public enum JsonKey: String {
     case order
     case accounts
     case shortcuts
+    case walletAddress
+    case memo
+    case castcle
+    case other
 }

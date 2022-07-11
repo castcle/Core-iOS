@@ -289,6 +289,7 @@ public enum ReferencedCastType: String, Codable {
 public enum AuthorType: String, Codable {
     case people
     case page
+    case none
 }
 
 // MARK: - ProfileType
