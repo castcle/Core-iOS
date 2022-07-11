@@ -36,7 +36,6 @@ public struct RegexpParser {
     public static let psdPattern: String = "^(?=.*[a-z])(?=.*[A-Z]).{6,}$"
     public static let psdCharPattern: String = "^(?=.*[a-z])(?=.*[A-Z]).{2,}$"
     public static let castcleIdPattern: String = "[A-Za-z0-9]+"
-    public static let urlPattern: String = "((http|https)://)?([(w|W)]{3}+\\.)?+(.)+\\.+[A-Za-z]{2,3}+(\\.)?+(/(.)*)?"
 }
 
 public struct AttributedContent {
