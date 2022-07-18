@@ -689,6 +689,11 @@ public enum State {
     case readAllNotification
     case getUserLikeContent
     case getUserRecastContent
+    case getWalletShortcuts
+    case sortWalletShortcuts
+    case createWalletShortcut
+    case updateWalletShortcut
+    case deleteWalletShortcut
     case getWalletRecent
     case walletSearch
     case none

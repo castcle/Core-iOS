@@ -42,6 +42,7 @@ public extension Notification.Name {
     static let openQuoteCastListDelegate = Notification.Name(rawValue: "openQuoteCastListDelegate")
     static let openSignInDelegate = Notification.Name(rawValue: "openSignInDelegate")
     static let openVerifyDelegate = Notification.Name(rawValue: "openVerifyDelegate")
+    static let openRegisterEmailDelegate = Notification.Name(rawValue: "openRegisterEmailDelegate")
     static let openVerifyMobileDelegate = Notification.Name(rawValue: "openVerifyMobileDelegate")
     static let feedScrollToTop = Notification.Name(rawValue: "feedScrollToTop")
     static let feedReloadContent = Notification.Name(rawValue: "feedReloadContent")

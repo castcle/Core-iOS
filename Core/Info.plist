@@ -24,6 +24,8 @@
 	<string>$(BASE_URL)</string>
 	<key>AIRDROP_URL</key>
 	<string>$(AIRDROP_URL)</string>
+	<key>QRCODE_URL</key>
+	<string>$(QRCODE_URL)</string>
 	<key>APP_CENTER_KEY</key>
 	<string>$(APP_CENTER_KEY)</string>
 	<key>PRIVACY_POLICY</key>

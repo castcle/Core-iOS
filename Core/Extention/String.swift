@@ -50,8 +50,11 @@ public extension String {
     }
 
     var isUrl: Bool {
-        let url = NSPredicate(format: RegexpParser.selfMatchesStr, RegexpParser.urlPattern)
-        return url.evaluate(with: self)
+        if let url = NSURL(string: self) {
+            return UIApplication.shared.canOpenURL(url as URL)
+        } else {
+            return false
+        }
     }
 
     var isCastcleId: Bool {
