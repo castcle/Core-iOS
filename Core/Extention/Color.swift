@@ -46,6 +46,7 @@ public extension UIColor {
         public static let trendUp = UIColor(named: "TrendUp", in: ConfigBundle.core, compatibleWith: nil)!
         public static let notifyFocus = UIColor(named: "NotifyFocus", in: ConfigBundle.core, compatibleWith: nil)!
         public static let veryLightBlue = UIColor(named: "VeryLightBlue", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let textGray = UIColor(named: "TextGray", in: ConfigBundle.core, compatibleWith: nil)!
     }
 }
 
