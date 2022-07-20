@@ -36,8 +36,8 @@ public extension UIButton {
             self.setBackgroundImage(UIColor.Asset.lightBlue.toImage(), for: .normal)
             self.capsule(color: UIColor.clear, borderWidth: 1, borderColor: UIColor.clear)
         } else {
-            self.setBackgroundImage(UIColor.Asset.gray.toImage(), for: .normal)
-            self.capsule(color: UIColor.clear, borderWidth: 1, borderColor: UIColor.Asset.gray)
+            self.setBackgroundImage(UIColor.Asset.lineGray.toImage(), for: .normal)
+            self.capsule(color: UIColor.clear, borderWidth: 1, borderColor: UIColor.Asset.lineGray)
         }
     }
 }

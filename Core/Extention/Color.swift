@@ -49,6 +49,7 @@ public extension UIColor {
         public static let textGray = UIColor(named: "TextGray", in: ConfigBundle.core, compatibleWith: nil)!
         public static let textDetailGray = UIColor(named: "TextDetailGray", in: ConfigBundle.core, compatibleWith: nil)!
         public static let lineGray = UIColor(named: "LineGray", in: ConfigBundle.core, compatibleWith: nil)!
+        public static let unregistered = UIColor(named: "Unregistered", in: ConfigBundle.core, compatibleWith: nil)!
     }
 }
 
