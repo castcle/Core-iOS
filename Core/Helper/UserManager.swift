@@ -94,8 +94,16 @@ public class UserManager: NSObject {
         return Defaults[.avatar]
     }
 
+    public var avatarFullHd: String {
+        return Defaults[.avatarFullHd]
+    }
+
     public var cover: String {
         return Defaults[.cover]
+    }
+
+    public var coverFullHd: String {
+        return Defaults[.coverFullHd]
     }
 
     public var overview: String {

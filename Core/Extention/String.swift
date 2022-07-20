@@ -69,6 +69,17 @@ public extension String {
         return UIImage(data: imageData)
     }
 
+    var toUrlString: String {
+        if self.isEmpty {
+            return self
+        } else {
+            var absoluteString = self
+            absoluteString = absoluteString.replacingOccurrences(of: UrlProtocol.https.value, with: "")
+            absoluteString = absoluteString.replacingOccurrences(of: UrlProtocol.http.value, with: "")
+            return "\(UrlProtocol.https.value)\(absoluteString)/"
+        }
+    }
+
     func localized(withComment comment: String = "", bundle: Bundle) -> String {
         if let path = bundle.path(forResource: Defaults[.appLanguage], ofType: "lproj"), let languageBundle = Bundle(path: path) {
             return NSLocalizedString(self, bundle: languageBundle, comment: comment)
