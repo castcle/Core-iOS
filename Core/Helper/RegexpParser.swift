@@ -26,7 +26,6 @@
 //
 
 import UIKit
-import Atributika
 
 public struct RegexpParser {
     public static let selfMatchesStr: String = "SELF MATCHES %@"

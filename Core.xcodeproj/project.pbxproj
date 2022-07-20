@@ -33,7 +33,6 @@
 		B72E366B27294764003E730B /* RecentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E366A27294764003E730B /* RecentSearch.swift */; };
 		B72E366E27294C62003E730B /* BetterSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = B72E366D27294C62003E730B /* BetterSegmentedControl */; };
 		B72E367127294CA6003E730B /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367027294CA6003E730B /* JGProgressHUD */; };
-		B72E367727294D88003E730B /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367627294D88003E730B /* Atributika */; };
 		B72E367D27294F16003E730B /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367C27294F16003E730B /* CropViewController */; };
 		B72E367F27294F16003E730B /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = B72E367E27294F16003E730B /* TOCropViewController */; };
 		B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */ = {isa = PBXBuildFile; productRef = B72E368127294F56003E730B /* JVFloatLabeledTextField */; };
@@ -107,6 +106,13 @@
 		B79F2AFD2856F62500B82989 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79F2AFC2856F62500B82989 /* Encryption.swift */; };
 		B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A15B162795AE1C001E34DE /* KeychainHelper.swift */; };
 		B7A71D8127045E090092F318 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B7A71D8027045E090092F318 /* SwiftyJSON */; };
+		B7A895F62888214D00F9096E /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A895EF2888214D00F9096E /* AttributedText.swift */; };
+		B7A895F72888214D00F9096E /* NSScanner+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A895F02888214D00F9096E /* NSScanner+Swift.swift */; };
+		B7A895F82888214D00F9096E /* HTMLSpecials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A895F12888214D00F9096E /* HTMLSpecials.swift */; };
+		B7A895F92888214D00F9096E /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A895F22888214D00F9096E /* Style.swift */; };
+		B7A895FA2888214D00F9096E /* AttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A895F32888214D00F9096E /* AttributedLabel.swift */; };
+		B7A895FB2888214D00F9096E /* NSAttributedString+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A895F42888214D00F9096E /* NSAttributedString+Utils.swift */; };
+		B7A895FC2888214D00F9096E /* String+Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A895F52888214D00F9096E /* String+Detection.swift */; };
 		B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2521C26C6826A00ACBB84 /* UserManager.swift */; };
 		B7D4BC2027FEFAC3008ACD9F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */; };
 		B7DE6A372861A1B40015DC84 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE6A362861A1B40015DC84 /* Int.swift */; };
@@ -175,6 +181,14 @@
 		B79DF1AB270AF4DF00A40502 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B79F2AFC2856F62500B82989 /* Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
 		B7A15B162795AE1C001E34DE /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		B7A895E728881E5100F9096E /* Atributika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Atributika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A895EF2888214D00F9096E /* AttributedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedText.swift; sourceTree = "<group>"; };
+		B7A895F02888214D00F9096E /* NSScanner+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSScanner+Swift.swift"; sourceTree = "<group>"; };
+		B7A895F12888214D00F9096E /* HTMLSpecials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLSpecials.swift; sourceTree = "<group>"; };
+		B7A895F22888214D00F9096E /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		B7A895F32888214D00F9096E /* AttributedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedLabel.swift; sourceTree = "<group>"; };
+		B7A895F42888214D00F9096E /* NSAttributedString+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Utils.swift"; sourceTree = "<group>"; };
+		B7A895F52888214D00F9096E /* String+Detection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Detection.swift"; sourceTree = "<group>"; };
 		B7C2521C26C6826A00ACBB84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		B7DE6A362861A1B40015DC84 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
@@ -227,7 +241,6 @@
 				B73ECF7828447357001A32AD /* FirebaseAppCheck in Frameworks */,
 				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
 				B7F814D628634357002C3F50 /* Adjust in Frameworks */,
-				B72E367727294D88003E730B /* Atributika in Frameworks */,
 				B79A8ED42822629100918716 /* SwipeCellKit in Frameworks */,
 				B72E367F27294F16003E730B /* TOCropViewController in Frameworks */,
 				B73ECF9628447357001A32AD /* FirebaseInstallations in Frameworks */,
@@ -390,6 +403,29 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B7A895ED2888211800F9096E /* External Library */ = {
+			isa = PBXGroup;
+			children = (
+				B7A895EE2888214D00F9096E /* AttributedLabel */,
+			);
+			name = "External Library";
+			sourceTree = "<group>";
+		};
+		B7A895EE2888214D00F9096E /* AttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				B7A895EF2888214D00F9096E /* AttributedText.swift */,
+				B7A895F02888214D00F9096E /* NSScanner+Swift.swift */,
+				B7A895F12888214D00F9096E /* HTMLSpecials.swift */,
+				B7A895F22888214D00F9096E /* Style.swift */,
+				B7A895F32888214D00F9096E /* AttributedLabel.swift */,
+				B7A895F42888214D00F9096E /* NSAttributedString+Utils.swift */,
+				B7A895F52888214D00F9096E /* String+Detection.swift */,
+			);
+			name = AttributedLabel;
+			path = "../../External-Library/AttributedLabel";
+			sourceTree = "<group>";
+		};
 		B7F69CBB268EB85600B01223 = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +446,7 @@
 		B7F69CC7268EB85600B01223 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B7A895ED2888211800F9096E /* External Library */,
 				B754FD3427FFFECD00ACB1D2 /* Localization */,
 				B72E36522729051C003E730B /* Share */,
 				B755292C269C42F5005D5EB5 /* Helper */,
@@ -425,6 +462,7 @@
 		FD3BDFC01B4D6050981AE6D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7A895E728881E5100F9096E /* Atributika.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -470,7 +508,6 @@
 				B72E366827290CB5003E730B /* RealmSwift */,
 				B72E366D27294C62003E730B /* BetterSegmentedControl */,
 				B72E367027294CA6003E730B /* JGProgressHUD */,
-				B72E367627294D88003E730B /* Atributika */,
 				B72E367C27294F16003E730B /* CropViewController */,
 				B72E367E27294F16003E730B /* TOCropViewController */,
 				B72E368127294F56003E730B /* JVFloatLabeledTextField */,
@@ -560,7 +597,6 @@
 				B72E366527290CB5003E730B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				B72E366C27294C62003E730B /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */,
 				B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
-				B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */,
 				B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */,
 				B72E368027294F55003E730B /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */,
 				B72E368327294FCE003E730B /* XCRemoteSwiftPackageReference "Nantes" */,
@@ -618,11 +654,14 @@
 				B70748E527955C6700F01CB4 /* Environment.swift in Sources */,
 				B7630CC2279FECAF00675165 /* DispatchQueue.swift in Sources */,
 				B76E4B12272FAB87008FFD2C /* ExtractUrls.swift in Sources */,
+				B7A895F92888214D00F9096E /* Style.swift in Sources */,
 				B76E8BD0285C57250036790C /* Button.swift in Sources */,
 				B7928123268F2025000ED84A /* String.swift in Sources */,
 				B75528E0269B7ECF005D5EB5 /* View.swift in Sources */,
 				B7928125268F2056000ED84A /* Keys.swift in Sources */,
 				B755292E269C4311005D5EB5 /* Utility.swift in Sources */,
+				B7A895FA2888214D00F9096E /* AttributedLabel.swift in Sources */,
+				B7A895FC2888214D00F9096E /* String+Detection.swift in Sources */,
 				B75529E0269FE5D3005D5EB5 /* Date.swift in Sources */,
 				B779D95227B4D349008C8670 /* CountryCode.swift in Sources */,
 				B7910ED926C0EB1D0097C94E /* ApiHelper.swift in Sources */,
@@ -630,7 +669,9 @@
 				B79DF1AC270AF4DF00A40502 /* Notification.swift in Sources */,
 				B7D4BC2027FEFAC3008ACD9F /* Enum.swift in Sources */,
 				B75E62A82696DD2F003E1ADA /* FontType.swift in Sources */,
+				B7A895F82888214D00F9096E /* HTMLSpecials.swift in Sources */,
 				B79281DD2695A02F000ED84A /* Font.swift in Sources */,
+				B7A895FB2888214D00F9096E /* NSAttributedString+Utils.swift in Sources */,
 				B7C2521D26C6826A00ACBB84 /* UserManager.swift in Sources */,
 				B75E62A62696D853003E1ADA /* IconFont.swift in Sources */,
 				B75529AA269E174E005D5EB5 /* TextSize.swift in Sources */,
@@ -640,8 +681,10 @@
 				B72E366B27294764003E730B /* RecentSearch.swift in Sources */,
 				B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */,
 				B72E365527290561003E730B /* Page.swift in Sources */,
+				B7A895F72888214D00F9096E /* NSScanner+Swift.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B7DE6A372861A1B40015DC84 /* Int.swift in Sources */,
+				B7A895F62888214D00F9096E /* AttributedText.swift in Sources */,
 				B744AC322872DF1500378924 /* AdjustEventToken.swift in Sources */,
 				B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */,
 				B7F376C5283E317C00BDCFEB /* Urls.swift in Sources */,
@@ -1330,14 +1373,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/psharanda/Atributika.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
 		B72E367B27294F16003E730B /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TimOliver/TOCropViewController.git";
@@ -1534,11 +1569,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B72E366F27294CA6003E730B /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
-		};
-		B72E367627294D88003E730B /* Atributika */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B72E367527294D88003E730B /* XCRemoteSwiftPackageReference "Atributika" */;
-			productName = Atributika;
 		};
 		B72E367C27294F16003E730B /* CropViewController */ = {
 			isa = XCSwiftPackageProductDependency;
