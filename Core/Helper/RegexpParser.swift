@@ -29,8 +29,10 @@ import UIKit
 
 public struct RegexpParser {
     public static let selfMatchesStr: String = "SELF MATCHES %@"
-    public static let hashtagPattern: String = "#[^[:punct:][:space:]]+"
-    public static let mentionPattern: String = "@[^[:punct:][:space:]]+"
+    public static let hashtagPattern: String = "#[^[.-][:space:]]+"
+    public static let hashtagAutoCorrectPattern: String = "#[^[:space:]]+"
+    public static let mentionPattern: String = "@[A-Za-z0-9_]+"
+    public static let mentionAutoCorrectPattern: String = "@[^[:space:]]+"
     public static let emailPattern: String = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
     public static let psdPattern: String = "^(?=.*[a-z])(?=.*[A-Z]).{6,}$"
     public static let psdCharPattern: String = "^(?=.*[a-z])(?=.*[A-Z]).{2,}$"
