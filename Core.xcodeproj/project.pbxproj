@@ -92,6 +92,7 @@
 		B76E4B12272FAB87008FFD2C /* ExtractUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */; };
 		B76E8BD0285C57250036790C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E8BCF285C57250036790C /* Button.swift */; };
 		B779D95227B4D349008C8670 /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779D95127B4D349008C8670 /* CountryCode.swift */; };
+		B77C42AB288A9EF300F152C5 /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B77C42AA288A9EF300F152C5 /* Sarabun-Regular.ttf */; };
 		B7872E6B2738CCC200ECA047 /* SwiftColor in Frameworks */ = {isa = PBXBuildFile; productRef = B7872E6A2738CCC200ECA047 /* SwiftColor */; };
 		B7910E2726B5CB5A0097C94E /* CoreImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7910E2626B5CB5A0097C94E /* CoreImage.xcassets */; };
 		B7910ED926C0EB1D0097C94E /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7910ED826C0EB1D0097C94E /* ApiHelper.swift */; };
@@ -172,6 +173,7 @@
 		B76E4B11272FAB87008FFD2C /* ExtractUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractUrls.swift; sourceTree = "<group>"; };
 		B76E8BCF285C57250036790C /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		B779D95127B4D349008C8670 /* CountryCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCode.swift; sourceTree = "<group>"; };
+		B77C42AA288A9EF300F152C5 /* Sarabun-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Regular.ttf"; sourceTree = "<group>"; };
 		B7910E2626B5CB5A0097C94E /* CoreImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CoreImage.xcassets; sourceTree = "<group>"; };
 		B7910ED826C0EB1D0097C94E /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		B7928120268F200C000ED84A /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 				B71B667F272564A700191A62 /* Kanit-Medium.ttf */,
 				B71B667A272564A600191A62 /* Kanit-Regular.ttf */,
 				B71B667D272564A700191A62 /* Sarabun-Bold.ttf */,
+				B77C42AA288A9EF300F152C5 /* Sarabun-Regular.ttf */,
 				B767A061288A571B00960FA5 /* Sarabun-Medium.ttf */,
 				B71B6680272564A800191A62 /* Sarabun-Light.ttf */,
 				B71B667B272564A700191A62 /* Sarabun-LightItalic.ttf */,
@@ -634,6 +637,7 @@
 				B767A062288A571B00960FA5 /* Sarabun-Medium.ttf in Resources */,
 				B71B6683272564A800191A62 /* Kanit-Bold.ttf in Resources */,
 				B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */,
+				B77C42AB288A9EF300F152C5 /* Sarabun-Regular.ttf in Resources */,
 				B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */,
 				B79281C6269596A1000ED84A /* ColorTheme.xcassets in Resources */,
 				B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */,
