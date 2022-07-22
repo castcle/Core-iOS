@@ -36,6 +36,7 @@ public extension UIFont {
         registerFont(withFilenameString: "Kanit-Medium.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Kanit-Regular.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Sarabun-Bold.ttf", bundle: ConfigBundle.core)
+        registerFont(withFilenameString: "Sarabun-Medium.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Sarabun-Light.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Sarabun-LightItalic.ttf", bundle: ConfigBundle.core)
         registerFont(withFilenameString: "Castcle.ttf", bundle: ConfigBundle.core)
@@ -85,6 +86,7 @@ public extension UIFont {
         case medium = "Kanit-Medium"
         case regular = "Kanit-Regular"
         case contentBold = "Sarabun-Bold"
+        case contentMedium = "Sarabun-Medium"
         case contentLight = "Sarabun-Light"
         case contentLightItalic = "Sarabun-LightItalic"
         case castcleIcon = "untitled-font-1"
