@@ -696,5 +696,6 @@ public enum State {
     case deleteWalletShortcut
     case getWalletRecent
     case walletSearch
+    case reviewSendToken
     case none
 }
