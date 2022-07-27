@@ -228,6 +228,7 @@ public enum JsonKey: String {
     case castcle
     case other
     case transaction
+    case verification
     case address
     case amount
     case note

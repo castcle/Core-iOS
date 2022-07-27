@@ -52,6 +52,7 @@ public enum AuthenObjective: String {
     case changePassword = "change_password"
     case verifyMobile = "verify_mobile"
     case mergeAccount = "merge_account"
+    case sendToken = "send_token"
     case none
 }
 
@@ -697,5 +698,6 @@ public enum State {
     case getWalletRecent
     case walletSearch
     case reviewSendToken
+    case confirmSendToken
     case none
 }

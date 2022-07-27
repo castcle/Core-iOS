@@ -82,6 +82,10 @@ public class UserManager: NSObject {
         return Defaults[.email]
     }
 
+    public var countryCode: String {
+        return Defaults[.mobileCountryCode]
+    }
+
     public var mobile: String {
         return Defaults[.mobileNumber]
     }

@@ -27,13 +27,16 @@
 
 import Adjust
 import FirebaseAnalytics
+import Defaults
 
 public class TrackingAnalyticHelper {
     public static let shared = TrackingAnalyticHelper()
 
     public func sendTrackingAnalytic(eventType: TrackingEventType, item: Analytic) {
         self.sendAdjustAnalytic(eventType: eventType, item: item)
-        self.sendFirebaseAnalytic(eventType: eventType, item: item)
+        if Defaults[.isAdjustEnable] {
+            self.sendFirebaseAnalytic(eventType: eventType, item: item)
+        }
     }
 
     private func sendAdjustAnalytic(eventType: TrackingEventType, item: Analytic) {

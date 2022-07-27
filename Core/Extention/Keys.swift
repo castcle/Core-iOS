@@ -93,4 +93,5 @@ public extension Defaults.Keys {
     static let updateButton = Key<String>("updateButton", default: "")
     static let updateButtonCancel = Key<String>("updateButtonCancel", default: "")
     static let isFarmingEnable = Key<Bool>("isFarmingEnable", default: false)
+    static let isAdjustEnable = Key<Bool>("isAdjustEnable", default: false)
 }
