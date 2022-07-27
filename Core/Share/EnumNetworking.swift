@@ -236,4 +236,7 @@ public enum JsonKey: String {
     case adsCredit
     case farmBalance
     case totalBalance
+    case filter
+    case value
+    case status
 }
