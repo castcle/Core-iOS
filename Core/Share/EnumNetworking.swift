@@ -227,4 +227,16 @@ public enum JsonKey: String {
     case memo
     case castcle
     case other
+    case transaction
+    case verification
+    case address
+    case amount
+    case note
+    case availableBalance
+    case adsCredit
+    case farmBalance
+    case totalBalance
+    case filter
+    case value
+    case status
 }

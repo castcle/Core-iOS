@@ -52,6 +52,7 @@ public enum AuthenObjective: String {
     case changePassword = "change_password"
     case verifyMobile = "verify_mobile"
     case mergeAccount = "merge_account"
+    case sendToken = "send_token"
     case none
 }
 
@@ -481,11 +482,26 @@ public enum SearchResualState {
 
 // MARK: - WalletHistoryType
 public enum WalletHistoryType: String {
-    case wallet = "Wallet Balance"
-    case farming = "Content Farming"
-    case social = "Social Rewards"
-    case transaction = "Deposit & Send"
-    case airdrop = "Referral & Airdrop"
+    case walletBalance = "wallet-balance"
+    case contentFarming = "content-farming"
+    case socialRewards = "social-rewards"
+    case depositSend = "deposit-send"
+    case airdropReferral = "airdrop-referral"
+
+    public var display: String {
+        switch self {
+        case .walletBalance:
+            return "Wallet Balance"
+        case .contentFarming:
+            return "Content Farming"
+        case .socialRewards:
+            return "Social Rewards"
+        case .depositSend:
+            return "Deposit & Send"
+        case .airdropReferral:
+            return "Referral & Airdrop"
+        }
+    }
 }
 
 // MARK: - ReactionType
@@ -624,6 +640,69 @@ public enum TrackingChennel: String {
     case unkown
 }
 
+// MARK: - WalletTransactionType
+public enum WalletTransactionType: String {
+    case deposit
+    case send
+    case receive
+    case withdraw
+    case social
+    case referral
+    case airdrop
+    case farming
+    case unfarming
+    case farmed
+    case unkown
+
+    public var display: String {
+        switch self {
+        case .deposit:
+            return "Deposit"
+        case .send:
+            return "Send"
+        case .receive:
+            return "Receive"
+        case .withdraw:
+            return "Withdraw"
+        case .social:
+            return "Social Reward"
+        case .referral:
+            return "Referral Reward"
+        case .airdrop:
+            return "Airdrop"
+        case .farming:
+            return "Farming"
+        case .unfarming:
+            return "Undo Farming"
+        case .farmed:
+            return "Farming reward"
+        case .unkown:
+            return ""
+        }
+    }
+}
+
+// MARK: - WalletTransactionStatusType
+public enum WalletTransactionStatusType: String {
+    case success
+    case pending
+    case failed
+    case unkown
+
+    public var display: String {
+        switch self {
+        case .success:
+            return "Success"
+        case .pending:
+            return "Pending"
+        case .failed:
+            return "Failed"
+        case .unkown:
+            return ""
+        }
+    }
+}
+
 // MARK: - LoadState
 public enum LoadState {
     case loading
@@ -696,5 +775,9 @@ public enum State {
     case deleteWalletShortcut
     case getWalletRecent
     case walletSearch
+    case reviewSendToken
+    case confirmSendToken
+    case walletLookup
+    case getWalletHistory
     case none
 }
