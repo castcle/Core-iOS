@@ -76,7 +76,27 @@ public extension String {
             var absoluteString = self
             absoluteString = absoluteString.replacingOccurrences(of: UrlProtocol.https.value, with: "")
             absoluteString = absoluteString.replacingOccurrences(of: UrlProtocol.http.value, with: "")
-            return "\(UrlProtocol.https.value)\(absoluteString)/"
+            return "\(UrlProtocol.https.value)\(absoluteString)"
+        }
+    }
+
+    var toCastcleId: String {
+        if self.isEmpty {
+            return self
+        } else {
+            var absoluteString = self.trimmingCharacters(in: .whitespacesAndNewlines)
+            absoluteString = absoluteString.replacingOccurrences(of: "@", with: "")
+            return "@\(absoluteString)"
+        }
+    }
+
+    var toRawCastcleId: String {
+        if self.isEmpty {
+            return self
+        } else {
+            var absoluteString = self.trimmingCharacters(in: .whitespacesAndNewlines)
+            absoluteString = absoluteString.replacingOccurrences(of: "@", with: "")
+            return absoluteString
         }
     }
 

@@ -49,7 +49,7 @@ public class CommentRef: Object {
         let commentRef = CommentRef()
         commentRef.id = json[JsonKey.id.rawValue].stringValue
         commentRef.message = json[JsonKey.message.rawValue].stringValue
-        commentRef.authorId = json[JsonKey.author.rawValue].stringValue
+        commentRef.authorId = json[JsonKey.authorId.rawValue].stringValue
         commentRef.createdAt = json[JsonKey.createdAt.rawValue].stringValue
         commentRef.updatedAt = json[JsonKey.updatedAt.rawValue].stringValue
 

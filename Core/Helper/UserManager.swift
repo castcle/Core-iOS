@@ -71,10 +71,6 @@ public class UserManager: NSObject {
     }
 
     public var castcleId: String {
-        return "@\(Defaults[.castcleId])"
-    }
-
-    public var rawCastcleId: String {
         return Defaults[.castcleId]
     }
 
