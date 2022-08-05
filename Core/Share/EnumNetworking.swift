@@ -239,4 +239,5 @@ public enum JsonKey: String {
     case filter
     case value
     case status
+    case isReportContent
 }
