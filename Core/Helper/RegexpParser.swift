@@ -36,7 +36,7 @@ public struct RegexpParser {
     public static let emailPattern: String = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
     public static let psdPattern: String = "[a-zA-Z0-9!@#$%^&*()-_=+]+"
     public static let psdCharPattern: String = "^(?=.*[a-z])(?=.*[A-Z]).{2,}$"
-    public static let castcleIdPattern: String = "[A-Za-z0-9_]+"
+    public static let castcleIdPattern: String = "@[A-Za-z0-9_]+"
 }
 
 public struct AttributedContent {
