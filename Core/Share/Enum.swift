@@ -703,6 +703,12 @@ public enum WalletTransactionStatusType: String {
     }
 }
 
+// MARK: - ReportType
+public enum ReportType: String {
+    case content
+    case user
+}
+
 // MARK: - LoadState
 public enum LoadState {
     case loading
