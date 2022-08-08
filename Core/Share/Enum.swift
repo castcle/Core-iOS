@@ -242,6 +242,7 @@ public enum FeedCellType {
     case footer
     case pageAds
     case reach
+    case report
     case none
 }
 

@@ -180,6 +180,7 @@ public enum JsonKey: String {
     case channel
     case targetCastcleId
     case targetContentId
+    case subject
     case refCode
     case mobileNumber
     case page
