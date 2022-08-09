@@ -19,7 +19,7 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  Page.swift
+//  PageRealm.swift
 //  Core
 //
 //  Created by Castcle Co., Ltd. on 27/10/2564 BE.
@@ -28,7 +28,7 @@
 import RealmSwift
 import SwiftyJSON
 
-public class Page: Object {
+public class PageRealm: Object {
 
     @objc dynamic public var id: String = ""
     @objc dynamic public var castcleId: String = ""
@@ -41,11 +41,11 @@ public class Page: Object {
     @objc dynamic public var isSyncFacebook: Bool = false
 
     public override static func primaryKey() -> String? {
-        return "castcleId"
+        return "id"
     }
 
-    public func initCustom(id: String = "", displayName: String = "", castcleId: String = "", avatar: String = "", cover: String = "", overview: String = "", official: Bool = false) -> Page {
-        let page = Page()
+    public func initCustom(id: String = "", displayName: String = "", castcleId: String = "", avatar: String = "", cover: String = "", overview: String = "", official: Bool = false) -> PageRealm {
+        let page = PageRealm()
         page.id = id
         page.displayName = displayName
         page.castcleId = castcleId

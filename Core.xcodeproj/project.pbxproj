@@ -22,7 +22,7 @@
 		B71B6686272564A800191A62 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667F272564A700191A62 /* Kanit-Medium.ttf */; };
 		B71B6687272564A800191A62 /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B6680272564A800191A62 /* Sarabun-Light.ttf */; };
 		B71F66D727EB2BDF004DF6D5 /* CheckUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F66D627EB2BDF004DF6D5 /* CheckUpdate.swift */; };
-		B72E365527290561003E730B /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E365427290561003E730B /* Page.swift */; };
+		B72E365527290561003E730B /* PageRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72E365427290561003E730B /* PageRealm.swift */; };
 		B72E3658272907B5003E730B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B72E3657272907B5003E730B /* Kingfisher */; };
 		B72E365B272908EB003E730B /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B72E365A272908EB003E730B /* SkeletonView */; };
 		B72E365E27290946003E730B /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = B72E365D27290946003E730B /* SwiftDate */; };
@@ -118,7 +118,7 @@
 		B7C5267E28A10632003476BE /* ReportRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C5267D28A10632003476BE /* ReportRef.swift */; };
 		B7D4BC2027FEFAC3008ACD9F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */; };
 		B7DE6A372861A1B40015DC84 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE6A362861A1B40015DC84 /* Int.swift */; };
-		B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRef.swift */; };
+		B7E4666D2759F13F006E0B89 /* AuthorRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4666C2759F13F006E0B89 /* AuthorRealm.swift */; };
 		B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B7E466722767433D006E0B89 /* TLPhotoPicker */; };
 		B7E924BE2805880E00F9D75D /* CommentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E924BD2805880E00F9D75D /* CommentRef.swift */; };
 		B7EEC20A2738D1F300C9F66B /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */; };
@@ -150,7 +150,7 @@
 		B71B667F272564A700191A62 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		B71B6680272564A800191A62 /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
 		B71F66D627EB2BDF004DF6D5 /* CheckUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpdate.swift; sourceTree = "<group>"; };
-		B72E365427290561003E730B /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		B72E365427290561003E730B /* PageRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRealm.swift; sourceTree = "<group>"; };
 		B72E366A27294764003E730B /* RecentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearch.swift; sourceTree = "<group>"; };
 		B744AC2D2872DEAA00378924 /* Analytic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytic.swift; sourceTree = "<group>"; };
 		B744AC2F2872DED800378924 /* TrackingAnalyticHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingAnalyticHelper.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		B7C5267D28A10632003476BE /* ReportRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRef.swift; sourceTree = "<group>"; };
 		B7D4BC1F27FEFAC3008ACD9F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		B7DE6A362861A1B40015DC84 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
-		B7E4666C2759F13F006E0B89 /* AuthorRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRef.swift; sourceTree = "<group>"; };
+		B7E4666C2759F13F006E0B89 /* AuthorRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRealm.swift; sourceTree = "<group>"; };
 		B7E924BD2805880E00F9D75D /* CommentRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRef.swift; sourceTree = "<group>"; };
 		B7F376C4283E317C00BDCFEB /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		B7F69CC5268EB85600B01223 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,9 +307,9 @@
 		B72E36532729052E003E730B /* RealmModel */ = {
 			isa = PBXGroup;
 			children = (
-				B72E365427290561003E730B /* Page.swift */,
+				B72E365427290561003E730B /* PageRealm.swift */,
 				B72E366A27294764003E730B /* RecentSearch.swift */,
-				B7E4666C2759F13F006E0B89 /* AuthorRef.swift */,
+				B7E4666C2759F13F006E0B89 /* AuthorRealm.swift */,
 				B703A550278AB379007BFA01 /* ContentRef.swift */,
 				B7E924BD2805880E00F9D75D /* CommentRef.swift */,
 				B779D95127B4D349008C8670 /* CountryCode.swift */,
@@ -687,7 +687,7 @@
 				B703A551278AB37A007BFA01 /* ContentRef.swift in Sources */,
 				B72E366B27294764003E730B /* RecentSearch.swift in Sources */,
 				B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */,
-				B72E365527290561003E730B /* Page.swift in Sources */,
+				B72E365527290561003E730B /* PageRealm.swift in Sources */,
 				B7A895F72888214D00F9096E /* NSScanner+Swift.swift in Sources */,
 				B7928121268F200C000ED84A /* Localization.swift in Sources */,
 				B7DE6A372861A1B40015DC84 /* Int.swift in Sources */,
@@ -697,7 +697,7 @@
 				B7F376C5283E317C00BDCFEB /* Urls.swift in Sources */,
 				B79F2AFD2856F62500B82989 /* Encryption.swift in Sources */,
 				B79281C826959854000ED84A /* Color.swift in Sources */,
-				B7E4666D2759F13F006E0B89 /* AuthorRef.swift in Sources */,
+				B7E4666D2759F13F006E0B89 /* AuthorRealm.swift in Sources */,
 				B7A15B172795AE1C001E34DE /* KeychainHelper.swift in Sources */,
 				B7C5267E28A10632003476BE /* ReportRef.swift in Sources */,
 				B75528E2269B81C6005D5EB5 /* Image.swift in Sources */,

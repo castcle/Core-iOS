@@ -19,7 +19,7 @@
 //  Thailand 10160, or visit www.castcle.com if you need additional information
 //  or have any questions.
 //
-//  AuthorRef.swift
+//  AuthorRealm.swift
 //  Core
 //
 //  Created by Castcle Co., Ltd. on 3/12/2564 BE.
@@ -28,7 +28,7 @@
 import RealmSwift
 import SwiftyJSON
 
-public class AuthorRef: Object {
+public class AuthorRealm: Object {
     @objc dynamic public var id = ""
     @objc dynamic public var type = ""
     @objc dynamic public var castcleId = ""
@@ -41,11 +41,11 @@ public class AuthorRef: Object {
     @objc dynamic public var official = false
 
     public override static func primaryKey() -> String? {
-        return "castcleId"
+        return "id"
     }
 
-    public func initCustom(json: JSON) -> AuthorRef {
-        let authorRef = AuthorRef()
+    public func initCustom(json: JSON) -> AuthorRealm {
+        let authorRef = AuthorRealm()
         authorRef.id = json[JsonKey.id.rawValue].stringValue
         authorRef.type = json[JsonKey.type.rawValue].stringValue
         authorRef.castcleId = json[JsonKey.castcleId.rawValue].stringValue

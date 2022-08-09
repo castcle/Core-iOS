@@ -54,13 +54,10 @@ public extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
-        if Defaults[.appLanguage] == "th" {
-            dateFormatter.locale =  Locale(identifier: "th_TH")
-        } else {
-            dateFormatter.locale = Locale(identifier: "en_US")
-        }
-        let dateDisplay = dateFormatter.string(from: self)
-        return dateDisplay.replacingOccurrences(of: "BE", with: "")
+        var dateDisplay = dateFormatter.string(from: self)
+        dateDisplay = dateDisplay.replacingOccurrences(of: "BE", with: "")
+        dateDisplay = dateDisplay.replacingOccurrences(of: self.localMonthMedium(), with: self.appLanguageMonthMedium())
+        return dateDisplay
     }
 
     func timeToString() -> String {
@@ -108,5 +105,22 @@ public extension Date {
             return "\(diff) days ago"
         }
         return self.dateToString()
+    }
+
+    private func localMonthMedium() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM"
+        return dateFormatter.string(from: self)
+    }
+
+    private func appLanguageMonthMedium() -> String {
+        let dateFormatter = DateFormatter()
+        if Defaults[.appLanguage] == "th" {
+            dateFormatter.locale =  Locale(identifier: "th_TH")
+        } else {
+            dateFormatter.locale = Locale(identifier: "en_US")
+        }
+        dateFormatter.dateFormat = "MMM"
+        return dateFormatter.string(from: self)
     }
 }
