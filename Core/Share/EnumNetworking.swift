@@ -47,6 +47,7 @@ public enum JsonKey: String {
     case reply
     case metrics
     case participate
+    case reportedStatus
     case createdAt
     case updatedAt
     case comments

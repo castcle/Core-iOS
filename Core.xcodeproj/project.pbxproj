@@ -72,7 +72,6 @@
 		B744AC302872DED800378924 /* TrackingAnalyticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744AC2F2872DED800378924 /* TrackingAnalyticHelper.swift */; };
 		B744AC322872DF1500378924 /* AdjustEventToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744AC312872DF1500378924 /* AdjustEventToken.swift */; };
 		B74E912027901BAF0067059B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B74E911F27901BAF0067059B /* GoogleSignIn */; };
-		B754A124274660C400147210 /* SwiftIP in Frameworks */ = {isa = PBXBuildFile; productRef = B754A123274660C400147210 /* SwiftIP */; };
 		B754FD3327FFFB1900ACB1D2 /* EnumNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B754FD3227FFFB1900ACB1D2 /* EnumNetworking.swift */; };
 		B754FD3727FFFEFD00ACB1D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B754FD3927FFFEFD00ACB1D2 /* Localizable.strings */; };
 		B75528E0269B7ECF005D5EB5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75528DF269B7ECF005D5EB5 /* View.swift */; };
@@ -242,7 +241,6 @@
 				B73ECF7428447357001A32AD /* FirebaseAnalyticsSwift in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
 				B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */,
-				B754A124274660C400147210 /* SwiftIP in Frameworks */,
 				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
 				B73ECF7828447357001A32AD /* FirebaseAppCheck in Frameworks */,
 				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
@@ -525,7 +523,6 @@
 				B72E368A2729505E003E730B /* SnackBar */,
 				B7872E6A2738CCC200ECA047 /* SwiftColor */,
 				B7EEC2092738D1F300C9F66B /* SwiftKeychainWrapper */,
-				B754A123274660C400147210 /* SwiftIP */,
 				B7E466722767433D006E0B89 /* TLPhotoPicker */,
 				B73FFBB32771B9E100E23E58 /* NVActivityIndicatorView */,
 				B73FFBB52771B9E100E23E58 /* NVActivityIndicatorViewExtended */,
@@ -613,7 +610,6 @@
 				B72E36892729505E003E730B /* XCRemoteSwiftPackageReference "SnackBar" */,
 				B7872E692738CCC200ECA047 /* XCRemoteSwiftPackageReference "SwiftColor" */,
 				B7EEC2082738D1F300C9F66B /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
-				B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */,
 				B7E466712767433D006E0B89 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
 				B73FFBB22771B9E100E23E58 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */,
@@ -1449,14 +1445,6 @@
 				minimumVersion = 6.0.0;
 			};
 		};
-		B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Samasaur1/SwiftIP.git";
-			requirement = {
-				kind = exactVersion;
-				version = 2.2.0;
-			};
-		};
 		B75D26AE278D9EEF00F19AC1 /* XCRemoteSwiftPackageReference "Swifter" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mattdonnelly/Swifter.git";
@@ -1761,11 +1749,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B74E911E27901BAF0067059B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
-		};
-		B754A123274660C400147210 /* SwiftIP */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B754A122274660C400147210 /* XCRemoteSwiftPackageReference "SwiftIP" */;
-			productName = SwiftIP;
 		};
 		B75D26AF278D9EEF00F19AC1 /* Swifter */ = {
 			isa = XCSwiftPackageProductDependency;

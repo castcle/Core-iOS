@@ -271,6 +271,12 @@ public enum FeedDisplayType: String {
     case blogNoImage
 }
 
+// MARK: - ReportedStatusType
+public enum ReportedStatusType: String {
+    case illegal
+    case none
+}
+
 // MARK: - FeedType
 public enum FeedType: String, Codable {
     case content
@@ -462,6 +468,7 @@ public enum NotificationType: String {
     case like
     case recast
     case adsApprove = "ads-approve"
+    case illegalDone = "illegal-done"
     case none
 }
 

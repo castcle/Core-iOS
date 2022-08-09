@@ -28,21 +28,19 @@
 import UIKit
 import DeviceKit
 import Defaults
-import SwiftIP
 import SwiftyJSON
 
 public struct ApiHelper {
     public static let errorResponse: Data = "{\"code\" : \"9999\", \"statusCode\" : \"500\", \"message\" : \"Sorry, Internal server error.\"}".data(using: .utf8) ?? Data()
 
     public static func header(version: String = "") -> [String: String] {
-        let publicIP: String = IP.public() ?? APIs.defualtIpAddress
         var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
             "Platform": "iOS",
             "Authorization": "Bearer \(UserManager.shared.accessToken)",
-            "API-Metadata": "ip=\(publicIP.trimmingCharacters(in: .whitespacesAndNewlines)),src=iOS,dest=castcle"
+            "API-Metadata": "src=iOS,dest=castcle"
         ]
         if !version.isEmpty {
             param["Accept-Version"] = version
@@ -51,14 +49,13 @@ public struct ApiHelper {
     }
 
     public static func headerRefreshToken(version: String = "") -> [String: String] {
-        let publicIP: String = IP.public() ?? APIs.defualtIpAddress
         var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
             "Platform": "iOS",
             "Authorization": "Bearer \(UserManager.shared.refreshToken)",
-            "API-Metadata": "ip=\(publicIP.trimmingCharacters(in: .whitespacesAndNewlines)),src=iOS,dest=castcle"
+            "API-Metadata": "src=iOS,dest=castcle"
         ]
         if !version.isEmpty {
             param["Accept-Version"] = version
