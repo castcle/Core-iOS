@@ -55,7 +55,6 @@ public extension Date {
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
         var dateDisplay = dateFormatter.string(from: self)
-        dateDisplay = dateDisplay.replacingOccurrences(of: "BE", with: "")
         dateDisplay = dateDisplay.replacingOccurrences(of: self.localMonthMedium(), with: self.appLanguageMonthMedium())
         return dateDisplay
     }

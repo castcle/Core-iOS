@@ -677,7 +677,7 @@ public enum WalletTransactionType: String {
         case .referral:
             return "Referral Reward"
         case .airdrop:
-            return "Airdrop"
+            return "Airdrop Reward"
         case .farming:
             return "Farming"
         case .unfarming:
