@@ -148,6 +148,8 @@ public enum CastcleType: Int {
     case costPerAccount
     case youtubeBold
     case others
+    case mailSolid
+    case phone
 }
 
 private let castcleIcons = [
@@ -264,5 +266,7 @@ private let castcleIcons = [
     "\u{E010}", // case autoBid
     "\u{E011}", // case costPerAccount
     "\u{E012}", // case youtubeBold
-    "\u{E013}" // case others
+    "\u{E013}", // case others
+    "\u{E014}", // case mailSolid
+    "\u{E015}" // case phone
 ]

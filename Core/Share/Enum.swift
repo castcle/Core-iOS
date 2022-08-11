@@ -274,6 +274,8 @@ public enum FeedDisplayType: String {
 // MARK: - ReportedStatusType
 public enum ReportedStatusType: String {
     case illegal
+    case appeal
+    case removeWithOwner
     case none
 }
 
@@ -793,5 +795,7 @@ public enum State {
     case confirmSendToken
     case walletLookup
     case getWalletHistory
+    case notAppealCast
+    case appealCast
     case none
 }
