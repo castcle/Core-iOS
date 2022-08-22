@@ -543,6 +543,14 @@ public enum SizeType: String {
     case large
 }
 
+// MARK: - FarmingStatus
+public enum FarmingStatus: String {
+    case available
+    case farming
+    case farmed
+    case limit
+}
+
 // MARK: - LandingPage
 public enum LandingPage: String {
     case follower
@@ -797,5 +805,8 @@ public enum State {
     case getWalletHistory
     case notAppealCast
     case appealCast
+    case farmingLookup
+    case farmingCast
+    case unfarmingCast
     case none
 }

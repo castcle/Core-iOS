@@ -242,4 +242,9 @@ public enum JsonKey: String {
     case value
     case status
     case isReportContent
+    case content
+    case balance
+    case farmed
+    case available
+    case total
 }
