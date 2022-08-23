@@ -809,5 +809,6 @@ public enum State {
     case farmingCast
     case unfarmingCast
     case getFarmingActive
+    case getFarmingHistory
     case none
 }

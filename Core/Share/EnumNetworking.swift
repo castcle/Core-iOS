@@ -50,6 +50,7 @@ public enum JsonKey: String {
     case reportedStatus
     case createdAt
     case updatedAt
+    case farmedAt
     case comments
     case users
     case casts
