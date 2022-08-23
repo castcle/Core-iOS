@@ -808,5 +808,6 @@ public enum State {
     case farmingLookup
     case farmingCast
     case unfarmingCast
+    case getFarmingActive
     case none
 }
