@@ -33,7 +33,7 @@ import SwiftyJSON
 public struct ApiHelper {
     public static let errorResponse: Data = "{\"code\" : \"9999\", \"statusCode\" : \"500\", \"message\" : \"Sorry, Internal server error.\"}".data(using: .utf8) ?? Data()
 
-    public static func header(version: String = "", isGuestLogin: Bool = false) -> [String: String] {
+    public static func header(isGuestLogin: Bool = false) -> [String: String] {
         var param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
@@ -44,14 +44,11 @@ public struct ApiHelper {
         if !isGuestLogin {
             param["Authorization"] = "Bearer \(UserManager.shared.accessToken)"
         }
-        if !version.isEmpty {
-            param["Accept-Version"] = version
-        }
         return param
     }
 
-    public static func headerRefreshToken(version: String = "") -> [String: String] {
-        var param: [String: String] = [
+    public static func headerRefreshToken() -> [String: String] {
+        let param: [String: String] = [
             "Content-Type": "application/json",
             "Device": "\(Device.current)",
             "Accept-Language": Defaults[.appLanguage],
@@ -59,9 +56,6 @@ public struct ApiHelper {
             "Authorization": "Bearer \(UserManager.shared.refreshToken)",
             "API-Metadata": "src=iOS,dest=castcle"
         ]
-        if !version.isEmpty {
-            param["Accept-Version"] = version
-        }
         return param
     }
 

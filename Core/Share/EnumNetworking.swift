@@ -56,6 +56,7 @@ public enum JsonKey: String {
     case casts
     case pdpa
     case userFields
+    case nextToken
     case keyword
     case type
     case hashtag
