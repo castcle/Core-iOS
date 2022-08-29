@@ -60,8 +60,8 @@ public enum AuthenObjective: String {
 public enum SocialType: String {
     case facebook
     case twitter
-    case google = "apple id"
-    case apple
+    case google
+    case apple = "apple id"
     case unknow
 
     public var display: String {
@@ -379,7 +379,7 @@ public enum AdStatus: String {
     case declinded
     case approved
     case canceled
-    
+
     public var display: String {
         switch self {
         case .processing:
