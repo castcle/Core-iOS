@@ -158,10 +158,23 @@ public enum FarmingHistoryType {
 
 // MARK: - HistoryFilterType
 public enum HistoryFilterType: String {
-    case all = "All"
-    case day = "Today"
-    case week = "This week"
-    case month = "This month"
+    case all
+    case day
+    case week
+    case month
+
+    public var text: String {
+        switch self {
+        case .all:
+            return "All"
+        case .day:
+            return "Today"
+        case .week:
+            return "This week"
+        case .month:
+            return "This month"
+        }
+    }
 }
 
 // MARK: - SettingSection
@@ -365,6 +378,20 @@ public enum AdStatus: String {
     case processing
     case declinded
     case approved
+    case canceled
+    
+    public var display: String {
+        switch self {
+        case .processing:
+            return "In process"
+        case .declinded:
+            return "Declined"
+        case .approved:
+            return "Approved"
+        case .canceled:
+            return "Canceled"
+        }
+    }
 }
 
 // MARK: - BoostStatus

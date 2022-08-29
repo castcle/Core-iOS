@@ -133,6 +133,7 @@ public enum JsonKey: String {
     case impression
     case reach
     case cpm = "CPM"
+    case dailySpent
     case organic
     case paid
     case likes
