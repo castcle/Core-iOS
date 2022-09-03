@@ -732,6 +732,7 @@ public enum WalletTransactionStatusType: String {
     case success
     case pending
     case failed
+    case verified
     case unkown
 
     public var display: String {
@@ -742,6 +743,8 @@ public enum WalletTransactionStatusType: String {
             return "Pending"
         case .failed:
             return "Failed"
+        case .verified:
+            return "Success"
         case .unkown:
             return ""
         }
