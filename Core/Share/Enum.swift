@@ -400,6 +400,19 @@ public enum BoostStatus: String {
     case running
     case pause
     case end
+
+    public var display: String {
+        switch self {
+        case .unknown:
+            return "N/A"
+        case .running:
+            return "Running"
+        case .pause:
+            return "Pause"
+        case .end:
+            return "End"
+        }
+    }
 }
 
 // MARK: - BoostType
