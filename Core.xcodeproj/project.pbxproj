@@ -13,6 +13,7 @@
 		B70748EC27955C6700F01CB4 /* ConfigBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70748E227955C6700F01CB4 /* ConfigBundle.swift */; };
 		B717447726E2587C0014D6B5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717447626E2587C0014D6B5 /* NavigationBar.swift */; };
 		B717449026E765D50014D6B5 /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717448F26E765D50014D6B5 /* FlexibleTextView.swift */; };
+		B7179F5E28DD5523000A7AE7 /* Mantis in Frameworks */ = {isa = PBXBuildFile; productRef = B7179F5D28DD5523000A7AE7 /* Mantis */; };
 		B71B66692720167400191A62 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B71B66682720167400191A62 /* Defaults */; };
 		B71B6681272564A800191A62 /* Kanit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667A272564A600191A62 /* Kanit-Regular.ttf */; };
 		B71B6682272564A800191A62 /* Sarabun-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71B667B272564A700191A62 /* Sarabun-LightItalic.ttf */; };
@@ -241,6 +242,7 @@
 				B73ECF7428447357001A32AD /* FirebaseAnalyticsSwift in Frameworks */,
 				B7910EDC26C0EF090097C94E /* DeviceKit in Frameworks */,
 				B72E368227294F56003E730B /* JVFloatLabeledTextField in Frameworks */,
+				B7179F5E28DD5523000A7AE7 /* Mantis in Frameworks */,
 				B72E367D27294F16003E730B /* CropViewController in Frameworks */,
 				B73ECF7828447357001A32AD /* FirebaseAppCheck in Frameworks */,
 				B7E466732767433D006E0B89 /* TLPhotoPicker in Frameworks */,
@@ -562,6 +564,7 @@
 				B7F814D928634357002C3F50 /* Sociomantic */,
 				B7F814DB28634357002C3F50 /* Trademob */,
 				B7F814DD28634357002C3F50 /* WebBridge */,
+				B7179F5D28DD5523000A7AE7 /* Mantis */,
 			);
 			productName = Core;
 			productReference = B7F69CC5268EB85600B01223 /* Core.framework */;
@@ -618,6 +621,7 @@
 				B79A8ED22822629100918716 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
 				B73ECF6E28447356001A32AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				B7F814D428634357002C3F50 /* XCRemoteSwiftPackageReference "ios_sdk" */,
+				B7179F5C28DD5523000A7AE7 /* XCRemoteSwiftPackageReference "Mantis" */,
 			);
 			productRefGroup = B7F69CC6268EB85600B01223 /* Products */;
 			projectDirPath = "";
@@ -1309,6 +1313,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B7179F5C28DD5523000A7AE7 /* XCRemoteSwiftPackageReference "Mantis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/guoyingtao/Mantis.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		B71B66672720167400191A62 /* XCRemoteSwiftPackageReference "Defaults" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
@@ -1520,6 +1532,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B7179F5D28DD5523000A7AE7 /* Mantis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7179F5C28DD5523000A7AE7 /* XCRemoteSwiftPackageReference "Mantis" */;
+			productName = Mantis;
+		};
 		B71B66682720167400191A62 /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B71B66672720167400191A62 /* XCRemoteSwiftPackageReference "Defaults" */;
