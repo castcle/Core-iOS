@@ -778,7 +778,6 @@ public enum LoadState {
 
 // MARK: - State
 public enum State {
-    case getAds
     case getMe
     case getMyPage
     case getUserInfo
@@ -853,5 +852,9 @@ public enum State {
     case unfarmingCast
     case getFarmingActive
     case getFarmingHistory
+    case getAds
+    case getAdsDetail
+    case createAdsUser
+    case cancelAds
     case none
 }
