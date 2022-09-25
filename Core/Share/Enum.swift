@@ -856,5 +856,8 @@ public enum State {
     case getAdsDetail
     case createAdsUser
     case cancelAds
+    case endAds
+    case runAds
+    case pauseAds
     case none
 }
